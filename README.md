@@ -1,4 +1,8 @@
-tcr
-===
+#To Co Robimy
 
-tocorobimy.pl
+***
+
+###Baza danych:
+* Z oczywistych wzglêdów baza danych nie znajduje siê w repozytorium
+* Pobraæ j¹ nale¿y [ST¥D](http://dl.dropbox.com/u/24163047/Database%20PG.rar)
+* W archiwum znajduje siê plik README.docs, wg którego nale¿y postêpowaæ by "zainstalowaæ" bazê PostgreSQL (wersja bezinstalacyjna)
