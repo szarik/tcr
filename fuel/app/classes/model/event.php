@@ -1,3 +1,4 @@
+<?php
 class Model_Event extends \Orm\Model
 {
 	//protected static $_table_name = 'tcr.events';
@@ -42,3 +43,4 @@ class Model_Event extends \Orm\Model
       )
    );
 }
+?>

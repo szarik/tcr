@@ -14,9 +14,10 @@ return array(
 	'default' => array(
 		'type'        => 'pdo',
 		'connection'  => array(
-			'dsn'		=> 'postgresql:localhost:5432',
-			'username'	=> 'tcr',
-			'password'	=> '',
+			'dsn'	   => 'pgsql:host=localhost;dbname=tcr',
+			'username' => 'tcr',
+			'password' => 'tcr',
+			'persistent'=> true
 			//'dsn'   => 'postgresql:pgsql.nazwa.pl:5432:allow',
 		    //'username' => 'ghggroup_28',
 		    //'password' => '123ToCoRobimy!@#',
@@ -27,13 +28,4 @@ return array(
 		'enable_cache' => true,
 		'profiling'    => false,
 	),
-
-	'redis' => array(
-		'default' => array(
-			'hostname'  => '127.0.0.1',
-			'port'      => 6379,
-			'timeout'	=> null,
-		)
-	),
-
 );

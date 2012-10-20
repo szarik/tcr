@@ -4,11 +4,16 @@
  */
 
 return array(
-	'default' => array(
+	default' => array(
+		'type'        => 'pdo',
 		'connection'  => array(
-			'dsn'        => 'mysql:host=localhost;dbname=fuel_dev',
-			'username'   => 'root',
-			'password'   => 'root',
+			'dsn'	   => 'pgsql:host=localhost;port=5432;dbname=tcr',
+			'username' => 'tcr',
+			'password' => 'tcr',
+			'persistent'=> true
+			//'dsn'   => 'postgresql:pgsql.nazwa.pl:5432:allow',
+		    //'username' => 'ghggroup_28',
+		    //'password' => '123ToCoRobimy!@#',
 		),
 	),
 );

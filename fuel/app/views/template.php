@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <meta http-equiv="Content-type" content="text/html; charset=UTF-8" />
     <?php echo Asset::css('bootstrap.css'); ?>
 </head>
 <body>
-	Template!
     <div id="content">
-      <p>
+      <br/>
+	  <p>
          <?php
             echo \Html::anchor('events/add', 'Dodaj wydarzenie');
          ?>
