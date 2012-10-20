@@ -14,7 +14,12 @@ return array(
 	'default' => array(
 		'type'        => 'pdo',
 		'connection'  => array(
-			'persistent' => false,
+			'dsn'		=> 'postgresql:localhost:5432',
+			'username'	=> 'tcr',
+			'password'	=> '',
+			//'dsn'   => 'postgresql:pgsql.nazwa.pl:5432:allow',
+		    //'username' => 'ghggroup_28',
+		    //'password' => '123ToCoRobimy!@#',
 		),
 		'identifier'   => '`',
 		'table_prefix' => '',
