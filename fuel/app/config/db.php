@@ -12,15 +12,14 @@ return array(
 	 * Base config, just need to set the DSN, username and password in env. config.
 	 */
 	'default' => array(
-		'type'        => 'pdo',
+		'type'        => 'mysqli',
 		'connection'  => array(
-			'dsn'	   => 'pgsql:host=localhost;dbname=tcr',
-			'username' => 'tcr',
-			'password' => 'tcr',
-			'persistent'=> true
-			//'dsn'   => 'postgresql:pgsql.nazwa.pl:5432:allow',
-		    //'username' => 'ghggroup_28',
-		    //'password' => '123ToCoRobimy!@#',
+			'hostname'       => 'sql.ghggroup.nazwa.pl',
+			'port'           => '3307',
+			'database'       => 'ghggroup_30',
+			'username'       => 'ghggroup_30',
+			'password'       => '123ToCoRobimy!@#',
+			'persistent'     => false
 		),
 		'identifier'   => '`',
 		'table_prefix' => '',
@@ -29,3 +28,4 @@ return array(
 		'profiling'    => false,
 	),
 );
+?>

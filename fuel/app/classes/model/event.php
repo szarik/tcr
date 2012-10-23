@@ -6,23 +6,23 @@ class Model_Event extends \Orm\Model
 	protected static $_properties = array(
       'id',
       'place_id' => array(
-         'data_type' => 'integer',
-         'label' => 'Id miejsca'
-         //'validation' => array('required')
+         'data_type' => 'int',
+         'label' => 'Id miejsca',
+         'validation' => array('required', 'valid_integer')
       ),
 	  'name' => array(
          'data_type' => 'string',
-         'label' => 'Nazwa wydarzenia' //label for the input field
-         //'validation' => array('required', 'max_length'=>array(100), 'min_length'=>array(10))
+         'label' => 'Nazwa wydarzenia',
+         'validation' => array('required', 'max_length'=>array(255), 'min_length'=>array(3))
       ),
       'description' => array(
          'data_type' => 'string',
-         'label' => 'Opis',
-         //'validation' =>  array('required', 'max_length'=>array(65), 'min_length'=>array(2))
+         'label' => 'Opis'
       ),
 	  'date_start' => array(
          'data_type' => 'date',
          'label' => 'Pocz¹tek',
+		 'validation' => array()
       ),
 	  'date_end' => array(
          'data_type' => 'date',
@@ -34,7 +34,7 @@ class Model_Event extends \Orm\Model
 		 'form' => array('type' => 'select', 'options' => array('single'=>'Jedna osoba', 'couple'=>'Para', 'group'=>'Grupa', 'any'=>'Dowolne'))
       ),
 	  'periodicity' => array(
-         'data_type' => 'integer',
+         'data_type' => 'int',
          'label' => 'Powtarzalnoœæ (w dniach)',
       ),
 	  'coordinates' => array(

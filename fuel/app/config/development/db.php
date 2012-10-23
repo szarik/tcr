@@ -4,16 +4,16 @@
  */
 
 return array(
-	default' => array(
-		'type'        => 'pdo',
+	'default' => array(
+		'type'        => 'mysqli',
 		'connection'  => array(
-			'dsn'	   => 'pgsql:host=localhost;port=5432;dbname=tcr',
-			'username' => 'tcr',
-			'password' => 'tcr',
-			'persistent'=> true
-			//'dsn'   => 'postgresql:pgsql.nazwa.pl:5432:allow',
-		    //'username' => 'ghggroup_28',
-		    //'password' => '123ToCoRobimy!@#',
+			'hostname'       => 'sql.ghggroup.nazwa.pl',
+			'port'           => '3307',
+			'database'       => 'ghggroup_30',
+			'username'       => 'ghggroup_30',
+			'password'       => '123ToCoRobimy!@#',
+			'persistent'     => false
 		),
 	),
 );
+?>
