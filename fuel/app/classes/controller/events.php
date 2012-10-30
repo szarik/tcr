@@ -13,7 +13,18 @@ class Controller_Events extends \Controller_Template
 	//add new event
 	function action_add()
 	{
-		$fieldset = Fieldset::forge()->add_model('Model_Event');
+		$fieldset = Fieldset::forge('smth')->add_model('Model_Event');
+		
+		//custom validations
+		$val = Validation::instance('smth');
+		$val->add_callable('\Model_Event');
+		$val->field('place_id')->add_rule('is_int');
+		$val->field('date_start')->add_rule('is_timestamp');
+		$val->field('date_end')->add_rule('is_timestamp');
+		$val->field('periodicity')->add_rule('is_int');
+		$val->set_message('is_int', ':label musi byc wartoscia calkowita');
+		$val->set_message('is_timestamp', ':label musi byc data formatu YYYY-MM-DD HH:MM');
+		
 		$form = $fieldset->form();
 		$form->add('submit', '', array('type' => 'submit', 'value' => 'Dodaj', 'class' => 'btn medium primary'));
 		if($fieldset->validation()->run() == true)
