@@ -1,6 +1,8 @@
 <?php
 class Model_Event extends \Orm\Model
 {
+	//protected static $_has_many = array('events2prices', 'events2metatags', 'events2categories');
+
 	protected static $_properties = array(
       'id',
 	  'place_id' => array(
@@ -15,7 +17,8 @@ class Model_Event extends \Orm\Model
       ),
       'description' => array(
          'data_type' => 'string',
-         'label' => 'Opis'
+         'label' => 'Opis',
+		 'form' => array('type' => 'textarea') 
       ),
 	  'date_start' => array(
          'data_type' => 'date',
@@ -30,7 +33,7 @@ class Model_Event extends \Orm\Model
 	  'preferences' => array(
          'data_type' => 'string',
          'label' => 'Preferencje',
-		 'form' => array('type' => 'select', 'options' => array('single'=>'Jedna osoba', 'couple'=>'Para', 'group'=>'Grupa', 'any'=>'Dowolne'))
+		 'form' => array('type' => 'checkbox', 'options' => array('single'=>'Jedna osoba', 'couple'=>'Para', 'group'=>'Grupa'))
       ),
 	  'periodicity' => array(
          'data_type' => 'int',
@@ -64,6 +67,27 @@ class Model_Event extends \Orm\Model
 	        $ret = checkdate($m[2], $m[3], $m[1]);
 	    
 	    return $ret && strtotime($d);
+   }
+   
+   public static function _validation_checkboxes_required($checks)
+   {
+		if( $checks != null )
+		{
+			return true;
+		}
+		return false;
+   }
+   
+   public static function flatten($values)
+   {
+		if( $values == null  ||  count($values) == 1)
+		{
+			return $values;
+		}
+		else
+		{
+			return implode(',', $values);
+		}
    }
 }
 ?>

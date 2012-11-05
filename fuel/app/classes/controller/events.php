@@ -22,8 +22,10 @@ class Controller_Events extends \Controller_Template
 		$val->field('date_start')->add_rule('is_timestamp');
 		$val->field('date_end')->add_rule('is_timestamp');
 		$val->field('periodicity')->add_rule('is_int');
+		$val->field('preferences')->add_rule('checkboxes_required');
 		$val->set_message('is_int', ':label musi byc wartoscia calkowita');
 		$val->set_message('is_timestamp', ':label musi byc data formatu YYYY-MM-DD HH:MM');
+		$val->set_message('checkboxes_required', 'Przynajmniej jedna preferencja musi byc zaznaczona');
 		
 		$form = $fieldset->form();
 		$form->add('submit', '', array('type' => 'submit', 'value' => 'Dodaj', 'class' => 'btn medium primary'));
@@ -36,7 +38,7 @@ class Controller_Events extends \Controller_Template
 			$event->description		= $fields['description'];
 			$event->date_start		= $fields['date_start'];
 			$event->date_end		= $fields['date_end'];
-			$event->preferences		= $fields['preferences'];
+			$event->preferences		= Model_Event::flatten($fields['preferences']);
 			$event->periodicity		= $fields['periodicity'];
 			$event->coordinates		= $fields['coordinates'];
 			
