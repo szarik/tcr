@@ -5,3 +5,33 @@ body {
 .sidebar-nav {
     padding: 9px 0;
 }
+
+td:first-child>label[for*='form_'] {
+	font-weight: bold;
+}
+
+label[for*='form_'] {
+	display: inline;
+}
+
+#popup-form {
+	display: none;
+	opacity: 0.0;
+	position: absolute;
+	height: 500px;
+	width: 400px;
+	top: -500px;
+	left: 50%;
+	margin-left: -200px;
+	border: 1px black solid;
+	background: lightgray;
+	-webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+}
+
+.shadow {
+  -moz-box-shadow:    3px 3px 5px 6px #888;
+  -webkit-box-shadow: 3px 3px 50px 6px #ccc;
+  box-shadow:         15px 15px 15px 0px #333;
+}
