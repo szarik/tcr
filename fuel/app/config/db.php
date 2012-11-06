@@ -12,14 +12,9 @@ return array(
 	 * Base config, just need to set the DSN, username and password in env. config.
 	 */
 	'default' => array(
-		'type'        => 'mysqli',
+		'type'        => 'pdo',
 		'connection'  => array(
-			'hostname'       => 'sql.ghggroup.nazwa.pl',
-			'port'           => '3307',
-			'database'       => 'ghggroup_30',
-			'username'       => 'ghggroup_30',
-			'password'       => '123ToCoRobimy!@#',
-			'persistent'     => false
+			'persistent' => false,
 		),
 		'identifier'   => '`',
 		'table_prefix' => '',
@@ -27,5 +22,13 @@ return array(
 		'enable_cache' => true,
 		'profiling'    => false,
 	),
+
+	'redis' => array(
+		'default' => array(
+			'hostname'  => '127.0.0.1',
+			'port'      => 6379,
+			'timeout'	=> null,
+		)
+	),
+
 );
-?>

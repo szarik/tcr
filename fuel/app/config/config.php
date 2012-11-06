@@ -1,13 +1,7 @@
 <?php
 /**
- * Fuel is a fast, lightweight, community driven PHP5 framework.
- *
- * @package    Fuel
- * @version    1.0
- * @author     Fuel Development Team
- * @license    MIT License
- * @copyright  2010 - 2012 Fuel Development Team
- * @link       http://fuelphp.com
+ * Ines CMS
+ * Grzesiecki.com
  */
 
 return array(
@@ -41,7 +35,7 @@ return array(
 	 *
 	 * Set this to false or remove if you using mod_rewrite.
 	 */
-	'index_file'  => 'index.php',
+	'index_file'  => false,
 
 	'profiling'  => false,
 
@@ -62,10 +56,8 @@ return array(
 	'ob_callback'  => null,
 
 	'errors'  => array(
-		// Which errors should we show, but continue execution? You can add the following:
-		// E_NOTICE, E_WARNING, E_DEPRECATED, E_STRICT to mimic PHP's default behaviour
-		// (which is to continue on non-fatal errors). We consider this bad practice.
-		'continue_on'  => array(),
+		// Which errors should we show, but continue execution?
+		'continue_on'  => array(E_NOTICE, E_WARNING, E_DEPRECATED, E_STRICT),
 		// How many errors should we show before we stop showing them? (prevents out-of-memory errors)
 		'throttle'     => 10,
 		// Should notices from Error::notice() be shown?
@@ -100,7 +92,7 @@ return array(
 	 * Fuel::L_INFO
 	 * Fuel::L_ALL
 	 */
-	'log_threshold'    => Fuel::L_WARNING,
+	'log_threshold'    => Fuel::L_ALL,
 	'log_path'         => APPPATH.'logs/',
 	'log_date_format'  => 'Y-m-d H:i:s',
 
@@ -188,11 +180,9 @@ return array(
 	 * here. By default empty, but to use them you can add something
 	 * like this:
 	 *      array(APPPATH.'modules'.DS)
-	 *
-	 * Paths MUST end with a directory separator (the DS constant)!
 	 */
 	'module_paths' => array(
-		//APPPATH.'modules'.DS
+		APPPATH.'modules'.DS
 	),
 
 	/**
@@ -225,7 +215,9 @@ return array(
 		 * );
 		 */
 		'packages'  => array(
-			'orm',
+			//'ines',
+			'parser'
+			//'orm'
 		),
 
 		/**
@@ -236,12 +228,16 @@ return array(
 		 *
 		 * A path must be set in module_paths for this to work.
 		 */
-		'modules'  => array(),
+		'modules'  => array(
+			'inesTools',
+		),
 
 		/**
 		 * Classes to autoload & initialize even when not used
 		 */
-		'classes'  => array(),
+		'classes'  => array(
+			'ines'
+		),
 
 		/**
 		 * Configs to autoload

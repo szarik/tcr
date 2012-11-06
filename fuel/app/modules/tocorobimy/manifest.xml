@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xml>
+    <module>
+        <code>tocorobimy</code>
+        <class>Tocorobimy</class>
+        <name>Tcr</name>
+        <description>Tcr</description>
+        <version>20121104</version>
+        <author>zespół</author>
+    </module>
+    <autoload>
+        <class>categories</class>
+    </autoload>
+</xml>

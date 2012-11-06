@@ -5,15 +5,14 @@
 
 return array(
 	'default' => array(
-		'type'        => 'mysqli',
 		'connection'  => array(
-			'hostname'       => 'sql.ghggroup.nazwa.pl',
-			'port'           => '3307',
-			'database'       => 'ghggroup_30',
-			'username'       => 'ghggroup_30',
-			'password'       => '123ToCoRobimy!@#',
-			'persistent'     => false
+			'dsn'        => 'mysql:host=sql.ghggroup.nazwa.pl:3307;dbname=ghggroup_26',
+			'username'   => 'ghggroup_26',
+			'password'   => 'ZAQ!@#wsx',
 		),
+		'table_prefix'   => 'tcr_',
+		'charset'        => 'utf8',
+		'enable_cache'   => true,
+		'profiling'      => true,
 	),
 );
-?>

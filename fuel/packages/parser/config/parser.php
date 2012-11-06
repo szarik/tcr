@@ -29,10 +29,10 @@ return array(
 		'twig'      => 'View_Twig',
 		'mustache'  => 'View_Mustache',
 		'md'        => 'View_Markdown',
-		'dwoo'      => array('class' => 'View_Dwoo', 'extension' => 'tpl'),
+		'dwoo'      => 'View_Dwoo',
 		'jade'      => 'View_Jade',
 		'haml'      => 'View_Haml',
-		'smarty'    => 'View_Smarty',
+		'smarty'    => array('class' => 'View_Smarty', 'extension' => 'tpl'),
 		'phptal'    => 'View_Phptal',
 	),
 

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xml>
+    <module>
+        <code>inesEntity</code>
+        <class>manage</class>
+        <name>Ines Entity</name>
+        <description>Zarządzanie obiektami na portalu</description>
+        <version>20121102</version>
+        <author>Paweł Grzesiecki</author>
+    </module>
+    <autoload>
+        <class>manage</class>
+    </autoload>
+</xml>

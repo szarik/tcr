@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xml>
+    <module>
+        <code>inesThemeTcr</code>
+        <class>theme</class>
+        <name>TCR theme</name>
+        <description>To co robimy?</description>
+        <version>20121104</version>
+        <author>zespół</author>
+    </module>
+    <autoload>
+        <class>theme</class>
+    </autoload>
+</xml>
