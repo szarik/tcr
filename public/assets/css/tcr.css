@@ -41,3 +41,14 @@ label[for*='form_'] {
 .inesgmap_area img {
     max-width: none;
 }
+
+.search_map_box {
+    width: 95%;
+    height: 400px;
+    border: solid 1px #000;
+    margin: 0 auto;
+}
+
+.bleu {
+    color: #0088cc;
+}

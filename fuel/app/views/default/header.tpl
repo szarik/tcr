@@ -18,10 +18,10 @@
                 <ul class="nav">
                     <li class="active"><a href="#">Strona główna</a></li>
                     <li>
-                        <form class="navbar-search pull-left">
-                            <input type="text" class="search-query" placeholder="Podaj adres">
-                            <button type="submit" class="btn btn-inverse">Szukaj</button>
-                        </form>
+                        {$header_search.open}
+                            {$header_search.field}
+                            {$header_search.submit}
+                        {$header_search.close}
                     </li>
                     <li><a href="#about">Jak to działa?</a></li>
                     <li><a href="#contact">Kontakt</a></li>
@@ -36,5 +36,4 @@
 <div id="form-event" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
 	{$form_event|default:''}
 </div>
-{$widok_cos|default:''}
 {if isset($config.theme_show_comments) && $config.theme_show_comments == 1} <!-- header.tpl end --> {/if}

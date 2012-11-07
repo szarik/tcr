@@ -27,6 +27,20 @@ class Theme
 	// Extend default view by theme options
 	public static function extend_view($params, $return)
 	{
+
+		// Tocorobimy
+		$params->set('event_categories', \Tocorobimy\Categories::instance()->get(), false);
+		$params->set('places', \Tocorobimy\Places::instance()->get(), false);
+		$_r = \Tocorobimy\Places::instance()->get(\Input::get('lokal'));
+		$params->set('selected_place', $_r->current(), false);
+
+		// Header - formularz szukania po adresie
+		$_header_form['open'] = \Form::open(array('action' => 'search/address', 'class' => 'navbar-search pull-left'));
+		$_header_form['close'] = \Form::close();
+		$_header_form['field'] = \Form::input('address', \Input::post('address', ''), array('placeholder' => 'Podaj adres', 'class' => 'search-query'));
+		$_header_form['submit'] = \Form::button('submit', 'Szukaj', array('type' => 'submit', 'class' => 'btn btn-inverse'));
+		$params->set('header_search', $_header_form, false);
+
 		return $params;
 	}
 

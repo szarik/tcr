@@ -11,12 +11,12 @@
 
             function gmap_<?php echo $id ?>() {
                 var wspolrzedne = new google.maps.LatLng(53.41935400090768, 14.58160400390625);
-                var opcjeMapy = {
-                    zoom:10,
+                var options = {
+                    zoom: <?php echo $zoom ?>,
                     center:wspolrzedne,
                     mapTypeId:google.maps.MapTypeId.ROADMAP
                 };
-                map_<?php echo $id ?> = new google.maps.Map(document.getElementById("<?php echo $container ?>"), opcjeMapy);
+                map_<?php echo $id ?> = new google.maps.Map(document.getElementById("<?php echo $container ?>"), options);
 
 				<?php
 				if (isset($geocodes)) {
@@ -40,7 +40,8 @@
 				  if (isset($_data['callback_default'])) {
 					  ?>
 
-                  function <?php echo $_data['callback'] ?>(results, status) {
+                  function <?php echo $_data['callback'] ?> (results, status)
+						{
                       if (status == google.maps.GeocoderStatus.OK) {
                           map_<?php echo $id ?>.setCenter(results[0].geometry.location);
                           var marker = new google.maps.Marker({

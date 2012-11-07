@@ -14,12 +14,6 @@
     {$assets|default:''}{$assets_external|default:''}{$assets_js_raw|default:''}<!--[if IE]>
     {$cssie|default:''}<![endif]-->
 
-    <script type="text/javascript">
-        $(function(){
-            mapaStart();
-        });
-    </script>
-
 </head>
 <body>
 
@@ -33,7 +27,7 @@
         </div>
 
         <div class="span9">
-        {include file="$theme/tabs.tpl"}
+            {$body|default:''}
         </div>
 
     </div>

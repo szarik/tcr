@@ -46,6 +46,13 @@ class Map
 	private $_geocode_count = 0;
 
 	/**
+	 * Map zoom level
+	 *
+	 * @var int
+	 */
+	private $_zoom = 10;
+
+	/**
 	 * Create new map
 	 */
 	public function __construct()
@@ -83,6 +90,16 @@ class Map
 	}
 
 	/**
+	 * Set zoom level
+	 *
+	 * @param $name
+	 */
+	public function setZoom($zoom)
+	{
+		$this->_zoom = (int)$zoom;
+	}
+
+	/**
 	 * Get container name
 	 */
 	public function getContainer()
@@ -96,6 +113,16 @@ class Map
 	public function getId()
 	{
 		return (string)$this->_id;
+	}
+
+	/**
+	 * Set zoom level
+	 *
+	 * @param $name
+	 */
+	public function getZoom()
+	{
+		return (int) $this->_zoom;
 	}
 
 	/**
@@ -148,6 +175,7 @@ class Map
 		// Set params
 		$this->_js->id = $this->_id;
 		$this->_js->container = $this->_container;
+		$this->_js->zoom = $this->_zoom;
 
 		// Add geocodes
 		if (!empty($this->_geocode)) {

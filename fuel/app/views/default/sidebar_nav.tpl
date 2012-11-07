@@ -9,7 +9,7 @@
     {foreach from=$event_categories item=category}
         <li {if isset($smarty.get.kategoria) && $smarty.get.kategoria == $category->id}
                 class="active" {/if}>
-            <a href="?kategoria={$category->id}&strona={if isset($smarty.get.strona)}{$smarty.get.strona}{/if}">{$category->nazwa}</a>
+            <a href="?kategoria={$category->id}&strona={if isset($smarty.get.strona)}{$smarty.get.strona}{/if}">{$category->name}</a>
         </li>
     {/foreach}
 

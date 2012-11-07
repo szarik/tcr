@@ -45,12 +45,6 @@ class Controller_Ines_Site extends Controller
 		$this->_tpl->set('config', ines::configGet());
 		$this->_tpl->set('theme', ines::configGet('theme', 'default'));
 
-		// Tocorobimy
-		$this->_tpl->set('event_categories', \Tocorobimy\Categories::instance()->get(), false);
-		$this->_tpl->set('places', \Tocorobimy\Places::instance()->get(), false);
-		$_r = \Tocorobimy\Places::instance()->get(Input::get('lokal'));
-		$this->_tpl->set('selected_place', $_r->current(), false);
-
 		// Return final view
 		$this->_tpl = ines::hook('view_extend_after', $this->_tpl, $this->_tpl);
 
