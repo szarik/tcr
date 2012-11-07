@@ -22,6 +22,9 @@ class Gmap
 		// Load Gmap configuration
 		\Config::load('inesGmap::gmap', 'gmap');
 
+		// Required jquery
+		\Asset::js('jquery.js');
+
 		// Add Google Map assets to autoload
 		\Asset::js(vsprintf(self::$_google_js, array(\Config::get('gmap.api'), \Config::get('gmap.sensor'))), array(), 'external');
 	}

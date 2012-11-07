@@ -36,4 +36,5 @@
 <div id="popup-form" class="shadow">
 	<b>UFO</b>
 </div>
+{$widok_cos|default:''}
 {if isset($config.theme_show_comments) && $config.theme_show_comments == 1} <!-- header.tpl end --> {/if}

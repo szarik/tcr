@@ -51,7 +51,6 @@ class Controller_Ines_Site extends Controller
 		$_r = \Tocorobimy\Places::instance()->get(Input::get('lokal'));
 		$this->_tpl->set('selected_place', $_r->current(), false);
 
-
 		// Return final view
 		$this->_tpl = ines::hook('view_extend_after', $this->_tpl, $this->_tpl);
 

@@ -11,7 +11,7 @@
     <link rel="apple-touch-icon-precomposed" sizes="72x72" href="ico/apple-touch-icon-72-precomposed.png">
     <link rel="apple-touch-icon-precomposed" href="ico/apple-touch-icon-57-precomposed.png">
 
-    {$assets|default:''}{$assets_external|default:''}<!--[if IE]>
+    {$assets|default:''}{$assets_external|default:''}{$assets_js_raw|default:''}<!--[if IE]>
     {$cssie|default:''}<![endif]-->
 
     <script type="text/javascript">
@@ -24,8 +24,6 @@
 <body>
 
 {include file="$theme/header.tpl"}
-
-
 
 <div class="container">
 

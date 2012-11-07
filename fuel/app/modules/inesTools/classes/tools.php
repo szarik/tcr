@@ -68,13 +68,29 @@ class Tools
 		$_loaded_modules = Model::get_enabled_modules();
 		if (isset($_loaded_modules) && !empty($_loaded_modules))
 			foreach ($_loaded_modules as $_module) {
+
+				// Enable module
 				\Module::load($_module['module']['code']);
+
+				// Initialize autoload classes
 				if (isset($_module['autoload']['class'])) {
 					if (is_array($_module['autoload']['class']) && !empty($_module['autoload']['class'])) {
-						foreach ($_module['autoload']['class'] as $_loaded_class)
+						foreach ($_module['autoload']['class'] as $_loaded_class) {
 							eval("new \\" . $_module['module']['code'] . "\\" . $_loaded_class . ";");
+						}
 					} else {
 						eval("new \\" . $_module['module']['code'] . "\\" . $_module['autoload']['class'] . ";");
+					}
+				}
+
+				// Add custom assets pathes and add trailing slash if not exists
+				if (isset($_module['assets'])) {
+					if (is_array($_module['assets']) && !empty($_module['assets'])) {
+						foreach ($_module['assets'] as $_type => $_folder) {
+							if ($_type == 'css' || $_type == 'js' || $_type == 'img') {
+								\Asset::add_path(strtolower($_module['module']['code']) . '/' . (substr($_folder, -1) == '/') ? $_folder : ($_folder . '/'), $_type);
+							}
+						}
 					}
 				}
 			}

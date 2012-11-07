@@ -2,7 +2,6 @@
 <xml>
     <module>
         <code>inesGmap</code>
-        <class>gmap</class>
         <name>Ines Google Map v3</name>
         <description>To jest mój super moduł</description>
         <version>20120908</version>
