@@ -14,8 +14,14 @@
     {$assets|default:''}{$assets_external|default:''}<!--[if IE]>
     {$cssie|default:''}<![endif]-->
 
+    <script type="text/javascript">
+        $(function(){
+            mapaStart();
+        });
+    </script>
+
 </head>
-<body onload="mapaStart()">
+<body>
 
 {include file="$theme/header.tpl"}
 

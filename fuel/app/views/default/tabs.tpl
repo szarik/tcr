@@ -222,7 +222,7 @@
                     mapTypeControl:true,
                     scaleControl:true
                 };
-                mapa = new google.maps.Map(document.getElementById("mapka2"), opcjeMapy);
+                mapa = new google.maps.Map(document.getElementById("mapka"), opcjeMapy);
                 dymek = new google.maps.InfoWindow();
 
                 {literal}geokoder.geocode({address:"{/literal}{$selected_place->miasto}, {$selected_place->adres}{literal}"}, obslugaGeokodowania);{/literal}
@@ -276,7 +276,7 @@
                 <p>Opis: {$selected_place->opis} </p>
             </div>
             <div class="span8">
-                <div id="mapka2" style="width: 570px; height: 500px; border: 1px solid black; background: gray;">
+                <div id="mapka" style="width: 570px; height: 500px; border: 1px solid black; background: gray;">
                     <!-- tu będzie mapa -->
                 </div>
             </div>
