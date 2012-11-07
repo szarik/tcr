@@ -30,6 +30,14 @@ class Model_Event extends \Orm\Model
          'label' => 'Koniec',
 		 'validation' => array('required')
       ),
+	  'price_normal' => array(
+		'data_type' => 'string',
+		'label' => 'Cena normalna'
+	  ),
+	  'price_discount' => array(
+		'data_type' => 'string',
+		'label' => 'Cena ulgowa'
+	  ),
 	  'preferences' => array(
          'data_type' => 'string',
          'label' => 'Preferencje',
@@ -51,6 +59,13 @@ class Model_Event extends \Orm\Model
 		if( $val == null )
 			return true;
 		return ctype_digit($val);
+   }
+   
+   public static function _validation_is_price($val)
+   {
+		if( $val == null )
+			return true;
+		return is_numeric($val);
    }
    
    public static function _validation_is_timestamp($d)

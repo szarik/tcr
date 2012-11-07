@@ -4,7 +4,6 @@ namespace InesThemeTcr;
 
 class Theme
 {
-
 	public static function _init()
 	{
 		// Add theme css
@@ -16,6 +15,7 @@ class Theme
 		\Asset::js('jquery.js');
 		\Asset::js('jquery.greyscale.js');
 		\Asset::js('jquery.hover.zoom.js');
+		\Asset::js('template.js');
 
 		// Register hooks
 		\Ines::registerHook('view_extend_after', 'extend_view', 'InesThemeTcr\Theme');

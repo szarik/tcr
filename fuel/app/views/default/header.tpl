@@ -32,4 +32,8 @@
         </div>
     </div>
 </div>
+
+<div id="popup-form" class="shadow">
+	<b>UFO</b>
+</div>
 {if isset($config.theme_show_comments) && $config.theme_show_comments == 1} <!-- header.tpl end --> {/if}

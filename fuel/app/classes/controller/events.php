@@ -23,9 +23,12 @@ class Controller_Events extends \Controller_Template
 		$val->field('date_end')->add_rule('is_timestamp');
 		$val->field('periodicity')->add_rule('is_int');
 		$val->field('preferences')->add_rule('checkboxes_required');
-		$val->set_message('is_int', ':label musi byc wartoscia calkowita');
-		$val->set_message('is_timestamp', ':label musi byc data formatu YYYY-MM-DD HH:MM');
+		$val->field('price_normal')->add_rule('is_price');
+		$val->field('price_discount')->add_rule('is_price');
+		$val->set_message('is_int', '\':label\' musi byc wartoscia calkowita');
+		$val->set_message('is_timestamp', '\':label\' musi byc data formatu YYYY-MM-DD HH:MM');
 		$val->set_message('checkboxes_required', 'Przynajmniej jedna preferencja musi byc zaznaczona');
+		$val->set_message('is_price', '\':label\' musi byc liczba zmiennoprzecinkowa');
 		
 		$form = $fieldset->form();
 		$form->add('submit', '', array('type' => 'submit', 'value' => 'Dodaj', 'class' => 'btn medium primary'));
@@ -42,7 +45,18 @@ class Controller_Events extends \Controller_Template
 			$event->periodicity		= $fields['periodicity'];
 			$event->coordinates		= $fields['coordinates'];
 			
-			if($event->save())
+			//	TODO: walidacja required cena normal albo discount i Model_Event2Price
+			$price_normal = new Model_Event2Price;
+			$price_normal->event_id	= $fields['event_id'];
+			$price_normal->price_name_id = 1;
+			$price_normal->value	= $fields['price_normal'];
+			
+			$price_discount = new Model_Event2Price;
+			$price_discount->event_id	= $fields['event_id'];
+			$price_discount->price_name_id = 2;
+			$price_discount->value	= $fields['price_discount'];
+			
+			if($event->save()  &&  $price_normal->save()  &&  $price_discount->save())
 			{
 				\Response::redirect('/'.$event->id);
 			}
