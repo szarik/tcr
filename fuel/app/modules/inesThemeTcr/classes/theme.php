@@ -15,7 +15,7 @@ class Theme
 		\Asset::js('jquery.js');
 		\Asset::js('jquery.greyscale.js');
 		\Asset::js('jquery.hover.zoom.js');
-		\Asset::js('template.js');
+		\Asset::js('bootstrap.js');
 
 		// Register hooks
 		\Ines::registerHook('view_extend_after', 'extend_view', 'InesThemeTcr\Theme');

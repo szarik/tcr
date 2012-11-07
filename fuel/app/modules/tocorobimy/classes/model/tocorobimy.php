@@ -12,7 +12,7 @@ class Tocorobimy extends \Model
 	 */
 	public static function get_categories($_categories = null, $_limit = 0, $_offset = 0)
 	{
-		$_query = \DB::select('id', 'nazwa')->from('kategorie_imprez');
+		$_query = \DB::select('id', 'name')->from('categories');
 
 		if ($_categories !== null) {
 			$_query->where('id', 'IN', $_categories);
@@ -40,7 +40,7 @@ class Tocorobimy extends \Model
 	 */
 	public static function get_places($_places = null, $_limit = null, $_offset = null)
 	{
-		$_query = \DB::select("*")->from('lokale');
+		$_query = \DB::select("*")->from('places');
 
 		if ($_places !== null) {
 			$_query->where('id', 'IN', $_places);
