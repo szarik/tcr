@@ -13,25 +13,27 @@ class Controller_Events extends \Controller_Template
 	//add new event
 	function action_add()
 	{
-		$fieldset = Fieldset::forge('smth')->add_model('Model_Event');
+		$fieldset = Fieldset::forge('form_event')->add_model('Model_Event');
 		
 		//custom validations
-		$val = Validation::instance('smth');
+		$val = Validation::instance('form_event');
 		$val->add_callable('\Model_Event');
 		$val->field('place_id')->add_rule('is_int');
 		$val->field('date_start')->add_rule('is_timestamp');
 		$val->field('date_end')->add_rule('is_timestamp');
-		$val->field('periodicity')->add_rule('is_int');
 		$val->field('preferences')->add_rule('checkboxes_required');
-		$val->field('price_normal')->add_rule('is_price');
-		$val->field('price_discount')->add_rule('is_price');
 		$val->set_message('is_int', '\':label\' musi byc wartoscia calkowita');
 		$val->set_message('is_timestamp', '\':label\' musi byc data formatu YYYY-MM-DD HH:MM');
 		$val->set_message('checkboxes_required', 'Przynajmniej jedna preferencja musi byc zaznaczona');
 		$val->set_message('is_price', '\':label\' musi byc liczba zmiennoprzecinkowa');
+		$val->set_message('valid_url', '\':label\' musi byc poprawnym adresem URL');
 		
 		$form = $fieldset->form();
+		$form->add('price_free', 'Bilet darmowy', array('type' => 'checkbox'), array());
+		$form->add('price_normal', 'Bilet normalny', array('type' => 'text'), array('is_price'));
+		$form->add('price_discount', 'Bilet ulgowy', array('type' => 'text'), array('is_price'));
 		$form->add('submit', '', array('type' => 'submit', 'value' => 'Dodaj', 'class' => 'btn medium primary'));
+		
 		if($fieldset->validation()->run() == true)
 	    {
 			$fields = $fieldset->validated();
@@ -39,30 +41,62 @@ class Controller_Events extends \Controller_Template
 			$event->place_id		= $fields['place_id'];
 			$event->name			= $fields['name'];
 			$event->description		= $fields['description'];
+			$event->link			= $fields['link'];
+			$event->link_photo		= $fields['link_photo'];
+			$event->link_movie		= $fields['link_movie'];
 			$event->date_start		= $fields['date_start'];
 			$event->date_end		= $fields['date_end'];
 			$event->preferences		= Model_Event::flatten($fields['preferences']);
-			$event->periodicity		= $fields['periodicity'];
 			$event->coordinates		= $fields['coordinates'];
 			
-			//	TODO: walidacja required cena normal albo discount i Model_Event2Price
-			$price_normal = new Model_Event2Price;
-			$price_normal->event_id	= $fields['event_id'];
-			$price_normal->price_name_id = 1;
-			$price_normal->value	= $fields['price_normal'];
+			$success_event = $event->save();
+			$success_price1 = true;
+			$success_price2 = true;
+			$success_price3 = false;
 			
-			$price_discount = new Model_Event2Price;
-			$price_discount->event_id	= $fields['event_id'];
-			$price_discount->price_name_id = 2;
-			$price_discount->value	= $fields['price_discount'];
-			
-			if($event->save()  &&  $price_normal->save()  &&  $price_discount->save())
+			if(isset($fields['price_free']))
 			{
-				\Response::redirect('/'.$event->id);
+				$price_free = new Model_Event2Price;
+				$price_free->event_id		= $event->id;
+				$price_free->price_name_id	= 3;
+				$success_price1 = $price_free->save();
+			}
+			if($fields['price_normal'] != null)
+			{
+				$price_normal = new Model_Event2Price;
+				$price_normal->event_id			= $event->id;
+				$price_normal->value			= $fields['price_normal'];
+				$price_normal->price_name_id	= 1;
+				$success_price2 = $price_normal->save();
+			}
+			if($fields['price_discount'] != null)
+			{
+				$price_discount = new Model_Event2Price;
+				$price_discount->event_id		= $event->id;
+				$price_discount->value			= $fields['price_discount'];
+				$price_discount->price_name_id	= 2;
+				$success_price3 = $price_discount->save();
+			}
+			
+			if($success_event && $success_price1 && $success_price2 && $success_price3)
+			{
+				\Response::redirect('/aufnaufn'.$event->id);
+			}
+			else
+			{
+				//	some records failed to save - rollback database changes
+				$event->delete();
+				if(isset($fields['price_free']))
+					$price_free->delete();
+				if($fields['price_normal'] != null)
+					$price_normal->delete();
+				if($fields['price_discount'] != null)
+					$price_discount->delete();
 			}
 		}
 		else
 		{
+		
 			$this->template->messages = $fieldset->validation()->error();
 		}
 		$this->template->set('content', $form->build(), false);

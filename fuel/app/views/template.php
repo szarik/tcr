@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta http-equiv="Content-type" content="text/html; charset=UTF-8" />
-    <?php echo Asset::css('bootstrap.css'); ?>
+    <!--?php echo \Asset::css('bootstrap.css'); ?-->
 </head>
 <body>
     <div id="content">

@@ -6,11 +6,11 @@
 return array(
 	'default' => array(
 		'connection'  => array(
-			'dsn'        => 'mysql:host=sql.ghggroup.nazwa.pl:3307;dbname=ghggroup_26',
-			'username'   => 'ghggroup_26',
-			'password'   => 'ZAQ!@#wsx',
+			'dsn'        => 'mysql:host=sql.ghggroup.nazwa.pl:3307;dbname=ghggroup_30',
+			'username'   => 'ghggroup_30',
+			'password'   => '123ToCoRobimy!@#',
 		),
-		'table_prefix'   => 'tcr_',
+		'table_prefix'   => '',
 		'charset'        => 'utf8',
 		'enable_cache'   => true,
 		'profiling'      => true,

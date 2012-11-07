@@ -1,7 +1,7 @@
 <?php
 class Model_Event extends \Orm\Model
 {
-	//protected static $_has_many = array('events2prices', 'events2metatags', 'events2categories');
+	protected static $_has_many = array('event2price'); //'events2metatags', 'events2categories'
 
 	protected static $_properties = array(
       'id',
@@ -20,6 +20,21 @@ class Model_Event extends \Orm\Model
          'label' => 'Opis',
 		 'form' => array('type' => 'textarea') 
       ),
+	  'link' => array(
+         'data_type' => 'string',
+         'label' => 'Link',
+		 'validation' => array('valid_url')
+      ),
+	  'link_photo' => array(
+         'data_type' => 'string',
+         'label' => 'Link (zdjecie)',
+		 'validation' => array('valid_url')
+      ),
+	  'link_movie' => array(
+         'data_type' => 'string',
+         'label' => 'Link (film)',
+		 'validation' => array('valid_url')
+      ),
 	  'date_start' => array(
          'data_type' => 'date',
          'label' => 'Poczatek',
@@ -30,22 +45,10 @@ class Model_Event extends \Orm\Model
          'label' => 'Koniec',
 		 'validation' => array('required')
       ),
-	  'price_normal' => array(
-		'data_type' => 'string',
-		'label' => 'Cena normalna'
-	  ),
-	  'price_discount' => array(
-		'data_type' => 'string',
-		'label' => 'Cena ulgowa'
-	  ),
 	  'preferences' => array(
          'data_type' => 'string',
          'label' => 'Preferencje',
 		 'form' => array('type' => 'checkbox', 'options' => array('single'=>'Jedna osoba', 'couple'=>'Para', 'group'=>'Grupa'))
-      ),
-	  'periodicity' => array(
-         'data_type' => 'int',
-         'label' => 'Powtarzalnosc (w dniach)',
       ),
 	  'coordinates' => array(
          'data_type' => 'string',

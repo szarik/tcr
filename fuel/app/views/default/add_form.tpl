@@ -1,0 +1,1 @@
+<div id="form_content">{$test|default:''}</div>
