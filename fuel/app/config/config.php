@@ -37,7 +37,7 @@ return array(
 	 */
 	'index_file'  => false,
 
-	'profiling'  => false,
+	'profiling'  => true,
 
 	/**
 	 * Default location for the file cache
@@ -61,7 +61,7 @@ return array(
 		// How many errors should we show before we stop showing them? (prevents out-of-memory errors)
 		'throttle'     => 10,
 		// Should notices from Error::notice() be shown?
-		'notices'      => true,
+		'notices'      => false,
 	),
 
 	/**

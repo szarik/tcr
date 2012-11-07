@@ -47,6 +47,9 @@ class Controller_Ines_Site extends Controller
 
 		// Tocorobimy
 		$this->_tpl->set('event_categories', \Tocorobimy\Categories::instance()->get(), false);
+		$this->_tpl->set('places', \Tocorobimy\Places::instance()->get(), false);
+		$_r = \Tocorobimy\Places::instance()->get(Input::get('lokal'));
+		$this->_tpl->set('selected_place', $_r->current(), false);
 
 
 		// Return final view

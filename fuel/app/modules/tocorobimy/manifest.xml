@@ -10,5 +10,6 @@
     </module>
     <autoload>
         <class>categories</class>
+        <class>places</class>
     </autoload>
 </xml>
