@@ -27,7 +27,6 @@ class Theme
 	// Extend default view by theme options
 	public static function extend_view($params, $return)
 	{
-
 		// Tocorobimy
 		$params->set('event_categories', \Tocorobimy\Categories::instance()->get(), false);
 		$params->set('places', \Tocorobimy\Places::instance()->get(), false);
@@ -40,7 +39,7 @@ class Theme
 		$_header_form['field'] = \Form::input('address', \Input::post('address', ''), array('placeholder' => 'Podaj adres', 'class' => 'search-query'));
 		$_header_form['submit'] = \Form::button('submit', 'Szukaj', array('type' => 'submit', 'class' => 'btn btn-inverse'));
 		$params->set('header_search', $_header_form, false);
-
+		
 		return $params;
 	}
 

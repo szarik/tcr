@@ -1,5 +1,5 @@
 <?php
-class Controller_Events extends \Controller_Template
+class Controller_Events extends Controller_Ines_Site
 {
 	//list events
 	function action_index()
@@ -33,7 +33,7 @@ class Controller_Events extends \Controller_Template
 		$form->add('price_normal', 'Bilet normalny', array('type' => 'text'), array('is_price'));
 		$form->add('price_discount', 'Bilet ulgowy', array('type' => 'text'), array('is_price'));
 		$form->add('submit', '', array('type' => 'submit', 'value' => 'Dodaj', 'class' => 'btn medium primary'));
-		
+
 		if($fieldset->validation()->run() == true)
 	    {
 			$fields = $fieldset->validated();
@@ -52,7 +52,7 @@ class Controller_Events extends \Controller_Template
 			$success_event = $event->save();
 			$success_price1 = true;
 			$success_price2 = true;
-			$success_price3 = false;
+			$success_price3 = true;
 			
 			if(isset($fields['price_free']))
 			{
@@ -96,10 +96,27 @@ class Controller_Events extends \Controller_Template
 		}
 		else
 		{
-		
-			$this->template->messages = $fieldset->validation()->error();
+			$html = "<ul>";
+			foreach($fieldset->validation()->error() as $error)
+			{
+				$html .= "<li>".$error."</li>";
+			}
+			
+			$html .= "</ul>";
+			$this->_tpl->set('event_messages', $html, false);
 		}
-		$this->template->set('content', $form->build(), false);
+		$this->_tpl->set('form_event', $form->build(), false);
+	}
+	
+	function set_form()
+	{
+		$fieldset = Fieldset::forge('form_event')->add_model('Model_Event');
+		$form = $fieldset->form();
+		$form->add('price_free', 'Bilet darmowy', array('type' => 'checkbox'), array());
+		$form->add('price_normal', 'Bilet normalny', array('type' => 'text'), array('is_price'));
+		$form->add('price_discount', 'Bilet ulgowy', array('type' => 'text'), array('is_price'));
+		$form->add('submit', '', array('type' => 'submit', 'value' => 'Dodaj', 'class' => 'btn medium primary'));
+		$this->_tpl->set('form_event', $form->build(), false);
 	}
 }
 ?>

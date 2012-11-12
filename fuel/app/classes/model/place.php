@@ -29,7 +29,7 @@ class Model_Place extends \Orm\Model
       ),
 	  'coordinates' => array(
          'data_type' => 'string',
-         'label' => 'Po³o¿enie',
+         'label' => 'Polozenie',
 		 'validation' => array('required', 'max_length'=>array(255), 'min_length'=>array(3))
       )
    );

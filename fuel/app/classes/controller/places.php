@@ -1,5 +1,5 @@
 <?php
-class Controller_Places extends \Controller_Template
+class Controller_Places extends \Controller_Ines_Site
 {
 	//list places
 	function action_index()
@@ -33,9 +33,16 @@ class Controller_Places extends \Controller_Template
 		}
 		else
 		{
-			$this->template->messages = $fieldset->validation()->error();
+			$html = "<ul>";
+			foreach($fieldset->validation()->error() as $error)
+			{
+				$html .= "<li>".$error."</li>";
+			}
+			
+			$html .= "</ul>";
+			$this->_tpl->set('place_messages', $html, false);
 		}
-		$this->template->set('content', $form->build(), false);
+		$this->_tpl->set('form_place', $form->build(), false);
 	}
 	
 	   //edit

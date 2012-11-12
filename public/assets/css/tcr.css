@@ -52,3 +52,7 @@ label[for*='form_'] {
 .bleu {
     color: #0088cc;
 }
+
+#form-event, #form-place {
+	padding: 10px;
+}

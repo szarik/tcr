@@ -12,7 +12,7 @@
 
             <div class="nav-collapse collapse">
                 <p class="navbar-text pull-right">
-                    <a href="#" class="btn btn-info dropdown-toggle" data-toggle="modal">+ Dodaj miejsce</a> &nbsp;&nbsp;
+                    <a href="#form-place" class="btn btn-info dropdown-toggle" data-toggle="modal">+ Dodaj miejsce</a> &nbsp;&nbsp;
                     <a href="#form-event" class="btn btn-info" data-toggle="modal">+ Dodaj wydarzenie</a>
                 </p>
                 <ul class="nav">
@@ -34,6 +34,11 @@
 </div>
 
 <div id="form-event" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	{$event_messages|default:''}
 	{$form_event|default:''}
+</div>
+<div id="form-place" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	{$place_messages|default:''}
+	{$form_place|default:''}
 </div>
 {if isset($config.theme_show_comments) && $config.theme_show_comments == 1} <!-- header.tpl end --> {/if}
