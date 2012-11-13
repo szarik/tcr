@@ -27,6 +27,9 @@ class Controller_Ines_Site extends Controller
 
 		// Set layout global vars
 		$this->_tpl->set('doctype', \Fuel\Core\Html::doctype(ines::configGet('doctype')), false);
+		
+		// Return final view
+		$this->_tpl = ines::hook('view_extend_after', $this->_tpl, $this->_tpl);
 	}
 
 	/**
@@ -45,12 +48,7 @@ class Controller_Ines_Site extends Controller
 		$this->_tpl->set('config', ines::configGet());
 		$this->_tpl->set('theme', ines::configGet('theme', 'default'));
 
-		// Return final view
-		$this->_tpl = ines::hook('view_extend_after', $this->_tpl, $this->_tpl);
 		
-		// Load events form into template
-		//@\Controller_Events::action_add();
-		//@\Controller_Places::action_add();
 
 		return new Response($this->_tpl, 400);
 	}

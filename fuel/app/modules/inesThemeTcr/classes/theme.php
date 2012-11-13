@@ -51,6 +51,12 @@ class Theme
 		$form->add('price_discount', 'Bilet ulgowy', array('type' => 'text'), array('is_price'));
 		$form->add('submit', '', array('type' => 'submit', 'value' => 'Dodaj', 'class' => 'btn medium primary'));
 		$params->set('form_event', $form->build('events/add'), false);
+		
+		// Wydarzenia
+		$fieldset = \Fieldset::forge('form_place')->add_model('Model_Place');
+		$form = $fieldset->form();
+		$form->add('submit', '', array('type' => 'submit', 'value' => 'Dodaj', 'class' => 'btn medium primary'));
+		$params->set('form_place', $form->build('places/add'), false);
 
 		return $params;
 	}

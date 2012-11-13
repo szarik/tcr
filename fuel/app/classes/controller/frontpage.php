@@ -11,8 +11,6 @@
 	 */
 class Controller_Frontpage extends Controller_Ines_Site
 {
-
-
 	/**
 	 * The basic welcome message
 	 *
