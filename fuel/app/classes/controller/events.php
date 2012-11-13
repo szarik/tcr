@@ -17,7 +17,6 @@ class Controller_Events extends Controller_Ines_Site
 	//add new event
 	function action_add()
 	{
-		/**
 		$fieldset = Fieldset::forge('form_event')->add_model('Model_Event');
 		
 		//custom validations
@@ -32,13 +31,14 @@ class Controller_Events extends Controller_Ines_Site
 		$val->set_message('checkboxes_required', 'Przynajmniej jedna preferencja musi byc zaznaczona');
 		$val->set_message('is_price', '\':label\' musi byc liczba zmiennoprzecinkowa');
 		$val->set_message('valid_url', '\':label\' musi byc poprawnym adresem URL');
-		
+
+		/**
 		$form = $fieldset->form();
 		$form->add('price_free', 'Bilet darmowy', array('type' => 'checkbox'), array());
 		$form->add('price_normal', 'Bilet normalny', array('type' => 'text'), array('is_price'));
 		$form->add('price_discount', 'Bilet ulgowy', array('type' => 'text'), array('is_price'));
 		$form->add('submit', '', array('type' => 'submit', 'value' => 'Dodaj', 'class' => 'btn medium primary'));
-
+*/
 		if($fieldset->validation()->run() == true)
 	    {
 			$fields = $fieldset->validated();
@@ -110,9 +110,8 @@ class Controller_Events extends Controller_Ines_Site
 			$html .= "</ul>";
 			$this->_tpl->set('event_messages', $html, false);
 		}
-		$this->_tpl->set('form_event', $form->build('events/add'), false);
+//		$this->_tpl->set('form_event', $form->build('events/add'), false);
 
-*/
 		$this->_tpl->body = "aaaaa";
 
 	}

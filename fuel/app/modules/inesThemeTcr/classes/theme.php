@@ -9,13 +9,16 @@ class Theme
 		// Add theme css
 		\Asset::css('bootstrap.css');
 		\Asset::css('bootstrap-responsive.css');
+		\Asset::css('colorbox.css');
 		\Asset::css('tcr.css');
 
 		// Add extended JS
 		\Asset::js('jquery.js');
 		\Asset::js('jquery.greyscale.js');
 		\Asset::js('jquery.hover.zoom.js');
+		\Asset::js('jquery.colorbox-min.js');
 		\Asset::js('bootstrap.js');
+		\Asset::js('tcr.js');
 
 		// Register hooks
 		\Ines::registerHook('view_extend_after', 'extend_view', 'InesThemeTcr\Theme');
