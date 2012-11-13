@@ -73,7 +73,7 @@ class Controller_Wydarzenia extends Controller_Ines_Site
 			
 			if($success_event && $success_price1 && $success_price2 && $success_price3)
 			{
-				\Response::redirect('/aufnaufn'.$event->id);
+				\Response::redirect('/');
 			}
 			else
 			{
