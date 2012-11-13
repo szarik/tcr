@@ -12,8 +12,8 @@
 
             <div class="nav-collapse collapse">
                 <p class="navbar-text pull-right">
-                    <a href="#form-place" class="btn btn-info dropdown-toggle" data-toggle="modal">+ Dodaj miejsce</a> &nbsp;&nbsp;
-                    <a href="#form-event" class="btn btn-info" data-toggle="modal">+ Dodaj wydarzenie</a>
+                    <a href="#form-place" class="btn btn-info colorbox">+ Dodaj miejsce</a> &nbsp;&nbsp;
+                    <a href="#form-event" class="btn btn-info colorbox">+ Dodaj wydarzenie</a>
                 </p>
                 <ul class="nav">
                     <li class="active"><a href="#">Strona główna</a></li>
@@ -33,6 +33,6 @@
     </div>
 </div>
 
-{include file="$theme/events_popup.tpl"}
+{include file="$theme/events_places_popup.tpl"}
 
 {if isset($config.theme_show_comments) && $config.theme_show_comments == 1} <!-- header.tpl end --> {/if}

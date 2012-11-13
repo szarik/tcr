@@ -102,18 +102,20 @@ class Controller_Events extends Controller_Ines_Site
 		else
 		{
 			$html = "<ul>";
-			foreach($fieldset->validation()->error() as $error)
+			$error_list = $fieldset->validation()->error();
+			foreach($error_list as $error)
 			{
 				$html .= "<li>".$error."</li>";
 			}
-			
 			$html .= "</ul>";
+			
+			if(count($error_list) > 0)
+			{
+				$html .= "<script type=\"text/javascript\">$(function(){show_events_popup();});</script>";
+			}
+			
 			$this->_tpl->set('event_messages', $html, false);
 		}
-//		$this->_tpl->set('form_event', $form->build('events/add'), false);
-
-		$this->_tpl->body = "aaaaa";
-
 	}
 }
 ?>
