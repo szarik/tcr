@@ -39,7 +39,16 @@ class Theme
 		$_header_form['field'] = \Form::input('address', \Input::post('address', ''), array('placeholder' => 'Podaj adres', 'class' => 'search-query'));
 		$_header_form['submit'] = \Form::button('submit', 'Szukaj', array('type' => 'submit', 'class' => 'btn btn-inverse'));
 		$params->set('header_search', $_header_form, false);
-		
+
+		// Wydarzenia
+		$fieldset = \Fieldset::forge('form_event')->add_model('Model_Event');
+		$form = $fieldset->form();
+		$form->add('price_free', 'Bilet darmowy', array('type' => 'checkbox'), array());
+		$form->add('price_normal', 'Bilet normalny', array('type' => 'text'), array('is_price'));
+		$form->add('price_discount', 'Bilet ulgowy', array('type' => 'text'), array('is_price'));
+		$form->add('submit', '', array('type' => 'submit', 'value' => 'Dodaj', 'class' => 'btn medium primary'));
+		$params->set('form_event', $form->build('events/add'), false);
+
 		return $params;
 	}
 

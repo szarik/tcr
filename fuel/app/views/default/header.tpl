@@ -33,12 +33,6 @@
     </div>
 </div>
 
-<div id="form-event" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-	{$event_messages|default:''}
-	{$form_event|default:''}
-</div>
-<div id="form-place" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-	{$place_messages|default:''}
-	{$form_place|default:''}
-</div>
+{include file="$theme/events_popup.tpl"}
+
 {if isset($config.theme_show_comments) && $config.theme_show_comments == 1} <!-- header.tpl end --> {/if}

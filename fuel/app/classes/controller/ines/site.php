@@ -49,8 +49,8 @@ class Controller_Ines_Site extends Controller
 		$this->_tpl = ines::hook('view_extend_after', $this->_tpl, $this->_tpl);
 		
 		// Load events form into template
-		@\Controller_Events::action_add();
-		@\Controller_Places::action_add();
+		//@\Controller_Events::action_add();
+		//@\Controller_Places::action_add();
 
 		return new Response($this->_tpl, 400);
 	}

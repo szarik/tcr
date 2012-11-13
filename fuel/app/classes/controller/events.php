@@ -9,10 +9,15 @@ class Controller_Events extends Controller_Ines_Site
 		$view->set('events', $events, false);
 		$this->template->content = $view;
 	}
+
+	function _create_form() {
+
+	}
 	
 	//add new event
 	function action_add()
 	{
+		/**
 		$fieldset = Fieldset::forge('form_event')->add_model('Model_Event');
 		
 		//custom validations
@@ -105,18 +110,11 @@ class Controller_Events extends Controller_Ines_Site
 			$html .= "</ul>";
 			$this->_tpl->set('event_messages', $html, false);
 		}
-		$this->_tpl->set('form_event', $form->build(), false);
-	}
-	
-	function set_form()
-	{
-		$fieldset = Fieldset::forge('form_event')->add_model('Model_Event');
-		$form = $fieldset->form();
-		$form->add('price_free', 'Bilet darmowy', array('type' => 'checkbox'), array());
-		$form->add('price_normal', 'Bilet normalny', array('type' => 'text'), array('is_price'));
-		$form->add('price_discount', 'Bilet ulgowy', array('type' => 'text'), array('is_price'));
-		$form->add('submit', '', array('type' => 'submit', 'value' => 'Dodaj', 'class' => 'btn medium primary'));
-		$this->_tpl->set('form_event', $form->build(), false);
+		$this->_tpl->set('form_event', $form->build('events/add'), false);
+
+*/
+		$this->_tpl->body = "aaaaa";
+
 	}
 }
 ?>
