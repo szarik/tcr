@@ -8,7 +8,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </a>
-            <a class="brand" href="#"></a>
+            <a class="brand" href="{$config.path}"></a>
 
             <div class="nav-collapse collapse">
                 <p class="navbar-text pull-right">
