@@ -1,5 +1,5 @@
 <?php
-class Controller_Places extends \Controller_Ines_Site
+class Controller_Miejsca extends \Controller_Ines_Site
 {
 	//list places
 	function action_index()
@@ -11,11 +11,11 @@ class Controller_Places extends \Controller_Ines_Site
 	}
 	
 	//add new place
-	function action_add()
+	function action_dodaj()
 	{
 		$fieldset = Fieldset::forge()->add_model('Model_Place')->repopulate();
-		$form = $fieldset->form();
-		$form->add('submit', '', array('type' => 'submit', 'value' => 'Dodaj', 'class' => 'btn medium primary'));
+		//$form = $fieldset->form();
+		//$form->add('submit', '', array('type' => 'submit', 'value' => 'Dodaj', 'class' => 'btn medium primary'));
 		if($fieldset->validation()->run() == true)
 	    {
 			$fields = $fieldset->validated();
@@ -34,15 +34,21 @@ class Controller_Places extends \Controller_Ines_Site
 		else
 		{
 			$html = "<ul>";
-			foreach($fieldset->validation()->error() as $error)
+			$error_list = $fieldset->validation()->error();
+			foreach($error_list as $error)
 			{
 				$html .= "<li>".$error."</li>";
 			}
-			
 			$html .= "</ul>";
+			
+			if(count($error_list) > 0)
+			{
+				$html .= "<script type=\"text/javascript\">$(function(){show_places_popup();});</script>";
+			}
+			
 			$this->_tpl->set('place_messages', $html, false);
 		}
-		$this->_tpl->set('form_place', $form->build(), false);
+		//$this->_tpl->set('form_place', $form->build(), false);
 	}
 	
 	   //edit

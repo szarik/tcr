@@ -23,6 +23,4 @@ class Controller_Frontpage extends Controller_Ines_Site
 		$this->_tpl->set('body', $view);
 		return $this->_tpl;// = View::forge('default/frontpage.smarty');
 	}
-
-
 }

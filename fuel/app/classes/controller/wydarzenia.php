@@ -1,5 +1,5 @@
 <?php
-class Controller_Events extends Controller_Ines_Site
+class Controller_Wydarzenia extends Controller_Ines_Site
 {
 	//list events
 	function action_index()
@@ -10,12 +10,7 @@ class Controller_Events extends Controller_Ines_Site
 		$this->template->content = $view;
 	}
 
-	function _create_form() {
-
-	}
-	
-	//add new event
-	function action_add()
+	function action_dodaj()
 	{
 		$fieldset = Fieldset::forge('form_event')->add_model('Model_Event');
 		
@@ -32,13 +27,6 @@ class Controller_Events extends Controller_Ines_Site
 		$val->set_message('is_price', '\':label\' musi byc liczba zmiennoprzecinkowa');
 		$val->set_message('valid_url', '\':label\' musi byc poprawnym adresem URL');
 
-		/**
-		$form = $fieldset->form();
-		$form->add('price_free', 'Bilet darmowy', array('type' => 'checkbox'), array());
-		$form->add('price_normal', 'Bilet normalny', array('type' => 'text'), array('is_price'));
-		$form->add('price_discount', 'Bilet ulgowy', array('type' => 'text'), array('is_price'));
-		$form->add('submit', '', array('type' => 'submit', 'value' => 'Dodaj', 'class' => 'btn medium primary'));
-*/
 		if($fieldset->validation()->run() == true)
 	    {
 			$fields = $fieldset->validated();
