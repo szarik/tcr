@@ -1,7 +1,7 @@
 <?php
 
 
-class Controller_Search extends Controller_Ines_Site
+class Controller_Szukaj extends Controller_Ines_Site
 {
 
 
@@ -13,7 +13,7 @@ class Controller_Search extends Controller_Ines_Site
 		return $this->_tpl;
 	}
 
-	public function action_address()
+	public function action_adres()
 	{
 		// Get searching address
 		$_address = trim((string) \Security::strip_tags(\Input::post('address', '')));

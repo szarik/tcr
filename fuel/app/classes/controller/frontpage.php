@@ -21,8 +21,8 @@ class Controller_Frontpage extends Controller_Ines_Site
 	 */
 	public function action_index()
 	{
-		//$view = View::forge('default/tabs.smarty');
-		$this->_tpl->set('body', 'STRONA GLOWNA');
+		$view = View::forge('default/tabs.smarty');
+		$this->_tpl->set('body', $view);
 		return $this->_tpl;// = View::forge('default/frontpage.smarty');
 	}
 

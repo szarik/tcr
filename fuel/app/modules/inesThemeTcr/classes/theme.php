@@ -37,7 +37,7 @@ class Theme
 		$params->set('selected_place', $_r->current(), false);
 
 		// Header - formularz szukania po adresie
-		$_header_form['open'] = \Form::open(array('action' => 'search/address', 'class' => 'navbar-search pull-left'));
+		$_header_form['open'] = \Form::open(array('action' => 'szukaj/adres', 'class' => 'navbar-search pull-left'));
 		$_header_form['close'] = \Form::close();
 		$_header_form['field'] = \Form::input('address', \Input::post('address', ''), array('placeholder' => 'Podaj adres', 'class' => 'search-query'));
 		$_header_form['submit'] = \Form::button('submit', 'Szukaj', array('type' => 'submit', 'class' => 'btn btn-inverse'));
