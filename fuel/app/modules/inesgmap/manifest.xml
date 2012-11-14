@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xml>
+    <module>
+        <code>inesGmap</code>
+        <name>Ines Google Map v3</name>
+        <description>To jest mój super moduł</description>
+        <version>20120908</version>
+        <author>Paweł Grzesiecki</author>
+    </module>
+    <autoload>
+        <class>gmap</class>
+    </autoload>
+</xml>
