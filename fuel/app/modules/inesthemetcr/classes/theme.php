@@ -17,6 +17,7 @@ class Theme
 		\Asset::js('jquery.greyscale.js');
 		\Asset::js('jquery.hover.zoom.js');
 		\Asset::js('jquery.colorbox-min.js');
+		\Asset::js('jquery.animate-colors.js');
 		\Asset::js('bootstrap.js');
 		\Asset::js('tcr.js');
 
