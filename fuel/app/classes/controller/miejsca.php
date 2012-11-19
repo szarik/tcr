@@ -2,12 +2,11 @@
 class Controller_Miejsca extends \Controller_Ines_Site
 {
 	//list places
-	function action_index()
+	public function action_index()
 	{
-		$places = \Model_Place::find('all');
-		$view = \View::forge('list_places');
-		$view->set('places', $places, false);
-		$this->template->content = $view;
+		$view = View::forge('default/tabs.smarty');
+		$this->_tpl->set('body', $view);
+		return $this->_tpl;// = View::forge('default/frontpage.smarty');
 	}
 	
 	//add new place
