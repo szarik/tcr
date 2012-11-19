@@ -106,7 +106,11 @@ label[for*='form_'] {
 	margin-right: 10px;
 }
 
-.footer-menu > li > a {
+.footer-menu > li > form {
+	display:inline;
+}
+
+.footer-menu > li > form > a {
 	text-decoration: none;
 	color: rgb(190,190,190);
 }

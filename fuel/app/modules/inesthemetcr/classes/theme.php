@@ -53,12 +53,22 @@ class Theme
 		$form->add('submit', '', array('type' => 'submit', 'value' => 'Dodaj', 'class' => 'btn medium primary'));
 		$params->set('form_event', $form->build('wydarzenia/dodaj'), false);
 		
-		// Wydarzenia
+		// Miejsca
 		$fieldset = \Fieldset::forge('form_place')->add_model('Model_Place');
 		$form = $fieldset->form();
 		$form->add('submit', '', array('type' => 'submit', 'value' => 'Dodaj', 'class' => 'btn medium primary'));
 		$params->set('form_place', $form->build('miejsca/dodaj'), false);
 
+		// Stopka
+		//		Regulamin
+		$params->set('form_regulamin', \Form::open(array('name' => 'regulamin', 'action' => 'strona/regulamin', 'method' => 'GET')), false);
+		//		Prawa autorskie
+		$params->set('form_prawa_autorskie', \Form::open(array('name' => 'prawa_autorskie', 'action' => 'strona/prawa_autorskie', 'method' => 'GET')), false);
+		//		Kontakt
+		$params->set('form_kontakt', \Form::open(array('name' => 'kontakt', 'action' => 'strona/kontakt', 'method' => 'GET')), false);
+		//		Zglos blad
+		$params->set('form_zglos_blad', \Form::open(array('name' => 'zglos_blad', 'action' => 'strona/zglos_blad', 'method' => 'GET')), false);
+		
 		return $params;
 	}
 
