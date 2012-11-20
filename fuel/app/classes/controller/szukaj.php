@@ -1,13 +1,8 @@
 <?php
-
-
 class Controller_Szukaj extends Controller_Ines_Site
 {
-
-
 	public function action_index()
 	{
-
 		$_places = \Tocorobimy\Places::instance()->get();
 
 		// Init map

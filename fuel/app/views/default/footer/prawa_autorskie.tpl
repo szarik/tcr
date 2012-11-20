@@ -1,0 +1,1 @@
+Wszystkie prawa zastrze¿one by ToCoRobimy.pl ®
