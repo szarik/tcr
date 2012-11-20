@@ -1,16 +1,16 @@
-<b>KONTAKT</b>
+<h2><center>KONTAKT</h2></center>
 <br/><br/>
-ToCoRobimy to lokalizator wydarzeÒ.<br/><br/>
+ToCoRobimy to lokalizator wydarze≈Ñ<br/><br/>
 
-E-mail: tocorobimy@tocorobimy.pl<br/>
-Telefon: 519 585 308<br/><br/>
+<b>E-mail</b>: tocorobimy@tocorobimy.pl<br/>
+<b>Telefon</b>: 519 585 308<br/><br/>
 
-IMPREZY. PROMOCJA, WYNAJEM KLUBU:<br/><br/>
+<b>IMPREZY, PROMOCJA, WYNAJEM KLUBU:</b><br/><br/>
 
-Ma≥gorzata: hydrozagadkaklub@gmail.com, 502 070 916<br/>
-£ukasz: hydrozagadkaklub@gmail.com, 505 849 386<br/><br/>
+Ma≈Çgorzata: tocorobimy@gmail.com, 502 070 916<br/>
+≈Åukasz: tocorobimy@gmail.com, 505 849 386<br/><br/>
 
-<tu jeszcze gmapa by siÍ zda≥a><br/><br/>
+tu jeszcze gmapa by siƒô zda≈Ça<br/><br/>
 
-ZWIERZ TA i ROWERY S• MILE WIDZIANE<br/>
-MOØNA P£ACI∆ KART•
+ZWIERZƒòTA i ROWERY SƒÑ MILE WIDZIANE<br/>
+MO≈ªNA P≈ÅACIƒÜ KARTƒÑ

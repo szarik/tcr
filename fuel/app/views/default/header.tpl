@@ -23,7 +23,7 @@
                             {$header_search.submit}
                         {$header_search.close}
                     </li>
-                    <li><a href="#about">Jak to działa?</a></li>
+                    <li>{$jak_to_dziala_header|default:""}</li>
                     <li><a href="#contact">Kontakt</a></li>
                 </ul>
 

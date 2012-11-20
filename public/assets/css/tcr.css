@@ -107,11 +107,37 @@ label[for*='form_'] {
 	margin-right: 10px;
 }
 
-.footer-menu > li > form {
+.footer-menu > li > a {
 	display:inline;
 }
 
-.footer-menu > li > form > a {
+.footer-menu > li > a {
 	text-decoration: none;
 	color: rgb(190,190,190);
+}
+
+.round_frame {
+	font-size: 10pt;
+	-moz-border-radius: 40px;
+    -webkit-border-radius: 30px;
+    -khtml-border-radius: 30px;
+    border-radius: 40px;
+	background-color: rgb(247,247,247);
+	padding: 10px;
+}
+
+.report_page_mail, .report_page_message {
+	width: 97%;
+}
+
+.report_page_message {
+	height: 200px;
+}
+
+#report_page_div {
+	width: 400px;
+}
+
+.align_right {
+	text-align: right;
 }

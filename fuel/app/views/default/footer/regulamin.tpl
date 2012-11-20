@@ -1,252 +1,518 @@
-<div id="ArticleContent" class="content">
-		<h2>Regulamin korzystania z Serwisu ToCoRobimy.pl.</h2>
-		<p>I. Postanowienia wstêpne.</p>
-<blockquote>
-1.	Niniejszy regulamin okreœla warunki korzystania z Serwisu ToCoRobimy.pl.<br>
-2.	Serwis ToCoRobimy.pl jest udostêpniany U¿ytkownikom przez "Wirtualn¹ Polskê" Spó³kê Akcyjn¹ z siedzib¹ w Gdañsku przy ulicy Traugutta 115C, wpisan¹ do Krajowego Rejestru S¹dowego - Rejestru Przedsiêbiorców prowadzonego przez S¹d Rejonowy Gdañsk - Pó³noc w Gdañsku VII Wydzia³ Gospodarczy Krajowego Rejestru S¹dowego pod numerem KRS 0000068548, o kapitale zak³adowym w wysokoœci 67.980.024,- z³otych (op³aconym w ca³oœci) oraz Numerze Identyfikacji Podatkowej 957-07-51-216. <br>
-3.	Korzystanie przez U¿ytkowników z Serwisu ToCoRobimy.pl odbywa siê na zasadach okreœlonych w niniejszym Regulaminie i jest równoznaczne ze: <br>
-    <blockquote>
-    a.	z³o¿eniem przez U¿ytkownika oœwiadczenia o akceptacji wszystkich postanowieñ Regulaminu i zobowi¹zania siê do ich przestrzegania; <br>
-    b.	wyra¿eniem przez U¿ytkownika zgody na niezw³oczne udostêpnienie mu us³ug œwiadczonych w Serwisie, po spe³nieniu przez U¿ytkownika warunków okreœlonych w Regulaminie. <br>
-    </blockquote>
-4.	Korzystanie przez U¿ytkowników z pakietów us³ug PTK.pl oferowanych przez PKT.pl Polskie Ksi¹¿ki Telefoniczne Spó³ka z o.o. w Warszawie w Serwisie ToCoRobimy.pl odbywa siê na zasadach okreœlonych we w³aœciwych regulaminach PKT.pl Polskie Ksi¹¿ki Telefoniczne Spó³ka z o.o. w Warszawie dotycz¹cych tych pakietów. Pakiety us³ug PKT.pl oferowane s¹ przez PKT.pl Polskie Ksi¹¿ki Telefoniczne Spó³ka z o.o. w Warszawie, wpisan¹ do Krajowego Rejestru S¹dowego - Rejestru Przedsiêbiorców przez S¹d Rejonowy w dla m.st. Warszawy, XII Wydzia³ Gospodarczy pod numerem 268645, posiadaj¹c¹ kapita³ zak³adowy w wysokoœci 95.050.000,- oraz Numer Identyfikacji Podatkowej 701-00-46-065, w imieniu, na rzecz i na odpowiedzialnoœæ PKT.pl Polskie Ksi¹¿ki Telefoniczne Spó³ka z o.o. w Warszawie. WP nie jest odpowiedzialna za realizacjê œwiadczeñ oferowanych przez PKT.pl Polskie Ksi¹¿ki Telefoniczne Spó³ka z o.o. w ramach pakietów us³ug PTK.pl oraz za dzia³ania i/lub zaniechania PKT.pl Polskie Ksi¹¿ki Telefoniczne Spó³ka z o.o. w Warszawie w tym zakresie. <br>
-</blockquote>
+ï»¿<center><h2>REGULAMIN SERWISU INTERNETOWEGO<br/>ToCoRobimy.pl</h1></center><br/>
+<h3>Â§1 POSTANOWIENIA OGÃ“LNE</h2>
+<ol>
+<li>Niniejszy regulamin okreÅ›la zasady korzystania z serwisu 
+internetowego <strong>ToCoRobimy.pl</strong></li>
+<li>Operatorem serwisu jest spÃ³Å‚ka Populi sp. z o.o.. z siedzibÄ… w 
+Piasecznie - Julianowie, przy ul. KombatantÃ³w 61 zarejestrowana w 
+Krajowym Rejestrze SÄ…dowym pod numerem KRS 141736460</li>
+<li>UÅ¼yte w niniejszym Regulaminie okreÅ›lenia majÄ… nastÄ™pujÄ…ce 
+znaczenie:
+	<ul>
+		<li><strong>Operator</strong> &ndash; www.ToCoRobimy.pl, Populi sp. Z o.o.</li>
+		<li><strong>Serwis</strong> &ndash; usÅ‚uga polegajÄ…ca na udostÄ™pnieniu 
+danych i umoÅ¼liwieniu ich wprowadzania przez UÅ¼ytkownikÃ³w, dostÄ™pna pod 
+adresem www.totuam.pl. skÅ‚adajÄ…ca siÄ™ m.in. Z moduÅ‚u zapisywania 
+preferencji uÅ¼ytkownikÃ³w, moduÅ‚u edytowania preferencji przez 
+uÅ¼ytkownikÃ³w, moduÅ‚u tworzenia i edycji profilu uÅ¼ytkownika, moduÅ‚u 
+kierowania uÅ¼ytkownikÃ³w na strony partnerÃ³w.</li>
+		<li><strong>UÅ¼ytkownik</strong> &ndash; osoba fizyczna korzystajÄ…ca z 
+Serwisu przez odbieranie z niego lub umieszczanie w nim danych;</li>
+		<li><strong>UÅ¼ytkownik Zarejestrowany</strong> &ndash; UÅ¼ytkownik, ktÃ³ry 
+dokonaÅ‚ Rejestracji PeÅ‚nej lub Rejestracji Ograniczonej;</li>
+		<li><strong>Profil</strong> &mdash; strona UÅ¼ytkownika zawierajÄ…ca dane oraz
+ zdjÄ™cia udostÄ™pnione przez niego dobrowolnie w Serwisie, z ktÃ³rymi mogÄ…
+ siÄ™ zapoznaÄ‡ inni UÅ¼ytkownicy, jak rÃ³wnieÅ¼ ktÃ³re moÅ¼e wykorzystywaÄ‡ 
+Operator na warunkach okreÅ›lonych w niniejszym Regulaminie;</li>
+		<li><strong>MateriaÅ‚</strong> &ndash; tekst, obrazy, odsyÅ‚acze (linki) lub 
+jakiekolwiek inne dane przekazane do Serwisu za pomocÄ… odpowiedniej 
+procedury elektronicznej i oznaczone jako majÄ…ce zostaÄ‡ opublikowane w 
+www.totuam.pl</li>
+		<li><strong>Wizerunek</strong> &ndash; rozpoznawalna i aktualna podobizna 
+UÅ¼ytkownika, zamieszczona przez UÅ¼ytkownika w jego profilu 
+www.ToCoRobimy.pl.;</li>
+		<li><strong>Rejestracja</strong> &ndash; Rejestracja Ograniczona lub 
+Rejestracja PeÅ‚na;</li>
+		<li><strong>Rejestracja Ograniczona</strong> &ndash; rejestracja w Serwisie z
+ podaniem nastÄ™pujÄ…cych danych osobowych: imienia, nazwiska, miasta 
+zamieszkania i adresu poczty elektronicznej (adresu e &ndash; mail);</li>
+		<li><strong>Rejestracja PeÅ‚na</strong> - Rejestracja Ograniczona 
+uzupeÅ‚niona o Wizerunek.</li>
+	</ul>
+</li>
+<li>Korzystanie z Serwisu w inny sposÃ³b niÅ¼ w ramach dozwolonego uÅ¼ytku 
+nie jest dopuszczalne bez zgody wszystkich podmiotÃ³w, ktÃ³rym przysÅ‚ugujÄ…
+ prawa do elementÃ³w Serwisu, w tym bez zgody Operatora.</li>
+<li>Zabronione jest przekazywanie do Serwisu MateriaÅ‚Ã³w, komentarzy, 
+wypowiedzi lub zamieszczanie wpisÃ³w na forum internetowym dostÄ™pnym w 
+Serwisie zawierajÄ…cych treÅ›ci sprzeczne z prawem, w tym naruszajÄ…ce 
+prawa osÃ³b trzecich, w szczegÃ³lnoÅ›ci prawa autorskie lub dobra osobiste,
+ lub sprzeczne z dobrymi obyczajami.</li>
+<li>Operator bÄ™dzie usuwaÅ‚ z Serwisu MateriaÅ‚y, komentarze, wypowiedzi 
+lub wpisy na forum internetowym dostÄ™pnym w Serwisie sprzeczne z prawem,
+ w tym naruszajÄ…ce prawa osÃ³b trzecich, w szczegÃ³lnoÅ›ci prawa autorskie 
+lub dobra osobiste, lub sprzeczne z dobrymi obyczajami. Informacje o 
+takich MateriaÅ‚ach, komentarzach, wypowiedziach lub wpisach na forum 
+internetowym dostÄ™pnym w Serwisie naleÅ¼y zgÅ‚aszaÄ‡ Operatorowi lub za 
+pomocÄ… poczty elektronicznej, na adres
+kontakt@populi.com.pl.</li>
+<li>Operator nie ponosi odpowiedzialnoÅ›ci za prawdziwoÅ›Ä‡ zamieszczonych w
+ Serwisie treÅ›ci a w szczegÃ³lnoÅ›ci publikowanych wydarzeÅ„, treÅ›ci 
+zawartych w komentarzach, wypowiedziach lub wpisach na forum 
+internetowym dostÄ™pnym w Serwisie, publikowanych w Serwisie 
+automatycznie, bez uprzedniej kontroli przez Operatora. JednoczeÅ›nie 
+Operator dbajÄ…c o dobro uÅ¼ytkownikÃ³w doÅ‚oÅ¼y wszelkich staraÅ„, aby treÅ›ci
+ publikowane byÅ‚y wiarygodne i aktualne co do miejsca i czasu.</li>
+<li>Operator nie ponosi odpowiedzialnoÅ›ci za skutki awarii Serwisu, a w 
+szczegÃ³lnoÅ›ci za ewentualnÄ… utratÄ™ przechowywanych w nim danych.</li>
+</ol>
 
-<p>II. S³ownik nazw.</p>
-Nazwy u¿yte w Regulaminie oznaczaj¹:<br>
+<h3>Â§2 UÅ»YTKOWNICY</h2>
+<ol>
+	<li>DokonujÄ…c Rejestracji, UÅ¼ytkownik oÅ›wiadcza, iÅ¼ podane przez niego 
+dane osobowe sÄ… prawdziwe oraz wyraÅ¼a zgodÄ™ na gromadzenie i 
+przetwarzanie przez Operatora swoich danych osobowych, w takim zakresie,
+ w jakim jest to konieczne do korzystania z usÅ‚ug Serwisu oraz do 
+korzystania przez Operatora z udzielonej mu przez UÅ¼ytkownika licencji 
+wyÅ‚Ä…cznej.</li>
+	<li>DokonujÄ…c Rejestracji PeÅ‚nej, UÅ¼ytkownik wyraÅ¼a zgodÄ™ na 
+rozpowszechnianie i publiczne udostÄ™pnianie przez Operatora Wizerunku, w
+ Serwisie, obok imienia i nazwiska UÅ¼ytkownika lub obok jego komentarzy,
+ MateriaÅ‚Ã³w, wypowiedzi lub wpisÃ³w na forum dostÄ™pnym w Serwisie &ndash; na 
+zasadach analogicznych jak w przypadku licencji wskazanej w Â§4.</li>
+	<li>DokonujÄ…c Rejestracji PeÅ‚nej, UÅ¼ytkownik wyraÅ¼a rÃ³wnieÅ¼ zgodÄ™ na 
+rozpowszechnianie i publiczne udostÄ™pnianie Wizerunku wraz z imieniem i 
+nazwiskiem tego UÅ¼ytkownika przez dowolny podmiot, ktÃ³ry uzyskaÅ‚ od 
+Operatora sublicencjÄ™ na komentarz, MateriaÅ‚ lub wypowiedÅº. Z tytuÅ‚u 
+rozpowszechniania i udostÄ™pnienia Wizerunku UÅ¼ytkownikowi nie 
+przysÅ‚uguje wynagrodzenie.</li>
+	<li>DokonujÄ…c Rejestracji, UÅ¼ytkownik akceptuje niniejszy Regulamin, a w
+ szczegÃ³lnoÅ›ci jego postanowienia o charakterze umownym regulujÄ…ce 
+stosunek miÄ™dzy UÅ¼ytkownikiem a Operatorem oraz zobowiÄ…zuje siÄ™ do 
+przestrzegania prawa przy korzystaniu z Serwisu, w szczegÃ³lnoÅ›ci do 
+przestrzegania autorskich praw majÄ…tkowych oraz praw wynikajÄ…cych z 
+rejestracji wynalazkÃ³w, patentÃ³w, znakÃ³w towarowych, wzorÃ³w uÅ¼ytkowych i
+ przemysÅ‚owych innych osÃ³b, a takÅ¼e do poszanowania dÃ³br osobistych osÃ³b
+ trzecich i Operatora oraz poszanowania dobrych obyczajÃ³w.</li>
+	<li>Przy dokonywaniu Rejestracji UÅ¼ytkownik moÅ¼e wyraziÄ‡ zgodÄ™ na 
+przetwarzanie przez Operatora danych osobowych udostÄ™pnionych w zwiÄ…zku z
+ RejestracjÄ… w celach reklamy, promocji, w celach statystycznych oraz do
+ badania rynku, a takÅ¼e zachowaÅ„ i preferencji UÅ¼ytkownikÃ³w.</li>
+	<li>Przy dokonywaniu Rejestracji UÅ¼ytkownik wyraÅ¼a zgodÄ™ na 
+otrzymywanie na adres poczty internetowej e-mail podany podczas 
+Rejestracji komunikatÃ³w dotyczÄ…cych bieÅ¼Ä…cej dziaÅ‚alnoÅ›ci Serwisu. 
+UÅ¼ytkownik Zarejestrowany moÅ¼e w kaÅ¼dej chwili zrezygnowaÄ‡ z 
+otrzymywania tych komunikatÃ³w.</li>
+	<li>Osoba niepeÅ‚noletnia moÅ¼e dokonaÄ‡ Rejestracji tylko wtedy, jeÅ›li po
+ wypeÅ‚nieniu formularza rejestracyjnego przeÅ›le na adres: 
+kontakt@populi.com.pl wydrukowany ze stron Serwisu formularz zawierajÄ…cy
+ zgodÄ™ swoich przedstawicieli ustawowych na akceptacjÄ™ niniejszego 
+Regulaminu. Rejestracja stanie siÄ™ skuteczna z chwilÄ… wprowadzenia przez
+ Operatora odpowiednich danych do Serwisu.</li>
+	<li>W przypadku uzasadnionych wÄ…tpliwoÅ›ci co do prawdziwoÅ›ci danych 
+podanych przez UÅ¼ytkownika przy Rejestracji, Operator zastrzega sobie 
+prawo ograniczenia UÅ¼ytkownikowi moÅ¼liwoÅ›ci korzystania z Serwisu do 
+czasu uprawdopodobnienia przez UÅ¼ytkownika, iÅ¼ podaÅ‚ on prawdziwe dane. 
+Operator wskaÅ¼e UÅ¼ytkownikowi sposÃ³b uprawdopodobnienia danych za pomocÄ…
+ wiadomoÅ›ci przesÅ‚anej na adres poczty internetowej e-mail podany przez 
+UÅ¼ytkownika podczas Rejestracji.</li>
+	<li>Jeden UÅ¼ytkownik nie moÅ¼e posiadaÄ‡ w Serwisie wiÄ™cej niÅ¼ jednego 
+konta, tj. jednego identyfikatora i hasÅ‚a pozwalajÄ…cych na korzystanie z
+ Serwisu.</li>
+	<li>Operator zastrzega sobie prawo uprzywilejowania niektÃ³rych 
+UÅ¼ytkownikÃ³w Zarejestrowanych z Wizerunkiem poprzez np. przyznanie im 
+nagrÃ³d pieniÄ™Å¼nych lub rzeczowych lub uprawnieÅ„ do usuwania komentarzy i
+ wpisÃ³w na forum dostÄ™pnym w Serwisie. Operator moÅ¼e cofnÄ…Ä‡ przyznane 
+uprawnienia bez uzasadnienia.</li>
+	<li>Operator zastrzega sobie moÅ¼liwoÅ›Ä‡ udzielenia zezwolenia niektÃ³rym 
+UÅ¼ytkownikom Zarejestrowanym na publikowanie MateriaÅ‚Ã³w, komentarzy lub 
+wypowiedzi pod pseudonimem. Wniosek do Operatora w tej sprawie wraz z 
+uzasadnieniem UÅ¼ytkownik powinien skierowaÄ‡ na adres 
+kontakt@populi.com.pl, podajÄ…c wszystkie dane wymagane do Rejestracji 
+PeÅ‚nej. W przypadku wyraÅ¼enia zgody na publikacjÄ™ pod pseudonimem 
+Rejestracja stanie siÄ™ skuteczna z chwilÄ… wprowadzenia przez Operatora 
+odpowiednich danych do Serwisu.</li>
+</ol>
 
-<blockquote>
-1.	<strong>Formularz</strong> - oznacza Strony internetowe w sieci Internet, które umo¿liwiaj¹ za³o¿enie Konta Portalu Wirtualna Polska, konta poczty elektronicznej Wirtualnej Polski oraz Profilu w Serwisie, a tak¿e korzystanie z Funkcjonalnoœci Serwisu, zamówienie i korzystanie z Us³ugi WP oraz przekazanie WP danych (w tym danych osobowych) U¿ytkownika lub/i przedstawiciela ustawowego lub opiekuna prawnego U¿ytkownika nie posiadaj¹cego zdolnoœci do czynnoœci prawnych. <br>
-2.	<strong>Funkcjonalnoœci Serwisu</strong> - oznaczaj¹ dostêpne w Serwisie ToCoRobimy.pl formy i mo¿liwoœci (w tym techniczne) wyszukiwania Punktów i obszarów na Mapie oraz zapoznawania siê z informacjami i danymi ich dotycz¹cymi; za³o¿enia zindywidualizowanego Profilu w Serwisie; zg³aszania propozycji zamieszczenia Punktu na Mapie, zmiany Wizytówki Punktu lub/i usuniêcia Punktu z Mapy; wyznaczania trasy i obliczania odleg³oœci pomiêdzy Punktami; przegl¹dania planów miast znajduj¹cych siê na terytorium Rzeczypospolitej Polskiej; drukowania wybranej czêœci Mapy (widoku Mapy); zapisywania, przechowywania i usuwania informacji o wybranych przez U¿ytkownika Punktach, obszarach, widokach Mapy, trasach, parametrach trasowania, odleg³oœciach i Mapach; zamawiania i korzystania z Us³ugi WP; przesy³ania widoku Mapy za pomoc¹ Stron internetowych Serwisu; zamieszczania, prezentowania i przechowywania Opinii i Plików U¿ytkownika i ich nieodp³atnego udostêpniania innym U¿ytkownikom do czytania lub/i ogl¹dania lub/i opiniowania; zamieszczania Notatek w celu ich udostêpniania wybranym przez U¿ytkownika osobom oraz kopiowania Linków do widoków Mapy. Wszystkie Funkcjonalnoœci Serwisu zautomatyzowane i obs³ugiwane przez odpowiednie Narzêdzia internetowe. <br>
-3.	<strong>Interfejs</strong> - oznacza Strony internetowe w sieci Internet, które umo¿liwiaj¹ korzystanie z Funkcjonalnoœci Serwisu i Us³ugi WP oraz realizacjê prawa dostêpu do danych U¿ytkownika, w tym danych osobowych i ich poprawiania. <br>
-4.	<strong>Konto Portalu Wirtualna Polska</strong> - oznacza Konto w rozumieniu Regulaminu Konta Portalu Wirtualna Polska, zamieszczonego pod adresem internetowym https://profil.wp.pl/regulamin/ramka_2.html. <br>
-5.	<strong>Link</strong> - oznacza odnoœnik umo¿liwiaj¹cy prze³¹czanie pomiêdzy Stronami internetowymi lub pomiêdzy poszczególnymi miejscami w ramach jednej Strony internetowej. <br>
-6.	<strong>Mapa</strong> - oznacza zapisan¹ w postaci wektorowej mapê znajduj¹c¹ siê w Serwisie ToCoRobimy.pl wraz z naniesionymi na niej obszarami i Punktami. <br>
-7.	<strong>Notatnik</strong> - oznacza powierzchniê Serwisu i Funkcjonalnoœæ Serwisu umo¿liwiaj¹c¹ U¿ytkownikowi zapisanie, przechowywanie i usuwanie informacji o wybranych przez U¿ytkownika Punktach, obszarach, widokach Mapy, trasach, parametrach trasowania, odleg³oœciach i Mapach, przy czym iloœæ Punktów, obszarów, tras, odleg³oœci i Map, które U¿ytkownik mo¿e zapisaæ w Moim Notatniku mo¿e zostaæ ograniczona przez WP, o czym U¿ytkownik zostanie poinformowany stosownym komunikatem. <br>
-8.	<strong>Notatka</strong> - oznacza informacjê zamieszczan¹ przez U¿ytkownika na Mapie za pomoc¹ odpowiedniej Funkcjonalnoœci Serwisu, widoczn¹ wy³¹cznie dla U¿ytkownika, który zamieœci³ informacjê oraz dla U¿ytkowników, którym U¿ytkownik ten udostêpni³ treœæ informacji (za pomoc¹ korespondencji elektronicznej) lub Link prowadz¹cy do informacji. <br>
-9.	<strong>Narzêdzia internetowe</strong> - oznaczaj¹ oprogramowanie, Interfejs U¿ytkownika i Formularze udostêpniane U¿ytkownikowi w celu korzystania z Funkcjonalnoœci Serwisu i Us³ugi WP. Wszystkie Narzêdzia Internetowe s¹ zautomatyzowane i obs³ugiwane przez odpowiednie oprogramowanie. <br>
-10.	<strong>Opinia</strong> - oznacza wypowiedŸ zamieszczon¹ przez U¿ytkownika w Serwisie za pomoc¹ odpowiedniej Funkcjonalnoœci Serwisu, widoczn¹ dla innych U¿ytkowników. <br>
-11.	<strong>Plik U¿ytkownika</strong> - oznacza plik elektroniczny zawieraj¹cy zdjêcie, który U¿ytkownik mo¿e zamieœciæ na Mapie przy danym Punkcie, widoczny dla innych U¿ytkowników. <br>
-12.	<strong>Portal Wirtualna Polska</strong> - oznacza portal internetowy prowadzony przez WP w domenach internetowych, do których przys³uguj¹ prawa WP. <br>
-13.	<strong>Punkt</strong> - oznacza budynek lub/i inny obiekt, punkt us³ugowy lub/i handlowy, instytucjê, przedsiêbiorstwo lub/i inne miejsce lub/i osobê, zamieszczony na Mapie wraz z Wizytówk¹ Punktu, a w przypadku niektórych budynków - równie¿ ze zdjêciem budynku. <br>
-14.	<strong>Profil</strong> - oznacza powierzchniê Serwisu i Funkcjonalnoœæ Serwisu umo¿liwiaj¹c¹ U¿ytkownikowi: <br>
+<h3>Â§3 UWARUNKOWANIA TECHNICZNE KORZYSTANIA Z SERWISU</h2>
 
-    <blockquote>
-    a.	zamieszczenie i przechowywanie nazwy U¿ytkownika, jak¹ pos³ugiwaæ siê on bêdzie w Serwisie; <br>
-    b.	informacji dotycz¹cych U¿ytkownika i korzystania przez niego z Serwisu; <br>
-    c.	zg³aszanie propozycji zamieszczenia, zmiany Wizytówki Punktu lub usuniêcia Punktu na Mapie; <br>
-    d.	korzystanie z Notatnika, w tym zamieszczanie i przechowywanie informacji gromadzonych w Notatniku; <br>
-    e.	dodawanie Plików U¿ytkownika na Mapie; <br>
-    f.	korzystanie z Funkcjonalnoœci Serwisu wymagaj¹cych posiadania przez U¿ytkownika Profilu w Serwisie; <br>
-    g.	usuniêcie Profilu. <br>
-    </blockquote>
-</blockquote>
+<ol>
+	<li>WÅ‚aÅ›cicielem Serwisu jest Populi sp. z o.o., z siedzibÄ… w 
+Piasecznie - Julianowie., przy ul. KombatantÃ³w 61.</li>
+	<li>Przedmiotem dziaÅ‚alnoÅ›ci Serwisu jest prowadzenie przez Operatora 
+bazy kont (Profili) umoÅ¼liwiajÄ…cych m.in. wyszukiwanie UÅ¼ytkownikÃ³w oraz
+ zamieszczanie na stronie internetowej www.totuam.pl. materiaÅ‚Ã³w 
+stanowiÄ…cych szeroko rozumianÄ… twÃ³rczoÅ›Ä‡ wÅ‚asnÄ… UÅ¼ytkownikÃ³w jaki i 
+zamieszczanie na stronach internetowych operatorÃ³w wspÃ³Å‚pracujÄ…cych z 
+Operatorem Serwisu materiaÅ‚Ã³w wyselekcjonowanych z MateriaÅ‚Ã³w 
+zamieszczanych w Serwisie przez UÅ¼ytkownikÃ³w oraz rozsyÅ‚anie wiadomoÅ›ci 
+internetowych e-mail zawierajÄ…cych takie MateriaÅ‚y w formie oryginalnej 
+lub zmodyfikowanej przez Operatora.</li>
+	<li>NiezbÄ™dnym dla korzystania z Serwisu jest posiadanie przez 
+UÅ¼ytkownika urzÄ…dzenia pozwalajÄ…cego na dostÄ™p do sieci internetowej, 
+wÅ‚Ä…cznie z programem sÅ‚uÅ¼Ä…cym do przeglÄ…dania jej zasobÃ³w, akceptujÄ…cym 
+pliki typu cookies oraz konto poczty internetowej e-mail.</li>
+	<li>Nazwa Serwisu, jego koncepcja, wyglÄ…d graficzny, oprogramowanie 
+oraz baza danych podlegajÄ… ochronie prawnej.</li>
+</ol>
 
-<blockquote>
-15.	<strong>Regulamin</strong> - oznacza niniejszy regulamin korzystania z Serwisu ToCoRobimy.pl. <br>
-16.	<strong>Serwis internetowy</strong> - oznacza zbiór Stron internetowych zbudowany wed³ug okreœlonej struktury, objêty okreœlonym standardem przetwarzania, przechowywania i prezentacji informacji, zawieraj¹cy treœci i us³ugi zwi¹zane z okreœlon¹ tematyk¹, dostêpny w Internecie w okreœlonych domenach internetowych. <br>
-17.	<strong>Serwis ToCoRobimy.pl lub Serwis</strong> - oznacza Serwis internetowy udostêpniany przez WP, dostêpny pod adresem internetowym <a href="http://www.ToCoRobimy.pl"><strong>www.ToCoRobimy.pl</strong></a>. <br>
-18.	<strong>Strona internetowa</strong> - stanowi prezentacjê danych, przesy³anych czêœciowo lub w ca³oœci przez Internet, odczytywanych przy pomocy specjalnego oprogramowania, nazywanego "przegl¹dark¹ internetow¹" lub za poœrednictwem innego oprogramowania i sprzêtu umo¿liwiaj¹cego odbiór takich danych. Strona internetowa mo¿e zawieraæ w szczególnoœci tekst, pliki graficzne, pliki multimedialne, skrypty, oprogramowanie. <br>
-19.	<strong>Treœci</strong> - oznaczaj¹ wszelkie poza propozycjami Punktów lub/i propozycjami zmian Wizytówek Punktów, treœci zamieszczane, prezentowane, udostêpniane i przechowywane przez U¿ytkowników w Serwisie, w tym Pliki U¿ytkownika, Notatki, Opinie oraz wszelkie dane i informacje. <br>
-20.	<strong>Us³uga WP</strong> - oznacza us³ugê œwiadczon¹ przez WP dla U¿ytkowników, umo¿liwiaj¹c¹ U¿ytkownikowi pobranie i zamieszczenie kodu HTML wybranej przez niego Mapy na wybranych przez U¿ytkownika Stronach internetowych w celu publikacji Mapy na tych Stronach internetowych, zamawian¹ i œwiadczon¹ w Serwisie, Us³uga WP jest czêœci¹ Serwisu. <br>
-21.	<strong>U¿ytkownik</strong> - oznacza osobê fizyczn¹, osobê prawn¹ lub jednostkê organizacyjn¹ nie posiadaj¹c¹ osobowoœci prawnej korzystaj¹c¹ z Serwisu. Osoba fizyczna mo¿e byæ U¿ytkownikiem, je¿eli: <br>
-    <blockquote>
-    a.	posiada pe³n¹ zdolnoœæ do czynnoœci prawnych lub <br>
-    b.	uzyska zgodê przedstawiciela ustawowego lub opiekuna prawnego w przypadku, gdy posiada ograniczon¹ zdolnoœæ do czynnoœci prawnych lub <br>
-    c.	jest reprezentowana przez przedstawiciela ustawowego lub opiekuna prawnego w przypadku, gdy nie posiada zdolnoœci do czynnoœci prawnych. W przypadku osób prawnych czynnoœci okreœlone w Regulaminie wykonuje organ tej osoby lub jej przedstawiciel. <br>
-    </blockquote>
-</blockquote>
+<h3>Â§4 MATERIAÅY I KOMENTARZE</h2>
+<ol>
+	<li>UÅ¼ytkownik Zarejestrowany, zarÃ³wno w sposÃ³b Ograniczony jak i PeÅ‚ny
+ jest uprawniony do zamieszczania w Serwisie MateriaÅ‚Ã³w, wypowiedzi, 
+komentarzy oraz wpisÃ³w na forum dostÄ™pnym w Serwisie.</li>
+	<li>WyÅ‚Ä…cznie UÅ¼ytkownik Zarejestrowany w sposÃ³b PeÅ‚ny moÅ¼e zostaÄ‡ 
+uprzywilejowany przez Operatora.</li>
+	<li>W przypadku usuniÄ™cia Wizerunku UÅ¼ytkownik traci przywileje 
+przyznane przez Operatora.</li>
+	<li>DokonujÄ…c Rejestracji, UÅ¼ytkownik upowaÅ¼nia Operatora do 
+publikowania w Serwisie ToCoRobimy.pl. jego MateriaÅ‚Ã³w, komentarzy lub 
+wypowiedzi oraz do korzystania z przekazanych do Serwisu MateriaÅ‚Ã³w, 
+komentarzy lub wypowiedzi na nastÄ™pujÄ…cych polach eksploatacji 
+(licencja):
+		<ul>
+			<li>wytwarzanie i zwielokrotnianie dowolnÄ… technikÄ… egzemplarzy 
+utworu, w tym technikÄ… drukarskÄ…, reprograficznÄ…, zapisu magnetycznego 
+oraz technikÄ… cyfrowÄ…;</li>
+			<li>wprowadzanie do obrotu, uÅ¼yczenie lub najem egzemplarzy utworu;
+			</li><li>kaÅ¼de publiczne udostÄ™pnianie utworu, w tym jego 
+udostÄ™pnianie: - w taki sposÃ³b, aby kaÅ¼dy mÃ³gÅ‚ mieÄ‡ do niego dostÄ™p w 
+miejscu i czasie przez siebie wybranym; - na jakichkolwiek noÅ›nikach 
+reklamowych w celu promocji Serwisu ; - poprzez emisjÄ™ lub reemisjÄ™ w 
+radiu lub w telewizji; - poprzez publikacjÄ™ w prasie; - poprzez 
+wyÅ›wietlanie lub publikacjÄ™ na jakichkolwiek noÅ›nikach wewnÄ™trznych lub 
+zewnÄ™trznych, w szczegÃ³lnoÅ›ci billboard lub citylight; - przy pomocy 
+wszystkich technik i technologii telekomunikacyjnych obejmujÄ…cych m.in. 
+technologie GSM i UMTS, w szczegÃ³lnoÅ›ci poprzez SMS, IVR, WAP, MMS;</li>
+			<li>wykorzystanie w innych utworach, w tym w utworach dramatycznych, 
+muzyczno-dramatycznych, choreograficznych, audiowizualnych lub 
+multimedialnych, a takÅ¼e wykorzystania w postaci stanowiÄ…cej aranÅ¼acjÄ™, 
+instrumentalizacjÄ™ lub przystosowanie utworu do potrzeb nowego 
+wykonania.</li>
+		</ul>
+	</li>
+	<li>Licencja zostaje udzielona w odniesieniu do kaÅ¼dego utworu 
+odrÄ™bnie, z chwilÄ… jego przekazania do Serwisu.</li>
+	<li>Licencja zostaje udzielona na czas nieoznaczony.</li>
+	<li>Licencja ma charakter wyÅ‚Ä…czny.</li>
+	<li>Licencja zostaje udzielona nieodpÅ‚atnie.</li>
+	<li>Licencja na umieszczone przez UÅ¼ytkownika w Serwisie MateriaÅ‚y 
+przestaje obowiÄ…zywaÄ‡ z chwilÄ… usuniÄ™cia Ich przez UÅ¼ytkownika z 
+Serwisu.</li>
+	<li>Operatorowi przysÅ‚uguje prawo do udzielania sublicencji wedÅ‚ug 
+swego swobodnego uznania. JeÅ¼eli umowa sublicencji jest odpÅ‚atna, 
+UÅ¼ytkownikowi przysÅ‚uguje roszczenie o wypÅ‚atÄ™ 20 % (sÅ‚ownie: dwudziestu
+ procent) wynagrodzenia otrzymanego przez Operatora z tytuÅ‚u zawarcia 
+umowy sublicencji. WypÅ‚ata wynagrodzenia naleÅ¼nego UÅ¼ytkownikowi moÅ¼e 
+nastÄ…piÄ‡ wyÅ‚Ä…cznie na rachunek bankowy UÅ¼ytkownika prowadzony w banku 
+krajowym. Roszczenie UÅ¼ytkownika staje siÄ™ wymagalne nie wczeÅ›niej niÅ¼ w
+ dniu, w ktÃ³rym podaÅ‚ Operatorowi we wÅ‚aÅ›ciwej formie elektronicznej 
+wszystkie dane niezbÄ™dne do wypÅ‚aty wynagrodzenia oraz do pobrania i 
+rozliczenia zwiÄ…zanych z tÄ… wypÅ‚atÄ… podatkÃ³w. Prawo do wynagrodzenia nie
+ dotyczy sublicencji udzielanych w zamian za inne, ekwiwalentne 
+Å›wiadczenie niepieniÄ™Å¼ne.</li>
+	<li>UÅ¼ytkownik nie moÅ¼e udzielaÄ‡ dalszych licencji do korzystania z 
+MateriaÅ‚u, komentarza lub wypowiedzi objÄ™tych licencjÄ… udzielonÄ… 
+Operatorowi.</li>
+	<li>UÅ¼ytkownik moÅ¼e zwolniÄ‡ siÄ™ z powyÅ¼szego zobowiÄ…zania w odniesieniu
+ do okreÅ›lonego MateriaÅ‚u, komentarza lub wypowiedzi przez to, Å¼e na 
+miesiÄ…c przed udzieleniem licencji poinformuje Operatora na piÅ›mie o 
+zamiarze jej udzielenia.</li>
+	<li>UÅ¼ytkownik zobowiÄ…zuje siÄ™ nie przekazywaÄ‡ do Serwisu MateriaÅ‚Ã³w, 
+komentarzy lub wypowiedzi, za ktÃ³rych publikacjÄ™ w Serwisie otrzymaÅ‚ lub
+ ma otrzymaÄ‡ wynagrodzenie od osÃ³b trzecich, w szczegÃ³lnoÅ›ci materiaÅ‚Ã³w o
+ charakterze reklamowym lub promocyjnym. W razie naruszenia powyÅ¼szego 
+zobowiÄ…zania UÅ¼ytkownik zobowiÄ…zany jest do zapÅ‚aty tego wynagrodzenia w
+ podwÃ³jnej wysokoÅ›ci na rzecz Operatora.</li>
+	<li>W przypadku przekazania do publikacji MateriaÅ‚Ã³w lub wypowiedzi nie
+ stanowiÄ…cych przedmiotu osobistych lub majÄ…tkowych praw autorskich 
+UÅ¼ytkownika zamieszczajÄ…cego, UÅ¼ytkownik jest zobowiÄ…zany podaÄ‡ swoje 
+imiÄ™ i nazwisko oraz zamieÅ›ciÄ‡ aktywny link do miejsca pierwszej 
+publikacji MateriaÅ‚u lub wypowiedzi albo, w przypadku pierwszej 
+publikacji poza sieciÄ… internetowÄ…, podaÄ‡ miejsce i datÄ™ tej publikacji.
+ Publikacja, o ktÃ³rej mowa w zdaniu poprzednim, moÅ¼e nastÄ…piÄ‡ wyÅ‚Ä…cznie 
+po przekazaniu Operatorowi przez UÅ¼ytkownika pisemnej zgody na 
+publikacjÄ™ w Serwisie udzielonej przez podmiot, ktÃ³remu przysÅ‚ugujÄ… 
+majÄ…tkowe prawa autorskie do przekazanego materiaÅ‚u.</li>
+	<li>UÅ¼ytkownik zobowiÄ…zuje siÄ™ przekazywaÄ‡ do serwisu jedynie takie 
+MateriaÅ‚y, komentarze, wypowiedzi lub wpisy na forum dostÄ™pnym w 
+Serwisie, z ktÃ³rych korzystanie przez Operatora jest zgodne z prawem i 
+nie narusza dobrych obyczajÃ³w ani praw osÃ³b trzecich lub Operatora, w 
+szczegÃ³lnoÅ›ci ich praw autorskich lub dÃ³br osobistych.</li>
+	<li>UÅ¼ytkownik zobowiÄ…zuje siÄ™ do naprawienia wszelkich szkÃ³d, jakie 
+Operator poniesie na skutek niewykonania lub nienaleÅ¼ytego wykonania 
+zobowiÄ…zania, o ktÃ³rym mowa w Â§ 4 ust. 15. OdpowiedzialnoÅ›Ä‡ ta jest 
+niezaleÅ¼na od winy UÅ¼ytkownika.</li>
+	<li>Operator nie jest zobowiÄ…zany do rozpowszechniania przekazanego 
+MateriaÅ‚u, komentarza lub wypowiedzi. Odmowa rozpowszechniania nie 
+wymaga uzasadnienia. Operator lub osoba przez niego upowaÅ¼niona moÅ¼e 
+takÅ¼e usunÄ…Ä‡ MateriaÅ‚, komentarz lub wypowiedÅº, do ktÃ³rej 
+rozpowszechniania Operator wczeÅ›niej przystÄ…piÅ‚. Operator ma prawo 
+dokonywania bez zgody UÅ¼ytkownika zmian i poprawek w przekazanych 
+MateriaÅ‚ach lub wypowiedziach, a takÅ¼e dokonywania w nich skrÃ³tÃ³w.</li>
+	<li>Operator lub osoba przez niego upowaÅ¼niona moÅ¼e usuwaÄ‡ MateriaÅ‚y, 
+komentarze, wypowiedzi i wpisy na forum dostÄ™pnym w Serwisie, jeÅ¼eli 
+uzna, Å¼e ich rozpowszechnianie w Internecie moÅ¼e byÄ‡ niezgodne z prawem,
+ w tym moÅ¼e naruszaÄ‡ prawa osÃ³b trzecich, w szczegÃ³lnoÅ›ci prawa 
+autorskie lub dobra osobiste lub moÅ¼e byÄ‡ sprzeczne z dobrymi 
+obyczajami. UsuniÄ™cie MateriaÅ‚u, komentarza, wypowiedzi lub wpisu na 
+forum nie wymaga uzasadnienia.</li>
+	<li>UÅ¼ytkownik (zarÃ³wno zarejestrowany w sposÃ³b peÅ‚ny jak i 
+ograniczony) zobowiÄ…zuje siÄ™ nie przekazywaÄ‡ danych potrzebnych do 
+uprawnionego wejÅ›cia do Serwisu osobom postronnym, zachowujÄ…c je 
+wyÅ‚Ä…cznie dla siebie. W przypadku niedopeÅ‚nienia tego obowiÄ…zku 
+uÅ¼ytkownik ponosi peÅ‚nÄ… odpowiedzialnoÅ›Ä‡ za wynikÅ‚Ä… stÄ…d szkodÄ™, zarÃ³wno
+ wobec Operatora jak i osÃ³b trzecich.</li>
+	<li>Operator Serwisu nie odpowiada za szkody powstaÅ‚e w wyniku 
+udostÄ™pnienia przez UÅ¼ytkownika danych z Â§4 pkt. 19 osobom postronnym, w
+ tym za treÅ›ci obraÅºliwe lub niezgodne z prawem zamieszczane przez te 
+osoby w Serwisie.</li>
+</ol>
 
-<blockquote>
-22.	<strong>Wizytówka Punktu</strong> - oznacza zamieszczone przy Punkcie dane lub/i opis Punktu. <br>
-23.	<strong>WP</strong> - oznacza "Wirtualn¹ Polskê" Spó³kê Akcyjn¹ z siedzib¹ w Gdañsku przy ulicy Traugutta 115C. <br>
-24.	<strong>Zablokowanie U¿ytkownika</strong> - oznacza stan, w którym U¿ytkownik nie mo¿e z przyczyn okreœlonych w Regulaminie korzystaæ z Funkcjonalnoœci Serwisu, poza mo¿liwoœci¹ korzystania z tych Funkcjonalnoœci, które nie wymagaj¹ posiadania Konta Portalu Wirtualna Polska lub/i utworzenia Profilu w Serwisie. <br>
-25.	<strong>Zablokowanie lub Zablokowanie Treœci U¿ytkownika</strong> - oznacza stan, w którym poszczególne lub wszystkie Treœci U¿ytkownika nie s¹ dostêpne w Serwisie (dostêp do Treœci jest uniemo¿liwiony) z przyczyn okreœlonych w Regulaminie lub/i we w³aœciwych przepisach prawa. <br>
-</blockquote>
+<h3>Â§5 OBOWIÄ„ZKI UÅ»YTKOWNIKÃ“W</h2>
+<ol>
+	<li>UÅ¼ytkownicy sÄ… zobowiÄ…zani do przestrzegania przepisÃ³w prawa przy 
+korzystaniu z Serwisu, w szczegÃ³lnoÅ›ci przepisÃ³w ustawy prawo prasowe, 
+przepisÃ³w kodeksu cywilnego oraz ustawy o prawie autorskim i prawach 
+pokrewnych.</li>
+	<li>UÅ¼ytkownikowi, ktÃ³ry narusza niniejszy Regulamin, a w 
+szczegÃ³lnoÅ›ci:
+		<ul>
+		<li>zamieszcza tego rodzaju wypowiedzi, komentarze, MateriaÅ‚y lub 
+wpisy na forum dostÄ™pnym w Serwisie, Å¼e ich rozpowszechnianie moÅ¼e byÄ‡ 
+niezgodne z prawem, w tym moÅ¼e naruszaÄ‡ prawa osÃ³b trzecich lub 
+Operatora, w szczegÃ³lnoÅ›ci prawa autorskie lub dobra osobiste lub moÅ¼e 
+byÄ‡ sprzeczne z	dobrymi obyczajami;</li>
+		<li>usuwa z naruszeniem dobrych obyczajÃ³w komentarze lub wypowiedzi 
+innych UÅ¼ytkownikÃ³w;</li>
+		<li>zakÅ‚ada wiÄ™cej niÅ¼ jedno konto w Serwisie;</li>
+		<li>podaje nieprawdziwe dane osobowe przy rejestracji w Serwisie;</li>
+		</ul>
+		Operator ma prawo:
+		<ul>
+			<li>zablokowaÄ‡ moÅ¼liwoÅ›ci przekazywania do Serwisu MateriaÅ‚Ã³w, 
+komentarzy, wypowiedzi lub wpisÃ³w na forum internetowym dostÄ™pnym w 
+Serwisie na czas oznaczony lub nieoznaczony lub</li>
+			<li>pozbawiÄ‡ przyznanych przywilejÃ³w, lub</li>
+			<li>pozbawiÄ‡ moÅ¼liwoÅ›ci korzystania z Serwisu poprzez usuniÄ™cie jego 
+konta z Serwisu.</li>
+		</ul>
+	</li>
+	<li>Zastosowanie blokady, pozbawienie przywilejÃ³w lub usuniÄ™cie 
+UÅ¼ytkownika nie wymaga uzasadnienia.
+</li></ol>
 
-<p>III. Zakres korzystania z Serwisu ToCoRobimy.pl. </p>
-<blockquote>
-1.	Serwis ToCoRobimy.pl umo¿liwia U¿ytkownikom (za pomoc¹ znajduj¹cych siê w nim Funkcjonalnoœci Serwisu): <br>
-	
-    <blockquote>
-    a.	wyszukiwanie Punktów i obszarów na Mapie wed³ug nazwy lub/i kategorii Punktu/obszaru lub/i wspó³rzêdnych geograficznych i zapoznawanie siê z informacjami i danymi ich dotycz¹cymi; <br>
-    b.	za³o¿enie zindywidualizowanego Profilu w Serwisie; <br>
-    c.	zg³aszanie propozycji zamieszczenia Punktu na Mapie, zmiany Wizytówki Punktu lub/i usuniêcia Punktu z Mapy; <br>
-    d.	wyznaczenie trasy i obliczanie odleg³oœci pomiêdzy Punktami na Mapie; <br>
-    e.	przegl¹danie planów miast znajduj¹cych siê na terytorium Rzeczypospolitej Polskiej; , <br>
-    f.	drukowanie wybranej przez U¿ytkownika czêœci Mapy (widoku Mapy), opisu trasy wybranej przez U¿ytkownika i wyników wyszukiwania; <br>
-    g.	korzystanie z Notatnika; <br>
-    h.	zamówienie i korzystanie z Us³ugi WP; <br>
-    i.	przes³anie za pomoc¹ Stron internetowych Serwisu widoku Mapy do znajomych U¿ytkownika podczas jej ogl¹dania przez U¿ytkownika; <br>
-    j.	zamieszczanie, prezentowanie i przechowywanie Opinii i Plików U¿ytkownika i ich nieodp³atne udostêpnianie innym U¿ytkownikom do czytania lub/i ogl¹dania lub/i opiniowania; <br>
-    k.	zamieszczanie i przechowywanie Notatek w celu ich prezentowanie wybranym przez u¿ytkownika osobom; <br>
-    l.	pobranie i umieszczenie na Stronie internetowej U¿ytkownika specjalnego oprogramowania, umo¿liwiaj¹cego podanie Punktów na Mapie w celu wyznaczenia trasy lub Punktu w celu jego wyszukania przez osobê korzystaj¹c¹ ze Strony internetowej U¿ytkownika, a nastêpnie zapoznanie siê z wynikami wyszukiwania w Serwisie; <br>
-    m.	kopiowanie Linków do widoków Mapy wybranych przez U¿ytkownika. <br>
-    </blockquote>
-</blockquote>
+<h3>Â§6 OCHRONA DANYCH OSOBOWYCH</h2>
+<ol>
+	<li>W momencie rejestracji UÅ¼ytkownik wyraÅ¼a zgodÄ™ na umieszczenie i 
+przetwarzanie jego danych osobowych przez Operatora.</li>
+	<li>Administratorem danych osobowych jest Jacek NiewÄ™gÅ‚owski ktÃ³ra/y 
+dokonuje przetwarzania danych osobowych UÅ¼ytkownikÃ³w zgodnie z 
+przepisami ustawy z dnia 29 sierpnia 1997 roku o ochronie danych 
+osobowych (t. jedn. Dz.U. z 2002 r., nr 101, poz. 926 ze zm.) oraz 
+ustawy z dnia 18 lipca 2002 roku o Å›wiadczeniu usÅ‚ug drogÄ… elektronicznÄ…
+ (Dz.U. nr 144, poz. 1204 ze zm.).</li>
+	<li>Dane osobowe oraz informacje zawarte w formularzu rejestracyjnym 
+wykorzystywane bÄ™dÄ… przez Operatora do zawarcia, zmiany, rozwiÄ…zania 
+umowy z UÅ¼ytkownikiem oraz zapewnienia jak najwyÅ¼szej jakoÅ›ci 
+Å›wiadczonych usÅ‚ug.</li>
+	<li>Administrator ma prawo uzaleÅ¼niÄ‡ Å›wiadczenie swoich usÅ‚ug i 
+korzystanie z Serwisu przez UÅ¼ytkownika od uprzedniego potwierdzenia 
+przez niego danych osobowych o ktÃ³rych mowa w niniejszym paragrafie 
+stosownymi dokumentami, poprzez przesÅ‚anie kserokopii dokumentu 
+potwierdzajÄ…cego toÅ¼samoÅ›Ä‡. NadesÅ‚anie kserokopii dokumentu jest 
+dobrowolne. JeÅ¼eli kserokopia dokumentu nie zostanie przesÅ‚ana lub 
+budziÄ‡ bÄ™dzie uzasadnione wÄ…tpliwoÅ›ci Administratora, moÅ¼e on odmÃ³wiÄ‡ 
+zawarcia umowy.</li>
+	<li>UÅ¼ytkownik ma prawo wglÄ…du do przetwarzanych danych w kaÅ¼dym 
+czasie, jak rÃ³wnieÅ¼ prawo do ich poprawiania oraz Å¼Ä…dania ich usuniÄ™cia z
+ bazy kont (Profili).</li>
+	<li>UÅ¼ytkownik ma obowiÄ…zek aktualizowaÄ‡ dane podane w formularzu 
+rejestracyjnym niezwÅ‚ocznie po kaÅ¼dej zmianie tych danych.</li>
+	<li>W przypadku powziÄ™cia przez Administratora wÄ…tpliwoÅ›ci, co do 
+zgodnoÅ›ci z prawdÄ… bÄ…dÅº aktualnoÅ›ci podanych przez UÅ¼ytkownika danych w 
+formularzu rejestracyjnym, uzyskuje on uprawnienie do podjÄ™cia 
+nastÄ™pujÄ…cych czynnoÅ›ci:
+		<ul>
+			<li>wezwania UÅ¼ytkownika do niezwÅ‚ocznego usuniÄ™cia nieprawdziwych 
+danych bÄ…dÅº aktualizacji danych;</li>
+			<li>natychmiastowego zablokowania Konta do czasu wyjaÅ›nienia sprawy;</li>
+		</ul>
+	</li>
+	<li>Administrator uprawniony jest do ujawnienia danych osobowych 
+wyÅ‚Ä…cznie podmiotom upowaÅ¼nionym na podstawie wÅ‚aÅ›ciwych przepisÃ³w 
+prawa, zgodnie z zasadami Polityki Ochrony PrywatnoÅ›ci, postanowieniami 
+Regulaminu i obowiÄ…zujÄ…cymi przepisami prawa.</li>
+</ol>
 
-<blockquote>
-2.	Korzystanie z Serwisu jest bezp³atne z zastrze¿eniem, ¿e U¿ytkownik jest zobowi¹zany do zap³aty wynagrodzenia na rzecz podmiotów œwiadcz¹cych us³ugi telekomunikacyjne w zakresie dostêpu do Internetu i transmisji danych (operatorzy telekomunikacyjni) z tytu³u korzystania z dostêpu do Internetu lub/i transmisji danych, zgodnie z cennikami i regulaminami œwiadczenia tych us³ug obowi¹zuj¹cymi u tych podmiotów, przy czym wynagrodzenie to nie jest pobierane przez WP i nie stanowi wynagrodzenia za korzystanie z Serwisu. <br>
-3.	Korzystanie z Funkcjonalnoœci Serwisu umo¿liwiaj¹cych zamieszczanie i przechowywanie nazwy U¿ytkownika oraz danych i informacji dotycz¹cych U¿ytkownika, zg³aszanie propozycji zamieszczenia Punktu na Mapie, zmiany Wizytówki Punktu lub usuniêcia Punktu z Mapy, zamieszczanie Plików U¿ytkownika na Mapie oraz korzystanie z Notatnika wymaga za³o¿enia i posiadania aktywnego (niezablokowanego) Konta Portalu Wirtualna Polska i podania adresu poczty elektronicznej U¿ytkownika w Formularzu dotycz¹cym tego Konta lub za³o¿enia konta poczty elektronicznej udostêpnianej przez WP, zalogowania siê do Portalu Wirtualna Polska oraz za³o¿enia Profilu w Serwisie, a tak¿e zaakceptowania postanowieñ Regulaminu i wyra¿enia zgód okreœlonych w punkcie V Regulaminu w odpowiednim Formularzu (wszystkie warunki musz¹ zostaæ spe³nione ³¹cznie), z zastrze¿eniem zdania nastêpnego. W przypadku U¿ytkowników nie posiadaj¹cych zdolnoœci do czynnoœci prawnych, korzystanie z Funkcjonalnoœci Serwisu wymienionych w zdaniu poprzednim wymaga za³o¿enia i posiadania aktywnego (niezablokowanego) Konta Portalu Wirtualna Polska i podania WP adresu poczty elektronicznej U¿ytkownika w Formularzu dotycz¹cym tego Konta lub za³o¿enia konta poczty elektronicznej udostêpnianej przez WP, zalogowania siê do Portalu Wirtualna Polska oraz za³o¿enia Profilu w Serwisie, a tak¿e zaakceptowania postanowieñ Regulaminu i wyra¿enia zgód okreœlonych w punkcie V Regulaminu w odpowiednim Formularzu przez przedstawiciela ustawowego lub opiekuna prawnego U¿ytkownika (wszystkie warunki musz¹ zostaæ spe³nione ³¹cznie). O koniecznoœci spe³nienia przez U¿ytkownika warunków okreœlonych w zdaniach poprzednich niniejszego punktu Regulaminu, U¿ytkownik poinformowany zostanie odpowiednim komunikatem przy próbie skorzystania z tych Funkcjonalnoœci Serwisu, które wymagaj¹ dokonania czynnoœci wskazanych w zdaniach poprzednich niniejszego punktu Regulaminu. <br>
-4.	Niezale¿nie od postanowieñ punktu III.3 Regulaminu, korzystanie z Funkcjonalnoœci Serwisu mo¿e zostaæ uzale¿nione od dokonania okreœlonych czynnoœci przez U¿ytkownika, o czym U¿ytkownik zostanie poinformowany stosownym komunikatem przy próbie skorzystania z tych Funkcjonalnoœci. <br>
-5.	Korzystanie z Funkcjonalnoœci Serwisu wymienionych w punkcie III.3 Regulaminu nie bêdzie mo¿liwe w przypadku zablokowania lub/i zaprzestania udostêpniania U¿ytkownikowi Konta Portalu Wirtualna Polska z przyczyn okreœlonych w Regulaminie Konta Portalu Wirtualna Polska. Maj¹c powy¿sze na wzglêdzie, w przypadku zablokowania lub/i zaprzestania udostêpniania U¿ytkownikowi Konta Portalu Wirtualna Polska, WP jest uprawniona do Zablokowania U¿ytkownika lub/i zaprzestania udostêpniania U¿ytkownikowi us³ug œwiadczonych w Serwisie, które wymagaj¹ posiadania przez U¿ytkownika aktywnego Konta Portalu Wirtualna Polska, bez uprzedniego powiadamiania o tym U¿ytkownika. <br>
-6.	Treœci zamieszczane przez U¿ytkowników w Serwisie powinny byæ zgodne z tematyk¹ Serwisu, a dane i informacje dotycz¹ce U¿ytkownika prezentowaæ wy³¹cznie osobê U¿ytkownika, który je zamieszcza. <br>
-7.	Opinie zamieszczane przez U¿ytkowników w Serwisie winny dotyczyæ wy³¹cznie Punktu lub zdjêcia Punktu, przy którym zosta³y zamieszczone oraz byæ sporz¹dzane wy³¹cznie w jêzyku polskim. <br>
-8.	Opinie, Notatki i Pliki U¿ytkownika zamieszczane i publikowane bêd¹ wraz z "podpisem" lub/i nazw¹ U¿ytkownika. Zg³oszone przez U¿ytkowników propozycje Punktów lub/i zmiany Wizytówek Punktów zamieszczane bêd¹ na Mapie bez oznaczenia U¿ytkownika, który je zg³osi³. <br>
-9.	Pola odpowiednich Formularzy s³u¿¹cych do korzystania z Funkcjonalnoœci Serwisu umo¿liwiaj¹cych zamieszczanie Treœci przez U¿ytkowników mog¹ zostaæ ograniczone przez WP pod wzglêdem iloœci znaków, jakie U¿ytkownik bêdzie móg³ zamieœciæ w polu, o czym U¿ytkownik zostanie poinformowany przy korzystaniu z tych Formularzy. <br>
-10.	Opinie i Pliki U¿ytkownika zamieszczane i przechowywane przez U¿ytkownika w Serwisie mog¹ byæ nieodp³atnie ogl¹dane lub/i czytane lub/i opiniowane przez innych U¿ytkowników, a Notatki przez U¿ytkowników, którym zosta³y udostêpnione. Wizytówki Punktów zg³oszonych przez U¿ytkownika do zamieszczenia na Mapie lub/i zmiany Wizytówek Punktów mog¹ byæ nieodp³atnie ogl¹dane lub/i czytane lub/i opiniowane przez innych U¿ytkowników. <br>
-11.	Typ i rozmiar Plików, jakie U¿ytkownik mo¿e zamieszczaæ w Serwisie s¹ wskazane U¿ytkownikowi na Stronach internetowych Serwisu. Pliki U¿ytkowników o rozmiarze wiêkszym ni¿ wskazana na Stronach internetowych Serwisu nie bêd¹ przechowywane w Serwisie. Pliki zamieszczane przez U¿ytkownika w Serwisie nie spe³niaj¹ce wymogów odnoœnie formatu plików przechowywanych w Serwisie lub nie spe³niaj¹ce wymagañ technicznych wprowadzonych w Serwisie mog¹ byæ zapisywane za pomoc¹ Narzêdzi internetowych w postaci plików o innym formacie bez jakiejkolwiek ingerencji w ich zawartoœæ (treœæ). U¿ytkownik akceptuje, ¿e zmiana formatu odbywa siê automatycznie. Z³o¿enie oœwiadczenia o akceptacji Regulaminu jest równoznaczne ze z³o¿eniem przez U¿ytkownika lub przez przedstawiciela ustawowego/opiekuna prawnego U¿ytkownika nie posiadaj¹cego zdolnoœci do czynnoœci prawnych oœwiadczenia o wyra¿eniu zgody na zapisywanie, za pomoc¹ Narzêdzi internetowych, Plików dostarczonych przez U¿ytkownika w postaci plików o innym formacie. <br>
-12.	Zg³aszane przez U¿ytkowników propozycje zamieszczenia Punktu na Mapie lub/i zmiany Wizytówek Punktów lub/i usuniêcia Punktu z Mapy, powinny byæ sporz¹dzane wy³¹cznie w jêzyku polskim. <br>
-13.	Zakres Mapy mo¿liwy do wydrukowania przez U¿ytkownika za pomoc¹ Funkcjonalnoœci Serwisu umo¿liwiaj¹cej drukowanie wybranej czêœci Mapy obejmowaæ bêdzie widok Mapy widziany przez U¿ytkownika na Stronie internetowej w chwili klikniêcia polecenia Drukuj Mapê. <br>
-14.	Zg³aszane przez U¿ytkowników propozycje zamieszczenia Punktu na Mapie lub/i zmiany Wizytówki Punktu lub/i usuniêcia Punktu z Mapy oceniane bêd¹ przez WP lub/i PKT.pl Polskie Ksi¹¿ki Telefoniczne Spó³ka z o.o. w Warszawie. W przypadku nie zaakceptowania zg³oszonej przez U¿ytkownika propozycji wskazanej w zdaniu poprzednim, Punkt nie zostanie zamieszczony na Mapie lub/i jego Wizytówka nie zostanie zmieniona lub/i Punkt nie zostanie usuniêty z Mapy, o czym U¿ytkownik zostanie poinformowany przez WP stosownym komunikatem. W przypadku zaakceptowania zg³oszonej przez U¿ytkownika propozycji wskazanej w zdaniu pierwszym niniejszego punktu Regulaminu, Punkt zostanie zamieszczony na Mapie lub/i Wizytówka Punktu zostanie zmieniona lub/i Punktu zostanie usuniêty z Mapy, bez koniecznoœci informowania o tym U¿ytkownika. Zaakceptowanie zg³oszonych przez U¿ytkowników propozycji zamieszczenia Punktu na Mapie lub/i zmiany Wizytówki Punktu lub/i usuniêcia Punktu z Mapy nie wy³¹cza WP prawa do usuniêcia zamieszczonego Punktu na Mapie lub/i przywrócenia poprzedniego brzmienia Wizytówki Punktu lub/i przywrócenia Punktu na Mapie, bez koniecznoœci informowania o tym U¿ytkownika. Zg³oszone przez U¿ytkownika i zamieszczone na Mapie Punkty lub/i zmiany Wizytówek Punktów zamieszczane i publicznie udostêpniane bêd¹ w Serwisie w czasie korzystania przez U¿ytkownika z Serwisu, jak i po rezygnacji przez U¿ytkownika z korzystania z Serwisu, na co U¿ytkownik wyra¿a zgodê poprzez z³o¿enie oœwiadczenia o akceptacji postanowieñ Regulaminu. <br>
-15.	Funkcjonalnoœci Serwisu umo¿liwiaj¹ce zg³aszanie propozycji zamieszczenia Punktu na Mapie lub/i zmiany Wizytówki Punktu lub/i usuniêcia Punktu z Mapy umo¿liwiaj¹ U¿ytkownikom tylko i wy³¹cznie zg³oszenie propozycji dodania Punktu do Mapy, zmiany Wizytówki Punktu lub/i usuniêcia Punktu z Mapy. W zwi¹zku z tym, przes³anie przez U¿ytkownika do WP propozycji wskazanych w zdaniu poprzednim nie stanowi dla WP zobowi¹zania do zamieszczenia Punktu lub/i zmiany Wizytówki Punktu lub/i usuniêcia Punktu z Mapy zgodnie z propozycj¹ U¿ytkownika, U¿ytkownikowi nie przys³uguje wzglêdem WP jakiekolwiek ¿¹danie zamieszczenia Punktu lub/i zmiany Wizytówki Punktu lub/i usuniêcia Punktu z Mapy zgodnie z propozycj¹ U¿ytkownika, a WP nie jest zobowi¹zana do zap³aty U¿ytkownikowi jakiekolwiek odszkodowania z tytu³u nie dokonania czynnoœci zaproponowanych przez U¿ytkownika. <br>
-16.	Treœci U¿ytkownika zamieszczane, prezentowane, przechowywane i udostêpniane s¹ w Serwisie w imieniu w³asnym U¿ytkownika, na jego rzecz i na jego odpowiedzialnoœæ. WP nie ponosi odpowiedzialnoœci za zawartoœæ Treœci zamieszczonych, publikowanych, przechowywanych i udostêpnianych przez U¿ytkowników w Serwisie. <br>
-17.	W przypadku, gdy Treœci U¿ytkowników lub treœci zg³oszonych przez U¿ytkownika Wizytówek Punktów lub/i zmiany Wizytówek Punktów naruszaæ bêd¹ postanowienia Regulaminu, przepisy prawa, prawa osób trzecich lub WP, dobre obyczaje lub zasady wspó³¿ycia spo³ecznego albo utrwalone zostan¹ z b³êdami, dostêp do takich Treœci w Serwisie bêdzie blokowany (uniemo¿liwiany), a nastêpnie Treœci te lub Wizytówki mog¹ byæ usuwane z serwera WP zgodnie z zasadami okreœlonymi w punkcie VI.14 Regulaminu. <br>
-18.	U¿ytkownik mo¿e korzystaæ z Funkcjonalnoœci Serwisu oraz danych, informacji i wyników wyszukiwania znajduj¹cych siê w Serwisie i jego Narzêdziach internetowych tylko i wy³¹cznie w celach informacyjnych, na w³asny u¿ytek lub u¿ytek osób wyraŸnie wymienionych w Regulaminie oraz zgodnie z przeznaczeniem tych Funkcjonalnoœci okreœlonym w niniejszym Regulaminie. Oznacza to w szczególnoœci, ¿e U¿ytkownik nie jest uprawniony do pobierania i korzystania z danych, informacji i wyników wyszukiwania wskazanych w zdaniu poprzedzaj¹cym w celach tworzenia w³asnych baz danych lub/i Serwisów lub/i Stron internetowych oraz w celach zarobkowych. U¿ytkownik zobowi¹zany jest do niedokonywania dzia³añ maj¹cych na celu obejœcie lub prze³amanie jakichkolwiek zabezpieczeñ Serwisu przed niezgodnym z prawem lub postanowieniami niniejszego Regulaminu korzystaniem z Serwisu. U¿ytkownik zobowi¹zany jest do naprawienia szkody, jak¹ mo¿e ponieœæ WP w zwi¹zku z naruszeniem postanowieñ niniejszego punktu Regulaminu. <br>
-19.	W ramach korzystania z Funkcjonalnoœci Serwisu umo¿liwiaj¹cej drukowanie Mapy (widoku Mapy), U¿ytkownik jest uprawniony do wydrukowania i korzystania z wydrukowanej przez niego czêœci Mapy tylko i wy³¹cznie w celach informacyjnych i na w³asny u¿ytek osobisty. Oznacza to w szczególnoœci, ¿e U¿ytkownik nie jest uprawniony do rozpowszechniania wydrukowanej Mapy w jakiejkolwiek formie, utrwalania lub/i zwielokrotniania wydrukowanej Mapy w jakiejkolwiek technice oraz do wprowadzania wydrukowanej Mapy do obrotu lub/i jej u¿yczania lub/i najmu, a tak¿e do wykorzystywania wydrukowanej Mapy w celach zwi¹zanych z prowadzeniem dzia³alnoœci gospodarczej lub/i zawodowej przez U¿ytkownika lub/i inne osoby. U¿ytkownik zobowi¹zany jest do naprawienia szkody, jak¹ mo¿e ponieœæ WP w zwi¹zku z naruszeniem postanowieñ niniejszego punktu Regulaminu. <br>
-20.	Postanowienie punktu III.19 Regulaminu ma zastosowanie równie¿ w przypadku wydrukowania Mapy (widoku Mapy) przez U¿ytkownika w sposób inny ni¿ skorzystanie z Funkcjonalnoœci Serwisu umo¿liwiaj¹cej drukowanie Mapy. <br>
-21.	U¿ytkownik posiadaj¹cy ograniczon¹ zdolnoœæ do czynnoœci prawnych, wszelkie oœwiadczenia sk³ada, zaci¹ga zobowi¹zania, realizuje uprawnienia i wykonuje obowi¹zki okreœlone w Regulaminie oraz na Stronach internetowych Serwisu za zgod¹ swojego przedstawiciela ustawowego lub opiekuna prawnego. U¿ytkownika nie posiadaj¹cego zdolnoœci do czynnoœci prawnych reprezentuje jego przedstawiciel ustawowy lub opiekun prawny, co oznacza, ¿e wszelkie oœwiadczenia sk³ada, zaci¹ga zobowi¹zania, realizuje uprawnienia i wykonuje obowi¹zki okreœlone w Regulaminie oraz na Stronach internetowych Serwisu przedstawiciel ustawowy lub opiekun prawny takiego U¿ytkownika w imieniu i na rzecz U¿ytkownika. <br>
-22.	Do czynnoœci zwi¹zanych z za³o¿eniem i posiadaniem przez U¿ytkownika Konta Portalu Wirtualna Polska zastosowanie maj¹ postanowienia Regulaminu Konta Portalu Wirtualna Polska, zamieszczonego pod adresem internetowym https://profil.wp.pl/regulamin/ramka_2.html. <br>
-23.	Do czynnoœci zwi¹zanych z za³o¿eniem i posiadaniem przez U¿ytkownika konta poczty elektronicznej udostêpnianej przez WP zastosowanie maj¹ - w zale¿noœci od rodzaju poczty, z której korzysta U¿ytkownik - postanowienia Regulaminu bezp³atnej poczty elektronicznej Wirtualnej Polski lub Regulaminu komercyjnej poczty elektronicznej Wirtualnej Polski. <br>
-24.	Korzystanie przez U¿ytkownika z Serwisu, a w szczególnoœci zaakceptowanie postanowieñ Regulaminu, jest równoznaczne z: <br>
-	<blockquote>
-    a.	przyjêciem do wiadomoœci i akceptacj¹ przez U¿ytkownika oraz przez przedstawiciela ustawowego/opiekuna prawnego U¿ytkownika nie posiadaj¹cego zdolnoœci do czynnoœci prawnych faktu, ¿e Opinie, Notatki, Pliki U¿ytkownika oraz zg³oszone przez U¿ytkownika do zamieszczenia na Mapie Wizytówki Punktów i zmiany Wizytówek Punktów mog¹ byæ ogl¹dane lub/i czytane lub/i opiniowane przez innych U¿ytkowników, z zastrze¿eniem postanowieñ Regulaminu; <br>
-    b.	wyra¿eniem przez U¿ytkownika oraz przez przedstawiciela ustawowego/opiekuna prawnego U¿ytkownika nie posiadaj¹cego zdolnoœci do czynnoœci prawnych zgody na nieodp³atne ogl¹danie lub/i czytanie lub/i opiniowanie Plików U¿ytkownika oraz Wizytówek Punktów i zmiany Wizytówek Punktów zg³oszonych przez U¿ytkownika do zamieszczenia na Mapie przez innych U¿ytkowników; <br>
-    c.	wyra¿eniem przez U¿ytkownika oraz przez przedstawiciela ustawowego/opiekuna prawnego U¿ytkownika nie posiadaj¹cego zdolnoœci do czynnoœci prawnych zgody na publikacjê Opinii, Notatek i Plików U¿ytkownika wraz z "podpisem" lub/i oznaczeniem U¿ytkownika; <br>
-d.	wyra¿eniem przez U¿ytkownika oraz przez przedstawiciela ustawowego/opiekuna prawnego U¿ytkownika nie posiadaj¹cego zdolnoœci do czynnoœci prawnych zgody na zamieszczenie na Mapie zg³oszonych przez U¿ytkownika propozycji Wizytówek Punktów lub/i zmiany Wizytówek Punktów bez oznaczenia U¿ytkownika. <br>
-	</blockquote>
-</blockquote>
+<h3>Â§7 ZASADY KORZYSTANIA Z SERWISU</h2>
+<ol>
+	<li>ZawierajÄ…c umowÄ™ z Operatorem, UÅ¼ytkownik zobowiÄ…zuje siÄ™ w 
+szczegÃ³lnoÅ›ci do:
+		<ul>
+			<li>przestrzegania autorskich praw majÄ…tkowych oraz praw wynikajÄ…cych
+ z rejestracji wynalazkÃ³w, patentÃ³w, znakÃ³w towarowych, wzorÃ³w 
+uÅ¼ytkowych i przemysÅ‚owych Operatora oraz innych OsÃ³b,</li>
+			<li>powstrzymywania siÄ™ od jakichkolwiek dziaÅ‚aÅ„, ktÃ³re naruszaÅ‚yby 
+prywatnoÅ›Ä‡ innych UÅ¼ytkownikÃ³w, przede wszystkim polegajÄ…cych na 
+zbieraniu, przetwarzaniu i rozpowszechnianiu informacji o innych 
+UÅ¼ytkownikach bez ich wyraÅºnej zgody, z wyjÄ…tkiem sytuacji, gdy 
+czynnoÅ›ci te sÄ… zgodne z przepisami prawa i postanowieniami niniejszego 
+Regulaminu,</li>
+			<li>powstrzymywania siÄ™ od jakichkolwiek dziaÅ‚aÅ„, ktÃ³re mogÅ‚yby 
+utrudniaÄ‡ lub zakÅ‚Ã³caÄ‡ funkcjonowanie Serwisu, a takÅ¼e dziaÅ‚aÅ„ 
+polegajÄ…cych na niszczeniu, zmianie, usuwaniu, uszkadzaniu, utrudnianiu 
+dostÄ™pu do Kont innych UÅ¼ytkownikÃ³w,</li>
+			<li>nie podejmowania jakichkolwiek dziaÅ‚aÅ„ na szkodÄ™ Operatora, 
+UÅ¼ytkownikÃ³w i innych OsÃ³b.</li>
+		</ul>
+	</li>
+	<li>UÅ¼ytkownik oÅ›wiadcza, Å¼e wszelkie treÅ›ci, w tym zdjÄ™cia i dane 
+osobowe, umieszczane przez niego w Serwisie, sÄ… prawdziwe i nie 
+naruszajÄ… jakichkolwiek praw autorskich i osobistych. UÅ¼ytkownik 
+oÅ›wiadcza rÃ³wnieÅ¼, Å¼e uzyskaÅ‚ zgodÄ™ innych osÃ³b na umieszczenie przez 
+niego treÅ›ci, przedstawiajÄ…cych lub odnoszÄ…cych siÄ™ do tych osÃ³b.</li>
+	<li>UÅ¼ytkownik, umieszczajÄ…c na Koncie dane, wizerunek lub inne treÅ›ci,
+ wyraÅ¼a zgodÄ™ na wglÄ…d w te informacje przez innych UÅ¼ytkownikÃ³w oraz 
+Operatora, jak rÃ³wnieÅ¼ upowaÅ¼nia Operatora do ich wykorzystania.</li>
+	<li>Zabrania siÄ™ wykorzystywania Serwisu w sposÃ³b sprzeczny lub 
+niewÅ‚aÅ›ciwy z jego celem. Niedozwolone jest w szczegÃ³lnoÅ›ci umieszczanie
+ treÅ›ci i zdjÄ™Ä‡ o charakterze erotycznym czy pornograficznym, 
+naruszajÄ…cych zarÃ³wno polskie jak i miÄ™dzynarodowe normy prawne oraz 
+moralne, obrazujÄ…cych lub propagujÄ…cych przemoc, nienawiÅ›Ä‡, 
+dyskryminacjÄ™ (rasowÄ…, kulturowÄ…, etnicznÄ…, religijnÄ… lub filozoficznÄ… 
+itp.), naruszajÄ…cych dobra osobiste lub obraÅ¼ajÄ…cych godnoÅ›Ä‡ innych 
+osÃ³b. Zabrania siÄ™ rÃ³wnieÅ¼ rozsyÅ‚ania spamu i niezamÃ³wionej informacji 
+handlowej oraz uprawiania dziaÅ‚alnoÅ›ci komercyjnej, reklamowej, 
+promocyjnej itp.</li>
 
-<p>IV. Us³uga WP.</p>
-<blockquote>
-1.	U¿ytkownik mo¿e korzystaæ z Us³ugi WP za pomoc¹ odpowiedniej Funkcjonalnoœci Serwisu. <br>
-2.	Us³uga WP jest bezp³atna. <br>
-3.	Us³uga WP upowa¿niania U¿ytkownika do pobrania kodu HTML wybranej przez niego Mapy (widoku Mapy) i zamieszczenia tego kodu HTML na wybranych przez U¿ytkownika Stronach internetowych (w celu pobrania i publikacji Mapy na tych Stronach internetowych) przez czas nieoznaczony. <br>
-4.	Kod HTML wybranej przez U¿ytkownika Mapy (widoku Mapy) zostanie udostêpniony U¿ytkownikowi do pobrania po zatwierdzeniu przez U¿ytkownika, za pomoc¹ odpowiedniej Funkcjonalnoœci Serwisu, widoku Mapy, do której chce pobraæ kod HTML. <br>
-5.	W ramach korzystania z Us³ugi WP, U¿ytkownik nie jest uprawniony do udostêpniania innym osobom otrzymanego od WP kodu wybranej przez niego Mapy (widoku Mapy) oraz do korzystania z otrzymanego kodu HTML w innym celu ni¿ zamieszczenie go na Stronie internetowej, a tak¿e do pobierania jakichkolwiek op³at za mo¿liwoœæ ogl¹dania Mapy przez innych u¿ytkowników na Stronie internetowej, na której U¿ytkownik zamieœci³ kod HTML Mapy. <br>
-6.	U¿ytkownik zobowi¹zany jest do przestrzegania i nienaruszania postanowieñ punktu IV Regulaminu oraz do naprawienia szkody, jak¹ mo¿e ponieœæ WP w zwi¹zku z naruszeniem przez U¿ytkownika tych postanowieñ. <br>
-7.	Je¿eli korzystanie z kodu HTML zamieszczonego przez U¿ytkownika na wybranej przez niego Stronie Internetowej powodowaæ bêdzie zak³ócenia lub/i usterki w pracy Serwisu, w tym jego Narzêdzi internetowych lub/i zamieszczonych w nim baz danych i Mapy lub/i Funkcjonalnoœci Serwisu, WP mo¿e zaprzestaæ œwiadczenia Us³ugi WP w odniesieniu do tej Strony Internetowej, bez uprzedniego poinformowania o tym U¿ytkownika. <br>
-</blockquote>
+	<li>Logo Serwisu podlega ochronie prawnej i jako takie nie moÅ¼e byÄ‡ 
+wykorzystywane w jakikolwiek sposÃ³b przez UÅ¼ytkownika bez zgody 
+Operatora.</li>
+</ol>
 
-<p>V. Rejestracja U¿ytkowników. </p>
+<h3>Â§8 REKLAMA W SERWISIE</h2>
+<ol>
+	<li>Niedopuszczalne sÄ… jakiekolwiek dziaÅ‚ania uÅ¼ytkownikÃ³w zwiÄ…zane z 
+wykorzystywaniem uzyskanych za poÅ›rednictwem serwisu informacji 
+dotyczÄ…cych innych uÅ¼ytkownikÃ³w oraz dziaÅ‚ania polegajÄ…ce na 
+wykorzystaniu jakiejkolwiek funkcji serwisu do rozsyÅ‚ania oraz 
+umieszczania w serwisie niezamÃ³wionej informacji handlowej (tzw. Spam), 
+prowadzenia nieuzgodnionej z Operatorem Serwisu dziaÅ‚alnoÅ›ci 
+komercyjnej, reklamowej, promocyjnej i marketingowej, w szczegÃ³lnoÅ›ci 
+stosowanie piramid finansowych, rozsyÅ‚anie przy uÅ¼yciu danych 
+UÅ¼ytkownikÃ³w ujawnionych w Serwisie prÃ³bek, ulotek czy kuponÃ³w 
+promocyjnych, stosowanie programÃ³w pozwalajÄ…cych na globalne 
+przeszukiwanie sieci internetowej(â€crawlowanieâ€) czy wykorzystywanie 
+robotÃ³w do pobierania treÅ›ci internetowych z Serwisu.</li>
+	<li>UÅ¼ytkownik bez zgody Operatora nie moÅ¼e stosowaÄ‡ na Å‚amach Serwisu 
+jakiejkolwiek formy reklamy czy promocji.</li>
+	<li>Operator wyÅ‚Ä…cznie decyduje o miejscu i sposobie wyÅ›wietlania 
+reklamy w prowadzonym przez siebie Serwisie.</li>
+	<li>Operator moÅ¼e w kaÅ¼dym momencie zdecydowaÄ‡ o wyÅ‚Ä…czeniu reklamy bez
+ koniecznoÅ›ci uzasadniania swojej decyzji.</li>
+	<li>Ze wzglÄ™du na specyfikÄ™ prowadzenia dziaÅ‚alnoÅ›ci jakÄ… jest 
+prowadzenie Serwisu internetowego, Operator nie ponosi odpowiedzialnoÅ›ci
+ za niezgodny z prawem sposÃ³b wykorzystywania treÅ›ci zamieszczanych 
+przez uÅ¼ytkownikÃ³w w Serwisie, w tym reklamy.</li>
+</ol>
 
-<blockquote>
-1.	Korzystanie z Funkcjonalnoœci Serwisu umo¿liwiaj¹cych zamieszczanie i przechowywanie nazwy U¿ytkownika oraz danych i informacji dotycz¹cych U¿ytkownika, zg³aszanie propozycji zamieszczenia Punktu na Mapie, zmiany Wizytówki Punktu lub usuniêcia Punktu z Mapy, zamieszczanie Plików U¿ytkownika na Mapie oraz korzystanie z Notatnika wymaga dokonania nastêpuj¹cych czynnoœci (wszystkie warunki bêd¹ musia³y zostaæ spe³nione ³¹cznie): <br>
+<h3>Â§9 BLOKADA KONTA</h2>
+<ol>
+<li>Operator zastrzega sobie prawo do zablokowania Konta UÅ¼ytkownika, 
+ktÃ³rego dziaÅ‚ania uzna za szkodliwe dla Serwisu bÄ…dÅº innych 
+UÅ¼ytkownikÃ³w.</li>
+<li>Operator ma prawo do zablokowania Konta UÅ¼ytkownika, ktÃ³ry Å‚amie 
+ktÃ³rekolwiek z postanowieÅ„ niniejszego Regulaminu.</li>
+<li>KaÅ¼da ze Stron umowy o Å›wiadczenie usÅ‚ug drogÄ… elektronicznÄ… moÅ¼e jÄ…
+ rozwiÄ…zaÄ‡ ze skutkiem natychmiastowym i bez podania przyczyny.</li>
+<li>RozwiÄ…zanie umowy przez UÅ¼ytkownika polega na usuniÄ™ciu przez niego 
+Konta, w drodze procedury podanej na stronie www.ToCoRobimy.pl/regulamin.</li>
+<li>Umowa moÅ¼e zostaÄ‡ rozwiÄ…zana przez Operatora poprzez zablokowanie 
+Konta w sytuacji:
+	<ul>
+		<li>naruszenia przez UÅ¼ytkownika postanowieÅ„ Regulaminu,</li>
+		<li>podejmowania przez UÅ¼ytkownika dziaÅ‚aÅ„ na szkodÄ™ UÅ¼ytkownikÃ³w lub 
+Operatora,</li>
+		<li>umieszczenia na Koncie treÅ›ci lub zdjÄ™Ä‡ majÄ…cych negatywny wpÅ‚yw 
+na funkcjonowanie Serwisu.</li>
+	</ul>
+</li>
+<li>W przypadku umieszczenia na Koncie treÅ›ci bezprawnych, obraÅºliwych, 
+nieprawdziwych, niezgodnych z przepisami prawa, propagujÄ…cych przemoc, 
+nienawiÅ›Ä‡, naruszajÄ…cych normy moralne lub dobre obyczaje, Operator moÅ¼e
+ usunÄ…Ä‡ te treÅ›ci, a takÅ¼e uprawiony jest do zablokowania Konta.</li>
+<li>Operator zastrzega sobie prawo do usuwania zdjÄ™Ä‡ umieszczonych na 
+Koncie, ktÃ³re uzna za niewÅ‚aÅ›ciwe lub sprzeczne z Regulaminem.</li>
+<li>W przypadku zablokowania Konta przez Operatora, zaÅ‚oÅ¼enie nowego 
+Konta wymaga uprzedniej zgody Operatora.</li>
+</ol>
 
-	<blockquote>
-    a.	za³o¿enia i posiadania aktywnego (niezablokowanego) Konta Portalu Wirtualna Polska; <br>
-    b.	podania adresu poczty elektronicznej U¿ytkownika w Formularzu dotycz¹cym Konta Portalu Wirtualna Polska lub za³o¿enia konta poczty elektronicznej udostêpnianej przez WP; <br>
-    c.	zalogowania siê do Portalu Wirtualna Polska i za³o¿enia Profilu w Serwisie; <br>
-    d.	zaakceptowania przez U¿ytkownika, a w przypadku U¿ytkowników nie posiadaj¹cych zdolnoœci do czynnoœci prawnych - przez przedstawiciela ustawowego lub opiekuna prawnego U¿ytkownika, postanowieñ Regulaminu; <br>
-    e.	wype³nienia wszystkich pól odpowiednich Formularzy zwi¹zanych z korzystaniem z Serwisu, chyba ¿e pole jest wyraŸnie oznaczone jako opcjonalne (dobrowolne), a nastêpnie przes³ania tych Formularzy drog¹ elektroniczn¹ do WP poprzez aktywacjê odpowiedniego pola znajduj¹cego siê w Formularzu (w przypadku U¿ytkowników nie posiadaj¹cych zdolnoœci do czynnoœci prawnych, czynnoœci te wykonuje ich przedstawiciel ustawowy lub opiekun prawny); <br>
-    f.	podania przez przedstawiciela ustawowego lub opiekuna prawnego U¿ytkownika nie posiadaj¹cego zdolnoœci do czynnoœci prawnych swoich danych osobowych w zakresie wymaganym przez WP oraz wyra¿enia zgody na przetwarzanie przez WP tych danych dla celów zwi¹zanych z reprezentowaniem U¿ytkownika oraz z³o¿eniem oœwiadczeñ okreœlonych w Regulaminie i we w³aœciwych Formularzach; <br>
-    g.	wyra¿enia przez U¿ytkownika, a w przypadku U¿ytkowników nie posiadaj¹cych zdolnoœci do czynnoœci prawnych - przez przedstawiciela ustawowego lub opiekuna prawnego U¿ytkownika, zgody na przetwarzanie przez WP danych osobowych U¿ytkownika dla celów zwi¹zanych z korzystaniem z Serwisu. <br>
-	</blockquote>
-    	
-2.	Wykonanie czynnoœci wskazanych w punkcie V.1 Regulaminu odbywa siê za pomoc¹ odpowiednich Formularzy i Interfejsu dostêpnych na Stronach internetowych Serwisu i Portalu Wirtualna Polska. <br>
-3.	U¿ytkownik oraz przedstawiciel ustawowy lub opiekun prawny U¿ytkownika nie posiadaj¹cego zdolnoœci do czynnoœci prawnych wyra¿a zgodê na przetwarzanie przez WP danych osobowych U¿ytkownika dla celów zwi¹zanych z korzystaniem z Serwisu. <br>
-4.	Przedstawiciel ustawowy lub opiekun prawny U¿ytkownika nie posiadaj¹cego zdolnoœci do czynnoœci prawnych wyra¿a zgodê na przetwarzanie przez WP swoich danych osobowych w zakresie wymaganym przez WP dla celów zwi¹zanych z reprezentowaniem U¿ytkownika oraz z³o¿eniem oœwiadczeñ okreœlonych w Regulaminie i we w³aœciwych Formularzach. <br>
-5.	Administratorem danych osobowych U¿ytkowników Serwisu oraz przedstawicieli ustawowych i opiekunów prawnych U¿ytkowników Serwisu nie posiadaj¹cych zdolnoœci do czynnoœci prawnych jest WP. <br>
-6.	WP informuje, ¿e podanie danych osobowych jest dobrowolne, choæ warunkuje mo¿liwoœæ korzystania z tych Funkcjonalnoœci Serwisu, które wymagaj¹ podania danych osobowych oraz ¿e U¿ytkownikom oraz przedstawicielom ustawowym lub opiekunom prawnym U¿ytkowników nie posiadaj¹cych zdolnoœci do czynnoœci prawnych przys³uguje prawo dostêpu do swoich danych oraz ich poprawiania (U¿ytkownicy nie posiadaj¹cy zdolnoœci do czynnoœci prawnych prawa te realizuj¹ przez swojego przedstawiciela ustawowego lub opiekuna prawnego). <br>
-7.	Zgoda na przetwarzanie przez WP danych osobowych U¿ytkownika dla celów zwi¹zanych z korzystaniem z Serwisu mo¿e zostaæ w ka¿dej chwili cofniêta przez U¿ytkownika, co jest równoznaczne z rezygnacj¹ z korzystania z tych Funkcjonalnoœci Serwisu, które wymagaj¹ podania przez U¿ytkownika danych osobowych (U¿ytkownicy nie posiadaj¹cy zdolnoœci do czynnoœci prawnych prawo to realizuj¹ przez swojego przedstawiciela ustawowego lub opiekuna prawnego). <br>
-8.	Zgoda na przetwarzanie przez WP danych osobowych przedstawiciela ustawowego lub opiekuna prawnego U¿ytkownika nie posiadaj¹cego zdolnoœci do czynnoœci prawnych dla celów zwi¹zanych z reprezentowaniem U¿ytkownika oraz z³o¿eniem oœwiadczeñ okreœlonych w Regulaminie i we w³aœciwych Formularzach mo¿e zostaæ w ka¿dej chwili cofniêta przez przedstawiciela ustawowego/opiekuna prawnego, co jest równoznaczne ze z³o¿eniem oœwiadczenia o rezygnacji z korzystania z Serwisu. <br>
-9.	Wype³nienie odpowiednich Formularzy zwi¹zanych z korzystaniem z Serwisu odbywa siê w oparciu o nastêpuj¹ce zasady: <br>
+<h3>Â§10 ODPOWIEDZIALNOÅšÄ†</h2>
+<ol>
+	<li>Operator zobowiÄ…zuje siÄ™ do zapewnienia jak najwyÅ¼szej jakoÅ›ci 
+Å›wiadczonych usÅ‚ug. Operator nie ponosi odpowiedzialnoÅ›ci za zakÅ‚Ã³cenia w
+ funkcjonowaniu Serwisu wywoÅ‚ane siÅ‚Ä… wyÅ¼szÄ…, awariÄ… sprzÄ™tu lub 
+niedozwolonÄ… ingerencjÄ… UÅ¼ytkownikÃ³w, nawet jeÅ›li spowodowaÅ‚yby one 
+utratÄ™ danych na Kontach UÅ¼ytkownikÃ³w.</li>
+	<li>Operator nie ponosi odpowiedzialnoÅ›ci za czasowÄ… niemoÅ¼noÅ›Ä‡ 
+korzystania przez UÅ¼ytkownikÃ³w z funkcji Serwisu, wynikajÄ…cÄ… z 
+dokonywania zmian i ulepszeÅ„ w systemie.</li>
+	<li>Operator nie ponosi odpowiedzialnoÅ›ci za treÅ›ci przekazywane i 
+publikowane przez UÅ¼ytkownikÃ³w. TreÅ›ci umieszczane przez UÅ¼ytkownikÃ³w 
+nie sÄ… poglÄ…dami i opiniami twÃ³rcÃ³w Serwisu. Operator zastrzega sobie 
+jednak prawo do: redagowania, skracania tekstÃ³w bÄ…dÅº usuniÄ™cia treÅ›ci 
+zabronionych przez prawo, wulgarnych, obraÅºliwych lub w inny sposÃ³b 
+naruszajÄ…cych zasady wspÃ³Å‚Å¼ycia spoÅ‚ecznego. UÅ¼ytkownik zamieszczajÄ…cy 
+treÅ›ci zabronione moÅ¼e ponieÅ›Ä‡ odpowiedzialnoÅ›Ä‡ karnÄ… oraz cywilnÄ… 
+wzglÄ™dem Operatora bÄ…dÅº innych OsÃ³b.</li>
+	<li>Operator nie ponosi odpowiedzialnoÅ›ci za dziaÅ‚ania innych OsÃ³b, ani
+ za wykorzystanie przez nie danych UÅ¼ytkownikÃ³w niezgodnie z celem 
+dziaÅ‚ania Serwisu.</li>
+	<li>Operator nie ponosi odpowiedzialnoÅ›ci w przypadku skierowania do 
+niego przez inne Osoby roszczeÅ„ zwiÄ…zanych z opublikowaniem zdjÄ™Ä‡ lub 
+osobistego wizerunku tych OsÃ³b. OdpowiedzialnoÅ›Ä‡ w tym zakresie ponosi 
+wyÅ‚Ä…cznie UÅ¼ytkownik, ktÃ³ry opublikowaÅ‚ sporne zdjÄ™cie lub wizerunek 
+innej osoby.</li>
+</ol>
 
-	<blockquote>
-    a.	dane wpisane do Formularzy powinny dotyczyæ wy³¹cznie U¿ytkownika/ przedstawiciela ustawowego/opiekuna prawnego, który wype³nia Formularze i byæ zgodne z prawd¹; <br>
-    b.	osob¹ odpowiedzialn¹ za prawdziwoœæ danych wpisanych do Formularzy jest wy³¹cznie U¿ytkownik, a w przypadku U¿ytkowników nie posiadaj¹cych zdolnoœci do czynnoœci prawnych równie¿ przedstawiciel ustawowy lub opiekun prawny takiego U¿ytkownika. <br>
-	</blockquote>
-    
-10.	Korzystanie z Serwisu, a w szczególnoœci przes³anie do WP Formularzy i zaakceptowanie Regulaminu jest równoznaczne z:<br>
 
-	<blockquote>
-    a.	z³o¿eniem przez U¿ytkownika oraz przez przedstawiciela ustawowego lub opiekuna prawnego U¿ytkownika nie posiadaj¹cego zdolnoœci do czynnoœci prawnych oœwiadczenia o przyjêciu do wiadomoœci i akceptacji wszystkich postanowieñ Regulaminu; <br>
-    b.	z³o¿eniem przez U¿ytkownika oraz przez przedstawiciela ustawowego lub opiekuna prawnego U¿ytkownika nie posiadaj¹cego zdolnoœci do czynnoœci prawnych oœwiadczenia, ¿e dane zawarte w odpowiednich Formularzach zwi¹zanych z korzystaniem z Serwisu s¹ zgodne z prawd¹; <br>
-    c.	upowa¿nieniem WP do przetwarzania danych osobowych U¿ytkownika w celu korzystania z Serwisu; <br>
-    d.	upowa¿nieniem WP do przetwarzania danych osobowych przedstawiciela ustawowego/opiekuna prawnego U¿ytkownika nie posiadaj¹cego zdolnoœci do czynnoœci prawnych w celach zwi¹zanych z reprezentowaniem U¿ytkownika oraz z³o¿eniem oœwiadczeñ okreœlonych w Regulaminie i we w³aœciwych Formularzach; <br>
-    e.	przyjêciem do wiadomoœci przez U¿ytkownika oraz przedstawiciela ustawowego lub opiekuna prawnego U¿ytkownika nie posiadaj¹cego zdolnoœci do czynnoœci prawnych prawa dostêpu do treœci swoich danych osobowych oraz ich poprawiania (U¿ytkownicy nie posiadaj¹cy zdolnoœci do czynnoœci prawnych prawa te realizuj¹ przez swojego przedstawiciela ustawowego lub opiekuna prawnego). <br>
-	</blockquote>
-    
-11.	Podanie przez U¿ytkownika lub przez przedstawiciela ustawowego lub opiekuna prawnego U¿ytkownika nie posiadaj¹cego zdolnoœci do czynnoœci prawnych danych niezgodnych z prawd¹ lub usuniêcie danych obowi¹zkowych w czasie korzystania z Serwisu uprawnia WP do Zablokowania Treœci U¿ytkownika lub/i Zablokowania U¿ytkownika lub/i zaprzestania œwiadczenia U¿ytkownikowi us³ug w Serwisie, w tym Us³ugi WP. <br>
-</blockquote>
-
-<p>VI. Prawa i obowi¹zki U¿ytkownika. </p>
-
-<blockquote>
-1.	WP do³o¿y starañ, aby korzystanie z Serwisu by³o mo¿liwe dla U¿ytkowników wszystkich popularnych przegl¹darek internetowych, systemów operacyjnych, typów komputerów oraz typów po³¹czeñ internetowych. Jednak¿e WP nie gwarantuje i nie odpowiada za to, ¿e ka¿da kombinacja tych czynników umo¿liwia korzystanie z Serwisu. Ponadto Narzêdzia internetowe Serwisu mog¹ wymagaæ okreœlonych konfiguracji komputera U¿ytkownika. Minimalne wymagania techniczne umo¿liwiaj¹ce U¿ytkownikowi korzystanie z Serwisu, z zastrze¿eniem zdania poprzedniego, to: przegl¹darka internetowa Internet Explorer 6.0. lub wersje wy¿sze albo przegl¹darka internetowa oparta na silniku Mozilla 1.0. lub wersjach wy¿szych. WP nie ponosi odpowiedzialnoœci za to, ¿e Treœci U¿ytkowników bêd¹ zawsze dostêpne, dok³adne i niezawodne oraz przydatne do ogl¹dania ze Stron internetowych Serwisu. Ryzyka zwi¹zane z korzystaniem z sieci Internet oraz funkcj¹ i celem oprogramowania lub danych niebêd¹cych sk³adnikiem treœci us³ug œwiadczonych w Serwisie, wprowadzanych przez WP do systemu teleinformatycznego, którym pos³uguje siê U¿ytkownik, WP podaje w Polityce prywatnoœci na Stronach internetowych Portalu Wirtualna Polska. <br>
-2.	U¿ytkownik zobowi¹zany jest posiadaæ wszelkie prawa do Treœci zamieszczanych przez niego w Serwisie oraz do zg³aszanych przez niego propozycji Wizytówek Punktów lub/i ich zmian w zakresie umo¿liwiaj¹cym ich zamieszczenie, prezentacjê i przechowywanie w Serwisie oraz bezp³atne ogl¹danie lub/i czytanie lub/i ocenianie przez innych U¿ytkowników, w tym zobowi¹zany jest posiadaæ autorskie prawa maj¹tkowe i prawa pokrewne do tych Treœci i propozycji w rozumieniu przepisów ustawy z dnia 04 lutego 1994 r. o prawie autorskim i prawach pokrewnych (Dz.U. z 2006, nr 90, poz. 631 ze zm.). Zaakceptowanie Regulaminu jest równoznaczne ze z³o¿eniem oœwiadczenia, ¿e posiadane przez U¿ytkownika prawo do Treœci zamieszczanych przez niego w Serwisie i do zg³aszanych przez niego propozycji Wizytówek Punktów lub/i ich zmian oraz prawo do zezwalania na ogl¹danie lub/i czytanie tych Treœci i propozycji Wizytówek Punktów lub/i ich zmian przez innych U¿ytkowników na warunkach okreœlonych w Regulaminie jest niczym nieograniczone. <br>
-3.	Korzystanie z Serwisu, a w szczególnoœci z³o¿enie oœwiadczenia o akceptacji Regulaminu jest równoznaczne ze z³o¿eniem oœwiadczenia, ¿e Treœci zamieszczane przez U¿ytkownika w Serwisie oraz zg³aszane przez U¿ytkownika propozycje Punktów lub/i zmiany Wizytówek Punktów nie naruszaj¹ praw autorskich i/lub praw pokrewnych w rozumieniu przepisów ustawy z dnia 04 lutego 1994 r. o prawie autorskim i prawach pokrewnych (Dz.U. z 2006, nr 90, poz. 631 ze zm.) ani wszelkich innych praw osób trzecich w rozumieniu w³aœciwych przepisów. U¿ytkownik zobowi¹zany jest do naprawienia wszelkiej szkody, jak¹ mo¿e ponieœæ WP z tytu³u ewentualnych roszczeñ osób trzecich zwi¹zanych z naruszeniem praw autorskich, praw pokrewnych lub jakichkolwiek innych praw do Treœci zamieszczonych przez U¿ytkownika w Serwisie oraz do zg³oszonych przez U¿ytkownika propozycji Punktów lub/i zmian Wizytówek Punktów. <br>
-4.	U¿ytkownik zobowi¹zany jest posiadaæ - w przypadku, gdy Treœci zamieszczane w Serwisie zawieraæ bêd¹ wizerunek innych osób - zgodê osób przedstawionych w tych Treœciach na rozpowszechnianie ich wizerunku w ramach Serwisu. W przypadku, gdy U¿ytkownik nie bêdzie posiada³ zgody wskazanej w zdaniu poprzednim lub zgoda taka zostanie cofniêta, a U¿ytkownik nie usunie z Serwisu Treœci zawieraj¹cych wizerunek osób wskazanych w zdaniu poprzednim, zobowi¹zany bêdzie do naprawienia szkody, jak¹ mo¿e ponieœæ WP z tego tytu³u. <br>
-5.	U¿ytkownik zobowi¹zany jest dokonaæ stosownego rozliczenia ze wszystkimi osobami, którym przys³uguj¹ jakiekolwiek prawa do Treœci zamieszczanych przez niego w Serwisie lub do zg³aszanych przez niego propozycji Punktów lub/i zmiany Wizytówek Punktów, je¿eli uprawnione osoby wyst¹pi¹ z roszczeniami z tytu³u przys³uguj¹cych im praw. <br>
-6.	U¿ytkownik zobowi¹zany jest dope³niæ wszelkich prawem wymaganych czynnoœci niezbêdnych do zamieszczania w Serwisie Treœci i zg³oszonych przez niego propozycji Punktów lub/i zmian Wizytówek Punktów oraz do ogl¹dania lub/i czytania tych Treœci i Wizytówek przez innych U¿ytkowników zgodnie z postanowieniami Regulaminu. <br>
-7.	U¿ytkownik zobowi¹zany jest do nie zamieszczania w Serwisie Treœci, które nie spe³niaj¹ warunków okreœlonych w Regulaminie. <br>
-8.	W przypadku, gdy U¿ytkownik nie jest twórc¹ Treœci lub propozycji Wizytówek Punktów lub zmian Wizytówek Punktu lub jest wspó³twórc¹ Treœci lub propozycji Wizytówek Punktów lub zmian Wizytówek Punktów winien posiadaæ na podstawie umowy zawartej z osobami, którym przys³uguj¹ jakiekolwiek prawa do Treœci lub propozycji Wizytówek Punktów lub zmian Wizytówek lub/i z organizacj¹ zbiorowego zarz¹dzania prawami autorskimi lub prawami pokrewnymi (je¿eli takie poœrednictwo jest wymagane przez w³aœciwe przepisy prawa) prawo do zamieszczenia i udostêpniania Treœci/propozycji Wizytówek Punktów lub zmian Wizytówek w Serwisie na warunkach okreœlonych w Regulaminie. U¿ytkownik zobowi¹zany jest - przed zamieszczeniem w Serwisie Treœci lub przed zg³oszeniem propozycji Wizytówek Punktów lub zmian Wizytówek, których nie jest twórc¹ lub którego jest wspó³twórc¹ - do skontaktowania siê z takimi osobami lub tak¹ organizacj¹, ustalenia zasad zamieszczenia i udostêpnienia Treœci/propozycji Wizytówek Punktów lub zmian Wizytówek w Serwisie oraz do zawarcia z nimi stosownych umów. U¿ytkownik nie mo¿e zamieszczaæ w Serwisie ¿adnych Treœci ani proponowaæ Wizytówek lub zmian Wizytówek Punktów, których nie jest twórc¹ lub których jest wspó³twórc¹ bez uprzedniego ustalenia z osobami i stosownymi organizacjami wskazanymi w niniejszym punkcie Regulaminu zasad zamieszczenia i udostêpnienia Treœci/propozycji Wizytówek lub zmian Wizytówek Punktów w Serwisie, w tym op³at za zamieszczenie i udostêpnienie Treœci/Wizytówek lub zmian Wizytówek Punktów, które winien uiœciæ tym osobom i organizacjom z tego tytu³u. U¿ytkownik zobowi¹zany jest do naprawienia szkody, jak¹ mo¿e ponieœæ WP z tytu³u roszczeñ osób trzecich, którym przys³uguj¹ jakiekolwiek prawa do Treœci lub propozycji Wizytówek Punktów lub zmian Wizytówek oraz roszczeñ organizacji zbiorowego zarz¹dzania prawami autorskimi lub prawami pokrewnymi zwi¹zanymi z Treœciami zamieszczonymi i udostêpnionymi przez U¿ytkownika w Serwisie lub zg³oszonymi przez U¿ytkownika propozycjami Wizytówek Punktów lub zmian Wizytówek. <br>
-9.	U¿ytkownik zamieszcza i przechowuje Treœci w Serwisie oraz zezwala na ich ogl¹danie lub/i czytanie lub/i opiniowanie przez innych U¿ytkowników we w³asnym imieniu, na w³asn¹ rzecz i na w³asn¹ odpowiedzialnoœæ. Udostêpnienie przez WP Funkcjonalnoœci Serwisu umo¿liwiaj¹cych zamieszczanie, prezentacjê i przechowywanie Treœci U¿ytkownika oraz ich ogl¹danie lub/i czytanie lub/i opiniowanie przez innych U¿ytkowników ogranicza siê jedynie do udostêpnienia rozwi¹zañ technicznych. Oznacza to w szczególnoœci, ¿e WP nie zamieszcza ani nie udostêpnia do czytania lub/i ogl¹dania lub/i opiniowania Treœci U¿ytkowników we w³asnym imieniu i na w³asn¹ odpowiedzialnoœæ, a czyni¹ to U¿ytkownicy w swoim imieniu, na w³asn¹ rzecz i w³asn¹ odpowiedzialnoœæ. <br>
-10.	U¿ytkownik nie mo¿e zamieszczaæ w Serwisie Treœci ani zg³aszaæ propozycji Wizytówek Punktów lub zmian Wizytówek Punktów, które bêd¹ zawiera³y treœci sprzeczne z obowi¹zuj¹cym prawem, zasadami wspó³¿ycia spo³ecznego, dobrymi obyczajami, naruszaj¹ce prawa WP i prawa osób trzecich, naruszaj¹ce dobra osobiste, obraŸliwe, wulgarne lub zawieraj¹ce groŸby skierowane pod adresem osób trzecich, zawieraj¹ce treœci dyskryminuj¹ce p³eæ, rasê, narodowoœæ, jêzyk, religiê, nawo³uj¹ce do przemocy lub posiadaj¹ce charakter pornograficzny, stanowi¹ce materia³y reklamowe lub promocyjne U¿ytkownika lub/i innych osób. U¿ytkownik zobowi¹zany jest do naprawienia wszelkiej szkody, jak¹ mo¿e ponieœæ WP z tytu³u publikowania i przechowywania Treœci U¿ytkownika lub/i zaproponowanych przez U¿ytkownika Wizytówek Punktów lub zmian Wizytówek Punktów sprzecznych z postanowieniami zdania poprzedniego. <br>
-11.	Korzystanie z Serwisu, a w szczególnoœci z³o¿enie oœwiadczenia o akceptacji Regulaminu jest równoznaczne z wyra¿eniem zgody na zamieszczanie, za pomoc¹ zautomatyzowanych Narzêdzi internetowych, Treœci U¿ytkownika w Profilu U¿ytkownika oraz we wszystkich wyodrêbnionych czêœciach Serwisu przeznaczonych do zamieszczania Treœci U¿ytkowników. <br>
-12.	U¿ytkownik zobowi¹zany jest do przestrzegania przepisów prawa i postanowieñ Regulaminu. Przedstawiciel ustawowy lub opiekun prawny U¿ytkownika zobowi¹zany jest do zapewnienia spe³nienia i przestrzegania przez U¿ytkownika, którego reprezentuje, postanowieñ Regulaminu. <br>
-13.	W przypadku naruszenia przez U¿ytkownika przepisów prawa lub/i postanowieñ Regulaminu, WP jest uprawniona do Zablokowania U¿ytkownika i zaprzestania œwiadczenia U¿ytkownikowi us³ug dostêpnych w Serwisie, w tym Us³ugi WP. W przypadku U¿ytkowników zarejestrowanych, WP Zablokuje U¿ytkownika po uprzednim zawiadomieniu U¿ytkownika o zamiarze Zablokowania. Jednoczeœnie w zawiadomieniu WP wezwie U¿ytkownika do zaprzestania naruszeñ przepisów prawa lub/i postanowieñ Regulaminu w wyznaczonym terminie, nie krótszym ni¿ 48 godzin. W przypadku bezskutecznego up³ywu terminu do zaprzestania naruszeñ przepisów prawa lub/i postanowieñ Regulaminu, WP mo¿e zaprzestaæ œwiadczenia U¿ytkownikowi us³ug dostêpnych w Serwisie, w tym Us³ugi WP. WP mo¿e tak¿e Zablokowaæ U¿ytkownika i zaprzestaæ œwiadczenia U¿ytkownikowi us³ug w Serwisie, w tym Us³ugi WP w przypadku ra¿¹cego lub powtarzaj¹cego siê naruszania przez U¿ytkownika przepisów prawa lub/i postanowieñ Regulaminu, o czym zarejestrowany U¿ytkownik zostanie uprzednio poinformowany stosownym zawiadomieniem. WP mo¿e usun¹æ Treœci U¿ytkownika z serwera WP z chwil¹ up³ywu 7 dni od dnia zaprzestania œwiadczenia U¿ytkownikowi us³ug dostêpnych w Serwisie, za wyj¹tkiem Treœci zabezpieczonych na ¿¹danie uprawnionego organu na podstawie przepisów prawa. <br>
-14.	W przypadku naruszenia przez Treœci U¿ytkownika przepisów prawa lub/i postanowieñ Regulaminu, WP jest uprawniona kolejno do: <br>
-	
-    <blockquote>
-    a.	Zablokowania Treœci U¿ytkownika; <br>
-    b.	Zablokowania U¿ytkownika lub/i zaprzestania œwiadczenia U¿ytkownikowi us³ug w Serwisie. <br>
-    WP Zablokuje Treœci U¿ytkownika po uprzednim zawiadomieniu U¿ytkownika o zamiarze Zablokowania Treœci U¿ytkownika. Jednoczeœnie w zawiadomieniu WP wezwie U¿ytkownika do zaprzestania naruszeñ przepisów prawa lub/i postanowieñ Regulaminu w wyznaczonym terminie, nie krótszym ni¿ 48 godzin. W przypadku bezskutecznego up³ywu terminu do zaprzestania naruszeñ przepisów prawa lub/i postanowieñ Regulaminu, WP mo¿e Zablokowaæ U¿ytkownika lub/i zaprzestaæ œwiadczenia U¿ytkownikowi us³ug w Serwisie, w tym Us³ugi WP. WP mo¿e tak¿e Zablokowaæ U¿ytkownika i zaprzestaæ œwiadczenia U¿ytkownikowi us³ug w Serwisie w przypadku ra¿¹cego lub powtarzaj¹cego siê naruszania przez U¿ytkownika przepisów prawa lub/i postanowieñ Regulaminu, o czym U¿ytkownik zostanie uprzednio poinformowany stosownym zawiadomieniem. WP mo¿e usun¹æ Treœci U¿ytkownika z serwera WP z chwil¹ up³ywu 7 dni od dnia Zablokowania Treœci U¿ytkownika - lub odpowiednio - Zablokowania U¿ytkownika. W przypadku Treœci, które U¿ytkownik mo¿e zamieszczaæ w Serwisie bez uprzedniego zarejestrowania siê lub/i za³o¿enia Profilu w Serwisie, WP mo¿e Zablokowaæ Treœci U¿ytkownika lub/i Zablokowaæ U¿ytkownika lub/i zaprzestaæ œwiadczenia U¿ytkownikowi us³ug w Serwisie bez przesy³ania U¿ytkownikowi zawiadomieñ wskazanych powy¿ej, a po up³ywie 7 dni od dnia Zablokowania Treœci U¿ytkownika - lub odpowiednio - Zablokowania U¿ytkownika usun¹æ Treœci U¿ytkownika z serwera WP, za wyj¹tkiem Treœci zabezpieczonych na ¿¹danie uprawnionego organu na podstawie przepisów prawa. <br>
-   </blockquote>
-</blockquote>
-
-<p>VII. Rezygnacja z korzystania z Serwisu i Us³ugi WP. </p>
-
-<blockquote>
-1.	U¿ytkownik mo¿e w ka¿dym czasie zrezygnowaæ z korzystania z Serwisu (U¿ytkownicy nie posiadaj¹cy zdolnoœci do czynnoœci prawnych prawo to realizuj¹ przez swojego przedstawiciela ustawowego lub opiekuna prawnego), z zastrze¿eniem punktu VII.3 Regulaminu. <br>
-2.	Usuniêcie Profilu U¿ytkownika jest mo¿liwe za pomoc¹ odpowiednich Narzêdzi internetowych dostêpnych w Profilu U¿ytkownika, po uprzednim zalogowaniu siê U¿ytkownika do Portalu Wirtualna Polska. <br>
-3.	Po rezygnacji U¿ytkownika z korzystania z Serwisu, WP ma prawo do przechowywania listy zg³oszonych przez U¿ytkownika propozycji Punktów, zmian Wizytówek Punktów i usuniêæ Punktów oraz listy zamieszczonych na Mapie propozycji Punktów, zmian Wizytówek Punktów i usuniêæ Punktów zg³oszonych przez U¿ytkownika. <br>
-</blockquote>
-
-<p>VIII. Zakres odpowiedzialnoœci i prawa WP. </p>
-
-<blockquote>
-1.	WP jest uprawniona do przerw lub zak³óceñ w dostêpnoœci i korzystaniu z Serwisu lub/i Us³ugi WP lub/i jego poszczególnych Narzêdzi internetowych, je¿eli jest to spowodowane: <br>
-	<blockquote>
-    a.	koniecznoœci¹ naprawy, rozbudowy, modyfikacji lub konserwacji sprzêtu albo oprogramowania; <br>
-    b.	przyczynami niezale¿nymi od WP (si³a wy¿sza, dzia³ania lub zaniechania osób trzecich). <br>
-	</blockquote>
-2.	WP nie ponosi odpowiedzialnoœci z tytu³u utraconych korzyœci poniesionych przez U¿ytkownika lub osoby trzecie w zwi¹zku korzystaniem z Serwisu lub/i Us³ugi WP. <br>
-3.	WP nie ponosi odpowiedzialnoœci za utratê danych spowodowan¹ awari¹ sprzêtu, oprogramowania lub te¿ okolicznoœciami niezale¿nymi od WP. <br>
-4.	WP nie ponosi odpowiedzialnoœci za utratê przez U¿ytkownika lub wejœcie w posiadanie przez osoby trzecie (niezale¿nie od sposobu wejœcia w posiadanie) jego hase³ i loginu. Niniejsze postanowienie Regulaminu nie ma zastosowania w przypadku, gdy utrata przez U¿ytkownika lub wejœcie w posiadanie przez osoby trzecie jego hase³ i loginu nast¹pi³o z przyczyn zawinionych przez WP lub przyczyn, za które WP ponosi odpowiedzialnoœæ na mocy obowi¹zuj¹cych przepisów prawa. <br>
-5.	WP nie ponosi odpowiedzialnoœci z tytu³u niewykonania lub nienale¿ytego wykonania œwiadczeñ, je¿eli niewykonanie lub nienale¿yte wykonanie nast¹pi³o z winy nieumyœlnej. <br>
-6.	WP nie ponosi odpowiedzialnoœci za niewykonanie lub nienale¿yte wykonywanie œwiadczeñ, je¿eli jest to spowodowane przez osoby trzecie (w szczególnoœci operatorów telekomunikacyjnych, dostawców ³¹czy telekomunikacyjnych i energii elektrycznej). WP jest jednak odpowiedzialna za dzia³ania lub zaniechania (jak za w³asne dzia³anie lub zaniechanie) osób, z których pomoc¹ zobowi¹zanie wykonuje, jak równie¿ osób, którym wykonanie zobowi¹zania powierza. WP jest tak¿e odpowiedzialna w przypadkach, o których mowa w niniejszym punkcie Regulaminu, jeœli odpowiedzialnoœæ wynika z obowi¹zuj¹cych przepisów prawa. Ograniczenie odpowiedzialnoœci, o którym mowa w niniejszym punkcie Regulaminu, obejmuje tak¿e odpowiedzialnoœæ z tytu³u szkód spowodowanych przez wirusy komputerowe.<br>
-7.	WP nie ponosi odpowiedzialnoœci za treœci otrzymywane i wysy³ane przez U¿ytkowników za poœrednictwem sieci Internet oraz za Treœci zamieszczone przez U¿ytkowników w Serwisie, w tym za jakiekolwiek dane i informacje. <br>
-8.	WP nie ponosi odpowiedzialnoœci za szkody spowodowane dzia³aniami lub zaniechaniami U¿ytkownika, w szczególnoœci za nieprawid³owe korzystanie przez niego z Serwisu lub/i Us³ugi WP, za korzystanie przez niego z Serwisu lub/i Us³ugi WP w sposób niezgodny z obowi¹zuj¹cymi przepisami prawa i postanowieniami Regulaminu oraz za szkody wynikaj¹ce z podania niepe³nych lub nieprawdziwych danych. <br>
-9.	WP zastrzega sobie prawo do udostêpniania danych U¿ytkownika i przedstawiciela ustawowego lub opiekuna prawnego U¿ytkownika nie posiadaj¹cego zdolnoœci do czynnoœci prawnych, je¿eli obowi¹zek udostêpnienia uprawnionym osobom lub organom wynika z obowi¹zuj¹cych przepisów prawa. <br>
-10.	WP zastrzega sobie prawo do rozbudowy lub/i zmian oprogramowania przeznaczonego do korzystania z Serwisu lub/i Us³ugi WP, bez uprzedniego informowania o tym U¿ytkowników. <br>
-11.	WP zastrzega sobie prawo do zmian szaty graficznej Serwisu oraz rozbudowy lub/i zmian form i zakresu korzystania z Serwisu lub/i Us³ugi WP, bez uprzedniego informowania o tym U¿ytkowników. <br>
-12.	WP ma prawo do opatrzenia Stron internetowych Serwisu elementami charakterystycznymi dla Serwisów internetowych prowadzonych przez WP, obejmuj¹cych w szczególnoœci odpowiedni nag³ówek, stopkê oraz powierzchniê przeznaczon¹ do zamieszczania i publikowania reklam lub/i og³oszeñ WP i innych osób (powierzchnia reklamowa). Reklamy lub/i og³oszenia publikowane na powierzchni reklamowej publikowane bêd¹ w sposób wskazuj¹cy, ¿e zamieszczone zosta³y przez WP. Korzystanie z Serwisu, a w szczególnoœci zaakceptowanie postanowieñ Regulaminu jest równoznaczne z wyra¿eniem zgody na dokonywanie przez WP czynnoœci wskazanych w niniejszym punkcie Regulaminu. <br>
-13.	Wszelkie prawa do elementów wskazanych w punkcie poprzednim Regulaminu nale¿¹ do WP. Powierzchnia reklamowa Serwisu oraz wszelkie przychody z tytu³u udostêpniania tej powierzchni nale¿¹ w ca³oœci do WP. <br>
-14.	WP zastrzega sobie prawo do rezygnacji z prowadzenia Serwisu (zamkniêcia Serwisu) lub rezygnacji z udostêpniania poszczególnych Funkcjonalnoœci Serwisu w terminie 7 dni od dnia z³o¿enia - odpowiednio - oœwiadczenia o rezygnacji z prowadzenia Serwisu lub oœwiadczenia o rezygnacji z udostêpniania Funkcjonalnoœci Serwisu na Stronie internetowej Serwisu. W przypadku rezygnacji przez WP z udostêpniania Funkcjonalnoœci Serwisu, korzystanie z tej Funkcjonalnoœci z chwil¹ up³ywu terminu wskazanego w zdaniu poprzednim zostanie zablokowane, a wszelkie Treœci U¿ytkowników w niej zamieszczone zostan¹ usuniête z serwera WP, za wyj¹tkiem Treœci zabezpieczonych na ¿¹danie uprawnionego organu na podstawie przepisów prawa. W przypadku rezygnacji przez WP z prowadzenia Serwisu, z chwil¹ up³ywu terminu wskazanego w zdaniu pierwszym niniejszego punktu Regulaminu korzystanie z Serwisu zostanie zablokowane, a wszelkie Treœci U¿ytkowników zostan¹ usuniête z serwera WP, za wyj¹tkiem Treœci zabezpieczonych na ¿¹danie uprawnionego organu na podstawie przepisów prawa. <br>
-15.	Prawem w³aœciwym dla wszystkich stosunków prawnych wynikaj¹cych z Regulaminu jest prawo polskie. Wszelkie spory bêd¹ rozstrzygane przez w³aœciwe polskie s¹dy powszechne. <br>
-16.	WP mo¿e odmówiæ U¿ytkownikowi œwiadczenia us³ug w Serwisie, jeœli jest to uzasadnione wzglêdami bezpieczeñstwa. <br>
-</blockquote>
-
-<p>IX. Korespondencja. </p>
-
-<blockquote>
-1.	WP kieruje korespondencjê do U¿ytkownika zwi¹zan¹ z korzystaniem z Serwisu na adres poczty elektronicznej wskazany WP przez U¿ytkownika w Formularzu Konta Portalu Wirtualna Polska, a w przypadku korzystania przez U¿ytkownika z poczty elektronicznej udostêpnianej przez WP - na adres poczty elektronicznej udostêpnionej U¿ytkownikowi przez WP. <br>
-2.	WP kieruje korespondencjê do przedstawiciela ustawowego lub opiekuna prawnego U¿ytkownika nie posiadaj¹cego zdolnoœci do czynnoœci prawnych zwi¹zan¹ z korzystaniem przez U¿ytkownika z Serwisu i reprezentowaniem U¿ytkownika na adres poczty elektronicznej wskazany przez przedstawiciela ustawowego/opiekuna prawnego w odpowiednim Formularzu. <br>
-3.	U¿ytkownik oraz przedstawiciel ustawowy lub opiekun prawny U¿ytkownika nie posiadaj¹cego zdolnoœci do czynnoœci prawnych powinien kierowaæ wszelk¹ korespondencjê w sprawach zwi¹zanych z korzystaniem z Serwisu na adres poczty elektronicznej: <a href="mailto:docelu@serwis.wp.pl">docelu@serwis.wp.pl</a><br>
-</blockquote>
-
-<p>X. Reklamacje. </p>
-
-<blockquote>
-1.	U¿ytkownik mo¿e kierowaæ reklamacje w sprawach zwi¹zanych z korzystaniem z Serwisu na adres poczty elektronicznej <a href="mailto:docelu@serwis.wp.pl">docelu@serwis.wp.pl</a>. <br>
-2.	WP rozpatruje reklamacje w terminie 14 (czternastu) dni roboczych od otrzymania reklamacji, przy czym okres ten mo¿e zostaæ przed³u¿ony maksymalnie o kolejne 7 (siedem) dni w przypadku, gdy rozpoznanie reklamacji wymaga d³u¿szego czasu. WP poinformuje U¿ytkownika o przed³u¿eniu okresu rozpoznania reklamacji, wskazuj¹c okres, o jaki ulegnie przed³u¿eniu rozpatrywanie reklamacji oraz przyczynê przed³u¿enia. Informacja o przed³u¿eniu rozpoznania reklamacji i jego przyczynie zostanie udzielona U¿ytkownikowi przed up³ywem czternastodniowego okresu, o którym mowa w pierwszym zdaniu niniejszego punktu Regulaminu. W przypadku, gdy z³o¿ona reklamacja zawiera braki uniemo¿liwiaj¹ce jej rozpatrzenie, WP o ile uzna, ¿e jest to konieczne dla prawid³owego rozpatrzenia reklamacji, niezw³ocznie wzywa reklamuj¹cego do jej uzupe³nienia, okreœlaj¹c termin, nie krótszy ni¿ 7 (siedem) dni roboczych i zakres tego uzupe³nienia z pouczeniem, ¿e nieuzupe³nienie reklamacji w okreœlonym terminie spowoduje pozostawienie reklamacji bez rozpoznania. Po bezskutecznym up³ywie wyznaczonego terminu reklamacjê pozostawia siê bez rozpoznania. <br>
-3.	OdpowiedŸ na reklamacjê WP kieruje na adres U¿ytkownika wskazany w punkcie IX.1 Regulaminu, a w przypadku U¿ytkownika nie posiadaj¹cego zdolnoœci do czynnoœci prawnych dodatkowo na adres przedstawiciela ustawowego lub opiekuna prawnego U¿ytkownika wskazany w punkcie IX.2 Regulaminu. <br>
-</blockquote>
-
-<p>XI. Zmiany Regulaminu.</p>
-
-<blockquote>
-1.	Regulamin wchodzi w ¿ycie z chwil¹ opublikowania na niniejszej Stronie internetowej Serwisu. <br>
-2.	WP zastrzega sobie prawo do zmian Regulaminu. Zmiany Regulaminu wchodz¹ w ¿ycie po opublikowaniu tych zmian na Stronie internetowej Serwisu (w szczególnoœci poprzez opublikowanie treœci Regulaminu zawieraj¹cego zmiany), o ile nie zastrze¿ono inaczej oraz w zakresie, w jakim jest to dopuszczalne przez obowi¹zuj¹ce przepisy prawa. <br>
-</blockquote>	</div>
+<h3>Â§11 PRZEPISY KOÅƒCOWE</h2>
+<ol>
+	<li>Operator bÄ™dzie dokÅ‚adaÅ‚ nieustannej starannoÅ›ci, aby prowadzony 
+przez niego Serwis byÅ‚ wolny od bÅ‚Ä™dÃ³w i usterek zagraÅ¼ajÄ…cych 
+UÅ¼ytkownikom, jednak ze wzglÄ™du na specyfikÄ™ dziaÅ‚alnoÅ›ci jakÄ… jest 
+prowadzenie Serwisu internetowego nie gwarantuje, Å¼e takowe nigdy nie 
+powstanÄ… (np. wirusy komputerowe, trojany, wiadomoÅ›ci spam). Operator 
+nie ponosi odpowiedzialnoÅ›ci za szkody UÅ¼ytkownika powstaÅ‚e w skutek 
+korzystania przez niego z Serwisu.</li>
+	<li>Regulamin jest dostÄ™pny pod adresem 
+www.ToCoRobimy.pl/s/page/regulamin.</li>
+	<li>Operator zastrzega sobie prawo do jednostronnej zmiany postanowieÅ„ 
+Regulaminu w kaÅ¼dej chwili i bez koniecznoÅ›ci uzasadniania przyczyny.</li>
+	<li>W przypadku dokonania zmian w Regulaminie, Operator poinformuje o 
+tym niezwÅ‚ocznie UÅ¼ytkownikÃ³w poprzez publikacjÄ™ jednolitego tekstu 
+Regulaminu na Å‚amach Serwisu.</li>
+	<li>Warunkiem dalszego korzystania z Serwisu jest zaakceptowanie 
+Regulaminu w caÅ‚oÅ›ci wraz z wprowadzonym zmianami. Po zapoznaniu siÄ™ z 
+nowÄ… treÅ›ciÄ… Regulaminu, UÅ¼ytkownik skÅ‚ada oÅ›wiadczenie nastÄ™pujÄ…cej 
+treÅ›ci: OÅ›wiadczam, iÅ¼ zapoznaÅ‚em/am siÄ™ z nowÄ… treÅ›ciÄ… Regulaminu i 
+akceptujÄ™ jego wszystkie postanowienia. ZÅ‚oÅ¼enie oÅ›wiadczenia jest 
+jednoznaczne z oÅ›wiadczeniem woli o kontynuowaniu umowy z Operatorem. W 
+przypadku braku akceptacji zmian w Regulaminie, UÅ¼ytkownik rozwiÄ…zuje 
+tym samym umowÄ™ z Operatorem, co jest rÃ³wnoznaczne z zablokowaniem 
+Konta.</li>
+	<li>Regulamin wchodzi w Å¼ycie z dniem ogÅ‚oszenia na stronie 
+internetowej Serwisu. Umowy zawarte pomiÄ™dzy UÅ¼ytkownikami, a Operatorem
+ przed dniem wejÅ›cia w Å¼ycie Regulaminu podlegajÄ… jego postanowieniom z 
+chwilÄ… akceptacji przez UÅ¼ytkownika.</li>
+	<li>W razie zmiany lub uniewaÅ¼nienia, wskutek prawomocnego orzeczenia 
+sÄ…du, ktÃ³regokolwiek z postanowieÅ„ niniejszego Regulaminu, pozostaÅ‚e 
+jego postanowienia pozostajÄ… w mocy i wiÄ…Å¼Ä… strony.</li>
+	<li>Do stosunkÃ³w miÄ™dzy Operatorem a UÅ¼ytkownikiem stosuje siÄ™ prawo 
+polskie.</li>
+	<li>W razie jakichkolwiek sporÃ³w wynikajÄ…cych ze stosunkÃ³w miÄ™dzy 
+Operatorem a UÅ¼ytkownikiem sÄ…dom polskim przysÅ‚uguje jurysdykcja krajowa
+ wyÅ‚Ä…czna. Wszelkie spory sÄ…dowe rozstrzyga sÄ…d wÅ‚aÅ›ciwy dla siedziby 
+Operatora.</li>
+</ol>

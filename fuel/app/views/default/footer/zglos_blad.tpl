@@ -1,3 +1,21 @@
-W tym miejscu moøesz zg≥aszaÊ zauwaøone b≥Ídy w serwisie <a href="www.tocorobimy.pl">ToCoRobimy.pl</a>.
-ZachÍcamy rÛwnieø do przesy≥ania propozycji usprawnienia serwisu oraz wprowadzenia nowych, ciekawych funkcjonalnoúci.
-Wszystkie propozycje rozpatrzymy, a najciekawsze z nich wprowadzimy w serwisie.
+Ôªø<h2><center>ZG≈ÅO≈ö B≈ÅƒÑD</center></h2><br/>
+
+W tym miejscu mo≈ºesz zg≈Çaszaƒá zauwa≈ºone b≈Çƒôdy w serwisie <a href="www.tocorobimy.pl">ToCoRobimy.pl</a>.
+Zachƒôcamy r√≥wnie≈º do przesy≈Çania propozycji usprawnienia serwisu oraz wprowadzenia nowych, ciekawych funkcjonalno≈õci.
+Wszystkie propozycje rozpatrzymy, a najciekawsze z nich wprowadzimy w serwisie.<br/><br/>
+
+<div id="report_page_errors">
+	{$report_page_errors|default:""}
+</div>
+
+<div id="report_page_div">
+	Tw√≥j e-mail:<br/>
+	{$report_form.open}
+		{$report_form.email|default:""}<br/>
+	Tre≈õƒá wiadomo≈õci:<br/>
+		{$report_form.message|default:""}<br/><br/>
+		<div class="align_right">
+			{$report_form.submit|default:""}
+		</div>
+	{$report_form.close}
+</div>
