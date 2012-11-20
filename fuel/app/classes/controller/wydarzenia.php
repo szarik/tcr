@@ -4,10 +4,9 @@ class Controller_Wydarzenia extends Controller_Ines_Site
 	//list events
 	function action_index()
 	{
-		$events = \Model_Event::find('all');
-		$view = \View::forge('listing');
-		$view->set('events', $events, false);
-		$this->template->content = $view;
+		$view = View::forge('default/tabs.smarty');
+		$this->_tpl->set('body', $view);
+		return $this->_tpl;// = View::forge('default/frontpage.smarty');
 	}
 
 	function action_dodaj()
