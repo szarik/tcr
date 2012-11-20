@@ -36,6 +36,8 @@ class Theme
 		$params->set('places', \Tocorobimy\Places::instance()->get(), false);
 		$_r = \Tocorobimy\Places::instance()->get(\Input::get('lokal'));
 		$params->set('selected_place', $_r->current(), false);
+		// Tocorobimy / Events - czyli pobranie wydarzeń 
+		$params->set('events', \Tocorobimy\Events::instance()->get(), false); 
 
 		// Header - formularz szukania po adresie
 		$_header_form['open'] = \Form::open(array('action' => 'szukaj/adres', 'class' => 'navbar-search pull-left'));

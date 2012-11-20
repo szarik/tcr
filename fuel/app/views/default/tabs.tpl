@@ -17,98 +17,46 @@
     <p>
 
 
-    <div class="row-fluid">
-        <ul class="thumbnails">
-            <li class="span4">
-                <div class="thumbnail">
-                    <img src="http://www.festivalhopper.de/news/wp-content/uploads/2008/05/001_mayday_photo-larsbehrendt.jpg" alt="" class="event-image">
 
-                    <div class="caption">
-                        <h3>Mayday</h3>
-
-                        <p>12. edycja Mayday w Polsce odbędzie się pod hasłem „<b>Twenty Young</b>”, co było nawiązaniem do pierwszej imprezy, która 20 lat temu odbyła się w Niemczech. Nawiązaniem była nie tylko nazwa, ale i muzyka – nie zabrakło utworów artystów, którzy największe suckesy odnosili w latach 90.: Wesbam, Len Faki i Chris Liebing, czy Rush.</p>
-
-                        <p><a href="#" class="btn btn-primary">Przyjdź do lokalu</a> <a href="#" class="btn">Dojazd</a></p>
+        {$zmienna = -1} 
+        {foreach from=$events item=event}
+        	{$zmienna = $zmienna + 1}
+            
+        	{if $zmienna%3 == 0}
+            <div class="row-fluid">
+            <ul class="thumbnails">
+            {/if}
+            
+                <li class="span4">
+                    <div class="thumbnail">
+                        <img src="{$event->link_photo}" alt="" class="event-image">
+    
+                        <div class="caption">
+                            <h3>{$event->name}</h3>
+    
+                            <p>{$event->description}</p>
+    
+                            <p><a href="#{$event->place_id}" class="btn btn-primary">Przyjdź do lokalu</a> <a href="#" class="btn">Dojazd</a></p>
+                        </div>
                     </div>
-                </div>
-            </li>
-            <li class="span4">
-                <div class="thumbnail">
-                    <img src="http://www.zachod.pl/wp-content/uploads/2011/09/12-bowling.jpg" alt="" class="event-image">
+                </li>
+            
+			{if $zmienna%3 == 2} 
+            </ul>
+    		</div>
+            {/if}
 
-                    <div class="caption">
-                        <h3>Szał Kręgli w ArcoBowl</h3>
-
-                        <p>W nowoczesnych i przestronnych wnętrzach z miłą  i profesjonalną obsługą, zapewniającą  przyjazną atmosferę poczują się Państwo w pełni zrelaksowani i usatysfakcjonowani. Posiadamy miejsca siedzące w komfortowych i stylowych kanapach dla 70 naszych Gości. Dzięki swojej bogatej ofercie każdy  z pewnością znajdzie coś dla siebie, dodatkową atrakcją naszego klubu jest kręgielnia.</p>
-
-                        <p><a href="#" class="btn btn-primary">Przyjdź do lokalu</a> <a href="#" class="btn">Dojazd</a></p>
-                    </div>
-                </div>
-            </li>
-            <li class="span4">
-                <div class="thumbnail">
-                    <img src="http://clubs4u.pl/dimg/po/a/4440.jpg" alt="" class="event-image">
-
-                    <div class="caption">
-                        <h3>Halloween</h3>
-
-                        <p>Jedziemy ostro! gorąca noc w naszym klubie! Bedzie naprawdę strasznie! Zobaczycie sami! Zapraszamy na mega odjechaną imprezę halloweenowa! Musicie być z nami! Jak zwykle najlepszy muzyczny klimat w Bieszczadach specjalnie dla Was!<br/><b>Wstęp</b>: 10 zł<br/><b>Start</b>: 20:00 </p>
-
-                        <p><a href="#" class="btn btn-primary">Przyjdź do lokalu</a> <a href="#" class="btn">Dojazd</a></p>
-                    </div>
-                </div>
-            </li>
-        </ul>
-    </div>
-    <div class="row-fluid">
-        <ul class="thumbnails">
-            <li class="span4">
-                <div class="thumbnail">
-                    <img src="http://clubs4u.pl/dimg/po/b/4087.jpg" alt="" class="event-image">
-
-                    <div class="caption">
-                        <h3>Facebook party</h3>
-
-                        <p>Co tu dużo pisać! każda osoba dopisana do wydarzenia wchodzi do klubu za jedyne 8pln! Zapraszam do klikania "wezmę udział" oraz przybycie do klubu od 20:00! Jak już wcześniej informowaliśmy, w każdą sobotę losujemy nrki biletów które każdy otrzyma przy wejściu :) i rozdajemy megaśne nagrody! Klimaty klubowe jak w każdą sobotę :) </p>
-
-                        <p><a href="#" class="btn btn-primary">Przyjdź do lokalu</a> <a href="#" class="btn">Dojazd</a></p>
-                    </div>
-                </div>
-            </li>
-			<li class="span4">
-                <div class="thumbnail">
-                    <img src="http://clubs4u.pl/dimg/po/a/6294.jpg" alt="" class="event-image">
-
-                    <div class="caption">
-                        <h3>Mecz Polska-Czechy + Afterparty</h3>
-
-                        <p>Kochani, już w sobotę wielkie emocje w <b>Allegra Pub</b>! Mecz Polska - Czechy! u nas wstęp wolny dla wszystkich klubowiczów!
-Ekran 6m2! musicie być z nami!!! Po meczu impreza do białego rana z najlepszymi przebojami! zapraszamy do klubu kibica :) takiej atmosfery nie znajdziecie nigdzie!!! </p>
-
-                        <p><a href="#" class="btn btn-primary">Przyjdź do lokalu</a> <a href="#" class="btn">Dojazd</a></p>
-                    </div>
-                </div>
-            </li>
-            <li class="span4">
-                <div class="thumbnail">
-                    <img src="http://clubs4u.pl/dimg/po/b/4086.jpg" alt="" class="event-image">
-
-                    <div class="caption">
-                        <h3>Browar Night</h3>
-
-                        <p>Tego wieczoru kochani browar lany po 4 ziko!
-zobaczcie jaką promocje szykujemy dla Was :)
-Bardzo odjechane klimaty zaserwuje Wam Alex light Nasz nowy rezydent klubu! Będziecie mogli pośpiewać razem z nami, drzem, perfect , lady pank, elektryczne gita, ksu!
-To i wile więcej usłyszycie tej nocy!</p>
-
-                        <p><a href="#" class="btn btn-primary">Przyjdź do lokalu</a> <a href="#" class="btn">Dojazd</a></p>
-                    </div>
-                </div>
-            </li>
-        </ul>
-    </div>
-
-
+        {/foreach}
+        
+		{if $zmienna%3 == 1} 
+            </ul>
+    		</div>
+            {/if}
+            
+            {if $zmienna%3 == 0} 
+            </ul>
+    		</div>
+            {/if}
     </p>
 </div>
 

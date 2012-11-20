@@ -3,7 +3,34 @@ namespace Tocorobimy\Model;
 
 class Tocorobimy extends \Model
 {
+	
+	 /**
+	 * Get events from DB
+	 *
+	 * @param null $_events
+	 * @return mixed
+	 */
+	public static function get_events($_events = null, $_limit = 0, $_offset = 0)
+	{
+		$_query = \DB::select('*')->from('events');
 
+		if ($_events !== null) {
+			$_query->where('id', 'IN', $_events);
+		}
+
+		if ((int)$_limit > 0) {
+			$_query->limit((int)$_limit);
+		}
+
+		if ((int)$_offset > 0) {
+			$_query->offset((int)$_offset);
+		}
+
+		$_query = $_query->as_object()->execute();
+
+		return $_query;
+	}
+	
 	/**
 	 * Get categories from DB
 	 *
