@@ -31,9 +31,9 @@
                     <div class="thumbnail">
                         <img src="{$event->link_photo}" alt="" class="event-image">
     
-                        <div class="caption">
+                        <div class="caption" style="margin-top:180px;">
                             <h3>{$event->name}</h3>
-    
+    <span>{$event->date_start}</span>
                             <p>{$event->description}</p>
     
                             <p><a href="#{$event->place_id}" class="btn btn-primary">Przyjdź do lokalu</a> <a href="#" class="btn">Dojazd</a></p>

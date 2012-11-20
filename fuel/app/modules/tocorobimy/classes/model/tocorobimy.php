@@ -17,7 +17,8 @@ class Tocorobimy extends \Model
 		if ($_events !== null) {
 			$_query->where('id', 'IN', $_events);
 		}
-
+		$_query->order_by('id', 'desc');
+		
 		if ((int)$_limit > 0) {
 			$_query->limit((int)$_limit);
 		}
