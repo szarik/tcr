@@ -1,7 +1,8 @@
 {if isset($config.theme_show_comments) && $config.theme_show_comments == 1} <!-- tabs.tpl start --> {/if}
 <div class="tabbable" style="margin-bottom: 18px;">
 <ul class="nav nav-tabs" id="xmyTab">
-    <li {if isset($smarty.get.strona) && $smarty.get.strona == "wydarzenia"}class="active"{/if}>
+    <li {if isset($smarty.get.strona) && $smarty.get.strona == "wydarzenia"}class="active"{/if}
+        {if empty($smarty.get.strona)}class="active"{/if}>
         <a href="#tab1" data-toggle="tab">Wydarzenia</a>
     </li>
     <li {if isset($smarty.get.strona) && $smarty.get.strona == "lokalizator"}class="active"{/if}>
@@ -13,7 +14,8 @@
 </ul>
 
 <div class="tab-content" style="padding-bottom: 9px; border-bottom: 1px solid #ddd; height:100%;">
-<div class="tab-pane {if isset($smarty.get.strona) && $smarty.get.strona == "wydarzenia"}active{/if}" id="tab1">
+<div class="tab-pane {if isset($smarty.get.strona) && $smarty.get.strona == "wydarzenia"}active{/if} 
+                     {if !isset($smarty.get.strona)}active{/if}" id="tab1">
     <p>
 
 
