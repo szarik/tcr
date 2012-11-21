@@ -20,30 +20,35 @@
 
         {$zmienna = -1} 
         {foreach from=$events item=event}
-        	{$zmienna = $zmienna + 1}
-            
-        	{if $zmienna%3 == 0}
-            <div class="row-fluid">
-            <ul class="thumbnails">
-            {/if}
-            
-                <li class="span4">
-                    <div class="thumbnail">
-                        <img src="{$event->link_photo}" alt="" class="event-image">
-    
-                        <div class="caption" style="margin-top:180px;">
-                            <h3>{$event->name}</h3>
-    <span>{$event->date_start}</span>
-                            <p>{$event->description}</p>
-    
-                            <p><a href="#{$event->place_id}" class="btn btn-primary">Przyjdź do lokalu</a> <a href="#" class="btn">Dojazd</a></p>
+        	
+            {if $event->visible == 1}
+                {$zmienna = $zmienna + 1}
+                
+                {if $zmienna%3 == 0}
+                <div class="row-fluid">
+                <ul class="thumbnails">
+                {/if}
+                
+                    <li class="span4">
+                        <div class="thumbnail">
+                            <img src="{$event->link_photo}" alt="" class="event-image">
+        
+                            <div class="caption" style="margin-top:180px;">
+                                <h3>{$event->name}</h3>
+            <span class="label">{$event->date_start}</span>
+            <span class="label label-info">
+            {$event->preferences|replace:'single':'single'|replace:'couple':'pary'|replace:'group':'grupy'}</span>
+                                <p>{$event->description}</p>
+        
+                                <p><a href="wydarzenia/wydarzenie/{$event->id}" class="btn btn-primary">Zobacz</a> <a href="#" class="btn">JakDojade</a></p>
+                            </div>
                         </div>
-                    </div>
-                </li>
-            
-			{if $zmienna%3 == 2} 
-            </ul>
-    		</div>
+                    </li>
+                
+                {if $zmienna%3 == 2} 
+                </ul>
+                </div>
+                {/if}
             {/if}
 
         {/foreach}
