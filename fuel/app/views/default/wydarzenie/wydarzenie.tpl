@@ -8,7 +8,7 @@
   
             <ul class="breadcrumb">
                 <li><a href="../../">Wydarzenia</a> <span class="divider">/</span></li>
-                <li><a href="../../">{$place->name}</a> <span class="divider">/</span></li>
+                <li><a href="../../miejsca/miejsce/{$place->id}">{$place->name}</a> <span class="divider">/</span></li>
                 <li class="active">{$event->name}</li>
             </ul>
             

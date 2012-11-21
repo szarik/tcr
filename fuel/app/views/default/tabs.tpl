@@ -200,21 +200,21 @@
 
         <div class="row">
             <div class="span4" style="padding-left:40px;">
-                <h3>{$selected_place->nazwa}</h3>
+                <h3>{$selected_place->name}</h3>
 
-                <p>Adres: {$selected_place->adres}, {$selected_place->miasto} </p>
+                <p>Adres: {$selected_place->address_street_name}, {$selected_place->address_city} </p>
 
-                <p>Telefon: {$selected_place->telefon} </p>
+                <p>Telefon: {$selected_place->phone} </p>
 
-                <p>Strona www: {$selected_place->strona_www} </p>
+                <p>Strona www: {$selected_place->website} </p>
 
                 <p>Email: {$selected_place->email} </p>
 
-                <p>Godziny otwarcia: {$selected_place->godziny_otwarcia} </p>
+                <p>Godziny otwarcia: {$selected_place->open_time} </p>
 
                 <p>Wstęp: {$selected_place->wstep} </p>
 
-                <p>Opis: {$selected_place->opis} </p>
+                <p>Opis: {$selected_place->description} </p>
             </div>
             <div class="span8">
                 <div id="mapka" style="width: 570px; height: 500px; border: 1px solid black; background: gray;">
@@ -236,7 +236,7 @@
 
                 <li class="span5">
                     <h4>
-                        <a href="?kategoria={$smarty.get.kategoria|default:''}&strona={$smarty.get.strona|default:''}&lokal={$place->id}">{$place->nazwa}</a>
+                        <a href="miejsca/miejsce/{$place->id}">{$place->name}</a>
                     </h4>
                 </li>
 
