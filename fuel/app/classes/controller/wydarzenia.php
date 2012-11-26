@@ -1,4 +1,5 @@
 <?php
+
 class Controller_Wydarzenia extends Controller_Ines_Site
 {
 	//list events
@@ -6,7 +7,7 @@ class Controller_Wydarzenia extends Controller_Ines_Site
 	{
 		$view = View::forge('default/tabs.smarty');
 		$this->_tpl->set('body', $view);
-		return $this->_tpl;// = View::forge('default/frontpage.smarty');
+		return $this->_tpl;
 	}
 
 	function action_dodaj()
@@ -40,6 +41,7 @@ class Controller_Wydarzenia extends Controller_Ines_Site
 			$event->date_end		= $fields['date_end'];
 			$event->preferences		= Model_Event::flatten($fields['preferences']);
 			$event->coordinates		= $fields['coordinates'];
+			$event->category		= $fields['category'];
 			
 			$success_event = $event->save();
 			$success_price1 = true;

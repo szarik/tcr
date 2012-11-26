@@ -118,7 +118,7 @@ label[for*='form_'] {
 
 .round_frame {
 	font-size: 10pt;
-	-moz-border-radius: 40px;
+	-moz-border-radius: 40px; 
     -webkit-border-radius: 30px;
     -khtml-border-radius: 30px;
     border-radius: 40px;
@@ -126,15 +126,15 @@ label[for*='form_'] {
 	padding: 10px;
 }
 
-.report_page_mail, .report_page_message {
-	width: 97%;
+.report_page_field, .report_page_message {
+	width: 100%;
 }
 
 .report_page_message {
 	height: 200px;
 }
 
-#report_page_div {
+.report_page_div {
 	width: 400px;
 }
 
