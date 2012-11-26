@@ -1,8 +1,7 @@
-{if isset($config.theme_show_comments) && $config.theme_show_comments == 1} <!-- tabs.tpl start --> {/if}
+{if isset($config.theme_show_comments) && $config.theme_show_comments == 1} <!-- event.tpl start --> {/if}
 <div class="tabbable" style="margin-bottom: 18px;">
 <ul class="nav nav-tabs" id="xmyTab">
-    <li {if isset($smarty.get.strona) && $smarty.get.strona == "wydarzenia"}class="active"{/if}
-        {if empty($smarty.get.strona)}class="active"{/if}>
+    <li {if isset($smarty.get.strona) && $smarty.get.strona == "wydarzenia"}class="active"{/if}>
         <a href="#tab1" data-toggle="tab">Wydarzenia</a>
     </li>
     <li {if isset($smarty.get.strona) && $smarty.get.strona == "lokalizator"}class="active"{/if}>
@@ -14,43 +13,39 @@
 </ul>
 
 <div class="tab-content" style="padding-bottom: 9px; border-bottom: 1px solid #ddd; height:100%;">
-<div class="tab-pane {if isset($smarty.get.strona) && $smarty.get.strona == "wydarzenia"}active{/if} 
-                     {if !isset($smarty.get.strona)}active{/if}" id="tab1">
+<div class="tab-pane {if isset($smarty.get.strona) && $smarty.get.strona == "wydarzenia"}active{/if}" id="tab1">
     <p>
 
 
 
         {$zmienna = -1} 
         {foreach from=$events item=event}
-        	
-            {if $event->visible == 1}
-                {$zmienna = $zmienna + 1}
-                
-                {if $zmienna%3 == 0}
-                <div class="row-fluid">
-                <ul class="thumbnails">
-                {/if}
-                
-                    <li class="span4">
-                        <div class="thumbnail">
-                            <img src="{$event->link_photo}" alt="" class="event-image">
-        
-                            <div class="caption" style="margin-top:180px;">
-                                <h3>{$event->name}</h3>
-            <span class="label">{$event->date_start}</span>
-            <span class="label label-info">
-            {$event->preferences|replace:'single':'single'|replace:'couple':'pary'|replace:'group':'grupy'}</span>
-                                <p>{$event->description}</p>
-        
-                                <p><a href="wydarzenia/wydarzenie/{$event->id}" class="btn btn-primary">Zobacz</a> <a href="#" class="btn">JakDojade</a></p>
-                            </div>
+        	{$zmienna = $zmienna + 1}
+            
+        	{if $zmienna%3 == 0}
+            <div class="row-fluid">
+            <ul class="thumbnails">
+            {/if}
+            
+                <li class="span4">
+                    <div class="thumbnail">
+                        <img src="{$event->link_photo}" alt="" class="event-image">
+    
+                        <div class="caption" style="margin-top:180px;">
+                            <h3>{$event->name}</h3>
+     	<span class="label">{$event->date_start}</span>
+        <span class="label label-info">
+        {$event->preferences|replace:'single':'single'|replace:'couple':'pary'|replace:'group':'grupy'}</span>
+                            <p>{$event->description}</p>
+    
+                            <p><a href="#{$event->place_id}" class="btn btn-primary">Zobacz</a> <a href="#" class="btn">JakDojade</a></p>
                         </div>
-                    </li>
-                
-                {if $zmienna%3 == 2} 
-                </ul>
-                </div>
-                {/if}
+                    </div>
+                </li>
+            
+			{if $zmienna%3 == 2} 
+            </ul>
+    		</div>
             {/if}
 
         {/foreach}
@@ -200,21 +195,21 @@
 
         <div class="row">
             <div class="span4" style="padding-left:40px;">
-                <h3>{$selected_place->name}</h3>
+                <h3>{$selected_place->nazwa}</h3>
 
-                <p>Adres: {$selected_place->address_street_name}, {$selected_place->address_city} </p>
+                <p>Adres: {$selected_place->adres}, {$selected_place->miasto} </p>
 
-                <p>Telefon: {$selected_place->phone} </p>
+                <p>Telefon: {$selected_place->telefon} </p>
 
-                <p>Strona www: {$selected_place->website} </p>
+                <p>Strona www: {$selected_place->strona_www} </p>
 
                 <p>Email: {$selected_place->email} </p>
 
-                <p>Godziny otwarcia: {$selected_place->open_time} </p>
+                <p>Godziny otwarcia: {$selected_place->godziny_otwarcia} </p>
 
                 <p>Wstęp: {$selected_place->wstep} </p>
 
-                <p>Opis: {$selected_place->description} </p>
+                <p>Opis: {$selected_place->opis} </p>
             </div>
             <div class="span8">
                 <div id="mapka" style="width: 570px; height: 500px; border: 1px solid black; background: gray;">
@@ -236,7 +231,7 @@
 
                 <li class="span5">
                     <h4>
-                        <a href="miejsca/miejsce/{$place->id}">{$place->name}</a>
+                        <a href="?kategoria={$smarty.get.kategoria|default:''}&strona={$smarty.get.strona|default:''}&lokal={$place->id}">{$place->nazwa}</a>
                     </h4>
                 </li>
 

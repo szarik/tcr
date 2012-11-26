@@ -3,41 +3,22 @@
 <ol>
 <li>Niniejszy regulamin określa zasady korzystania z serwisu 
 internetowego <strong>ToCoRobimy.pl</strong></li>
-<li>Operatorem serwisu jest spółka Populi sp. z o.o.. z siedzibą w 
-Piasecznie - Julianowie, przy ul. Kombatantów 61 zarejestrowana w 
-Krajowym Rejestrze Sądowym pod numerem KRS 141736460</li>
+<li>Operatorem serwisu jest Hanus Commercial Arts z siedzibą we 
+Wrocławiu, przy ul. Piastowskiej 38/20 zarejestrowana w  pod numerem NIP 898-207-69-49</li>
 <li>Użyte w niniejszym Regulaminie określenia mają następujące 
 znaczenie:
 	<ul>
-		<li><strong>Operator</strong> &ndash; www.ToCoRobimy.pl, Populi sp. Z o.o.</li>
+		<li><strong>Operator</strong> &ndash; www.ToCoRobimy.pl, Hanus Commercial Arts</li>
 		<li><strong>Serwis</strong> &ndash; usługa polegająca na udostępnieniu 
 danych i umożliwieniu ich wprowadzania przez Użytkowników, dostępna pod 
-adresem www.totuam.pl. składająca się m.in. Z modułu zapisywania 
-preferencji użytkowników, modułu edytowania preferencji przez 
-użytkowników, modułu tworzenia i edycji profilu użytkownika, modułu 
-kierowania użytkowników na strony partnerów.</li>
+adresem www.tocorobimy.pl. 
+
 		<li><strong>Użytkownik</strong> &ndash; osoba fizyczna korzystająca z 
 Serwisu przez odbieranie z niego lub umieszczanie w nim danych;</li>
-		<li><strong>Użytkownik Zarejestrowany</strong> &ndash; Użytkownik, który 
-dokonał Rejestracji Pełnej lub Rejestracji Ograniczonej;</li>
-		<li><strong>Profil</strong> &mdash; strona Użytkownika zawierająca dane oraz
- zdjęcia udostępnione przez niego dobrowolnie w Serwisie, z którymi mogą
- się zapoznać inni Użytkownicy, jak również które może wykorzystywać 
-Operator na warunkach określonych w niniejszym Regulaminie;</li>
-		<li><strong>Materiał</strong> &ndash; tekst, obrazy, odsyłacze (linki) lub 
+		<li><strong>Wydarzenie</strong> &ndash; tekst, obrazy, odsyłacze (linki) lub 
 jakiekolwiek inne dane przekazane do Serwisu za pomocą odpowiedniej 
 procedury elektronicznej i oznaczone jako mające zostać opublikowane w 
-www.totuam.pl</li>
-		<li><strong>Wizerunek</strong> &ndash; rozpoznawalna i aktualna podobizna 
-Użytkownika, zamieszczona przez Użytkownika w jego profilu 
-www.ToCoRobimy.pl.;</li>
-		<li><strong>Rejestracja</strong> &ndash; Rejestracja Ograniczona lub 
-Rejestracja Pełna;</li>
-		<li><strong>Rejestracja Ograniczona</strong> &ndash; rejestracja w Serwisie z
- podaniem następujących danych osobowych: imienia, nazwiska, miasta 
-zamieszkania i adresu poczty elektronicznej (adresu e &ndash; mail);</li>
-		<li><strong>Rejestracja Pełna</strong> - Rejestracja Ograniczona 
-uzupełniona o Wizerunek.</li>
+www.ToCoRobimy.pl</li>
 	</ul>
 </li>
 <li>Korzystanie z Serwisu w inny sposób niż w ramach dozwolonego użytku 
@@ -54,8 +35,7 @@ lub wpisy na forum internetowym dostępnym w Serwisie sprzeczne z prawem,
 lub dobra osobiste, lub sprzeczne z dobrymi obyczajami. Informacje o 
 takich Materiałach, komentarzach, wypowiedziach lub wpisach na forum 
 internetowym dostępnym w Serwisie należy zgłaszać Operatorowi lub za 
-pomocą poczty elektronicznej, na adres
-kontakt@populi.com.pl.</li>
+pomocą formularza dostępnego na stronie.</li>
 <li>Operator nie ponosi odpowiedzialności za prawdziwość zamieszczonych w
  Serwisie treści a w szczególności publikowanych wydarzeń, treści 
 zawartych w komentarzach, wypowiedziach lub wpisach na forum 
@@ -137,11 +117,11 @@ odpowiednich danych do Serwisu.</li>
 <h3>§3 UWARUNKOWANIA TECHNICZNE KORZYSTANIA Z SERWISU</h2>
 
 <ol>
-	<li>Właścicielem Serwisu jest Populi sp. z o.o., z siedzibą w 
-Piasecznie - Julianowie., przy ul. Kombatantów 61.</li>
+	<li>Właścicielem Serwisu jest  Commercial Arts z siedzibą we 
+Wrocławiu, przy ul. Piastowskiej 38/20 zarejestrowana w  pod numerem NIP 898-207-69-49.</li>
 	<li>Przedmiotem działalności Serwisu jest prowadzenie przez Operatora 
-bazy kont (Profili) umożliwiających m.in. wyszukiwanie Użytkowników oraz
- zamieszczanie na stronie internetowej www.totuam.pl. materiałów 
+bazy kont  umożliwiających m.in. wyszukiwanie i
+ zamieszczanie na stronie internetowej www.ToCoRobimy.pl. materiałów 
 stanowiących szeroko rozumianą twórczość własną Użytkowników jaki i 
 zamieszczanie na stronach internetowych operatorów współpracujących z 
 Operatorem Serwisu materiałów wyselekcjonowanych z Materiałów 
@@ -158,12 +138,9 @@ oraz baza danych podlegają ochronie prawnej.</li>
 
 <h3>§4 MATERIAŁY I KOMENTARZE</h2>
 <ol>
-	<li>Użytkownik Zarejestrowany, zarówno w sposób Ograniczony jak i Pełny
- jest uprawniony do zamieszczania w Serwisie Materiałów, wypowiedzi, 
+	<li>Użytkownik jest uprawniony do zamieszczania w Serwisie Materiałów, wypowiedzi, 
 komentarzy oraz wpisów na forum dostępnym w Serwisie.</li>
-	<li>Wyłącznie Użytkownik Zarejestrowany w sposób Pełny może zostać 
-uprzywilejowany przez Operatora.</li>
-	<li>W przypadku usunięcia Wizerunku Użytkownik traci przywileje 
+	<li>W przypadku usunięcia Wydarzenia Użytkownik traci przywileje 
 przyznane przez Operatora.</li>
 	<li>Dokonując Rejestracji, Użytkownik upoważnia Operatora do 
 publikowania w Serwisie ToCoRobimy.pl. jego Materiałów, komentarzy lub 
@@ -302,50 +279,7 @@ konta z Serwisu.</li>
 Użytkownika nie wymaga uzasadnienia.
 </li></ol>
 
-<h3>§6 OCHRONA DANYCH OSOBOWYCH</h2>
-<ol>
-	<li>W momencie rejestracji Użytkownik wyraża zgodę na umieszczenie i 
-przetwarzanie jego danych osobowych przez Operatora.</li>
-	<li>Administratorem danych osobowych jest Jacek Niewęgłowski która/y 
-dokonuje przetwarzania danych osobowych Użytkowników zgodnie z 
-przepisami ustawy z dnia 29 sierpnia 1997 roku o ochronie danych 
-osobowych (t. jedn. Dz.U. z 2002 r., nr 101, poz. 926 ze zm.) oraz 
-ustawy z dnia 18 lipca 2002 roku o świadczeniu usług drogą elektroniczną
- (Dz.U. nr 144, poz. 1204 ze zm.).</li>
-	<li>Dane osobowe oraz informacje zawarte w formularzu rejestracyjnym 
-wykorzystywane będą przez Operatora do zawarcia, zmiany, rozwiązania 
-umowy z Użytkownikiem oraz zapewnienia jak najwyższej jakości 
-świadczonych usług.</li>
-	<li>Administrator ma prawo uzależnić świadczenie swoich usług i 
-korzystanie z Serwisu przez Użytkownika od uprzedniego potwierdzenia 
-przez niego danych osobowych o których mowa w niniejszym paragrafie 
-stosownymi dokumentami, poprzez przesłanie kserokopii dokumentu 
-potwierdzającego tożsamość. Nadesłanie kserokopii dokumentu jest 
-dobrowolne. Jeżeli kserokopia dokumentu nie zostanie przesłana lub 
-budzić będzie uzasadnione wątpliwości Administratora, może on odmówić 
-zawarcia umowy.</li>
-	<li>Użytkownik ma prawo wglądu do przetwarzanych danych w każdym 
-czasie, jak również prawo do ich poprawiania oraz żądania ich usunięcia z
- bazy kont (Profili).</li>
-	<li>Użytkownik ma obowiązek aktualizować dane podane w formularzu 
-rejestracyjnym niezwłocznie po każdej zmianie tych danych.</li>
-	<li>W przypadku powzięcia przez Administratora wątpliwości, co do 
-zgodności z prawdą bądź aktualności podanych przez Użytkownika danych w 
-formularzu rejestracyjnym, uzyskuje on uprawnienie do podjęcia 
-następujących czynności:
-		<ul>
-			<li>wezwania Użytkownika do niezwłocznego usunięcia nieprawdziwych 
-danych bądź aktualizacji danych;</li>
-			<li>natychmiastowego zablokowania Konta do czasu wyjaśnienia sprawy;</li>
-		</ul>
-	</li>
-	<li>Administrator uprawniony jest do ujawnienia danych osobowych 
-wyłącznie podmiotom upoważnionym na podstawie właściwych przepisów 
-prawa, zgodnie z zasadami Polityki Ochrony Prywatności, postanowieniami 
-Regulaminu i obowiązującymi przepisami prawa.</li>
-</ol>
-
-<h3>§7 ZASADY KORZYSTANIA Z SERWISU</h2>
+<h3>§6 ZASADY KORZYSTANIA Z SERWISU</h2>
 <ol>
 	<li>Zawierając umowę z Operatorem, Użytkownik zobowiązuje się w 
 szczególności do:
@@ -386,12 +320,9 @@ osób. Zabrania się również rozsyłania spamu i niezamówionej informacji
 handlowej oraz uprawiania działalności komercyjnej, reklamowej, 
 promocyjnej itp.</li>
 
-	<li>Logo Serwisu podlega ochronie prawnej i jako takie nie może być 
-wykorzystywane w jakikolwiek sposób przez Użytkownika bez zgody 
-Operatora.</li>
 </ol>
 
-<h3>§8 REKLAMA W SERWISIE</h2>
+<h3>§7 REKLAMA W SERWISIE</h2>
 <ol>
 	<li>Niedopuszczalne są jakiekolwiek działania użytkowników związane z 
 wykorzystywaniem uzyskanych za pośrednictwem serwisu informacji 
@@ -417,7 +348,7 @@ prowadzenie Serwisu internetowego, Operator nie ponosi odpowiedzialności
 przez użytkowników w Serwisie, w tym reklamy.</li>
 </ol>
 
-<h3>§9 BLOKADA KONTA</h2>
+<h3>§8 BLOKADA KONTA</h2>
 <ol>
 <li>Operator zastrzega sobie prawo do zablokowania Konta Użytkownika, 
 którego działania uzna za szkodliwe dla Serwisu bądź innych 
@@ -487,7 +418,7 @@ powstaną (np. wirusy komputerowe, trojany, wiadomości spam). Operator
 nie ponosi odpowiedzialności za szkody Użytkownika powstałe w skutek 
 korzystania przez niego z Serwisu.</li>
 	<li>Regulamin jest dostępny pod adresem 
-www.ToCoRobimy.pl/s/page/regulamin.</li>
+www.ToCoRobimy.pl/strona/regulamin.</li>
 	<li>Operator zastrzega sobie prawo do jednostronnej zmiany postanowień 
 Regulaminu w każdej chwili i bez konieczności uzasadniania przyczyny.</li>
 	<li>W przypadku dokonania zmian w Regulaminie, Operator poinformuje o 

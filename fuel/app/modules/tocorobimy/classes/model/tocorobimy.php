@@ -68,7 +68,7 @@ class Tocorobimy extends \Model
 	 */
 	public static function get_places($_places = null, $_limit = null, $_offset = null)
 	{
-		$_query = \DB::select("*")->from('tcr_lokale');
+		$_query = \DB::select("*")->from('places');
 
 		if ($_places !== null) {
 			$_query->where('id', 'IN', $_places);
