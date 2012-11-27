@@ -1,8 +1,7 @@
-{if isset($config.theme_show_comments) && $config.theme_show_comments == 1} <!-- tabs.tpl start --> {/if}
+{if isset($config.theme_show_comments) && $config.theme_show_comments == 1} <!-- event.tpl start --> {/if}
 <div class="tabbable" style="margin-bottom: 18px;">
 <ul class="nav nav-tabs" id="xmyTab">
-    <li {if isset($smarty.get.strona) && $smarty.get.strona == "wydarzenia"}class="active"{/if}
-        {if empty($smarty.get.strona)}class="active"{/if}>
+    <li {if isset($smarty.get.strona) && $smarty.get.strona == "wydarzenia"}class="active"{/if}>
         <a href="#tab1" data-toggle="tab">Wydarzenia</a>
     </li>
     <li {if isset($smarty.get.strona) && $smarty.get.strona == "lokalizator"}class="active"{/if}>
@@ -14,50 +13,39 @@
 </ul>
 
 <div class="tab-content" style="padding-bottom: 9px; border-bottom: 1px solid #ddd; height:100%;">
-<div class="tab-pane {if isset($smarty.get.strona) && $smarty.get.strona == "wydarzenia"}active{/if} 
-                     {if !isset($smarty.get.strona)}active{/if}" id="tab1">
+<div class="tab-pane {if isset($smarty.get.strona) && $smarty.get.strona == "wydarzenia"}active{/if}" id="tab1">
     <p>
 
 
-		{$ilosc_wyswietlonych_na_stronie = 6}
+
         {$zmienna = -1} 
-        {$licznik = 0}
-        {$wydarzenia_dla_strony = $ilosc_wyswietlonych_na_stronie*($nr_strony-1)}
         {foreach from=$events item=event}
-        	{$licznik = $licznik + 1}
+        	{$zmienna = $zmienna + 1}
             
-            {if $licznik > $wydarzenia_dla_strony}
-                {if $licznik <= $ilosc_wyswietlonych_na_stronie+$wydarzenia_dla_strony}
-                    {if $event->visible == 1}
-                        {$zmienna = $zmienna + 1}
-                        
-                        {if $zmienna%3 == 0}
-                        <div class="row-fluid">
-                        <ul class="thumbnails">
-                        {/if}
-                        
-                            <li class="span4">
-                                <div class="thumbnail">
-                                    <img src="{$event->link_photo}" alt="" class="event-image">
-                
-                                    <div class="caption" style="margin-top:180px;">
-                                        <h4>{$event->name|strip_tags|substr:0:75} {if $event->name|strlen >= 75}...{/if}</h4>
-                    <span class="label">{$event->date_start}</span>
-                    <span class="label label-info">
-                    {$event->preferences|replace:'single':'single'|replace:'couple':'pary'|replace:'group':'grupy'}</span>
-                                        <p>{$event->description|strip_tags|substr:0:150} </p>
-                
-                                        <p><a href="/public/wydarzenia/wydarzenie/{$event->id}" class="btn btn-primary">Zobacz</a> <a href="#" class="btn">JakDojade</a></p>
-                                    </div>
-                                </div>
-                            </li>
-                        
-                        {if $zmienna%3 == 2} 
-                        </ul>
+        	{if $zmienna%3 == 0}
+            <div class="row-fluid">
+            <ul class="thumbnails">
+            {/if}
+            
+                <li class="span4">
+                    <div class="thumbnail">
+                        <img src="{$event->link_photo}" alt="" class="event-image">
+    
+                        <div class="caption" style="margin-top:180px;">
+                            <h3>{$event->name}</h3>
+     	<span class="label">{$event->date_start}</span>
+        <span class="label label-info">
+        {$event->preferences|replace:'single':'single'|replace:'couple':'pary'|replace:'group':'grupy'}</span>
+                            <p>{$event->description}</p>
+    
+                            <p><a href="#{$event->place_id}" class="btn btn-primary">Zobacz</a> <a href="#" class="btn">JakDojade</a></p>
                         </div>
-                        {/if}
-                    {/if}
-                {/if}
+                    </div>
+                </li>
+            
+			{if $zmienna%3 == 2} 
+            </ul>
+    		</div>
             {/if}
 
         {/foreach}
@@ -71,57 +59,6 @@
             </ul>
     		</div>
             {/if}
-        <div align="center" class="pagination">
-    <ul>
-    {$next = $nr_strony +1}
-    {$prev = $nr_strony -1}
-    
-   
-   
-    {$strona = $licznik / $ilosc_wyswietlonych_na_stronie}
-    {$zmienna_pomocnicza = $nr_strony}
-    {$zmienna_w_petli = 0}
-    {$ograniczenie_gorne= 5}
-     {if $strona < 10}
-            {$ogranicznie_dolne = $nr_strony}
-     		{$ograniczenie_gorne = $nr_strony}
-        {else}
-            {$ogranicznie_dolne = $nr_strony-4}
-        	{$ograniczenie_gorne = $nr_strony+4}
-      {/if}
-      
-    {if $prev <= 0}
-    	{$prev = 1}
-    {/if}
-    
-    
-    {if $next > $strona}
-   	 {$next = $strona}
-    {/if}
-   
-    {if $prev != 1}
-    <li><a href="/public//wydarzenia/strona/{$prev}">Poprzednia</a></li>
-   {/if}
-   
-    {for $zmienna_pomocnicza=$ogranicznie_dolne to $ograniczenie_gorne}  
-    		 {if $zmienna_pomocnicza <= $strona}
-             {if $zmienna_pomocnicza > 0}
-              <li><a href="/public/wydarzenia/strona/{$zmienna_pomocnicza}">{if $zmienna_pomocnicza == $nr_strony} <b>{$zmienna_pomocnicza}</b>{else} {$zmienna_pomocnicza}{/if}</a></li>
-			{/if}
-            {/if}
-    {/for}
-    {if $next != $strona}
-    <a href="/public/wydarzenia/strona/{$next}">Następna</a></li>
-    {/if}
-    <!-- {while $zmienna_pomocnicza < 10+$nr_strony}
-    
-       {$zmienna_w_petli = $zmienna_w_petli + 1}
-       {$zmienna_pomocnicza = $zmienna_pomocnicza + 1}
-    		  <li><a href="{$zmienna_pomocnicza}">{$zmienna_pomocnicza}</a></li>
-
-    {/while} -->
-    </ul>
-    </div>
     </p>
 </div>
 
@@ -258,21 +195,21 @@
 
         <div class="row">
             <div class="span4" style="padding-left:40px;">
-                <h3>{$selected_place->name}</h3>
+                <h3>{$selected_place->nazwa}</h3>
 
-                <p>Adres: {$selected_place->address_street_name}, {$selected_place->address_city} </p>
+                <p>Adres: {$selected_place->adres}, {$selected_place->miasto} </p>
 
-                <p>Telefon: {$selected_place->phone} </p>
+                <p>Telefon: {$selected_place->telefon} </p>
 
-                <p>Strona www: {$selected_place->website} </p>
+                <p>Strona www: {$selected_place->strona_www} </p>
 
                 <p>Email: {$selected_place->email} </p>
 
-                <p>Godziny otwarcia: {$selected_place->open_time} </p>
+                <p>Godziny otwarcia: {$selected_place->godziny_otwarcia} </p>
 
                 <p>Wstęp: {$selected_place->wstep} </p>
 
-                <p>Opis: {$selected_place->description} </p>
+                <p>Opis: {$selected_place->opis} </p>
             </div>
             <div class="span8">
                 <div id="mapka" style="width: 570px; height: 500px; border: 1px solid black; background: gray;">
@@ -294,7 +231,7 @@
 
                 <li class="span5">
                     <h4>
-                        <a href="miejsca/miejsce/{$place->id}">{$place->name}</a>
+                        <a href="?kategoria={$smarty.get.kategoria|default:''}&strona={$smarty.get.strona|default:''}&lokal={$place->id}">{$place->nazwa}</a>
                     </h4>
                 </li>
 
