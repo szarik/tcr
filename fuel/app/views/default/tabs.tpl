@@ -24,7 +24,6 @@
         {$licznik = 0}
         {$wydarzenia_dla_strony = $ilosc_wyswietlonych_na_stronie*($nr_strony-1)}
         {foreach from=$events item=event}
-<<<<<<< HEAD
         	{$licznik = $licznik + 1}
             
             {if $licznik > $wydarzenia_dla_strony}
@@ -46,6 +45,13 @@
                     <span class="label">{$event->date_start}</span>
                     <span class="label label-info">
                     {$event->preferences|replace:'single':'single'|replace:'couple':'pary'|replace:'group':'grupy'}</span>
+                    <span class="label label-success">
+                    {foreach from=$event_categories item=category}
+						{if $event->category_id == $category['id']}
+                        {$category['name']} 
+						{/if} 
+	    			{/foreach}
+                    </span>
                                         <p>{$event->description|strip_tags|substr:0:150} </p>
                 
                                         <p><a href="/public/wydarzenia/wydarzenie/{$event->id}" class="btn btn-primary">Zobacz</a> <a href="#" class="btn">JakDojade</a></p>
@@ -58,38 +64,8 @@
                         </div>
                         {/if}
                     {/if}
-=======
         	
-            {if $event->visible == 1}
-                {$zmienna = $zmienna + 1}
-                
-                {if $zmienna%3 == 0}
-                <div class="row-fluid">
-                <ul class="thumbnails">
-                {/if}
-                
-                    <li class="span4">
-                        <div class="thumbnail">
-                            <img src="{$event->link_photo}" alt="" class="event-image">
-        
-                            <div class="caption" style="margin-top:180px;">
-                                <h3>{$event->name}</h3>
-            <span class="label">{$event->date_start}</span>
-            <span class="label label-info">
-            {$event->preferences|replace:'single':'single'|replace:'couple':'pary'|replace:'group':'grupy'}</span>
-                                <p>{$event->description}</p>
-        
-                                <p><a href="wydarzenia/wydarzenie/{$event->id}" class="btn btn-primary">Zobacz</a> <a href="#" class="btn">JakDojade</a></p>
-                            </div>
-                        </div>
-                    </li>
-                
-                {if $zmienna%3 == 2} 
-                </ul>
-                </div>
->>>>>>> origin/master
-                {/if}
-            {/if}
+{/if}{/if}
 
         {/foreach}
         
@@ -105,17 +81,17 @@
         <div align="center" class="pagination">
     <ul>
     {$next = $nr_strony +1}
-    {$prev = $nr_strony -1}
+    {$prev = $nr_strony }
     
    
-   
     {$strona = $licznik / $ilosc_wyswietlonych_na_stronie}
+{$strona = $strona +1}
     {$zmienna_pomocnicza = $nr_strony}
     {$zmienna_w_petli = 0}
     {$ograniczenie_gorne= 5}
      {if $strona < 10}
             {$ogranicznie_dolne = $nr_strony}
-     		{$ograniczenie_gorne = $nr_strony}
+     		{$ograniczenie_gorne = $nr_strony+5}
         {else}
             {$ogranicznie_dolne = $nr_strony-4}
         	{$ograniczenie_gorne = $nr_strony+4}
@@ -125,24 +101,50 @@
     	{$prev = 1}
     {/if}
     
-    
     {if $next > $strona}
    	 {$next = $strona}
     {/if}
    
-    {if $prev != 1}
-    <li><a href="/public//wydarzenia/strona/{$prev}">Poprzednia</a></li>
-   {/if}
    
+   
+   {if empty($kategoriaa)}
+            {if $prev != 1}
+        <li><a href="/public/wydarzenia/strona/{$prev-1}">Poprzednia</a></li>
+       {/if}
+	{else}  
+         {if $prev != 1}
+        <li><a href="/public/wydarzenia/strona/{$prev-1}?kategoria={$kategoriaa}">Poprzednia</a></li>
+       {/if} 
+    {/if}
+
+   {$ogranicznie_dolne = $ogranicznie_dolne -4}
+   
+
     {for $zmienna_pomocnicza=$ogranicznie_dolne to $ograniczenie_gorne}  
     		 {if $zmienna_pomocnicza <= $strona}
              {if $zmienna_pomocnicza > 0}
-              <li><a href="/public/wydarzenia/strona/{$zmienna_pomocnicza}">{if $zmienna_pomocnicza == $nr_strony} <b>{$zmienna_pomocnicza}</b>{else} {$zmienna_pomocnicza}{/if}</a></li>
+             
+             	{if empty($kategoriaa)}
+             
+             		 <li><a href="/public/wydarzenia/strona/{$zmienna_pomocnicza}">
+                     	{if $zmienna_pomocnicza == $nr_strony} <b>{$zmienna_pomocnicza}</b>{else} {$zmienna_pomocnicza}{/if}</a></li>
+				{else}
+                	<li><a href="/public/wydarzenia/strona/{$zmienna_pomocnicza}?kategoria={$kategoriaa}">
+                     	{if $zmienna_pomocnicza == $nr_strony} <b>{$zmienna_pomocnicza}</b>{else} {$zmienna_pomocnicza}{/if}</a></li>
+                {/if}
 			{/if}
             {/if}
     {/for}
-    {if $next != $strona}
-    <a href="/public/wydarzenia/strona/{$next}">Następna</a></li>
+    
+
+	{if empty($kategoriaa)}
+        {if $next != $strona}
+        <a href="/public/wydarzenia/strona/{$next}">Następna</a></li>
+        {/if}
+	{else}  
+     {if $next != $strona}
+        <a href="/public/wydarzenia/strona/{$next}?kategoria={$kategoriaa}">Następna</a></li>
+        {/if}  
     {/if}
     <!-- {while $zmienna_pomocnicza < 10+$nr_strony}
     

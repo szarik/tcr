@@ -51,6 +51,7 @@ class Theme
 				\Input::get('kategoria') ? array(\Input::get('kategoria')) : array(),
 				\Input::get('preferencja') ? array(\Input::get('preferencja')) : array());
 		$params->set('events', $events, false);
+		$params->set('kategoriaa',\Input::get('kategoria'));
 
 		// Header
 		//		search form by address
