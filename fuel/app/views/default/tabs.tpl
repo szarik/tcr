@@ -24,6 +24,7 @@
         {$licznik = 0}
         {$wydarzenia_dla_strony = $ilosc_wyswietlonych_na_stronie*($nr_strony-1)}
         {foreach from=$events item=event}
+<<<<<<< HEAD
         	{$licznik = $licznik + 1}
             
             {if $licznik > $wydarzenia_dla_strony}
@@ -57,6 +58,36 @@
                         </div>
                         {/if}
                     {/if}
+=======
+        	
+            {if $event->visible == 1}
+                {$zmienna = $zmienna + 1}
+                
+                {if $zmienna%3 == 0}
+                <div class="row-fluid">
+                <ul class="thumbnails">
+                {/if}
+                
+                    <li class="span4">
+                        <div class="thumbnail">
+                            <img src="{$event->link_photo}" alt="" class="event-image">
+        
+                            <div class="caption" style="margin-top:180px;">
+                                <h3>{$event->name}</h3>
+            <span class="label">{$event->date_start}</span>
+            <span class="label label-info">
+            {$event->preferences|replace:'single':'single'|replace:'couple':'pary'|replace:'group':'grupy'}</span>
+                                <p>{$event->description}</p>
+        
+                                <p><a href="wydarzenia/wydarzenie/{$event->id}" class="btn btn-primary">Zobacz</a> <a href="#" class="btn">JakDojade</a></p>
+                            </div>
+                        </div>
+                    </li>
+                
+                {if $zmienna%3 == 2} 
+                </ul>
+                </div>
+>>>>>>> origin/master
                 {/if}
             {/if}
 

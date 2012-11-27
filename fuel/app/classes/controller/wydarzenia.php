@@ -6,6 +6,7 @@ class Controller_Wydarzenia extends Controller_Ines_Site
 	{
 		$view = View::forge('default/tabs.smarty');
 		$this->_tpl->set('body', $view);
+<<<<<<< HEAD
 		$this->action_strona(1);
 		return $this->_tpl;// = View::forge('default/frontpage.smarty');
 	}
@@ -18,6 +19,12 @@ class Controller_Wydarzenia extends Controller_Ines_Site
 		$this->_tpl->set('nr_strony', $nr_strony);
 		return $this->_tpl;// = View::forge('default/frontpage.smarty');
 	}
+=======
+		
+		return $this->_tpl;// = View::forge('default/frontpage.smarty');
+	}
+
+>>>>>>> origin/master
 	public function action_wydarzenie($id_wydarzenia)
 	{
 
