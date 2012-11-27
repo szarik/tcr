@@ -34,8 +34,6 @@ class Categories
 	 */
 	public function get($events = null)
 	{
-
-
 		if ($events === null) {
 			// Get all categories if null
 			return Model::get_categories();
