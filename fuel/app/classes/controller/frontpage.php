@@ -24,7 +24,8 @@ class Controller_Frontpage extends Controller_Ines_Site
 		$this->_tpl->set('nr_strony', $nr_strony);
 		return $this->_tpl;// = View::forge('default/frontpage.smarty');
 		*/
-		echo  $result = Request::forge('wydarzenia/strona/1')->execute();
+	 	echo Request::forge('wydarzenia/strona/1')->execute();
+		die();
 		
 	}
 }
