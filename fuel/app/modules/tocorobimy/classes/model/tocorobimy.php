@@ -127,14 +127,12 @@ class Tocorobimy extends \Model
 		}
 		if (!empty($_preferences))
 		{
-			if( $where_used )
+			$_query->where_open();
+			foreach($_preferences as $preference) 
 			{
-				$_query->and_where('preferences', 'IN', $_preferences);
+				$_query->or_where('preferences', 'like', '%'.$preference.'%');
 			}
-			else 
-			{
-				$_query->where('preferences', 'IN', $_preferences);
-			}
+			$_query->where_close();
 		}
 		$_query->order_by('id', 'desc');
 		
