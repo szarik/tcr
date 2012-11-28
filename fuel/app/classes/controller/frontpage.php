@@ -19,8 +19,12 @@ class Controller_Frontpage extends Controller_Ines_Site
 	 */
 	public function action_index()
 	{
-		$view = View::forge('default/tabs.smarty');
+		/*$view = View::forge('default/tabs.smarty');
 		$this->_tpl->set('body', $view);
+		$this->_tpl->set('nr_strony', $nr_strony);
 		return $this->_tpl;// = View::forge('default/frontpage.smarty');
+		*/
+		echo  $result = Request::forge('wydarzenia/strona/1')->execute();
+		
 	}
 }

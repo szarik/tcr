@@ -9,6 +9,17 @@ class Controller_Miejsca extends \Controller_Ines_Site
 		return $this->_tpl;// = View::forge('default/frontpage.smarty');
 	}
 	
+	public function action_miejsce($id_miejsce)
+	{
+
+		$view = View::forge('default/lokale/lokale.smarty');
+		$this->_tpl->set('body', $view);
+		$this->_tpl->set('id_miejsce', $id_miejsce);
+		
+		return $this->_tpl;// = View::forge('default/frontpage.smarty');
+		
+	}
+	
 	//add new place
 	function action_dodaj()
 	{

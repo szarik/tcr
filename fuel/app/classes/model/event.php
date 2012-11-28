@@ -1,7 +1,10 @@
 <?php
+
+use Tocorobimy\Model\Tocorobimy;
+
 class Model_Event extends \Orm\Model
 {
-	protected static $_has_many = array('event2price'); //'events2metatags', 'events2categories'
+	protected static $_has_many = array('event2price'); //'events2metatags'
 
 	protected static $_properties = array(
       'id',
@@ -54,9 +57,15 @@ class Model_Event extends \Orm\Model
          'data_type' => 'string',
          'label' => 'Polozenie',
 		 'validation' => array('required')
+      ),
+      'category' => array(
+      	'data_type' => 'int',
+      	'label' => 'Kategoria',
+      	//'form' => array('type' => 'select', \Model_Event::get_categories_list() )		//TODO:	jak to kurwa wywolac?!
       )
    );
    
+	
    public static function _validation_is_int($val)
    {
 		if( $val == null )

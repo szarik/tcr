@@ -20,10 +20,10 @@
 {include file="$theme/header.tpl"}
 
 <div class="container">
-
     <div class="row-fluid">
         <div class="span3">
         {include file="$theme/sidebar_nav.tpl"}
+        
         </div>
 
         <div class="span9">

@@ -227,7 +227,8 @@ return array(
 		'packages'  => array(
 			//'ines',
 			'parser',
-			'orm'
+			'orm',
+			'email'
 		),
 
 		/**

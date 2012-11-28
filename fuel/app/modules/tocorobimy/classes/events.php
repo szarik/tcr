@@ -32,28 +32,26 @@ class Events
 	/**
 	 * Get events list
 	 */
-	public function get($events = null)
+	public function get($categories = null)
 	{
-
-
-		if ($events === null) {
+		if ($categories === null) {
 			// Get all events if null
 			return Model::get_events();
 
 		} else {
 			// Get specific events if int or array of ints
 
-			if (!is_array($events)) {
-				$_events[] = (int)$events;
+			if (!is_array($categories)) {
+				$_categories[] = (int)$categories;
 			} else {
-				$_events = (array)$events;
+				$_categories = (array)$categories;
 			}
 
-			if (empty($_events)) {
+			if (empty($_categories)) {
 				return null;
 			}
 
-			return Model::get_events($_events);
+			return Model::get_events($_categories);
 		}
 	}
 

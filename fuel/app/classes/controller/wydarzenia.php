@@ -1,4 +1,5 @@
 <?php
+
 class Controller_Wydarzenia extends Controller_Ines_Site
 {
 	//list events
@@ -6,12 +7,36 @@ class Controller_Wydarzenia extends Controller_Ines_Site
 	{
 		$view = View::forge('default/tabs.smarty');
 		$this->_tpl->set('body', $view);
+
+		$this->action_strona(1);
 		return $this->_tpl;// = View::forge('default/frontpage.smarty');
 	}
 
+
+	function action_strona($nr_strony)
+	{
+		$view = View::forge('default/tabs.smarty');
+		$this->_tpl->set('body', $view);
+		$this->_tpl->set('nr_strony', $nr_strony);
+		return $this->_tpl;// = View::forge('default/frontpage.smarty');
+	}
+
+
+
+	public function action_wydarzenie($id_wydarzenia)
+	{
+
+		$view = View::forge('default/wydarzenie/wydarzenie.smarty');
+		$this->_tpl->set('body', $view);
+		$this->_tpl->set('id_wydarzenia', $id_wydarzenia);
+		
+		return $this->_tpl;// = View::forge('default/frontpage.smarty');
+		
+	}
+	
 	function action_dodaj()
 	{
-		$fieldset = Fieldset::forge('form_event')->add_model('Model_Event');
+		$fieldset = Fieldset::forge('form_event')->add_model('Model_Event')->repopulate();
 		
 		//custom validations
 		$val = Validation::instance('form_event');
@@ -40,6 +65,7 @@ class Controller_Wydarzenia extends Controller_Ines_Site
 			$event->date_end		= $fields['date_end'];
 			$event->preferences		= Model_Event::flatten($fields['preferences']);
 			$event->coordinates		= $fields['coordinates'];
+			$event->category		= $fields['category'];
 			
 			$success_event = $event->save();
 			$success_price1 = true;
