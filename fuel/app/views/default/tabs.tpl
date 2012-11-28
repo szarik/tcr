@@ -38,20 +38,41 @@
                         
                             <li class="span4">
                                 <div class="thumbnail">
-                                    <img src="{$event->link_photo}" alt="" class="event-image">
-                
+                                    {if empty($event->link_photo) or $event->link_photo == "http://pik.wroclaw.pl/"}
+                                    <img src="http://www.dev.tocorobimy.pl/public/assets/img/brak-foty.png" alt="" class="event-image" />
+                                    {else}
+                                    <img src="{$event->link_photo}" alt="" class="event-image" />
+               						{/if}
                                     <div class="caption" style="margin-top:180px;">
-                                        <h4>{$event->name|strip_tags|substr:0:75} {if $event->name|strlen >= 75}...{/if}</h4>
-                    <span class="label">{$event->date_start}</span>
-                    <span class="label label-info">
-                    {$event->preferences|replace:'single':'single'|replace:'couple':'pary'|replace:'group':'grupy'}</span>
+                                   
+                                        <h4>{$event->name|strip_tags|substr:0:70}{if $event->name|strlen >= 70}...{/if}</h4>
+                    <span class="label label-important">
+                    {foreach from=$places item=place}
+                		{if $place->id == $event->place_id}
+                    		{$place->name|strip_tags|substr:0:38}{if $place->name|strlen >= 38}...{/if}
+                    	{/if}
+                    {/foreach}
+                    </span>
+                   <!-- |replace:'Tuesday':'Wtorek'|
+                    replace:'Wednesday:'Środa'|
+                    replace:'Thursday':'Czwartek'|
+                    replace:'Friday':'Piątek'|
+                    replace:'Saturday':'Sobota'
+                    |replace:'Sunday':'Niedziela' -->
+                    <br />
+                    <span class="label">{$event->date_start|date_format:"%A, %H:%M %e-%m-%Y"|replace:'Monday':'Poniedziałek'|replace:'Tuesday':'Wtorek'|replace:'Wednesday':'Środa'|replace:'Thursday':'Czwartek'|replace:'Friday':'Piątek'|replace:'Saturday':'Sobota'|replace:'Sunday':'Niedziela'}</span> <br />
+                    
                     <span class="label label-success">
                     {foreach from=$event_categories item=category}
 						{if $event->category_id == $category['id']}
                         {$category['name']} 
 						{/if} 
 	    			{/foreach}
-                    </span>
+                    </span><br />
+                    <span class="label label-info">
+                    {$event->preferences|replace:'single':'single'|replace:'couple':'pary'|replace:'group':'grupy'}</span><br />
+                    
+                    
                                         <p>{$event->description|strip_tags|substr:0:150} </p>
                 
                                         <p><a href="/public/wydarzenia/wydarzenie/{$event->id}" class="btn btn-primary">Zobacz</a> <a href="#" class="btn">JakDojade</a></p>
@@ -237,55 +258,7 @@
 
 
 
-    <div class="thumbnail">
-        <script type="text/javascript">
-            var mapa;    // obiekt globalny
-            var dymek;    // okno z informacjami
-            var geokoder = new google.maps.Geocoder();
-
-            function mapaStart() {
-                var wspolrzedne = new google.maps.LatLng(53.429805, 14.537883);
-                var opcjeMapy = {
-                    zoom:15,
-                    center:wspolrzedne,
-                    mapTypeId:google.maps.MapTypeId.ROADMAP,
-                    disableDefaultUI:true,
-                    navigationControl:true,
-                    mapTypeControl:true,
-                    scaleControl:true
-                };
-                mapa = new google.maps.Map(document.getElementById("mapka"), opcjeMapy);
-                dymek = new google.maps.InfoWindow();
-
-                {literal}geokoder.geocode({address:"{/literal}{$selected_place->miasto}, {$selected_place->adres}{literal}"}, obslugaGeokodowania);{/literal}
-            }
-
-            function obslugaGeokodowania(wyniki, status) {
-                var rozmiar = new google.maps.Size(32, 32);
-                var rozmiar_cien = new google.maps.Size(59, 32);
-                var punkt_startowy = new google.maps.Point(0, 0);
-                var punkt_zaczepienia = new google.maps.Point(16, 16);
-
-                var ikona = new google.maps.MarkerImage("http://www.google.com/intl/en_ALL/mapfiles/marker.png", rozmiar, punkt_startowy, punkt_zaczepienia);
-                var cien = new google.maps.MarkerImage("http://www.google.com/intl/en_ALL/mapfiles/shadow50.png", rozmiar_cien, punkt_startowy, punkt_zaczepienia);
-
-                if (status == google.maps.GeocoderStatus.OK) {
-                    mapa.setCenter(wyniki[0].geometry.location);
-                    var marker = new google.maps.Marker(
-                            {
-                                map:mapa,
-                                position:wyniki[0].geometry.location,
-                                icon:ikona,
-                                shadow:cien
-                            }
-                    );
-                    dymek.open(mapa, marker);
-                    dymek.setContent('<center><h3>{$selected_place->nazwa}</h3>{$selected_place->adres}, {$selected_place->miasto}<br />{$selected_place->telefon}</center>');
-                }
-                else {
-                    alert("Nie znalazłem podanego adresu!");
-                }
-            }
+  
         </script>
 
 
@@ -293,7 +266,7 @@
             <div class="span4" style="padding-left:40px;">
                 <h3>{$selected_place->name}</h3>
 
-                <p>Adres: {$selected_place->address_street_name}, {$selected_place->address_city} </p>
+                <p>Adress: {$selected_place->address_street_name}, {$selected_place->address_city} </p>
 
                 <p>Telefon: {$selected_place->phone} </p>
 
