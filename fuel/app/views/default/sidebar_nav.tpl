@@ -6,7 +6,7 @@
                 class="active"
             {/if}>
         
-            <a href="?kategoria=0">Wszystko  ({$events_all})</a>
+            <a href="1?kategoria=0">Wszystko  ({$events_all})</a>
         
         </li>
     
@@ -16,7 +16,7 @@
 		                class="active" 
 		            {/if}>
 		            
-		            <a style="display: inline" href="?kategoria={$category['id']}">{$category['name']}  ({$category['how_many']})</a>
+		            <a style="display: inline" href="/public/wydarzenia/strona/1?kategoria={$category['id']}">{$category['name']}  ({$category['how_many']})</a>
 		        </li>
 	        {/if}
 	    {/foreach}
@@ -30,8 +30,8 @@
         <li><a href="#">szaleje do rana</a></li>
         
         <li class="nav-header">Kto idzie?</li>
-        <li><a href="?preferencja=single">Sam</a></li>
-        <li><a href="?preferencja=couple">Z dziewczyną/chłopakiem</a></li>
-        <li><a href="?preferencja=group">Ze znajomymi</a></li>
+        <li><a href="/public/wydarzenia/strona/1?preferencja=single">Sam</a></li>
+        <li><a href="/public/wydarzenia/strona/1?preferencja=couple">Z dziewczyną/chłopakiem</a></li>
+        <li><a href="/public/wydarzenia/strona/1?preferencja=group">Ze znajomymi</a></li>
     </ul>
 </div>
