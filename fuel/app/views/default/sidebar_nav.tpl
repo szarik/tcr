@@ -1,5 +1,7 @@
+<!--<div class="span3 bs-docs-sidebar">
+        <ul class="nav nav-list "> -->
 <div class="well sidebar-nav">
-    <ul class="nav nav-list">
+    <ul class="nav nav-list bs-docs-sidenav"> 
     	<li class="nav-header">Wybierz rodzaj wydarzenia</li>
 
         <li	{if !isset($event_categories) || !isset($smarty.get.kategoria) || $smarty.get.kategoria == 0}
@@ -20,7 +22,12 @@
 		        </li>
 	        {/if}
 	    {/foreach}
-
+		<li  class="nav-header">Data</li>
+        	<li><a href="#">Dziś</a></li>
+            <li><a href="#">Jutro</a></li>
+            <li><a href="#">Pojutrze</a></li>
+            <li><a href="#">Kolejne dni</a></li>
+        </li>
         <li class="nav-header">Budżet</li>
         <li><a href="#">od 0 zł do 20 zł</a></li>
         <li><a href="#">do 40 zł</a></li>
