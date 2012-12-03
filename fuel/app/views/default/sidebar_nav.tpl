@@ -4,41 +4,45 @@
     <ul class="nav nav-list bs-docs-sidenav"> 
     	<li class="nav-header">Wybierz rodzaj wydarzenia</li>
 
-        <li	{if !isset($event_categories) || !isset($smarty.get.kategoria) || $smarty.get.kategoria == 0}
+        <li	{if !isset($smarty.get.kategoria)}
                 class="active"
             {/if}>
         
-            <a href="?kategoria=0">Wszystko  ({$events_all})</a>
-        
+            <a href="javascript:ustawFiltr('kategoria', null)">Wszystko  ({$events_all})</a>
         </li>
     
 	    {foreach from=$event_categories item=category}
 	    	{if $category['how_many'] > 0}
-		        <li	{if isset($smarty.get.kategoria) && $smarty.get.kategoria == $category['id']}
+		        <li	{if isset($smarty.get.kategoria) && $category['selected'] == 'true'}
 		                class="active" 
 		            {/if}>
 		            
-		            <a style="display: inline" href="?kategoria={$category['id']}">{$category['name']}  ({$category['how_many']})</a>
+		            <a href="javascript:ustawFiltr('kategoria', '{$category['name']}')">{$category['name']}  ({$category['how_many']})</a>
 		        </li>
 	        {/if}
 	    {/foreach}
 		<li  class="nav-header">Data</li>
-        	<li><a href="#">Dziś</a></li>
-            <li><a href="#">Jutro</a></li>
-            <li><a href="#">Pojutrze</a></li>
-            <li><a href="#">Kolejne dni</a></li>
+        	{foreach from=$dates item=date}
+	        <li {if $date['selected'] == 'true'}
+	                class="active" 
+	            {/if}><a href="javascript:ustawFiltr('data', '{if isset($date['get_param'])}{$date['get_param']}{else}{$date['name']}{/if}')">{$date['name']}</a></li>
+        	{/foreach}
         </li>
         <li class="nav-header">Budżet</li>
-        <li><a href="#">od 0 zł do 20 zł</a></li>
-        <li><a href="#">do 40 zł</a></li>
-        <li><a href="#">do 60 zł</a></li>
-        <li><a href="#">do 80 zł</a></li>
-        <li><a href="#">do 100 zł</a></li>
-        <li><a href="#">szaleje do rana</a></li>
+        {foreach from=$prices item=price}
+        <li {if isset($smarty.get.cena) && $price['selected'] == 'true'}
+                class="active" 
+            {/if}><a href="javascript:ustawFiltr('cena', '{if isset($price['get_param'])}{$price['get_param']}{else}{$price['name']}{/if}')">{$price['name']}</a></li>
+        {/foreach}
+        <li {if !isset($smarty.get.cena)}
+                class="active" 
+            {/if}><a href="javascript:ustawFiltr('cena', null)">Szaleję do rana</a></li>
         
         <li class="nav-header">Kto idzie?</li>
-        <li><a href="?preferencja=single">Sam</a></li>
-        <li><a href="?preferencja=couple">Z dziewczyną/chłopakiem</a></li>
-        <li><a href="?preferencja=group">Ze znajomymi</a></li>
+        {foreach from=$preferences item=preference}
+	        <li {if isset($smarty.get.preferencja) && $preference['selected'] == 'true'}
+	                class="active" 
+	            {/if}><a href="javascript:ustawFiltr('preferencja', '{$preference['name']}')">{$preference['name']}</a></li>
+        {/foreach}
     </ul>
 </div>

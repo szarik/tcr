@@ -115,28 +115,70 @@ class Tocorobimy extends \Model
 		return count($_query->execute());
 	}
 
-	public static function get_events_for_filters($_categories, $_preferences)
+	public static function get_events_for_filters($_categories, $_preferences, $_prices, $_dates)
 	{
-		$_query = \DB::select('*')->from('events');
-		$where_used = false;
+		$_query = \DB::select('*')->from('events')->join('categories')->on('events.category_id', '=', 'categories.id');
 		
 		if (!empty($_categories))
 		{
-			$_query->where('category_id', 'IN', $_categories);
-			$where_used = true;
+			$_query->where(\DB::expr('LOWER(categories.name)'), 'IN', $_categories);
 		}
+		if (!empty($_dates))
+		{
+			$_query->where_open();
+			foreach($_dates as $date)
+			{
+				//	support only for date names at them moment
+				$_query->or_where(\DB::expr('CAST(date_start AS DATE)'), '=', \Tocorobimy\Model\Tocorobimy::datename_to_date(strtolower($date)));
+			}
+			$_query->where_close();
+		}
+		else
+		{
+			//	today
+			$_query->where(\DB::expr('CAST(date_start AS DATE)'), '=', date("Y-m-d"));
+		}
+// 		if (!empty($_prices))
+// 		{
+// 			//TODO:	
+// 			$_query->where_open();
+// 			foreach($_prices as $price)
+// 			{
+// 				$_query->or_where('prices', '...', '%'.$preference.'%');
+// 			}
+// 			$_query->where_close();
+// 		}
 		if (!empty($_preferences))
 		{
 			$_query->where_open();
-			foreach($_preferences as $preference) 
+			foreach($_preferences as $preference)
 			{
 				$_query->or_where('preferences', 'like', '%'.$preference.'%');
 			}
 			$_query->where_close();
 		}
-		$_query->order_by('id', 'desc');
+		
+		$_query->order_by('events.id', 'desc');
 		
 		$_query = $_query->as_object()->execute();
 		return $_query;
+	}
+
+	private static function datename_to_date($_name)
+	{
+		switch($_name)
+		{
+			case "dzis":
+				return date("Y-m-d");
+			case "jutro":
+				$tomorrow = mktime(0, 0, 0, date("m"), date("d")+1, date("y"));
+				return date("Y-m-d", $tomorrow);
+			case "pojutrze":
+				$day_after_tomorrow = mktime(0, 0, 0, date("m"), date("d")+2, date("y"));
+				return date("Y-m-d", $day_after_tomorrow);
+			default:
+				return date("Y-m-d");
+				break;
+		}
 	}
 }
