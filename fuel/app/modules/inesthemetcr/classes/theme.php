@@ -33,23 +33,52 @@ class Theme
 	// Extend default view by theme options
 	public static function extend_view($params, $return)
 	{
-		//	count events for categories
+		//	set categories tabs, their selection and counter for events
 		$categories = \Tocorobimy\Categories::instance()->get();
 		$event_categories = array();
 		foreach($categories as $cat)
 		{
 			$how_many = \Tocorobimy\Model\Tocorobimy::get_number_of_events($cat->id);
-			array_push($event_categories, array('id' => $cat->id, 'name' => $cat->name, 'how_many' => $how_many));
+			array_push($event_categories, array('id' => $cat->id, 'name' => $cat->name,
+						'how_many' => $how_many, 'selected' => (@strstr(\Input::get('kategoria'), $cat->name) ? 'true' : 'false')));
 		}
-		
-		$params->set('event_categories', $event_categories, false);
 		$params->set('events_all', \Tocorobimy\Model\Tocorobimy::get_number_of_events(), false);
+		$params->set('event_categories', $event_categories, false);
+		
+		//	set preferences tabs and their selection
+		$preferences = array();
+		array_push($preferences, array('name' => 'Sam', 'selected' => (@strstr(strtolower(\Input::get('preferencja')), 'sam') ? 'true' : 'false')));
+		array_push($preferences, array('name' => 'Para', 'selected' => (@strstr(strtolower(\Input::get('preferencja')), 'para') ? 'true' : 'false')));
+		array_push($preferences, array('name' => 'Grupa', 'selected' => (@strstr(strtolower(\Input::get('preferencja')), 'grupa') ? 'true' : 'false')));
+		$params->set('preferences', $preferences, false);
+		
+		//	set prices tabs and their selection
+		$prices = array();
+		array_push($prices, array('name' => 'od 0 zł do 20 zł', 'get_param' => '0-20','selected' => (@strstr(strtolower(\Input::get('cena')), '0-20') ? 'true' : 'false')));
+		array_push($prices, array('name' => 'do 40 zł', 'get_param' => '0-40','selected' => (@strstr(strtolower(\Input::get('cena')), '0-40') ? 'true' : 'false')));
+		array_push($prices, array('name' => 'do 60 zł', 'get_param' => '0-60','selected' => (@strstr(strtolower(\Input::get('cena')), '0-60') ? 'true' : 'false')));
+		array_push($prices, array('name' => 'do 80 zł', 'get_param' => '0-80','selected' => (@strstr(strtolower(\Input::get('cena')), '0-80') ? 'true' : 'false')));
+		array_push($prices, array('name' => 'do 100 zł', 'get_param' => '0-100','selected' => (@strstr(strtolower(\Input::get('cena')), '0-100') ? 'true' : 'false')));
+		$params->set('prices', $prices, false);
+		
+		//	set dates tabs and their selection
+		$dates = array();
+		array_push($dates, array('name' => 'Dziś', 'get_param' => 'Dzis','selected' => (@strstr(strtolower(\Input::get('data')), 'dzis') || \Input::get('data',null) == null ? 'true' : 'false')));
+		array_push($dates, array('name' => 'Jutro', 'selected' => (@strstr(strtolower(\Input::get('data')), 'jutro') ? 'true' : 'false')));
+		array_push($dates, array('name' => 'Pojutrze', 'selected' => (@strstr(strtolower(\Input::get('data')), 'pojutrze') ? 'true' : 'false')));
+		array_push($dates, array('name' => 'Kolejne dni', 'selected' => /*TODO: */ 'false'));
+		$params->set('dates', $dates, false);
+		
 		$params->set('places', \Tocorobimy\Places::instance()->get(), false);
 		$_r = \Tocorobimy\Places::instance()->get(\Input::get('lokal'));
 		$params->set('selected_place', $_r->current(), false);
+
+		// filter events
 		$events = \Tocorobimy\Model\Tocorobimy::get_events_for_filters(
-				\Input::get('kategoria') ? array(\Input::get('kategoria')) : array(),
-				\Input::get('preferencja') ? array(\Input::get('preferencja')) : array());
+				\Input::get('kategoria') ? explode(',', \Input::get('kategoria')) : array(),
+				\Input::get('preferencja') ? explode(',', \Input::get('preferencja')) : array(),
+				\Input::get('cena') ? explode(',', \Input::get('cena')) : array(),
+				\Input::get('data') ? explode(',', \Input::get('data')) : array());
 		$params->set('events', $events, false);
 
 		// Header

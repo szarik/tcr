@@ -51,7 +51,7 @@ class Model_Event extends \Orm\Model
 	  'preferences' => array(
          'data_type' => 'string',
          'label' => 'Preferencje',
-		 'form' => array('type' => 'checkbox', 'options' => array('single'=>'Jedna osoba', 'couple'=>'Para', 'group'=>'Grupa'))
+		 'form' => array('type' => 'checkbox', 'options' => array('sam'=>'Jedna osoba', 'para'=>'Para', 'grupa'=>'Grupa'))
       ),
 	  'coordinates' => array(
          'data_type' => 'string',

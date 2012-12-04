@@ -79,7 +79,7 @@
 	    			{/foreach}
                     </span><br />
                     <span class="label label-info">
-                    {$event->preferences|replace:'single':'single'|replace:'couple':'pary'|replace:'group':'grupy'}</span><br />
+                    {$event->preferences|replace:'sam':'single'|replace:'para':'pary'|replace:'grupa':'grupy'}</span><br />
                     
                     
                                         <p>{$event->description|strip_tags|substr:0:150} </p>
@@ -173,7 +173,7 @@
         {/if}
 	{else}  
      {if $next != $strona}
-        <a href="/public/wydarzenia/strona/{$next}?kategoria={$kategoriaa}">Następna</a></li>
+        <a href="{$next}?kategoria={$kategoriaa}">Następna</a></li>
         {/if}  
     {/if}
     <!-- {while $zmienna_pomocnicza < 10+$nr_strony}
@@ -332,7 +332,11 @@
         <th>Nazwa</th>
         <th>Lokalizacja</th>
         <th>Data</th>
+<<<<<<< HEAD
         <!--<th>Preferencje>--> 
+=======
+        <!--<th>Preferencje>-->
+>>>>>>> origin/master
         <th>Kategoria</th>
        <!-- <th>Budżet</th>-->
         <th>Przejdź</th>
@@ -363,7 +367,11 @@
 						<tr>
                            <td>
                                     {if empty($event->link_photo) or $event->link_photo == "http://pik.wroclaw.pl/"}
+<<<<<<< HEAD
                                     <img src="http://www.dev.tocorobimy.pl/public/assets/img/brak-foty.png" alt="" class="event-image2" />
+=======
+                                    <img src="http://www.dev.tocorobimy.pl/public/assets/img/brak-foty.png" alt="" class="event-image" />
+>>>>>>> origin/master
                                     {else}
                                     <img src="{$event->link_photo}" alt="" class="event-image2"  style=""/>
                						{/if}
@@ -385,7 +393,11 @@
 						{/if} 
 	    			{/foreach}
                     </td>
+<<<<<<< HEAD
                     <!--<td>{$event->preferences|replace:'single':'single'|replace:'couple':'pary'|replace:'group':'grupy'}</td>
+=======
+                    <!--<td>{$event->preferences|replace:'sam':'single'|replace:'para':'pary'|replace:'grupa':'grupy'}</td>
+>>>>>>> origin/master
                     <td></td>-->
                     <td> <p><a href="/public/wydarzenia/wydarzenie/{$event->id}" class="btn btn-primary">Zobacz</a> <a href="#" class="btn">JakDojade</a></p></td>
                     
