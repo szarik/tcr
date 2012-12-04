@@ -22,18 +22,11 @@
 	        {/if}
 	    {/foreach}
 		<li  class="nav-header">Data</li>
-<<<<<<< HEAD
-        	<li><a href="#">Dziś</a></li>
-            <li><a href="#">Jutro</a></li>
-            <li><a href="#">Pojutrze</a></li>
-            <li><a href="#">Kolejne dni</a> </li>
-=======
         	{foreach from=$dates item=date}
 	        <li {if $date['selected'] == 'true'}
 	                class="active" 
 	            {/if}><a href="javascript:ustawFiltr('data', '{if isset($date['get_param'])}{$date['get_param']}{else}{$date['name']}{/if}')">{$date['name']}</a></li>
         	{/foreach}
->>>>>>> origin/master
         </li>
         <li class="nav-header">Budżet</li>
         {foreach from=$prices item=price}

@@ -59,7 +59,6 @@ function ustawFiltr(filter, value) {
 					}
 				}
 				
-				
 				if(!removed) {
 					new_filter_values += (new_filter_values !== '' ? ',' : '') + value;
 				}
