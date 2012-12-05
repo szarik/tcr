@@ -50,7 +50,7 @@
                                     {if empty($event->link_photo) or $event->link_photo == "http://pik.wroclaw.pl/"}
                                     <img src="http://www.dev.tocorobimy.pl/public/assets/img/brak-foty.png" alt="" class="event-image" />
                                     {else}
-                                    <img src="{$event->link_photo}" alt="" class="event-image" />
+                                    <!-- <img src="{$event->link_photo}" alt="" class="event-image" /> -->
                						{/if}
                                     <div class="caption" style="margin-top:180px;">
                                    
@@ -102,6 +102,45 @@
             </ul>
     		</div>
             {/if}
+            
+        {$znak_zapytania = ""} 
+        {if (isset($smarty.get.kategoria) or isset($smarty.get.preferencja) or isset($smarty.get.cena) or isset($smarty.get.data))}   
+        {$znak_zapytania = "?"}
+        {/if}
+        
+        {$kategoria = ""}
+        {$var_kategoria = ""}
+        
+        {if isset($smarty.get.kategoria)}
+        {$kategoria = "kategoria="}
+        {$var_kategoria = $smarty.get.kategoria}
+        {/if}
+        
+        {$preferencja = ""}
+        {$var_preferencja = ""}
+ 
+        {if isset($smarty.get.preferencja)}
+        {$preferencja = "&preferencja="}
+        {$var_preferencja = $smarty.get.preferencja}
+        {/if}
+        
+        {$cena = ""}
+        {$var_cena = ""}
+        
+        {if isset($smarty.get.cena)}
+        {$cena  = "&cena="}
+        {$var_cena = $smarty.get.cena}
+        {/if}
+        
+        {$data = ""}
+        {$var_data = ""}
+        {if isset($smarty.get.data)}
+        {$data  = "&data="}
+        {$var_data = $smarty.get.data}
+        {/if}
+        
+        {assign var="ogon" value="`$znak_zapytania``$kategoria``$var_kategoria``$preferencja``$var_preferencja``$cena``$var_cena``$data``$var_data`"}
+        
         <div align="center" class="pagination">
     <ul>
     {$next = $nr_strony +1}
@@ -131,15 +170,11 @@
    
    
    
-   {if empty($kategoriaa)}
-            {if $prev != 1}
-        <li><a href="/public/wydarzenia/strona/{$prev-1}">Poprzednia</a></li>
+   
+       {if $prev != 1}
+        <li><a href="/public/wydarzenia/strona/{$prev-1}{$ogon}">Poprzednia</a></li>
        {/if}
-	{else}  
-         {if $prev != 1}
-        <li><a href="/public/wydarzenia/strona/{$prev-1}?kategoria={$kategoriaa}">Poprzednia</a></li>
-       {/if} 
-    {/if}
+	
 
    {$ogranicznie_dolne = $ogranicznie_dolne -4}
    
@@ -148,28 +183,23 @@
     		 {if $zmienna_pomocnicza <= $strona}
              {if $zmienna_pomocnicza > 0}
              
-             	{if empty($kategoriaa)}
-             
-             		 <li><a href="/public/wydarzenia/strona/{$zmienna_pomocnicza}">
+             	
+             		 <li><a href="/public/wydarzenia/strona/{$zmienna_pomocnicza}{$ogon}">
                      	{if $zmienna_pomocnicza == $nr_strony} <b>{$zmienna_pomocnicza}</b>{else} {$zmienna_pomocnicza}{/if}</a></li>
-				{else}
-                	<li><a href="/public/wydarzenia/strona/{$zmienna_pomocnicza}?kategoria={$kategoriaa}">
-                     	{if $zmienna_pomocnicza == $nr_strony} <b>{$zmienna_pomocnicza}</b>{else} {$zmienna_pomocnicza}{/if}</a></li>
-                {/if}
+				
 			{/if}
             {/if}
     {/for}
     
-
-	{if empty($kategoriaa)}
+    	
+        <!-- {$znak_zapytania}{$kategoria}{$var_kategoria}{$preferencja}{$var_preferencja}{$cena}{$var_cena}{$data}{$var_data}
+       		 `$znak_zapytania``$kategoria``$var_kategoria``$preferencja``$var_preferencja``$cena``$var_cena``$data``$var_data` -->
+		
+	
         {if $next != $strona}
-        <a href="/public/wydarzenia/strona/{$next}">Następna</a></li>
+        <a href="/public/wydarzenia/strona/{$next}{$ogon}">Następna</a></li>
         {/if}
-	{else}  
-     {if $next != $strona}
-        <a href="{$next}?kategoria={$kategoriaa}">Następna</a></li>
-        {/if}  
-    {/if}
+	
     <!-- {while $zmienna_pomocnicza < 10+$nr_strony}
     
        {$zmienna_w_petli = $zmienna_w_petli + 1}
