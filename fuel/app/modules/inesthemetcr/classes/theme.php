@@ -33,18 +33,6 @@ class Theme
 	// Extend default view by theme options
 	public static function extend_view($params, $return)
 	{
-		//	set categories tabs, their selection and counter for events
-		$categories = \Tocorobimy\Categories::instance()->get();
-		$event_categories = array();
-		foreach($categories as $cat)
-		{
-			$how_many = \Tocorobimy\Model\Tocorobimy::get_number_of_events($cat->id);
-			array_push($event_categories, array('id' => $cat->id, 'name' => $cat->name,
-						'how_many' => $how_many, 'selected' => (@strstr(\Input::get('kategoria'), $cat->name) ? 'true' : 'false')));
-		}
-		$params->set('events_all', \Tocorobimy\Model\Tocorobimy::get_number_of_events(), false);
-		$params->set('event_categories', $event_categories, false);
-		
 		// Tocorobimy / Events - czyli pobranie wydarzeń 
 		$params->set('events', \Tocorobimy\Events::instance()->get(), false); 
 		
@@ -84,6 +72,18 @@ class Theme
 				\Input::get('data') ? explode(',', \Input::get('data')) : array());
 		$params->set('events', $events, false);
 
+		//	set categories tabs, their selection and counter for filtered events
+		$categories = \Tocorobimy\Categories::instance()->get();
+		$event_categories = array();
+		foreach($categories as $cat)
+		{
+			$how_many = \Tocorobimy\Model\Tocorobimy::get_number_of_events($events, $cat->id);
+			array_push($event_categories, array('id' => $cat->id, 'name' => $cat->name,
+			'how_many' => $how_many, 'selected' => (@strstr(\Input::get('kategoria'), $cat->name) ? 'true' : 'false')));
+		}
+		$params->set('events_all', \Tocorobimy\Model\Tocorobimy::get_number_of_events($events), false);
+		$params->set('event_categories', $event_categories, false);
+		
 		// Header
 		//		search form by address
 		$_header_form['open'] = \Form::open(array('action' => 'szukaj/adres', 'class' => 'navbar-search pull-left'));

@@ -35,7 +35,7 @@
                             <h3>{$event->name}</h3>
      	<span class="label">{$event->date_start}</span>
         <span class="label label-info">
-        chuj</span>
+        </span>
                             <p>{$event->description}</p>
     
                             <p><a href="#{$event->place_id}" class="btn btn-primary">Zobacz</a> <a href="#" class="btn">JakDojade</a></p>

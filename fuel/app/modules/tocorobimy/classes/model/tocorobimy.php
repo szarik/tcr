@@ -106,13 +106,26 @@ class Tocorobimy extends \Model
 	 * @param $category_id; when not set, number of all events is calculated
 	 * @return int
 	 */
-	public static function get_number_of_events($category_id = null)
+	public static function get_number_of_events($events, $category_id = null)
 	{
-		$_query = (isset($category_id)
-			 ? $_query = \DB::select('*')->from('events')->where('category_id', $category_id)
-			 : $_query = \DB::select('*')->from('events'));
+// 		$_query = (isset($category_id)
+// 			 ? $_query = \DB::select('*')->from('events')->where('category_id', $category_id)
+// 			 : $_query = \DB::select('*')->from('events'));
+// 		return count($_query->execute());
+
+		$counter = 0;
+		if($category_id != null)
+		{
+			foreach($events as $event)
+				if($event->category_id == $category_id)
+					$counter++;
+		}
+		else 
+		{
+			$counter = count($events);
+		}
 		
-		return count($_query->execute());
+		return $counter;
 	}
 
 	public static function get_events_for_filters($_categories, $_preferences, $_prices, $_dates)
@@ -135,7 +148,7 @@ class Tocorobimy extends \Model
 		}
 		else
 		{
-			//	today
+			//	all from today inclusive
 			$_query->where(\DB::expr('CAST(date_start AS DATE)'), '>=', date("Y-m-d"));
 		}
 		if (!empty($_prices))
@@ -145,14 +158,10 @@ class Tocorobimy extends \Model
 			$_query->where_open();
 			foreach($_prices as $price)
 			{
-				$price_to = @split('-', $price);
-				$_query->or_where('value', 'between', array(0, $price_to[1]));
+				$price_splitted = @split('-', $price);
+				$_query->or_where('value', 'between', array(0, $price_splitted[1]));
 			}
 			$_query->where_close();
-		}
-		else
-		{
-			//TODO: ALL
 		}
 		if (!empty($_preferences))
 		{

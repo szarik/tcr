@@ -16,16 +16,18 @@ function show_places_popup() {
 	$("a[href='#form-place']").colorbox({open:true});
 }
 
-function ustawFiltr(filter, value) {
-	href =window.location.href.split('?'); 
+function ustawFiltr(filter, value, singleOption) {
+	baseUrl = getBaseURL();
+	
+	href =window.location.href.split('?');
 	url = href[0];
 	filters = href[1];
 	
 	if(filters == null && value == null) {
-		window.location.href = url;
+		window.location.href = baseUrl + "public/";
 	}
 	else if(filters == null) {
-		window.location.href = url + '?' + filter + '=' + value;
+		window.location.href = baseUrl + "public/?" + filter + '=' + value;
 	}
 	else {
 		filters = filters.split('&');
@@ -41,7 +43,12 @@ function ustawFiltr(filter, value) {
 			}
 			else if(filter_name === filter && value == null ) {
 				filter_existed = true;
-				continue;
+			}
+			else if(filter_name === filter && singleOption) {
+				filter_existed = true;
+				if(value !== filter_value) {
+					result_filters += (result_filters.split('=')[1] ? '&' : '') + filter_name + "=" + value;
+				}
 			}
 			else {
 				filter_existed = true;
@@ -75,6 +82,28 @@ function ustawFiltr(filter, value) {
 			result_filters += (result_filters.split('=')[1] ? '&' : '') + filter + '=' + value;
 		}
 		
-		window.location.href = url + (result_filters.split('=')[1] ? '?' + result_filters : '');
+		window.location.href = getBaseURL() + "public/" + (result_filters.split('=')[1] ? '?' + result_filters : '');
 	}
+}
+
+function getBaseURL() {
+    var url = location.href;  // entire url including querystring - also: window.location.href;
+    var baseURL = url.substring(0, url.indexOf('/', 14));
+
+
+    if (baseURL.indexOf('http://localhost') != -1) {
+        // Base Url for localhost
+        var url = location.href;  // window.location.href;
+        var pathname = location.pathname;  // window.location.pathname;
+        var index1 = url.indexOf(pathname);
+        var index2 = url.indexOf("/", index1 + 1);
+        var baseLocalUrl = url.substr(0, index2);
+
+        return baseLocalUrl + "/";
+    }
+    else {
+        // Root Url for domain name
+        return baseURL + "/";
+    }
+
 }
