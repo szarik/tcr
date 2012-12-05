@@ -45,6 +45,9 @@ class Theme
 		$params->set('events_all', \Tocorobimy\Model\Tocorobimy::get_number_of_events(), false);
 		$params->set('event_categories', $event_categories, false);
 		
+		// Tocorobimy / Events - czyli pobranie wydarzeń 
+		$params->set('events', \Tocorobimy\Events::instance()->get(), false); 
+		
 		//	set preferences tabs and their selection
 		$preferences = array();
 		array_push($preferences, array('name' => 'Sam', 'selected' => (@strstr(strtolower(\Input::get('preferencja')), 'sam') ? 'true' : 'false')));
@@ -63,7 +66,7 @@ class Theme
 		
 		//	set dates tabs and their selection
 		$dates = array();
-		array_push($dates, array('name' => 'Dziś', 'get_param' => 'Dzis','selected' => (@strstr(strtolower(\Input::get('data')), 'dzis') || \Input::get('data',null) == null ? 'true' : 'false')));
+		array_push($dates, array('name' => 'Dziś', 'get_param' => 'Dzis','selected' => (@strstr(strtolower(\Input::get('data')), 'dzis') ? 'true' : 'false')));
 		array_push($dates, array('name' => 'Jutro', 'selected' => (@strstr(strtolower(\Input::get('data')), 'jutro') ? 'true' : 'false')));
 		array_push($dates, array('name' => 'Pojutrze', 'selected' => (@strstr(strtolower(\Input::get('data')), 'pojutrze') ? 'true' : 'false')));
 		array_push($dates, array('name' => 'Kolejne dni', 'selected' => /*TODO: */ 'false'));

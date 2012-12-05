@@ -136,7 +136,7 @@ class Tocorobimy extends \Model
 		else
 		{
 			//	today
-// 			$_query->where(\DB::expr('CAST(date_start AS DATE)'), '=', date("Y-m-d"));
+			$_query->where(\DB::expr('CAST(date_start AS DATE)'), '>=', date("Y-m-d"));
 		}
 		if (!empty($_prices))
 		{
@@ -145,8 +145,8 @@ class Tocorobimy extends \Model
 			$_query->where_open();
 			foreach($_prices as $price)
 			{
-				$price_to = @split('-', $price)[1];
-				$_query->or_where('value', 'between', array(0, $price_to));
+				$price_to = @split('-', $price);
+				$_query->or_where('value', 'between', array(0, $price_to[1]));
 			}
 			$_query->where_close();
 		}
