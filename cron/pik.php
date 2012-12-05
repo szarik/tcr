@@ -1,4 +1,8 @@
-﻿<?php
+﻿<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf8" />
+</head>
+<body><?php
 set_time_limit(3600);
 require_once 'rss_php.php';    
 	
@@ -61,7 +65,7 @@ require_once 'rss_php.php';
 				}
 			
 			$street = get_string_between($item['description'], "Adres</strong>:<br /><p>", ",");
-			$preference = 'single,couple,group';
+			$preference = 'sam,para,grupa';
 			$city = 'Wrocław';
 			$post_code = get_string_between($item['description'], $street.",", "Wroc");
 			$description1 = get_string_between(file_get_contents($link), "<div class=\"tekst\">", "</div>");
@@ -148,8 +152,7 @@ require_once 'rss_php.php';
 		echo 'Już istnieje '.$y.' wydarzeń.';
 
 ?>
-<html>
-<body>
+
 
 </body>
 </html>
