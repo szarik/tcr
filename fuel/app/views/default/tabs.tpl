@@ -328,7 +328,7 @@
         <th>Data</th>
         <!--<th>Preferencje>-->
         <th>Kategoria</th>
-       <!-- <th>Budżet</th>-->
+        <!-- <th>Budżet</th>-->
         <th>Przejdź</th>
     </tr> 
     </thead>

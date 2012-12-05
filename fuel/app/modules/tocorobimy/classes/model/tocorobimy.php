@@ -117,7 +117,7 @@ class Tocorobimy extends \Model
 
 	public static function get_events_for_filters($_categories, $_preferences, $_prices, $_dates)
 	{
-		$_query = \DB::select('*')->from('events')->join('categories')->on('events.category_id', '=', 'categories.id');
+		$_query = \DB::select('events.id', 'place_id', 'events.name', 'description', 'date_end', 'preferences', 'periodicity', 'coordinates', 'visible', 'events.date_created', 'date_start', 'events.date_modified', 'link', 'link_photo', 'link_movie', 'category_id')->from('events')->join('categories')->on('events.category_id', '=', 'categories.id');
 		
 		if (!empty($_categories))
 		{
@@ -136,18 +136,24 @@ class Tocorobimy extends \Model
 		else
 		{
 			//	today
-			$_query->where(\DB::expr('CAST(date_start AS DATE)'), '=', date("Y-m-d"));
+// 			$_query->where(\DB::expr('CAST(date_start AS DATE)'), '=', date("Y-m-d"));
 		}
-// 		if (!empty($_prices))
-// 		{
-// 			//TODO:	
-// 			$_query->where_open();
-// 			foreach($_prices as $price)
-// 			{
-// 				$_query->or_where('prices', '...', '%'.$preference.'%');
-// 			}
-// 			$_query->where_close();
-// 		}
+		if (!empty($_prices))
+		{
+			$_query->join('events2prices', 'left')->on('events.id', '=', 'events2prices.event_id');
+			
+			$_query->where_open();
+			foreach($_prices as $price)
+			{
+				$price_to = @split('-', $price)[1];
+				$_query->or_where('value', 'between', array(0, $price_to));
+			}
+			$_query->where_close();
+		}
+		else
+		{
+			//TODO: ALL
+		}
 		if (!empty($_preferences))
 		{
 			$_query->where_open();
