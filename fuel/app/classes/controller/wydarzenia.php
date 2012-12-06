@@ -34,12 +34,12 @@ class Controller_Wydarzenia extends Controller_Ines_Site
 	
 	function action_dodaj()
 	{
-		$fieldset = Fieldset::forge('form_event')->add_model('Model_Event')->repopulate();
+		$fieldset = Fieldset::forge('form_event')->add_model('Model_Event');
 		
 		//custom validations
 		$val = Validation::instance('form_event');
 		$val->add_callable('\Model_Event');
-		$val->field('place_id')->add_rule('is_int');
+		$val->set_message('required', 'Pole \':label\' jest wymagane');
 		$val->field('date_start')->add_rule('is_timestamp');
 		$val->field('date_end')->add_rule('is_timestamp');
 		$val->field('preferences')->add_rule('checkboxes_required');
@@ -63,7 +63,7 @@ class Controller_Wydarzenia extends Controller_Ines_Site
 			$event->date_end		= $fields['date_end'];
 			$event->preferences		= Model_Event::flatten($fields['preferences']);
 			$event->coordinates		= $fields['coordinates'];
-			$event->category		= $fields['category'];
+			$event->category_id		= $fields['category_id'];
 			
 			$success_event = $event->save();
 			$success_price1 = true;

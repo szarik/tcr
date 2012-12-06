@@ -6,6 +6,8 @@ $(function(){
 	}, function() {
 		$(this).stop().animate({color: 'rgb(190,190,190)'}, 300);
 	});
+	
+	$("option:not([value])").attr('disabled', 'true');
 });
 
 function show_events_popup() {

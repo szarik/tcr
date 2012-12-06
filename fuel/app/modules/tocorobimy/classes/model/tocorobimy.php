@@ -128,14 +128,14 @@ class Tocorobimy extends \Model
 		return $counter;
 	}
 
-	public static function get_events_for_filters($_categories, $_preferences, $_prices, $_dates)
+	public static function get_events_for_filters($_preferences, $_prices, $_dates)
 	{
-		$_query = \DB::select('events.id', 'place_id', 'events.name', 'description', 'date_end', 'preferences', 'periodicity', 'coordinates', 'visible', 'events.date_created', 'date_start', 'events.date_modified', 'link', 'link_photo', 'link_movie', 'category_id')->from('events')->join('categories')->on('events.category_id', '=', 'categories.id');
+		$_query = \DB::select('events.id', 'place_id', 'events.name', 'description', 'date_end', 'preferences', 'periodicity', 'coordinates', 'visible', 'events.date_created', 'date_start', 'events.date_modified', 'link', 'link_photo', 'link_movie', 'category_id', array('categories.name','category_name'))->from('events')->join('categories')->on('events.category_id', '=', 'categories.id');
 		
-		if (!empty($_categories))
-		{
-			$_query->where(\DB::expr('LOWER(categories.name)'), 'IN', $_categories);
-		}
+// 		if (!empty($_categories))
+// 		{
+// 			$_query->where(\DB::expr('LOWER(categories.name)'), 'IN', $_categories);
+// 		}
 		if (!empty($_dates))
 		{
 			$_query->where_open();
@@ -194,6 +194,28 @@ class Tocorobimy extends \Model
 			default:
 				return date("Y-m-d");
 				break;
+		}
+	}
+	
+	public static function get_events_for_categories($events, $categories)
+	{
+		if(empty($categories))
+		{
+			return $events;
+		}
+		else
+		{
+			$events_filtered = array();
+			
+			foreach($events as $event)
+			{
+				if(in_array($event->category_name, $categories))
+				{
+					array_push($events_filtered, $event);
+				}
+			}
+			
+			return $events_filtered;
 		}
 	}
 }

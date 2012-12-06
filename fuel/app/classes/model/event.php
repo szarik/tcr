@@ -10,14 +10,21 @@ class Model_Event extends \Orm\Model
       'id',
 	  'place_id' => array(
          'data_type' => 'int',
-         'label' => 'Id miejsca',
-         'validation' => array('required')
+         'label' => 'Miejsce',
+         'validation' => array('required'),
+	  	 'form' => array('type' => 'select', '', 'options' => array('' => 'Wybierz miejsce'))
       ),
 	  'name' => array(
          'data_type' => 'string',
          'label' => 'Nazwa wydarzenia',
          'validation' => array('required', 'min_length'=>array(3), 'max_length'=>array(255))
       ),
+	  'category_id' => array(
+		 'data_type' => 'int',
+		 'label' => 'Kategoria',
+		 'validation' => array('required'),
+		 'form' => array('type' => 'select', '', 'options' => array('' => 'Wybierz kategorię'))
+	  ),
       'description' => array(
          'data_type' => 'string',
          'label' => 'Opis',
@@ -57,11 +64,6 @@ class Model_Event extends \Orm\Model
          'data_type' => 'string',
          'label' => 'Polozenie',
 		 'validation' => array('required')
-      ),
-      'category' => array(
-      	'data_type' => 'int',
-      	'label' => 'Kategoria',
-      	//'form' => array('type' => 'select', \Model_Event::get_categories_list() )		//TODO:	jak to kurwa wywolac?!
       )
    );
    
@@ -115,6 +117,16 @@ class Model_Event extends \Orm\Model
 		{
 			return implode(',', $values);
 		}
+   }
+   
+   public static function populate_place_ids()
+   {
+   		array_push(self::$_properties['place_id']['form']['options'], \DB::select('id', 'name')->from('places')->order_by('name', 'asc')->execute()->as_array('id', 'name'));
+   }
+   
+   public static function populate_category_ids()
+   {
+   		array_push(self::$_properties['category_id']['form']['options'], \DB::select('id', 'name')->from('categories')->order_by('name', 'asc')->execute()->as_array('id', 'name'));
    }
 }
 ?>

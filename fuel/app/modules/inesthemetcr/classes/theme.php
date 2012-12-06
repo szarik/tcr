@@ -27,15 +27,16 @@ class Theme
 		\Ines::registerHook('view_extend_after', 'extend_view', 'InesThemeTcr\Theme');
 
 		//\Ines::registerHook('engine_start', 'load_css', get_class());
+		
+		//  Populate form's selectboxes
+		\Model_Event::populate_place_ids();
+		\Model_Event::populate_category_ids();
 	}
 
 
 	// Extend default view by theme options
 	public static function extend_view($params, $return)
 	{
-		// Tocorobimy / Events - czyli pobranie wydarzeń 
-		$params->set('events', \Tocorobimy\Events::instance()->get(), false); 
-		
 		//	set preferences tabs and their selection
 		$preferences = array();
 		array_push($preferences, array('name' => 'Sam', 'selected' => (@strstr(strtolower(\Input::get('preferencja')), 'sam') ? 'true' : 'false')));
@@ -65,24 +66,31 @@ class Theme
 		$params->set('selected_place', $_r->current(), false);
 
 		// filter events
-		$events = \Tocorobimy\Model\Tocorobimy::get_events_for_filters(
-				\Input::get('kategoria') ? explode(',', \Input::get('kategoria')) : array(),
+// 		$events = \Tocorobimy\Model\Tocorobimy::get_events_for_filters(
+// 				\Input::get('kategoria') ? explode(',', \Input::get('kategoria')) : array(),
+// 				\Input::get('preferencja') ? explode(',', \Input::get('preferencja')) : array(),
+// 				\Input::get('cena') ? explode(',', \Input::get('cena')) : array(),
+// 				\Input::get('data') ? explode(',', \Input::get('data')) : array());
+		$events_for_sidepanel = \Tocorobimy\Model\Tocorobimy::get_events_for_filters(
 				\Input::get('preferencja') ? explode(',', \Input::get('preferencja')) : array(),
 				\Input::get('cena') ? explode(',', \Input::get('cena')) : array(),
 				\Input::get('data') ? explode(',', \Input::get('data')) : array());
-		$params->set('events', $events, false);
+		$events = \Tocorobimy\Model\Tocorobimy::get_events_for_categories($events_for_sidepanel, \Input::get('kategoria') ? explode(',', \Input::get('kategoria')) : array());
 
 		//	set categories tabs, their selection and counter for filtered events
 		$categories = \Tocorobimy\Categories::instance()->get();
 		$event_categories = array();
 		foreach($categories as $cat)
 		{
-			$how_many = \Tocorobimy\Model\Tocorobimy::get_number_of_events($events, $cat->id);
+			$how_many = \Tocorobimy\Model\Tocorobimy::get_number_of_events($events_for_sidepanel, $cat->id);
 			array_push($event_categories, array('id' => $cat->id, 'name' => $cat->name,
 			'how_many' => $how_many, 'selected' => (@strstr(\Input::get('kategoria'), $cat->name) ? 'true' : 'false')));
 		}
-		$params->set('events_all', \Tocorobimy\Model\Tocorobimy::get_number_of_events($events), false);
+		$params->set('events_all', \Tocorobimy\Model\Tocorobimy::get_number_of_events($events_for_sidepanel), false);
 		$params->set('event_categories', $event_categories, false);
+		
+		//	set filtered events on result list
+		$params->set('events', $events, false);
 		
 		// Header
 		//		search form by address
