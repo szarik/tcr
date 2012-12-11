@@ -16,7 +16,7 @@
                     <a href="#form-event" class="btn btn-info colorbox">+ Dodaj wydarzenie</a>
                 </p>
                 <ul class="nav">
-                    <li {if $highlight_strona_glowna}
+                    <li {if isset($highlight_strona_glowna)}
                     	class="active"
                     	{/if}>{$strona_glowna_header|default:""}</li>
                     <li>
@@ -25,10 +25,10 @@
                             {$header_search.submit}
                         {$header_search.close}
                     </li>
-                    <li {if $current_site === "strona/jak_to_dziala"}
+                    <li {if isset($current_site) && $current_site === "strona/jak_to_dziala"}
                     	class="active"
                     	{/if}>{$jak_to_dziala_header|default:""}</li>
-                    <li {if $current_site === "strona/kontakt"}
+                    <li {if isset($current_site) && $current_site === "strona/kontakt"}
                     	class="active"
                     	{/if}>{$kontakt_header|default:""}</li>
                 </ul>
