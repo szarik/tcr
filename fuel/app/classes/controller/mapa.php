@@ -31,6 +31,10 @@
 
 			// Get searching address
 			$_address = trim((string) \Security::strip_tags(\Input::post('address', '')));
+			$to_sess = preg_replace('/([Ww]+)([Rr]+)([Ooó]+)([Cc]+)([LlłŁ]+)([AaąĄ]+)([Ww]+)/', '', $_address);
+			$to_sess = preg_replace('/[.,\'\"\\"]/', '', $to_sess);
+			\Session::set('mapa_start', trim($to_sess)); // cut city name
+
 
 			// Create new map and add address
 			$opt = array('zoom' => 13, 'center' => 'new google.maps.LatLng(51.107885,17.038538)', 'mapTypeId' => 'google.maps.MapTypeId.ROADMAP');
@@ -60,9 +64,9 @@
 
 		function action_ajax($id)
 		{
-			$lokl = \Tocorobimy\Places::instance()->get($id)->current();
 			$view = View::forge('default/mapa/ajax_lokal.smarty');
 			$view->set('lokal', \Tocorobimy\Places::instance()->get($id)->current(), false);
+			$view->set('mapa_start', \Session::get('mapa_start', false));
 			echo $view->render();
 			die();
 		}
