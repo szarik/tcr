@@ -12,6 +12,7 @@
 
 			$return .= 'var map_' . $this->_id . ';';
 			$return .= 'var bounds_' . $this->_id . ' = new google.maps.LatLngBounds();';
+			$return .= 'var mapwindow = new google.maps.InfoWindow();';
 
 			$return .= $this->_js_map();
 
@@ -44,6 +45,7 @@
 			$return .= "};";
 			$return .= $this->_js_geocode();
 			$return .= 'map_' . $this->_id . ' = new google.maps.Map(document.getElementById("' . $this->_container . '"), o);';
+			$return .= $this->_js_markers();
 			$return .= '}';
 
 			return $return;
@@ -76,6 +78,35 @@
 			return '';
 		}
 
+		protected function _js_markers()
+		{
+
+			if (!empty($this->_marker)) {
+				$return = '';
+				$return .= 'var markers = [];';
+				$i = 1;
+				foreach ($this->_marker as $mark) {
+					if (strlen(trim($mark['cords']['lat'])) > 0 && strlen(trim($mark['cords']['lng'])) > 0) {
+						$return .= "var point_marker" . $i . " = new google.maps.LatLng(" . $mark['cords']['lat'] . ", " . $mark['cords']['lng'] . ");";
+						$return .= "var marker_main" . $i . " = new google.maps.Marker({
+						map:map_" . $this->_id . ", position:point_marker" . $i . ", id: " . $mark['cords']['id'] . "});";
+						$return .= "bounds_" . $this->_id . ".extend(point_marker" . $i . ");";
+
+						$return .= "google.maps.event.addListener(marker_main" . $i . ", 'click', function() {";
+						$return .= "load_content(map_" . $this->_id . ", this, mapwindow);";
+						$return .= "});";
+						$return .= "markers.push(marker_main" . $i++ . ");";
+
+					}
+				}
+
+				$return .= "var markerCluster = new MarkerClusterer(map_" . $this->_id . ", markers, {maxZoom: 14});";
+				$return .= "map_" . $this->_id . ".fitBounds(bounds_" . $this->_id . ");";
+				return $return;
+			}
+		}
+
+
 		protected function  _js_functions()
 		{
 			$retrun = 'function geocode_mark_default(results, status) {';
@@ -89,6 +120,16 @@
 			$retrun .= 'alert("Geocode was not successful for the following reason: " + status + " in callback: geocode_mark_default");';
 			$retrun .= '}}';
 
+
+			$retrun .= 'function load_content(map, marker, infowindow){';
+  			$retrun .= '$.ajax({';
+   			$retrun .= 'url: "' . \Uri::base(false) . 'mapa/ajax/" + marker.id,';
+    		$retrun .= 'success: function(data){';
+			$retrun .= 'infowindow.setContent(data);';
+			$retrun .= 'infowindow.open(map, marker);';
+			$retrun .= '}';
+  			$retrun .= '});';
+			$retrun .= '}';
 
 			// Geocodes callbacks
 			if (isset($this->_geocode) && !empty($this->_geocode)) {

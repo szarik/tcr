@@ -32,6 +32,7 @@
 		 * @var array
 		 */
 		protected $_geocode = array();
+		protected $_marker = array();
 
 		/**
 		 * Google Map options
@@ -189,6 +190,13 @@
 			}
 
 			return true;
+		}
+
+		/**
+		 * @param $cords
+		 */
+		public function addMarker($cords) {
+			$this->_marker[] = array('cords' => $cords);
 		}
 
 		/**

@@ -141,3 +141,81 @@ label[for*='form_'] {
 .align_right {
 	text-align: right;
 }
+
+
+/**
+ * Gmap
+ */
+#gmap_lokal {
+    width: 450px;
+    padding: 10px;
+}
+
+#gmap_lokal div.name {
+    font: bold 15px tahoma, sans-serif;
+    color: #000;
+    border-bottom: solid 2px #444;
+    padding-bottom: 5px;
+    margin-bottom: 7px;
+}
+
+#gmap_lokal div.photo {
+    float: left;
+    padding: 0 10px 10px 0;
+}
+
+#gmap_lokal div.photo img {
+    width: 80px;
+    height: 80px;
+}
+
+#gmap_lokal div.desc {
+    font: normal 12px tahoma;
+    color: #333;
+    padding: 0 0 10px 0;
+}
+
+#gmap_lokal div.open_time span {
+    background: url('../img/glyphicons-halflings.png') -47px -23px no-repeat;
+    width: 16px;
+    height: 16px;
+    display: block;
+    float: left;
+    padding: 0 5px 0 0;
+}
+
+#gmap_lokal div.address span {
+    background: url('../img/glyphicons-halflings.png') 0 -23px no-repeat;
+    width: 16px;
+    height: 16px;
+    display: block;
+    float: left;
+    padding: 0 5px 0 0;
+}
+
+#gmap_lokal div.phone span {
+    background: url('../img/glyphicons-halflings.png') -72px 0 no-repeat;
+    width: 16px;
+    height: 16px;
+    display: block;
+    float: left;
+    padding: 0 5px 0 0;
+}
+
+#gmap_lokal div.email span {
+    background: url('../img/glyphicons-halflings.png') 0 -72px no-repeat;
+    width: 16px;
+    height: 16px;
+    display: block;
+    float: left;
+    padding: 0 5px 0 0;
+}
+
+#gmap_lokal div.website span {
+    background: url('../img/glyphicons-halflings.png') 0 -48px no-repeat;
+    width: 16px;
+    height: 16px;
+    display: block;
+    float: left;
+    padding: 0 5px 0 0;
+}
