@@ -8,9 +8,10 @@
 		protected function _js()
 		{
 			$return = 'if (jQuery || typeof jQuery != "undefined") {';
+			$return .= 'var map_' . $this->_id . ';';
 			$return .= '$(function(){';
 
-			$return .= 'var map_' . $this->_id . ';';
+
 			$return .= 'var bounds_' . $this->_id . ' = new google.maps.LatLngBounds();';
 			$return .= 'var mapwindow = new google.maps.InfoWindow();';
 
@@ -97,7 +98,7 @@
 						$return .= "var point_marker" . $i . " = new google.maps.LatLng(" . $mark['cords']['lat'] . ", " . $mark['cords']['lng'] . ");";
 						$return .= "var marker_main" . $i . " = new google.maps.Marker({map:map_" . $this->_id . ", position:point_marker" . $i . ", id: " . $mark['cords']['id'] . ", icon: ikona, shadow: cien});";
 
-						if ($this->_additional['not_bound'] !== true) {
+						if (isset($this->_additional['not_bound']) && $this->_additional['not_bound'] !== true) {
 							$return .= "bounds_" . $this->_id . ".extend(point_marker" . $i . ");";
 						}
 
@@ -111,7 +112,7 @@
 
 				$return .= "var markerCluster = new MarkerClusterer(map_" . $this->_id . ", markers, {maxZoom: 14});";
 
-				if ($this->_additional['not_bound'] !== true) {
+				if (isset($this->_additional['not_bound']) && $this->_additional['not_bound'] !== true) {
 					$return .= "map_" . $this->_id . ".fitBounds(bounds_" . $this->_id . ");";
 				}
 

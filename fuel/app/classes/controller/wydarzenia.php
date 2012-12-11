@@ -15,7 +15,23 @@ class Controller_Wydarzenia extends Controller_Ines_Site
 
 	function action_strona($nr_strony)
 	{
+		//Prepare map (with all locales)
+		$places = \Tocorobimy\Places::instance()->get();
+		$opt = array('zoom' => 13, 'center' => 'new google.maps.LatLng(51.107885,17.038538)', 'mapTypeId' => 'google.maps.MapTypeId.ROADMAP');
+		$map1 = new \InesGmap\Map('lokalizator', 'lokalizator', $opt);
+
+		foreach ($places as $place) {
+			$map1->addMarker(array('id' => $place->id, 'lat' => $place->map_lat, 'lng' => $place->map_lng));
+		}
+
+		// Show map
+		$mapa1_javascript = $map1->getScript(true);
+		$mapa1_html = $map1->getHtml('div', array('style' => 'width: 95%; height: 600px; border: 1px solid black; background: gray;'));
+
 		$view = View::forge('default/tabs.smarty');
+		$view->set('lokalizator_javascript', $mapa1_javascript, false);
+		$view->set('lokalizator_html', $mapa1_html, false);
+
 		$this->_tpl->set('body', $view);
 		$this->_tpl->set('nr_strony', $nr_strony);
 		return $this->_tpl;// = View::forge('default/frontpage.smarty');

@@ -1,7 +1,7 @@
-                                                                     
-                                                                     
-                                                                     
-                                             
+
+
+
+
 {if isset($config.theme_show_comments) && $config.theme_show_comments == 1} <!-- tabs.tpl start --> {/if}
 <div class="tabbable" style="margin-bottom: 18px;">
 <ul class="nav nav-tabs" id="xmyTab">
@@ -28,31 +28,31 @@
 
 
 		{$ilosc_wyswietlonych_na_stronie = 6}
-        {$zmienna = -1} 
+        {$zmienna = -1}
         {$licznik = 0}
         {$wydarzenia_dla_strony = $ilosc_wyswietlonych_na_stronie*($nr_strony-1)}
         {$tablica_wydarzen = array()}
-        
+
         {foreach from=$events item=event}
         {if in_array($event->name, $tablica_wydarzen)}
-                        
+
         {else}
         {$tablica_wydarzen[] = $event->name}
-                        
+
         	{$licznik = $licznik + 1}
 
             {if $licznik > $wydarzenia_dla_strony}
                 {if $licznik <= $ilosc_wyswietlonych_na_stronie+$wydarzenia_dla_strony}
                     {if $event->visible == 1}
-                    
-                        
+
+
                                 {$zmienna = $zmienna + 1}
-                                    
+
                                 {if $zmienna%3 == 0}
                                 <div class="row-fluid">
                                 <ul class="thumbnails">
                                 {/if}
-                                
+
                                     <li class="span4">
                                         <div class="thumbnail">
                                             {if empty($event->link_photo) or $event->link_photo == "http://pik.wroclaw.pl/"}
@@ -61,7 +61,7 @@
                                                 <img src="{$event->link_photo}" alt="" class="event-image" />
                                             {/if}
                                             <div class="caption" style="margin-top:180px;">
-                                           
+
                                                 <h4>{$event->name|strip_tags|substr:0:70}{if $event->name|strlen >= 70}...{/if}</h4>
                             <span class="label label-important">
                             {foreach from=$places item=place}
@@ -76,85 +76,85 @@
                             <span class="label label-success">
                             {foreach from=$event_categories item=category}
                                 {if $event->category_id == $category['id']}
-                                {$category['name']} 
+                                {$category['name']}
                                 {/if} 
                             {/foreach}
                             </span><br />
                             <span class="label label-info">
                             {$event->preferences|replace:'sam':'single'|replace:'para':'pary'|replace:'grupa':'grupy'}</span><br />
-                            
-                            
+
+
                                                 <p>{$event->description|strip_tags|substr:0:150} </p>
-                        
+
                                                 <p><a href="/public/wydarzenia/wydarzenie/{$event->id}" class="btn btn-primary">Zobacz</a> <a href="#" class="btn">JakDojade</a></p>
                                             </div>
                                         </div>
                                     </li>
-                                
-                                {if $zmienna%3 == 2} 
+
+                                {if $zmienna%3 == 2}
                                 </ul>
                                 </div>
                                 {/if}
                     {/if}
-        	
+
 {/if}{/if}{/if}
 
         {/foreach}
-        
-		{if $zmienna%3 == 1} 
+
+		{if $zmienna%3 == 1}
             </ul>
     		</div>
             {/if}
-            
-            {if $zmienna%3 == 0} 
+
+            {if $zmienna%3 == 0}
             </ul>
     		</div>
             {/if}
-            
-        {$znak_zapytania = ""} 
-        {if (isset($smarty.get.kategoria) or isset($smarty.get.preferencja) or isset($smarty.get.cena) or isset($smarty.get.data))}   
+
+        {$znak_zapytania = ""}
+        {if (isset($smarty.get.kategoria) or isset($smarty.get.preferencja) or isset($smarty.get.cena) or isset($smarty.get.data))}
         {$znak_zapytania = "?"}
         {/if}
-        
+
         {$kategoria = ""}
         {$var_kategoria = ""}
-        
+
         {if isset($smarty.get.kategoria)}
         {$kategoria = "kategoria="}
         {$var_kategoria = $smarty.get.kategoria}
         {/if}
-        
+
         {$preferencja = ""}
         {$var_preferencja = ""}
- 
+
         {if isset($smarty.get.preferencja)}
         {$preferencja = "&preferencja="}
         {$var_preferencja = $smarty.get.preferencja}
         {/if}
-        
+
         {$cena = ""}
         {$var_cena = ""}
-        
+
         {if isset($smarty.get.cena)}
         {$cena  = "&cena="}
         {$var_cena = $smarty.get.cena}
         {/if}
-        
+
         {$data = ""}
         {$var_data = ""}
         {if isset($smarty.get.data)}
         {$data  = "&data="}
         {$var_data = $smarty.get.data}
         {/if}
-        
+
         {assign var="ogon" value="`$znak_zapytania``$kategoria``$var_kategoria``$preferencja``$var_preferencja``$cena``$var_cena``$data``$var_data`"}
-        
+
         <div align="center" class="pagination">
     <ul>
     {$next = $nr_strony +1}
     {$prev = $nr_strony }
-    
-   
+
+
     {$strona = $licznik / $ilosc_wyswietlonych_na_stronie}
 {$strona = $strona +1}
     {$zmienna_pomocnicza = $nr_strony}
@@ -167,47 +167,47 @@
             {$ogranicznie_dolne = $nr_strony-4}
         	{$ograniczenie_gorne = $nr_strony+4}
       {/if}
-      
+
     {if $prev <= 0}
     	{$prev = 1}
     {/if}
-    
+
     {if $next > $strona}
    	 {$next = $strona}
     {/if}
-   
-   
-   
-   
+
+
+
+
        {if $prev != 1}
         <li><a href="/public/wydarzenia/strona/{$prev-1}{$ogon}">Poprzednia</a></li>
        {/if}
-	
+
 
    {$ogranicznie_dolne = $ogranicznie_dolne -4}
-   
 
-    {for $zmienna_pomocnicza=$ogranicznie_dolne to $ograniczenie_gorne}  
+
+    {for $zmienna_pomocnicza=$ogranicznie_dolne to $ograniczenie_gorne}
     		 {if $zmienna_pomocnicza <= $strona}
              {if $zmienna_pomocnicza > 0}
-             
-             	
+
+
              		 <li><a href="/public/wydarzenia/strona/{$zmienna_pomocnicza}{$ogon}">
                      	{if $zmienna_pomocnicza == $nr_strony} <b>{$zmienna_pomocnicza}</b>{else} {$zmienna_pomocnicza}{/if}</a></li>
-				
+
 			{/if}
             {/if}
     {/for}
-    
-    	
+
+
         <!-- {$znak_zapytania}{$kategoria}{$var_kategoria}{$preferencja}{$var_preferencja}{$cena}{$var_cena}{$data}{$var_data}
        		 `$znak_zapytania``$kategoria``$var_kategoria``$preferencja``$var_preferencja``$cena``$var_cena``$data``$var_data` -->
-		
-	
+
+
         {if $next != $strona}
         <a href="/public/wydarzenia/strona/{$next}{$ogon}">Następna</a></li>
         {/if}
-	
+
     <!-- {while $zmienna_pomocnicza < 10+$nr_strony}
     
        {$zmienna_w_petli = $zmienna_w_petli + 1}
@@ -223,71 +223,24 @@
 
 <div class="tab-pane {if isset($smarty.get.strona) && $smarty.get.strona == "lokalizator"}active{/if}" id="tab2">
 
-{if isset($smarty.get.strona) && $smarty.get.strona == "lokalizator"}
+{$lokalizator_javascript|default:''}
+{$lokalizator_html|default:''}
 
-    <script type="text/javascript">
-        var mapa;    // obiekt globalny
-        var dymek;    // okno z informacjami
-
-            {foreach from=$places item=place}
-            var geokoder{$place->id} = new google.maps.Geocoder();
-            {/foreach}
-
-        function mapaStart() {
-            var wspolrzedne = new google.maps.LatLng(53.429805, 14.537883);
-            var opcjeMapy = {
-                zoom:15,
-                center:wspolrzedne,
-                mapTypeId:google.maps.MapTypeId.SATELLITE,
-                disableDefaultUI:true
-            };
-            mapa = new google.maps.Map(document.getElementById("mapka"), opcjeMapy);
-            dymek = new google.maps.InfoWindow();
-
-            // ten marker będzie przesuwalny
-            {foreach from=$places item=place name=place}
-                {if $smarty.foreach.place.index < 11}
-                        geokoder{$place->id}{literal}.geocode({address: "{/literal}{$place->miasto}, {$place->adres}{literal}"}, obslugaGeokodowania);{/literal}
-                {/if}
-            {/foreach}
-
-        }
-
-        function obslugaGeokodowania(wyniki, status) {
-            var rozmiar = new google.maps.Size(32, 32);
-            var rozmiar_cien = new google.maps.Size(59, 32);
-            var punkt_startowy = new google.maps.Point(0, 0);
-            var punkt_zaczepienia = new google.maps.Point(16, 16);
-
-            var ikona = new google.maps.MarkerImage("http://maps.google.com/mapfiles/kml/pal3/icon52.png", rozmiar, punkt_startowy, punkt_zaczepienia);
-            var cien = new google.maps.MarkerImage("http://maps.google.com/mapfiles/kml/pal3/icon52s.png", rozmiar_cien, punkt_startowy, punkt_zaczepienia);
-
-            if (status == google.maps.GeocoderStatus.OK) {
-                mapa.setCenter(wyniki[0].geometry.location);
-                var marker = new google.maps.Marker(
-                        {
-                            map:mapa,
-                            position:wyniki[0].geometry.location,
-                            icon:ikona,
-                            shadow:cien
-                        }
-                );
-                dymek.open(mapa, marker);
-                dymek.setContent('<strong>Poszukiwany adres</strong><br />Szczecin, Krzywoustego 23');
-            }
-            else {
-                alert("Nie znalazłem podanego adresu!");
-            }
-        }
-
-    </script>
-    <div id="mapka" style="width: 600px; height: 500px; border: 1px solid black; background: gray;">
-        <!-- tu będzie mapa -->
-    </div>
-    <p id="info">
-        Na mapie zostanie wyświetlony marker, oznaczający lokację <strong>Szczecin, ul. Krzywoustego 23</strong>
-    </p>
-{/if}
+	<script type="text/javascript">
+        {literal}
+		$(function () {
+			$("a[href='#tab2']").click(function () {
+				setTimeout(function() {
+					if($('#tab2').is(":visible")) {
+						var center = map_lokalizator.getCenter();
+						parent.google.maps.event.trigger(map_lokalizator, "resize");
+						map_lokalizator.setCenter(center);
+                    }
+				}, 100);
+			});
+		});
+        {/literal}
+	</script>
 
 </div>
 
@@ -296,12 +249,6 @@
 
 
 {if isset($smarty.get.strona) && isset($selected_place)}
-
-
-
-  
-        </script>
-
 
         <div class="row">
             <div class="span4" style="padding-left:40px;">
@@ -329,7 +276,6 @@
 
 
         </div>
-    </div>
     {else}
 
     <div class="row-fluid">
@@ -350,10 +296,8 @@
     </div>
 {/if}
 
-
-
 </div>
- 
+
 
 <div class="tab-pane {if isset($smarty.get.strona) && $smarty.get.strona == "dodaj_lokalizacje_lub_wydarzenie"}active{/if}"
      id="tab4">
@@ -368,7 +312,7 @@
         <th>Kategoria</th>
         <!-- <th>Budżet</th>-->
         <th>Przejdź</th>
-    </tr> 
+    </tr>
     </thead>
      <tbody>
      <style>
@@ -381,13 +325,13 @@
 
 	 </style>
      	{$ilosc_wyswietlonych_na_stronie = 600}
-        {$zmienna = -1} 
+        {$zmienna = -1}
         {$licznik = 0}
         {$wydarzenia_dla_strony = $ilosc_wyswietlonych_na_stronie*($nr_strony-1)}
-        
+
       {foreach from=$events item=event}
         	{$licznik = $licznik + 1}
-            
+
             {if $licznik > $wydarzenia_dla_strony}
                 {if $licznik <= $ilosc_wyswietlonych_na_stronie+$wydarzenia_dla_strony}
                     {if $event->visible == 1}
@@ -409,36 +353,36 @@
                     {/foreach}
                     </td>
                   <td>{$event->date_start|date_format:"%A, %H:%M %e-%m-%Y"|replace:'Monday':'Poniedziałek'|replace:'Tuesday':'Wtorek'|replace:'Wednesday':'Środa'|replace:'Thursday':'Czwartek'|replace:'Friday':'Piątek'|replace:'Saturday':'Sobota'|replace:'Sunday':'Niedziela'}</td>
-                    
+
                     <td>
                     {foreach from=$event_categories item=category}
 						{if $event->category_id == $category['id']}
-                        {$category['name']} 
-						{/if} 
+                        {$category['name']}
+						{/if}
 	    			{/foreach}
                     </td>
                     <!--<td>{$event->preferences|replace:'sam':'single'|replace:'para':'pary'|replace:'grupa':'grupy'}</td>
                     <td></td>-->
                     <td> <p><a href="/public/wydarzenia/wydarzenie/{$event->id}" class="btn btn-primary">Zobacz</a> <a href="#" class="btn">JakDojade</a></p></td>
-                    
-                    
+
+
                                        <!-- <p>{$event->description|strip_tags|substr:0:150} </p>-->
-                
-                           </tr>            
-                        
-                       
+
+                           </tr>
+
+
                     {/if}
-        	
+
 {/if}{/if}
 
         {/foreach}
-        
-          
-      
+
+
+
      </tbody>
     </table>
 </div>
 
-</div> 
+</div>
 </div>
 {if isset($config.theme_show_comments) && $config.theme_show_comments == 1} <!-- tabs.tpl end --> {/if}
