@@ -48,6 +48,12 @@
 		protected $_raw;
 
 		/**
+		 * Array of additional options
+		 * @var array
+		 */
+		protected $_additional = array();
+
+		/**
 		 * Create a new Google Map
 		 *
 		 * @see https://developers.google.com/maps/documentation/javascript/reference#MapOptions
@@ -131,6 +137,24 @@
 					$this->_mapoptions = array_merge((array) $this->_mapoptions, (array) $_options);
 				} else {
 					$this->_mapoptions = array_merge((array) $_options, (array) $this->_mapoptions);
+				}
+			}
+		}
+
+		public function setAdditional($opt, $overwrite = true)
+		{
+			if (is_array($opt) && !empty($opt)) {
+
+				$_options = array();
+
+				foreach ($opt as $k => $o) {
+					$_options[(string) $k] = $o;
+				}
+
+				if ($overwrite === true) {
+					$this->_additional = array_merge((array) $this->_additional, (array) $_options);
+				} else {
+					$this->_additional = array_merge((array) $_options, (array) $this->_additional);
 				}
 			}
 		}

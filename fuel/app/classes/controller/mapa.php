@@ -36,6 +36,13 @@
 			$opt = array('zoom' => 13, 'center' => 'new google.maps.LatLng(51.107885,17.038538)', 'mapTypeId' => 'google.maps.MapTypeId.ROADMAP');
 			$map1 = new \InesGmap\Map('lokalizator', 'lokalizator', $opt);
 
+			$map1->setAdditional(array('not_bound' => true)); // we do not want to bound all points
+
+			$places = \Tocorobimy\Places::instance()->get();
+			foreach ($places as $place) {
+				$map1->addMarker(array('id' => $place->id, 'lat' => $place->map_lat, 'lng' => $place->map_lng));
+			}
+
 			$map1->addGeocode('gmap_szukaj', array('address' => $_address));
 
 			$view = View::forge('default/mapa/index.smarty');

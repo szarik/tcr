@@ -84,13 +84,22 @@
 			if (!empty($this->_marker)) {
 				$return = '';
 				$return .= 'var markers = [];';
+				$return .= 'var rozmiar = new google.maps.Size(32,32);';
+				$return .= 'var rozmiar_cien = new google.maps.Size(59,32);';
+				$return .= 'var punkt_startowy = new google.maps.Point(0,0);';
+				$return .= 'var punkt_zaczepienia = new google.maps.Point(16,16);';
+				$return .= 'var ikona = new google.maps.MarkerImage("http://maps.google.com/mapfiles/kml/pal3/icon61.png", rozmiar, punkt_startowy, punkt_zaczepienia);';
+				$return .= 'var cien = new google.maps.MarkerImage("http://maps.google.com/mapfiles/kml/pal3/icon61s.png", rozmiar_cien, punkt_startowy, punkt_zaczepienia);';
+
 				$i = 1;
 				foreach ($this->_marker as $mark) {
 					if (strlen(trim($mark['cords']['lat'])) > 0 && strlen(trim($mark['cords']['lng'])) > 0) {
 						$return .= "var point_marker" . $i . " = new google.maps.LatLng(" . $mark['cords']['lat'] . ", " . $mark['cords']['lng'] . ");";
-						$return .= "var marker_main" . $i . " = new google.maps.Marker({
-						map:map_" . $this->_id . ", position:point_marker" . $i . ", id: " . $mark['cords']['id'] . "});";
-						$return .= "bounds_" . $this->_id . ".extend(point_marker" . $i . ");";
+						$return .= "var marker_main" . $i . " = new google.maps.Marker({map:map_" . $this->_id . ", position:point_marker" . $i . ", id: " . $mark['cords']['id'] . ", icon: ikona, shadow: cien});";
+
+						if ($this->_additional['not_bound'] !== true) {
+							$return .= "bounds_" . $this->_id . ".extend(point_marker" . $i . ");";
+						}
 
 						$return .= "google.maps.event.addListener(marker_main" . $i . ", 'click', function() {";
 						$return .= "load_content(map_" . $this->_id . ", this, mapwindow);";
@@ -101,7 +110,11 @@
 				}
 
 				$return .= "var markerCluster = new MarkerClusterer(map_" . $this->_id . ", markers, {maxZoom: 14});";
-				$return .= "map_" . $this->_id . ".fitBounds(bounds_" . $this->_id . ");";
+
+				if ($this->_additional['not_bound'] !== true) {
+					$return .= "map_" . $this->_id . ".fitBounds(bounds_" . $this->_id . ");";
+				}
+
 				return $return;
 			}
 		}
@@ -122,13 +135,13 @@
 
 
 			$retrun .= 'function load_content(map, marker, infowindow){';
-  			$retrun .= '$.ajax({';
-   			$retrun .= 'url: "' . \Uri::base(false) . 'mapa/ajax/" + marker.id,';
-    		$retrun .= 'success: function(data){';
+			$retrun .= '$.ajax({';
+			$retrun .= 'url: "' . \Uri::base(false) . 'mapa/ajax/" + marker.id,';
+			$retrun .= 'success: function(data){';
 			$retrun .= 'infowindow.setContent(data);';
 			$retrun .= 'infowindow.open(map, marker);';
 			$retrun .= '}';
-  			$retrun .= '});';
+			$retrun .= '});';
 			$retrun .= '}';
 
 			// Geocodes callbacks
