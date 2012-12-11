@@ -2,15 +2,13 @@
 <br/><br/>
 ToCoRobimy to lokalizator wydarzeń<br/><br/>
 
-<b>E-mail</b>: tocorobimy@tocorobimy.pl<br/>
-<b>Telefon</b>: 519 585 308<br/><br/>
+<b>Uwagi techniczne i merytoryczne prosze kierować na adres</b><br />
+<b>E-mail</b>: kontakt@tocorobimy.pl<br/>
+<b>Telefon</b>: 669-975-140<br/><br/>
 
-<b>IMPREZY, PROMOCJA, WYNAJEM KLUBU:</b><br/><br/>
+<b>WYDARZENIA, IMPREZY, PROMOCJA, REKLAMA:</b><br/><br/>
 
-Małgorzata: tocorobimy@gmail.com, 502 070 916<br/>
-Łukasz: tocorobimy@gmail.com, 505 849 386<br/><br/>
 
 tu jeszcze gmapa by się zdała<br/><br/>
 
 ZWIERZĘTA i ROWERY SĄ MILE WIDZIANE<br/>
-MOŻNA PŁACIĆ KARTĄ
