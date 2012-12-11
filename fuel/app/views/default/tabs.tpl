@@ -31,65 +31,73 @@
         {$zmienna = -1} 
         {$licznik = 0}
         {$wydarzenia_dla_strony = $ilosc_wyswietlonych_na_stronie*($nr_strony-1)}
+        {$tablica_wydarzen = array()}
         
         {foreach from=$events item=event}
+        {if in_array($event->name, $tablica_wydarzen)}
+                        
+        {else}
+        {$tablica_wydarzen[] = $event->name}
+                        
         	{$licznik = $licznik + 1}
 
             {if $licznik > $wydarzenia_dla_strony}
                 {if $licznik <= $ilosc_wyswietlonych_na_stronie+$wydarzenia_dla_strony}
                     {if $event->visible == 1}
-                        {$zmienna = $zmienna + 1}
+                    
                         
-                        {if $zmienna%3 == 0}
-                        <div class="row-fluid">
-                        <ul class="thumbnails">
-                        {/if}
+                                {$zmienna = $zmienna + 1}
+                                    
+                                {if $zmienna%3 == 0}
+                                <div class="row-fluid">
+                                <ul class="thumbnails">
+                                {/if}
+                                
+                                    <li class="span4">
+                                        <div class="thumbnail">
+                                            {if empty($event->link_photo) or $event->link_photo == "http://pik.wroclaw.pl/"}
+                                            <img src="http://www.dev.tocorobimy.pl/public/assets/img/brak-foty.png" alt="" class="event-image" />
+                                            {else}
+                                                <img src="{$event->link_photo}" alt="" class="event-image" />
+                                            {/if}
+                                            <div class="caption" style="margin-top:180px;">
+                                           
+                                                <h4>{$event->name|strip_tags|substr:0:70}{if $event->name|strlen >= 70}...{/if}</h4>
+                            <span class="label label-important">
+                            {foreach from=$places item=place}
+                                {if $place->id == $event->place_id}
+                                    {$place->name|strip_tags|substr:0:38}{if $place->name|strlen >= 38}...{/if}
+                                {/if}
+                            {/foreach}
+                            </span>
+                            <br />
+                            <span class="label">{$event->date_start|date_format:"%A, %H:%M %e-%m-%Y"|replace:'Monday':'Poniedziałek'|replace:'Tuesday':'Wtorek'|replace:'Wednesday':'Środa'|replace:'Thursday':'Czwartek'|replace:'Friday':'Piątek'|replace:'Saturday':'Sobota'|replace:'Sunday':'Niedziela'}</span> <br />
+                            
+                            <span class="label label-success">
+                            {foreach from=$event_categories item=category}
+                                {if $event->category_id == $category['id']}
+                                {$category['name']} 
+                                {/if} 
+                            {/foreach}
+                            </span><br />
+                            <span class="label label-info">
+                            {$event->preferences|replace:'sam':'single'|replace:'para':'pary'|replace:'grupa':'grupy'}</span><br />
+                            
+                            
+                                                <p>{$event->description|strip_tags|substr:0:150} </p>
                         
-                            <li class="span4">
-                                <div class="thumbnail">
-                                    {if empty($event->link_photo) or $event->link_photo == "http://pik.wroclaw.pl/"}
-                                    <img src="http://www.dev.tocorobimy.pl/public/assets/img/brak-foty.png" alt="" class="event-image" />
-                                    {else}
-                                    	<img src="{$event->link_photo}" alt="" class="event-image" />
-               						{/if}
-                                    <div class="caption" style="margin-top:180px;">
-                                   
-                                        <h4>{$event->name|strip_tags|substr:0:70}{if $event->name|strlen >= 70}...{/if}</h4>
-                    <span class="label label-important">
-                    {foreach from=$places item=place}
-                		{if $place->id == $event->place_id}
-                    		{$place->name|strip_tags|substr:0:38}{if $place->name|strlen >= 38}...{/if}
-                    	{/if}
-                    {/foreach}
-                    </span>
-                    <br />
-                    <span class="label">{$event->date_start|date_format:"%A, %H:%M %e-%m-%Y"|replace:'Monday':'Poniedziałek'|replace:'Tuesday':'Wtorek'|replace:'Wednesday':'Środa'|replace:'Thursday':'Czwartek'|replace:'Friday':'Piątek'|replace:'Saturday':'Sobota'|replace:'Sunday':'Niedziela'}</span> <br />
-                    
-                    <span class="label label-success">
-                    {foreach from=$event_categories item=category}
-						{if $event->category_id == $category['id']}
-                        {$category['name']} 
-						{/if} 
-	    			{/foreach}
-                    </span><br />
-                    <span class="label label-info">
-                    {$event->preferences|replace:'sam':'single'|replace:'para':'pary'|replace:'grupa':'grupy'}</span><br />
-                    
-                    
-                                        <p>{$event->description|strip_tags|substr:0:150} </p>
-                
-                                        <p><a href="/public/wydarzenia/wydarzenie/{$event->id}" class="btn btn-primary">Zobacz</a> <a href="#" class="btn">JakDojade</a></p>
-                                    </div>
+                                                <p><a href="/public/wydarzenia/wydarzenie/{$event->id}" class="btn btn-primary">Zobacz</a> <a href="#" class="btn">JakDojade</a></p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                
+                                {if $zmienna%3 == 2} 
+                                </ul>
                                 </div>
-                            </li>
-                        
-                        {if $zmienna%3 == 2} 
-                        </ul>
-                        </div>
-                        {/if}
+                                {/if}
                     {/if}
         	
-{/if}{/if}
+{/if}{/if}{/if}
 
         {/foreach}
         
