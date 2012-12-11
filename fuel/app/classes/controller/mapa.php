@@ -7,7 +7,7 @@
 		{
 			//Prepare map (with all locales)
 			$places = \Tocorobimy\Places::instance()->get();
-			$opt = array('zoom' => 13, 'center' => 'new google.maps.LatLng(51.107885,17.038538)', 'mapTypeId' => 'google.maps.MapTypeId.TERRAIN');
+			$opt = array('zoom' => 13, 'center' => 'new google.maps.LatLng(51.107885,17.038538)', 'mapTypeId' => 'google.maps.MapTypeId.ROADMAP');
 			$map1 = new \InesGmap\Map('lokalizator', 'lokalizator', $opt);
 
 			foreach ($places as $place) {
@@ -26,6 +26,30 @@
 			return $this->_tpl; // = View::forge('default/frontpage.smarty');
 		}
 
+
+		function action_szukaj() {
+
+			// Get searching address
+			$_address = trim((string) \Security::strip_tags(\Input::post('address', '')));
+
+			// Create new map and add address
+			$opt = array('zoom' => 13, 'center' => 'new google.maps.LatLng(51.107885,17.038538)', 'mapTypeId' => 'google.maps.MapTypeId.ROADMAP');
+			$map1 = new \InesGmap\Map('lokalizator', 'lokalizator', $opt);
+
+			$map1->addGeocode('gmap_szukaj', array('address' => $_address));
+
+			$view = View::forge('default/mapa/index.smarty');
+			$this->_tpl->set('body', $view);
+
+			// Show map
+			$mapa1_javascript = $map1->getScript(true);
+			$view->set('lokalizator_javascript', $mapa1_javascript, false);
+			$mapa1_html = $map1->getHtml('div', array('style' => 'width: 95%; height: 600px; border: 1px solid black; background: gray;'));
+			$view->set('lokalizator_html', $mapa1_html, false);
+
+			return $this->_tpl; // = View::forge('default/frontpage.smarty');
+
+		}
 
 		function action_ajax($id)
 		{
