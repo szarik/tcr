@@ -1,7 +1,7 @@
 ﻿<div class="footer">
 	<hr class="footer_hr">
 	<div>
-		<ul class="footer-menu">
+		<ul class="footer_menu">
 			<li>{$zglos_blad_footer|default:""}</li>
 			<li>{$jak_to_dziala_footer|default:""}</li>
 			<li>{$regulamin_footer|default:""}</li>

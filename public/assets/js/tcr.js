@@ -1,7 +1,7 @@
 $(function(){
     $(".colorbox").colorbox({inline:true, width:"50%"});
 	
-	$(".footer-link").hover(function() {
+	$(".footer_link").hover(function() {
 		$(this).stop().animate({color: 'black'}, 600);
 	}, function() {
 		$(this).stop().animate({color: 'rgb(190,190,190)'}, 300);

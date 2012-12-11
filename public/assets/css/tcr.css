@@ -95,25 +95,25 @@ label[for*='form_'] {
 	);
 }
 
-.footer-menu {
+.footer_menu {
 	list-style-type:none;
 	margin:0;
 	padding:0;
 }
 
-.footer-menu > li {
+.footer_menu > li {
 	display:inline;
 	margin-left: 10px;
 	margin-right: 10px;
 }
 
-.footer-menu > li > a {
+.footer_link {
 	display:inline;
+	color: rgb(190,190,190);
 }
 
-.footer-menu > li > a {
-	text-decoration: none;
-	color: rgb(190,190,190);
+.footer_active {
+	color: black;
 }
 
 .round_frame {
@@ -140,4 +140,8 @@ label[for*='form_'] {
 
 .align_right {
 	text-align: right;
+}
+
+.footer_menu > li > a {
+	text-decoration: none;
 }

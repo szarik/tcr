@@ -16,15 +16,21 @@
                     <a href="#form-event" class="btn btn-info colorbox">+ Dodaj wydarzenie</a>
                 </p>
                 <ul class="nav">
-                    <li class="active"><a href="#">Strona główna</a></li>
+                    <li {if $highlight_strona_glowna}
+                    	class="active"
+                    	{/if}>{$strona_glowna_header|default:""}</li>
                     <li>
                         {$header_search.open}
                             {$header_search.field}
                             {$header_search.submit}
                         {$header_search.close}
                     </li>
-                    <li>{$jak_to_dziala_header|default:""}</li>
-                    <li><a href="#contact">Kontakt</a></li>
+                    <li {if $current_site === "strona/jak_to_dziala"}
+                    	class="active"
+                    	{/if}>{$jak_to_dziala_header|default:""}</li>
+                    <li {if $current_site === "strona/kontakt"}
+                    	class="active"
+                    	{/if}>{$kontakt_header|default:""}</li>
                 </ul>
 
             </div>

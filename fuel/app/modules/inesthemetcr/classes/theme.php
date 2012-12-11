@@ -37,6 +37,9 @@ class Theme
 	// Extend default view by theme options
 	public static function extend_view($params, $return)
 	{
+		//	indicates which link to select as being visited
+		$current_site = explode(\Uri::base(), \Uri::current())[1];
+		$params->set('current_site', $current_site, false);
 		//	set preferences tabs and their selection
 		$preferences = array();
 		array_push($preferences, array('name' => 'Sam', 'selected' => (@strstr(strtolower(\Input::get('preferencja')), 'sam') ? 'true' : 'false')));
@@ -99,8 +102,11 @@ class Theme
 		$_header_form['field'] = \Form::input('address', \Input::post('address', ''), array('placeholder' => 'Podaj adres', 'class' => 'search-query'));
 		$_header_form['submit'] = \Form::button('submit', 'Szukaj', array('type' => 'submit', 'class' => 'btn btn-inverse'));
 		$params->set('header_search', $_header_form, false);
-		//		link to 'Jak to działa?'
+		//		links
+		$params->set('strona_glowna_header', \Html::anchor('/', 'Strona główna'), false);
+		$params->set('highlight_strona_glowna', strpos($current_site, 'wydarzenia/') !== false);
 		$params->set('jak_to_dziala_header', \Html::anchor('strona/jak_to_dziala', 'Jak to działa?'), false);
+		$params->set('kontakt_header', \Html::anchor('strona/kontakt', 'Kontakt'), false);
 
 		// Events
 		$fieldset = \Fieldset::forge('form_event')->add_model('Model_Event');
@@ -121,17 +127,16 @@ class Theme
 
 		// Footer
 		//		Regulamin
-		$params->set('regulamin_footer', \Html::anchor('strona/regulamin', 'Regulamin', array('class' => 'footer-link')), false);
+		$params->set('regulamin_footer', \Html::anchor('strona/regulamin', 'Regulamin', array('class' => strpos($current_site, 'strona/regulamin') !== false ? 'footer_active' : 'footer_link')), false);
 		//		Prawa autorskie
-		$params->set('prawa_autorskie_footer', \Html::anchor('strona/prawa_autorskie', 'Prawa autorskie', array('class' => 'footer-link')), false);
+		$params->set('prawa_autorskie_footer', \Html::anchor('strona/prawa_autorskie', 'Prawa autorskie', array('class' => strpos($current_site, 'strona/prawa_autorskie') !== false ? 'footer_active' : 'footer_link')), false);
 		//		Kontakt
-		$params->set('kontakt_footer', \Html::anchor('strona/kontakt', 'Kontakt', array('class' => 'footer-link')), false);
+		$params->set('kontakt_footer', \Html::anchor('strona/kontakt', 'Kontakt', array('class' => strpos($current_site, 'strona/kontakt') !== false ? 'footer_active' : 'footer_link')), false);
 		//		Zglos błąd
-		$params->set('zglos_blad_footer', \Html::anchor('strona/zglos_blad', 'Zgłoś błąd', array('class' => 'footer-link')), false);
+		$params->set('zglos_blad_footer', \Html::anchor('strona/zglos_blad', 'Zgłoś błąd', array('class' => strpos($current_site, 'strona/zglos_blad') !== false ? 'footer_active' : 'footer_link')), false);
 		//		Jak to działa?
-		$params->set('jak_to_dziala_footer', \Html::anchor('strona/jak_to_dziala', 'Jak to działa?', array('class' => 'footer-link')), false);
+		$params->set('jak_to_dziala_footer', \Html::anchor('strona/jak_to_dziala', 'Jak to działa?', array('class' => strpos($current_site, 'strona/jak_to_dziala') !== false ? 'footer_active' : 'footer_link')), false);
 		
 		return $params;
 	}
-
 }
