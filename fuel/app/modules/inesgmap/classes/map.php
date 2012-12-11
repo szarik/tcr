@@ -32,6 +32,7 @@
 		 * @var array
 		 */
 		protected $_geocode = array();
+		protected $_marker = array();
 
 		/**
 		 * Google Map options
@@ -45,6 +46,12 @@
 		 * @var
 		 */
 		protected $_raw;
+
+		/**
+		 * Array of additional options
+		 * @var array
+		 */
+		protected $_additional = array();
 
 		/**
 		 * Create a new Google Map
@@ -134,6 +141,24 @@
 			}
 		}
 
+		public function setAdditional($opt, $overwrite = true)
+		{
+			if (is_array($opt) && !empty($opt)) {
+
+				$_options = array();
+
+				foreach ($opt as $k => $o) {
+					$_options[(string) $k] = $o;
+				}
+
+				if ($overwrite === true) {
+					$this->_additional = array_merge((array) $this->_additional, (array) $_options);
+				} else {
+					$this->_additional = array_merge((array) $_options, (array) $this->_additional);
+				}
+			}
+		}
+
 		public function setRaw($code)
 		{
 			$code = str_replace('<script type="text/javascript">', '', $code);
@@ -189,6 +214,13 @@
 			}
 
 			return true;
+		}
+
+		/**
+		 * @param $cords
+		 */
+		public function addMarker($cords) {
+			$this->_marker[] = array('cords' => $cords);
 		}
 
 		/**
