@@ -12,6 +12,7 @@ class Theme
 		\Asset::css('bootstrap.css');
 		\Asset::css('bootstrap-responsive.css');
 		\Asset::css('colorbox.css');
+		\Asset::css('daterangepicker.css');
 		\Asset::css('tcr.css');
 
 		// Add extended JS
@@ -21,6 +22,8 @@ class Theme
 		\Asset::js('jquery.colorbox-min.js');
 		\Asset::js('jquery.animate-colors.js');
 		\Asset::js('bootstrap.js');
+		\Asset::js('daterangepicker.js');
+		\Asset::js('date.js');
 		\Asset::js('tcr.js');
 
 		// Register hooks
@@ -38,7 +41,8 @@ class Theme
 	public static function extend_view($params, $return)
 	{
 		//	indicates which link to select as being visited
-		$current_site = explode(\Uri::base(), \Uri::current())[1];
+		$temp = explode(\Uri::base(), \Uri::current());
+		$current_site = $temp[1];
 		$params->set('current_site', $current_site, false);
 		//	set preferences tabs and their selection
 		$preferences = array();
@@ -56,28 +60,15 @@ class Theme
 		array_push($prices, array('name' => 'do 100 zł', 'get_param' => '0-100','selected' => (@strstr(strtolower(\Input::get('cena')), '0-100') ? 'true' : 'false')));
 		$params->set('prices', $prices, false);
 		
-		//	set dates tabs and their selection
-		$dates = array();
-		array_push($dates, array('name' => 'Dziś', 'get_param' => 'Dzis','selected' => (@strstr(strtolower(\Input::get('data')), 'dzis') ? 'true' : 'false')));
-		array_push($dates, array('name' => 'Jutro', 'selected' => (@strstr(strtolower(\Input::get('data')), 'jutro') ? 'true' : 'false')));
-		array_push($dates, array('name' => 'Pojutrze', 'selected' => (@strstr(strtolower(\Input::get('data')), 'pojutrze') ? 'true' : 'false')));
-		array_push($dates, array('name' => 'Kolejne dni', 'selected' => /*TODO: */ 'false'));
-		$params->set('dates', $dates, false);
-		
 		$params->set('places', \Tocorobimy\Places::instance()->get(), false);
 		$_r = \Tocorobimy\Places::instance()->get(\Input::get('lokal'));
 		$params->set('selected_place', $_r->current(), false);
 
 		// filter events
-// 		$events = \Tocorobimy\Model\Tocorobimy::get_events_for_filters(
-// 				\Input::get('kategoria') ? explode(',', \Input::get('kategoria')) : array(),
-// 				\Input::get('preferencja') ? explode(',', \Input::get('preferencja')) : array(),
-// 				\Input::get('cena') ? explode(',', \Input::get('cena')) : array(),
-// 				\Input::get('data') ? explode(',', \Input::get('data')) : array());
 		$events_for_sidepanel = \Tocorobimy\Model\Tocorobimy::get_events_for_filters(
 				\Input::get('preferencja') ? explode(',', \Input::get('preferencja')) : array(),
 				\Input::get('cena') ? explode(',', \Input::get('cena')) : array(),
-				\Input::get('data') ? explode(',', \Input::get('data')) : array());
+				\Input::get('data'));
 		$events = \Tocorobimy\Model\Tocorobimy::get_events_for_categories($events_for_sidepanel, \Input::get('kategoria') ? explode(',', \Input::get('kategoria')) : array());
 
 		//	set categories tabs, their selection and counter for filtered events

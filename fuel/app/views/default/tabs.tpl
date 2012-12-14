@@ -56,7 +56,7 @@
                                     <li class="span4">
                                         <div class="thumbnail">
                                             {if empty($event->link_photo) or $event->link_photo == "http://pik.wroclaw.pl/"}
-                                            <img src="http://www.dev.tocorobimy.pl/public/assets/img/brak-foty.png" alt="" class="event-image" />
+                                            	<img src="http://www.dev.tocorobimy.pl/public/assets/img/brak-foty.png" alt="" class="event-image" />
                                             {else}
                                                 <img src="{$event->link_photo}" alt="" class="event-image" />
                                             {/if}

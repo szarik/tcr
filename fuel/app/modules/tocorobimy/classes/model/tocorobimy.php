@@ -128,23 +128,21 @@ class Tocorobimy extends \Model
 		return $counter;
 	}
 
-	public static function get_events_for_filters($_preferences, $_prices, $_dates)
+	public static function get_events_for_filters($_preferences, $_prices, $_date)
 	{
 		$_query = \DB::select('events.id', 'place_id', 'events.name', 'description', 'date_end', 'preferences', 'periodicity', 'coordinates', 'visible', 'events.date_created', 'date_start', 'events.date_modified', 'link', 'link_photo', 'link_movie', 'category_id', array('categories.name','category_name'))->from('events')->join('categories')->on('events.category_id', '=', 'categories.id');
 		
-// 		if (!empty($_categories))
-// 		{
-// 			$_query->where(\DB::expr('LOWER(categories.name)'), 'IN', $_categories);
-// 		}
-		if (!empty($_dates))
+		if (!empty($_date))
 		{
-			$_query->where_open();
-			foreach($_dates as $date)
+			$dates = explode('_', $_date);
+			if(count($dates) > 1)
 			{
-				//	support only for date names at them moment
-				$_query->or_where(\DB::expr('CAST(date_start AS DATE)'), '=', \Tocorobimy\Model\Tocorobimy::datename_to_date(strtolower($date)));
+				$_query->or_where(\DB::expr('CAST(date_start AS DATE)'), 'between', array($dates[0], $dates[1]));
 			}
-			$_query->where_close();
+			else
+			{
+				$_query->or_where(\DB::expr('CAST(date_start AS DATE)'), '=', $_date);
+			}
 		}
 		else
 		{

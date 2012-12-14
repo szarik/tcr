@@ -1,4 +1,6 @@
 $(function(){
+	$('.datepicker').daterangepicker({format: 'yyyy-MM-dd'});
+	
     $(".colorbox").colorbox({inline:true, width:"50%"});
 	
 	$(".footer_link").hover(function() {
@@ -48,7 +50,10 @@ function ustawFiltr(filter, value, singleOption) {
 			}
 			else if(filter_name === filter && singleOption) {
 				filter_existed = true;
-				if(value !== filter_value) {
+				if(filter === 'data') {
+					result_filters += (result_filters.split('=')[1] ? '&' : '') + filter_name + "=" + value;
+				}
+				else if(value !== filter_value) {
 					result_filters += (result_filters.split('=')[1] ? '&' : '') + filter_name + "=" + value;
 				}
 			}
