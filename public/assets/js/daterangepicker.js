@@ -86,11 +86,12 @@
                       '<label for="daterangepicker_end">' + this.locale.toLabel + '</label>' +
                       '<input class="input-mini" type="text" name="daterangepicker_end" value="" disabled="disabled" />' +
                     '</div>' +
-                    '<button class="btn btn-small btn-success" disabled="disabled" onclick="submitDates()">' + this.locale.applyLabel + '</button>' +
+                  
                     '<br/><br/><br/>' +
                     '<br/><button style="width: 70px" class="btn btn-small btn-info" disabled="disabled" onclick="setDate(new Date())">Dziś</button>' +
                     '<br/><button style="margin-top: 4px; margin-bottom: 4px; width: 70px" class="btn btn-small btn-warning" disabled="disabled" onclick="setDate(new Date(new Date().getTime()+(24*60*60*1000)))">Jutro</button>' +
-                    '<br/><button style="width: 70px" class="btn btn-small btn-danger" disabled="disabled" onclick="setDate(new Date(new Date().getTime()+2*(24*60*60*1000)))">Pojutrze</button>' +
+                    '<br/><button style="width: 70px" class="btn btn-danger" disabled="disabled" onclick="setDate(new Date(new Date().getTime()+2*(24*60*60*1000)))">Pojutrze</button><br />' +
+					 '<button class="btn btn-small btn-success" disabled="disabled" onclick="submitDates()">' + this.locale.applyLabel + '</button>' +
                   '</div>' +
                 '</div>' +
               '</div>';
