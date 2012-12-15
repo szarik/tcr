@@ -28,10 +28,10 @@ function ustawFiltr(filter, value, singleOption) {
 	filters = href[1];
 	
 	if(filters == null && value == null) {
-		window.location.href = baseUrl + "public/";
+		window.location.href = TCR_BASEURL;
 	}
 	else if(filters == null) {
-		window.location.href = baseUrl + "public/?" + filter + '=' + value;
+		window.location.href = TCR_BASEURL + "?" + filter + '=' + value;
 	}
 	else {
 		filters = filters.split('&');
@@ -89,11 +89,14 @@ function ustawFiltr(filter, value, singleOption) {
 			result_filters += (result_filters.split('=')[1] ? '&' : '') + filter + '=' + value;
 		}
 		
-		window.location.href = getBaseURL() + "public/" + (result_filters.split('=')[1] ? '?' + result_filters : '');
+		window.location.href = TCR_BASEURL + (result_filters.split('=')[1] ? '?' + result_filters : '');
 	}
 }
 
 function getBaseURL() {
+
+	return TCR_BASEURL;
+
     var url = location.href;  // entire url including querystring - also: window.location.href;
     var baseURL = url.substring(0, url.indexOf('/', 14));
 

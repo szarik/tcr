@@ -47,6 +47,7 @@ class Controller_Ines_Site extends Controller
 		// Cfg
 		$this->_tpl->set('config', ines::configGet());
 		$this->_tpl->set('theme', ines::configGet('theme', 'default'));
+		$this->_tpl->set('baseurl', \Uri::base(false));
 
 		
 

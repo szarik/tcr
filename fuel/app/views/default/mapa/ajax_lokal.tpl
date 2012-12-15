@@ -17,7 +17,7 @@
 {if $lokal->address_street_name && $lokal->address_street_name|strlen > 2}
 	<div class="address"> <span></span> {$lokal->address_street_name}
         {if $mapa_start && $mapa_start != false}
-            <a href="http://jakdojade.pl/?tn={$lokal->address_street_name}&fn={$mapa_start}&cid=2000" target="_blank" title="JakDojade"> (jak dojadę?) </a>
+			<a href="http://jakdojade.pl/?tn={$lokal->address_street_name}&fn={$mapa_start}&cid=2000" target="_blank" title="JakDojade"> (jak dojadę?) </a>
         {/if}
     </div> {/if}
 {if $lokal->phone && $lokal->phone|strlen > 2}

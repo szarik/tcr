@@ -14,6 +14,10 @@
     {$assets|default:''}{$assets_external|default:''}{$assets_js_raw|default:''}<!--[if IE]>
     {$cssie|default:''}<![endif]-->
 
+    <script type="text/javascript">
+        var TCR_BASEURL = '{$baseurl}';
+    </script>
+
 </head>
 <body>
 

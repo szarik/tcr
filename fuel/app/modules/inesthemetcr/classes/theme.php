@@ -88,7 +88,8 @@ class Theme
 		$params->set('lokalizator_wydarzen_javascript', $map2->getScript(true), false);
 		$params->set('lokalizator_wydarzen_html', $map2->getHtml('div', array('style' => 'width: 95%; height: 600px; border: 1px solid black; background: gray;')), false);
 
-
+		// Mapa start
+		$params->set('mapa_start', \Session::get('mapa_start', false));
 
 		//	set categories tabs, their selection and counter for filtered events
 		$categories = \Tocorobimy\Categories::instance()->get();
