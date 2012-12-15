@@ -218,3 +218,14 @@ label[for*='form_'] {
     float: left;
     padding: 0 5px 0 0;
 }
+
+#gmap_lokal div.additional {
+    padding: 10px 10px 0 10px;
+    font: normal 11px tahoma;
+}
+
+#gmap_lokal div.additional h1 {
+    font: bold 12px tahoma;
+    margin: 0;
+    padding: 0;
+}

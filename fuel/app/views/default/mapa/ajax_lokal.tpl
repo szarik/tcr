@@ -27,4 +27,14 @@
 {if $lokal->website && $lokal->website|strlen > 2}
 	<div class="website"> <span></span> <a href="{$lokal->website}">{$lokal->website}</a> </div> {/if}
 
+    {if $dodatkowe_lokale}
+        <div class="additional">
+            <h1> Inne lokale w tym miejscu: </h1>
+        {foreach from=$dodatkowe_lokale item=dodatkowy_lokal}
+            <div> - {$dodatkowy_lokal->name} </div>
+        {/foreach}
+		</div>
+    {/if}
+    <div> </div>
+
 </div>

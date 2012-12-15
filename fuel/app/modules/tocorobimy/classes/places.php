@@ -32,11 +32,9 @@ class Places
 	/**
 	 * Get places list
 	 */
-	public function get($places = null)
+	public function get($places = null, $options = array())
 	{
-
-
-		if ($places === null) {
+		if ($places === null && empty($options)) {
 			// Get all categories if null
 			return Model::get_places();
 
@@ -49,11 +47,11 @@ class Places
 				$_places = (array)$places;
 			}
 
-			if (empty($_places)) {
+			if (empty($_places) && empty($options)) {
 				return null;
 			}
 
-			return Model::get_places($_places);
+			return Model::get_places($_places, null, null, $options);
 		}
 	}
 

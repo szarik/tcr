@@ -27,7 +27,8 @@
 		}
 
 
-		function action_szukaj() {
+		function action_szukaj()
+		{
 
 			// Get searching address
 			$_address = trim((string) \Security::strip_tags(\Input::post('address', '')));
@@ -42,9 +43,13 @@
 
 			$map1->setAdditional(array('not_bound' => true)); // we do not want to bound all points
 
-			$places = \Tocorobimy\Places::instance()->get();
-			foreach ($places as $place) {
-				$map1->addMarker(array('id' => $place->id, 'lat' => $place->map_lat, 'lng' => $place->map_lng));
+			$_single_place = array();
+			foreach (\Tocorobimy\Places::instance()->get() as $place) {
+				$_chack_data = $place->map_lat . '#' . $place->map_lng;
+				if (!in_array($_chack_data, $_single_place)) {
+					$map1->addMarker(array('id' => $place->id, 'lat' => $place->map_lat, 'lng' => $place->map_lng));
+					$_single_place[] = $_chack_data;
+				}
 			}
 
 			$map1->addGeocode('gmap_szukaj', array('address' => $_address));
@@ -65,7 +70,10 @@
 		function action_ajax($id)
 		{
 			$view = View::forge('default/mapa/ajax_lokal.smarty');
-			$view->set('lokal', \Tocorobimy\Places::instance()->get($id)->current(), false);
+			$place = \Tocorobimy\Places::instance()->get($id)->current();
+			$view->set('lokal', $place, false);
+			$additional_places = \Tocorobimy\Places::instance()->get(null, array('map_lat' => $place->map_lat, 'map_lng' => $place->map_lng));
+			$view->set('dodatkowe_lokale', $additional_places, false);
 			$view->set('mapa_start', \Session::get('mapa_start', false));
 			echo $view->render();
 			die();

@@ -66,12 +66,18 @@ class Tocorobimy extends \Model
 	 * @param null $_categories
 	 * @return mixed
 	 */
-	public static function get_places($_places = null, $_limit = null, $_offset = null)
+	public static function get_places($_places = null, $_limit = null, $_offset = null, $_params = array())
 	{
 		$_query = \DB::select("*")->from('places');
 
-		if ($_places !== null) {
+		if ($_places !== null && $_places[0] > 0) {
 			$_query->where('id', 'IN', $_places);
+		}
+
+		if(is_array($_params) && !empty($_params)) {
+			foreach($_params as $param_name => $param_value) {
+				$_query->where($param_name, '=', $param_value);
+			}
 		}
 
 		if ((int)$_limit > 0) {
