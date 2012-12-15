@@ -76,17 +76,17 @@ class Theme
 		$opt = array('zoom' => 13, 'center' => 'new google.maps.LatLng(51.107885,17.038538)', 'mapTypeId' => 'google.maps.MapTypeId.ROADMAP');
 		$map2 = new \InesGmap\Map('lokalizator_wydarzen', 'lokalizator_wydarzen', $opt);
 
-/*		$_single_place = array();
+		$_single_place = array();
 		foreach ($events as $event) {
 			$_chack_data = $event->map_lat . '#' . $event->map_lng;
 			if (!in_array($_chack_data, $_single_place)) {
-				$map2->addMarker(array('id' => $place->id, 'lat' => $place->map_lat, 'lng' => $place->map_lng));
+				$map2->addMarker(array('id' => $event->id, 'lat' => $event->map_lat, 'lng' => $event->map_lng));
 				$_single_place[] = $_chack_data;
 			}
-		}*/
+		}
 		// Show map
-		$params->set('mapa2_javascript', 'a', false); //= $map2->getScript(true);
-		$params->set('mapa2_html', 'b', false); //$map2->getHtml('div', array('style' => 'width: 95%; height: 600px; border: 1px solid black; background: gray;'));
+		$params->set('lokalizator_wydarzen_javascript', $map2->getScript(true), false);
+		$params->set('lokalizator_wydarzen_html', $map2->getHtml('div', array('style' => 'width: 95%; height: 600px; border: 1px solid black; background: gray;')), false);
 
 
 
