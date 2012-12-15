@@ -82,6 +82,10 @@
 		protected function _js_markers()
 		{
 
+			if(!isset($this->_additional['type'])) {
+				$this->_additional['type'] = 'place';
+			}
+
 			if (!empty($this->_marker)) {
 				$return = '';
 				$return .= 'var markers = [];';
@@ -96,7 +100,7 @@
 				foreach ($this->_marker as $mark) {
 					if (strlen(trim($mark['cords']['lat'])) > 0 && strlen(trim($mark['cords']['lng'])) > 0) {
 						$return .= "var point_marker" . $i . " = new google.maps.LatLng(" . $mark['cords']['lat'] . ", " . $mark['cords']['lng'] . ");";
-						$return .= "var marker_main" . $i . " = new google.maps.Marker({map:map_" . $this->_id . ", position:point_marker" . $i . ", id: " . $mark['cords']['id'] . ", icon: ikona, shadow: cien});";
+						$return .= "var marker_main" . $i . " = new google.maps.Marker({map:map_" . $this->_id . ", position:point_marker" . $i . ", id: " . $mark['cords']['id'] . ", type: '".$this->_additional['type']."', icon: ikona, shadow: cien});";
 
 						if (isset($this->_additional['not_bound']) && $this->_additional['not_bound'] !== true) {
 							$return .= "bounds_" . $this->_id . ".extend(point_marker" . $i . ");";
@@ -137,7 +141,7 @@
 
 			$retrun .= 'function load_content(map, marker, infowindow){';
 			$retrun .= '$.ajax({';
-			$retrun .= 'url: "' . \Uri::base(false) . 'mapa/ajax/" + marker.id,';
+			$retrun .= 'url: "' . \Uri::base(false) . 'mapa/ajax/" + marker.id + "/" + marker.type,';
 			$retrun .= 'success: function(data){';
 			$retrun .= 'infowindow.setContent(data);';
 			$retrun .= 'infowindow.open(map, marker);';

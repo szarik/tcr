@@ -67,15 +67,19 @@
 
 		}
 
-		function action_ajax($id)
+		function action_ajax($id, $type)
 		{
-			$view = View::forge('default/mapa/ajax_lokal.smarty');
-			$place = \Tocorobimy\Places::instance()->get($id)->current();
-			$view->set('lokal', $place, false);
-			$additional_places = \Tocorobimy\Places::instance()->get(null, array('map_lat' => $place->map_lat, 'map_lng' => $place->map_lng));
-			$view->set('dodatkowe_lokale', $additional_places, false);
-			$view->set('mapa_start', \Session::get('mapa_start', false));
-			echo $view->render();
+			if ($type == 'place') {
+				$view = View::forge('default/mapa/ajax_lokal.smarty');
+				$place = \Tocorobimy\Places::instance()->get($id)->current();
+				$view->set('lokal', $place, false);
+				$additional_places = \Tocorobimy\Places::instance()->get(null, array('map_lat' => $place->map_lat, 'map_lng' => $place->map_lng));
+				$view->set('dodatkowe_lokale', $additional_places, false);
+				$view->set('mapa_start', \Session::get('mapa_start', false));
+				echo $view->render();
+			} else if ($type == 'event') {
+				echo "EVENT IT " . $id;
+			}
 			die();
 		}
 	}

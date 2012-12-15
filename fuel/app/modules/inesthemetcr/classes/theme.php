@@ -75,6 +75,7 @@ class Theme
 		// Events map
 		$opt = array('zoom' => 13, 'center' => 'new google.maps.LatLng(51.107885,17.038538)', 'mapTypeId' => 'google.maps.MapTypeId.ROADMAP');
 		$map2 = new \InesGmap\Map('lokalizator_wydarzen', 'lokalizator_wydarzen', $opt);
+		$map2->setAdditional(array('type' => 'event'));
 
 		$_single_place = array();
 		foreach ($events as $event) {
