@@ -30,7 +30,7 @@
 					<li class="span4">
 						<div class="thumbnail">
                             {if empty($event->link_photo) or $event->link_photo == "http://pik.wroclaw.pl/"}
-								<img src="http://www.dev.tocorobimy.pl/public/assets/img/brak-foty.png" alt="" class="event-image"/>
+								<img src="/assets/img/brak-foty.png" alt="" class="event-image"/>
                                 {else}
 								<img src="{$event->link_photo}" alt="" class="event-image"/>
                             {/if}
@@ -62,7 +62,7 @@
 								<p>{$event->description|strip_tags|substr:0:150} </p>
 
 								<p>
-									<a href="/public/wydarzenia/wydarzenie/{$event->id}" class="btn btn-primary">Zobacz</a>
+									<a href="/wydarzenia/wydarzenie/{$event->id}" class="btn btn-primary">Zobacz</a>
                                     {if isset($event->map_lat) && isset($event->map_lon)}
 										<a href="http://jakdojade.pl/?tc={$event->map_lat}:{$event->map_lon}&cid=2000" target="_blank" class="btn">JakDojade</a>
                                         {elseif isset($event->address_street_name)}
@@ -162,7 +162,7 @@
 
 
     {if $prev != 1}
-		<li><a href="/public/wydarzenia/strona/{$prev-1}{$ogon}">Poprzednia</a></li>
+		<li><a href="/wydarzenia/strona/{$prev-1}{$ogon}">Poprzednia</a></li>
     {/if}
 
 
@@ -174,7 +174,7 @@
             {if $zmienna_pomocnicza > 0}
 
 
-				<li><a href="/public/wydarzenia/strona/{$zmienna_pomocnicza}{$ogon}">
+				<li><a href="/wydarzenia/strona/{$zmienna_pomocnicza}{$ogon}">
                     {if $zmienna_pomocnicza == $nr_strony} <b>{$zmienna_pomocnicza}</b>{else} {$zmienna_pomocnicza}{/if}
 				</a></li>
 
@@ -188,7 +188,7 @@
 
 
     {if $next != $strona}
-		<a href="/public/wydarzenia/strona/{$next}{$ogon}">Następna</a></li>
+		<a href="/wydarzenia/strona/{$next}{$ogon}">Następna</a></li>
     {/if}
 
 		<!-- {while $zmienna_pomocnicza < 10+$nr_strony}

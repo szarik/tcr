@@ -32,16 +32,21 @@
 	    {/foreach}
 	    
 		<li class="nav-header">Data</li>
+        
+        <li {if isset($smarty.get.data)}
+        		class="active"
+        	{/if}>
+        	<a href="#" class="datepicker" data-date-format="yyyyyy-mm-dd" data-date="javascript:date()">{if !isset($smarty.get.data)}<i class="icon-chevron-down"></i> Wybierz datę <i class="icon-calendar"></i>{else}
+            
+            Wybrana data:  {$smarty.get.data} <i class="icon-calendar"></i>  
+            
+            {/if}</a>
+        </li>
         <li {if !isset($smarty.get.data)}
         		class="active"
         	{/if}>
         	<a href="javascript:ustawFiltr('data', null, false)">Dowolna</a>
-        </li>
-        <li {if isset($smarty.get.data)}
-        		class="active"
-        	{/if}>
-        	<a href="#" class="datepicker" data-date-format="yyyyyy-mm-dd" data-date="javascript:date()">{if !isset($smarty.get.data)}Wybierz datę{else}Wybrana data{/if}</a>
-        </li>
+        </li><!-- 
         <li class="nav-header">Budżet</li>
         <li {if !isset($smarty.get.cena)}
                 class="active" 
@@ -63,9 +68,9 @@
             
             {$price['name']}</a></li>
         {/foreach}
+        -->
         
-        
-        <li class="nav-header">Kto idzie?</li>
+       <!-- <li class="nav-header">Kto idzie?</li>
         <li {if !isset($smarty.get.preferencja)}
                 class="active" 
             {/if}><a href="javascript:ustawFiltr('preferencja', null, false)">
@@ -82,6 +87,6 @@
                      {/if}
                      </i>
                 {$preference['name']}</a></li>
-        {/foreach}
+        {/foreach} -->
     </ul>
 </div>
