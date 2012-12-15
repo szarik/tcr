@@ -11,10 +11,7 @@
             <a class="brand" href="{$config.path}"></a>
 
             <div class="nav-collapse collapse">
-                <p class="navbar-text pull-right">
-                    <a href="#form-place" class="btn btn-info colorbox">+ Dodaj miejsce</a> &nbsp;&nbsp;
-                    <a href="#form-event" class="btn btn-info colorbox">+ Dodaj wydarzenie</a>
-                </p>
+                
                 <ul class="nav">
                     <li {if isset($highlight_strona_glowna)}
                     	class="active"
@@ -31,6 +28,12 @@
                     <li {if isset($current_site) && $current_site === "strona/kontakt"}
                     	class="active"
                     	{/if}>{$kontakt_header|default:""}</li>
+                        </ul>
+                        
+                  <ul style="list-style-type:none;">
+                    <li><a href="#form-place" class="btn btn-info colorbox">+ Dodaj miejsce</a> 
+                    <a href="#form-event" class="btn btn-info colorbox">+ Dodaj wydarzenie</a></li>
+                </p>
                 </ul>
 
             </div>
