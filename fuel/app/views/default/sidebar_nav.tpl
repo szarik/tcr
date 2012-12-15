@@ -13,7 +13,7 @@
                <i class="icon-ok"></i>
             {/if}
             
-            Wszystko  ({$events_all})</a>
+            Dowolna  ({$events_all})</a>
         </li>
     
 	    {foreach from=$event_categories item=category}
@@ -35,8 +35,7 @@
         
         <li {if isset($smarty.get.data)}
         		class="active"
-        	{/if}>
-        	<a href="#" class="datepicker" data-date-format="yyyyyy-mm-dd" data-date="javascript:date()">{if !isset($smarty.get.data)}<i class="icon-chevron-down"></i> Wybierz datę <i class="icon-calendar"></i>{else}
+        	{/if}>        	<a href="#" class="datepicker" data-date-format="yyyyyy-mm-dd" data-date="javascript:date()">{if !isset($smarty.get.data)}<i style="padding-left:-500px;" class="icon-chevron-down"></i> Wybierz datę{else}
             
             Wybrana data:  {$smarty.get.data} <i class="icon-calendar"></i>  
             

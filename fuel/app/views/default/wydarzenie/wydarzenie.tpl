@@ -70,9 +70,9 @@
 {$miejsce = $place->name}
 {$id_miejsce = $place->id}
 <ul class="breadcrumb">
-<li><a href="../../">Wydarzenia</a> <span class="divider">/</span></li>
+<li><a href="/">Wydarzenia</a> <span class="divider">/</span></li>
 {if !empty($event->category_id)}
-<li><a href="/public/wydarzenia/strona/1?kategoria={$event->category_id}">
+<li><a href="/wydarzenia/strona/1?kategoria={$event->category_name}">
 {foreach from=$event_categories item=category}
 {if $event->category_id == $category['id']}
 {$category['name']}

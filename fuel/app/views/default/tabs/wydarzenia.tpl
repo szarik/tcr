@@ -30,7 +30,7 @@
 					<li class="span4">
 						<div class="thumbnail">
                             {if empty($event->link_photo) or $event->link_photo == "http://pik.wroclaw.pl/"}
-								<img src="/assets/img/brak-foty.png" alt="" class="event-image"/>
+								<img src="http://www.dev.tocorobimy.pl/public/assets/img/brak-foty.png" alt="" class="event-image"/>
                                 {else}
 								<img src="{$event->link_photo}" alt="" class="event-image"/>
                             {/if}
@@ -62,7 +62,7 @@
 								<p>{$event->description|strip_tags|substr:0:150} </p>
 
 								<p>
-									<a href="/wydarzenia/wydarzenie/{$event->id}" class="btn btn-primary">Zobacz</a>
+									<a href="/wydarzenia/wydarzenie/{$event->id}{if isset($smarty.get)}/?{/if}{if isset($smarty.get.kategoria)}kategoria={$smarty.get.kategoria}{/if}{if isset($smarty.get.kategoria) && isset($smarty.get.data)}&{/if}{if isset($smarty.get.data)}data={$smarty.get.data}{/if}" class="btn btn-primary">Zobacz</a>
                                     {if isset($event->map_lat) && isset($event->map_lon)}
 										<a href="http://jakdojade.pl/?tc={$event->map_lat}:{$event->map_lon}&cid=2000" target="_blank" class="btn">JakDojade</a>
                                         {elseif isset($event->address_street_name)}
