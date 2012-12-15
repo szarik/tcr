@@ -33,30 +33,9 @@
 			$mapa1_javascript = $map1->getScript(true);
 			$mapa1_html = $map1->getHtml('div', array('style' => 'width: 95%; height: 600px; border: 1px solid black; background: gray;'));
 
-			//Prepare map (with all events)
-			//$places = \Tocorobimy\Places::instance()->get();
-			$opt = array('zoom' => 13, 'center' => 'new google.maps.LatLng(51.107885,17.038538)', 'mapTypeId' => 'google.maps.MapTypeId.ROADMAP');
-			$map2 = new \InesGmap\Map('lokalizator_wydarzen', 'lokalizator_wydarzen', $opt);
-
-			/*$_single_place = array();
-			foreach ($places as $place) {
-				$_chack_data = $place->map_lat . '#' . $place->map_lng;
-				if (!in_array($_chack_data, $_single_place)) {
-					$map2->addMarker(array('id' => $place->id, 'lat' => $place->map_lat, 'lng' => $place->map_lng));
-					$_single_place[] = $_chack_data;
-				}
-			}*/
-
-			// Show map
-			$mapa2_javascript = $map2->getScript(true);
-			$mapa2_html = $map2->getHtml('div', array('style' => 'width: 95%; height: 600px; border: 1px solid black; background: gray;'));
-
-
 			$view = View::forge('default/tabs.smarty');
 			$view->set('lokalizator_javascript', $mapa1_javascript, false);
 			$view->set('lokalizator_html', $mapa1_html, false);
-			$view->set('lokalizator_wydarzen_javascript', $mapa2_javascript, false);
-			$view->set('lokalizator_wydarzen_html', $mapa2_html, false);
 
 			$this->_tpl->set('body', $view);
 			$this->_tpl->set('nr_strony', $nr_strony);

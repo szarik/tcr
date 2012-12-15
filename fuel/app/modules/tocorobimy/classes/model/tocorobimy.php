@@ -136,8 +136,9 @@ class Tocorobimy extends \Model
 
 	public static function get_events_for_filters($_preferences, $_prices, $_date)
 	{
-		$_query = \DB::select('events.id', 'place_id', 'events.name', 'description', 'date_end', 'preferences', 'periodicity', 'coordinates', 'visible', 'events.date_created', 'date_start', 'events.date_modified', 'link', 'link_photo', 'link_movie', 'category_id', array('categories.name','category_name'))->from('events')->join('categories')->on('events.category_id', '=', 'categories.id');
-		
+		$_query = \DB::select('places.map_lng', 'places.map_lat', 'places.address_street_name', 'events.id', 'place_id', 'events.name', 'events.description', 'date_end', 'preferences', 'periodicity', 'coordinates', 'visible', 'events.date_created', 'date_start', 'events.date_modified', 'link', 'link_photo', 'link_movie', 'category_id', array('categories.name','category_name'))->from('events')->join('categories')->on('events.category_id', '=', 'categories.id');
+		$_query->join('places', 'left')->on('places.id', '=', 'place_id');
+
 		if (!empty($_date))
 		{
 			$dates = explode('_', $_date);
@@ -178,7 +179,6 @@ class Tocorobimy extends \Model
 		}
 		
 		$_query->order_by('events.id', 'desc');
-		
 		$_query = $_query->as_object()->execute();
 		return $_query;
 	}
