@@ -2,7 +2,7 @@
         <ul class="nav nav-list "> -->
 <div class="well sidebar-nav">
     <ul class="nav nav-list bs-docs-sidenav"> 
-    	<li class="nav-header">Wybierz rodzaj wydarzenia</li>
+    	<li class="nav-header">Kategorie wydarzeń</li>
 
         <li	{if !isset($smarty.get.kategoria)}
                 class="active"
@@ -13,7 +13,11 @@
                <i class="icon-ok"></i>
             {/if}
             
-            Dowolna  ({$events_all})</a>
+            Dowolna  ({$events_all})
+            {if !isset($smarty.get.kategoria)}
+                <i style="margin-top:2px;" class="icon-chevron-right icon-white pull-right"></i>
+            {/if}
+            </a>
         </li>
     
 	    {foreach from=$event_categories item=category}
@@ -26,26 +30,34 @@
                      <i class="icon-ok">
                      {/if}
                      </i>
-                    {$category['name']}  ({$category['how_many']}) </a>
+                    {$category['name']}  ({$category['how_many']}) 
+                     {if isset($smarty.get.kategoria) && $category['selected'] == 'true'}
+                     <i style="margin-top:2px;" class="icon-chevron-right icon-white pull-right"></i>
+                      {/if}
+                    </a>
 		        </li>
 	        {/if}
 	    {/foreach}
 	    
 		<li class="nav-header">Data</li>
         
-        <li {if isset($smarty.get.data)}
-        		class="active"
-        	{/if}>        	<a href="#" class="datepicker" data-date-format="yyyyyy-mm-dd" data-date="javascript:date()">{if !isset($smarty.get.data)}<i style="padding-left:-500px;" class="icon-chevron-down"></i> Wybierz datę{else}
-            
-            Wybrana data:  {$smarty.get.data} <i class="icon-calendar"></i>  
-            
-            {/if}</a>
-        </li>
+        
         <li {if !isset($smarty.get.data)}
         		class="active"
         	{/if}>
-        	<a href="javascript:ustawFiltr('data', null, false)">Dowolna</a>
-        </li><!-- 
+           
+        	<a href="javascript:ustawFiltr('data', null, false)">Dowolna  {if !isset($smarty.get.data)}
+             <i style="margin-top:2px;" class="icon-chevron-right icon-white pull-right"></i>
+            {/if}</a>
+            
+        </li>
+        <li {if isset($smarty.get.data)}
+        		class="active"
+        	{/if}>        	<a href="#" class="datepicker" data-date-format="yyyyyy-mm-dd" data-date="javascript:date()">{if !isset($smarty.get.data)}<i style="padding-left:-500px;" class="icon-chevron-down"></i> Zmień datę{else}<i style="padding-left:-500px;" class="icon-chevron-down"></i>{$smarty.get.data|replace:'_':' '} <i class="icon-calendar"></i>  
+            
+            {/if}   <i style="margin-top:2px;" class="icon-chevron-right icon-white pull-right"></i></a>
+        </li>
+        <!-- 
         <li class="nav-header">Budżet</li>
         <li {if !isset($smarty.get.cena)}
                 class="active" 

@@ -2,22 +2,29 @@
 <div class="tabbable" style="margin-bottom: 18px;">
     <ul class="nav nav-tabs" id="xmyTab">
         <li {if isset($smarty.get.strona) && $smarty.get.strona == "wydarzenia"}class="active"{/if}
+           
             {if empty($smarty.get.strona)}class="active"{/if}>
-            <a href="#tab1" data-toggle="tab">Wydarzenia</a>
+            <a href="#tab1" data-toggle="tab"> <i style="padding-left:-500px;" class="icon-th"></i>
+            Wydarzenia</a>
         </li>
+        
         <li {if isset($smarty.get.strona) && $smarty.get.strona == "lokale"}class="active"{/if}>
-            <a href="#tab4" data-toggle="tab">Wydarzenia Lista</a>
+            <a href="#tab4" data-toggle="tab"> <i style="padding-left:-500px;" class="icon-th-list"></i> Wydarzenia Lista</a>
+        </li>
+       
+        <li {if isset($smarty.get.strona) && $smarty.get.strona == "lokalizator_wydarzen"}class="active"{/if}>
+                    <a href="#tab5" data-toggle="tab"><i style="padding-left:-500px;" class="icon-map-marker"></i>
+        Lokalizator wydarzeń</a>
+        </li>        
+        
+        
+        <li {if isset($smarty.get.strona) && $smarty.get.strona == "lokale"}class="active"{/if}>
+            <a href="#tab3" data-toggle="tab"><i style="padding-left:-500px;" class="icon-th-list"></i>  Miejsca</a>
         </li>
         <li {if isset($smarty.get.strona) && $smarty.get.strona == "lokalizator"}class="active"{/if}>
-            <a href="#tab2" data-toggle="tab">Lokalizator miejsc</a>
+                    <a href="#tab2" data-toggle="tab"><i style="padding-left:-500px;" class="icon-map-marker"></i> Lokalizator miejsc
+        </a>
         </li>
-        <li {if isset($smarty.get.strona) && $smarty.get.strona == "lokalizator_wydarzen"}class="active"{/if}>
-            <a href="#tab5" data-toggle="tab">Lokalizator wydarzeń</a>
-        </li>
-        <li {if isset($smarty.get.strona) && $smarty.get.strona == "lokale"}class="active"{/if}>
-            <a href="#tab3" data-toggle="tab">Lokale</a>
-        </li>
-
     </ul>
 
     <div class="tab-content" style="padding-bottom: 9px; border-bottom: 1px solid #ddd; height:100%;">
