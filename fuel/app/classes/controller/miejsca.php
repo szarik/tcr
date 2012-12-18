@@ -40,8 +40,8 @@ class Controller_Miejsca extends \Controller_Ines_Site
 			$place->address_city		= $fields['address_city'];
 			$place->address_postcode	= $fields['address_postcode'];
 			//$place->address_gps			= $fields['address_gps'];
-			$place->map_lat = $fiels['map_lat'];
-			$place->map_lng = $fiels['map_lng'];
+			$place->map_lat =			 $fields['map_lat'];
+			$place->map_lng =		 $fields['map_lng'];
 			$place->open_time			= $fields['open_time'];
 			//$place->end_time			= $fields['end_time'];
 			$place->phone				= $fields['phone'];
