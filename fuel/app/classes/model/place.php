@@ -51,11 +51,6 @@ class Model_Place extends \Orm\Model
          'label' => 'Godziny otwarcia',
 		 'validation' => array('required', 'max_length'=>array(255), 'min_length'=>array(3))
       ),
-	  'end_time' => array(
-         'data_type' => 'time',
-         'label' => 'Godziny zamkniecia',
-		 'validation' => array('required', 'max_length'=>array(255), 'min_length'=>array(3))
-      ),
 	  'phone' => array(
          'data_type' => 'string',
          'label' => 'Nr telefonu',
