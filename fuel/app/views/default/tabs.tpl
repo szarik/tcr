@@ -19,7 +19,12 @@
         
         
         <li {if isset($smarty.get.strona) && $smarty.get.strona == "lokale"}class="active"{/if}>
-            <a href="#tab3" data-toggle="tab"><i style="padding-left:-500px;" class="icon-th-list"></i>  Miejsca</a>
+            <a href="#tab3" 
+            data-toggle="tab" 
+           >
+             
+            
+            <i style="padding-left:-500px;" class="icon-th-list"></i>  Miejsca</a>
         </li>
         <li {if isset($smarty.get.strona) && $smarty.get.strona == "lokalizator"}class="active"{/if}>
                     <a href="#tab2" data-toggle="tab"><i style="padding-left:-500px;" class="icon-map-marker"></i> Lokalizator miejsc

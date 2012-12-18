@@ -57,6 +57,7 @@
             
             {/if}   <i style="margin-top:2px;" class="icon-chevron-right icon-white pull-right"></i></a>
         </li>
+        <li>
         <!-- 
         <li class="nav-header">Budżet</li>
         <li {if !isset($smarty.get.cena)}

@@ -1,15 +1,20 @@
 <div class="tab-pane {if isset($smarty.get.strona) && $smarty.get.strona == "wydarzenia"}active{/if}
                      {if !isset($smarty.get.strona)}active{/if}" id="tab1">
 <p>
+{$tooltip = 1}
 {$ilosc_wyswietlonych_na_stronie = 6}
 {$zmienna = -1}
 {$licznik = 0}
 {$wydarzenia_dla_strony = $ilosc_wyswietlonych_na_stronie*($nr_strony-1)}
+
+
 {$tablica_wydarzen = array()}
 
 {foreach from=$events item=event}
     {if in_array($event->name, $tablica_wydarzen)}
-
+    
+				
+                
         {else}
         {$tablica_wydarzen[] = $event->name}
 
@@ -38,14 +43,30 @@
 
 								<h4>{$event->name|strip_tags|substr:0:70}{if $event->name|strlen >= 70}...{/if}</h4>
                             <span class="label label-important">
-                                {foreach from=$places item=place}
+                            {$tooltip = $tooltip + 1}
+                                <!-- <a href="#" rel="tooltip{$tooltip}" data-original-title="Inne Kina"  data-placement="bottom" data-content="
+                              {$tablica_miejsc[$event->name]}
+                               		
+                              
+                                
+                                ">-->{foreach from=$places item=place}
                                     {if $place->id == $event->place_id}
-                                        {$place->name|strip_tags|substr:0:38}{if $place->name|strlen >= 38}...{/if}
+                                        
+                               {$place->name|strip_tags|substr:0:38}{if $place->name|strlen >= 38}...{/if}
                                     {/if}
-                                {/foreach}
+                                {/foreach}<!--</a>  -->
+								<script type="text/javascript">
+									$("[rel=tooltip{$tooltip}]").popover()
+								</script>
 							</span>
 								<br/>
-								<span class="label">{$event->date_start|date_format:"%A, %H:%M %e-%m-%Y"|replace:'Monday':'Poniedziałek'|replace:'Tuesday':'Wtorek'|replace:'Wednesday':'Środa'|replace:'Thursday':'Czwartek'|replace:'Friday':'Piątek'|replace:'Saturday':'Sobota'|replace:'Sunday':'Niedziela'}</span>
+								<span class="label">
+                                
+                               
+                               
+                                {$event->date_start|date_format:"%A, %H:%M %e-%m-%Y"|replace:'Monday':'Poniedziałek'|replace:'Tuesday':'Wtorek'|replace:'Wednesday':'Środa'|replace:'Thursday':'Czwartek'|replace:'Friday':'Piątek'|replace:'Saturday':'Sobota'|replace:'Sunday':'Niedziela'}
+                               
+                                </span>
 								<br/>
 
                             <span class="label label-success">

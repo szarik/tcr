@@ -89,10 +89,12 @@
 					<div class="span4">
 						<img src="{$event->link_photo}" alt="" class="img-polaroid">
 					</div>
+
+
 					<div class="span6">
 						<dl class="dl-horizontal">
                             {if isset($event->place_id)}
-								<dt>Miejsce</dt>
+								<dt>Miejsce </dt>
 								<dd><a href="../../miejsca/miejsce/{$place->id}">{$miejsce}</a></dd>
                             {/if}
                             {if isset($event->coordinates)}
