@@ -38,7 +38,7 @@ class Controller_Miejsca extends \Controller_Ines_Site
 			$place->address_street_name	= $fields['address_street_name'];
 			$place->address_flat_number	= $fields['address_flat_number'];
 			$place->address_city		= $fields['address_city'];
-			$place->address_postcode	= $fields['address_postcode'];
+			$place->address_post_code	= $fields['address_post_code'];
 			//$place->address_gps			= $fields['address_gps'];
 			$place->map_lat =			 $fields['map_lat'];
 			$place->map_lng =		 $fields['map_lng'];
@@ -93,7 +93,7 @@ class Controller_Miejsca extends \Controller_Ines_Site
 			
 			if($place->save())
 			{
-				\Response::redirect('places/edit/'.$id);
+				\Response::redirect('/');
 			}
 	   }
 	   else
