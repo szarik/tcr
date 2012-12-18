@@ -15,7 +15,10 @@ class Controller_Miejsca extends \Controller_Ines_Site
 		$view = View::forge('default/lokale/lokale.smarty');
 		$this->_tpl->set('body', $view);
 		$this->_tpl->set('id_miejsce', $id_miejsce);
-		
+		//Przyk³adowa SQL'ka
+		$z = \DB::query("SELECT * FROM events WHERE place_id = $id_miejsce and date_start >= NOW()")->as_object()->execute();
+		//\Ines::dump($z);
+		$this->_tpl->set('inne_wydarzenie',$z, false);
 		return $this->_tpl;// = View::forge('default/frontpage.smarty');
 		
 	}

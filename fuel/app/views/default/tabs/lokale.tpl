@@ -7,7 +7,7 @@
 		<div class="span4" style="padding-left:40px;">
 			<h3>{$selected_place->name}</h3>
 
-			<p>Adress: {$selected_place->address_street_name}, {$selected_place->address_city} </p>
+			<p>Adres: {$selected_place->address_street_name}, {$selected_place->address_city} </p>
 
 			<p>Telefon: {$selected_place->phone} </p>
 
@@ -20,6 +20,12 @@
 			<p>Wstęp: {$selected_place->wstep} </p>
 
 			<p>Opis: {$selected_place->description} </p>
+            
+            
+            
+            <!--{foreach from=$inne_wydarzenia item=inne_wydarzenie}
+            <p>Inne {$inne_wydarzenie->name}</p>
+            {/foreach}-->
 		</div>
 		<div class="span8">
 			<div id="mapka" style="width: 570px; height: 500px; border: 1px solid black; background: gray;">
@@ -40,7 +46,7 @@
 
 				<li class="span5">
 					<h4>
-						<a href="miejsca/miejsce/{$place->id}">{$place->name}</a>
+						<a href="/miejsca/miejsce/{$place->id}">{$place->name}</a>
 					</h4>
 				</li>
 

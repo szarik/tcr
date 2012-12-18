@@ -80,7 +80,7 @@
 {/foreach}
 							</a> <span class="divider">/</span></li>
                         {/if}
-						<li><a href="../../miejsca/miejsce/{$place->id}">{$place->name}</a>
+						<li><a href="/miejsca/miejsce/{$place->id}">{$place->name}</a>
 							<span class="divider">/</span></li>
 						<li class="active">{$event->name}</li>
 					</ul>
@@ -95,7 +95,7 @@
 						<dl class="dl-horizontal">
                             {if isset($event->place_id)}
 								<dt>Miejsce </dt>
-								<dd><a href="../../miejsca/miejsce/{$place->id}">{$miejsce}</a></dd>
+								<dd><a href="/miejsca/miejsce/{$place->id}">{$miejsce}</a></dd>
                             {/if}
                             {if isset($event->coordinates)}
 								<dt>Lokalizacja</dt>

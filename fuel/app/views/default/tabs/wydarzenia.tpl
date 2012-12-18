@@ -76,8 +76,8 @@
                                 {/if}
                             {/foreach}
 							</span><br/>
-                            <span class="label label-info">
-                                {$event->preferences|replace:'sam':'single'|replace:'para':'pary'|replace:'grupa':'grupy'}</span><br/>
+                            <!-- <span class="label label-info">
+                               {$event->preferences|replace:'sam':'single'|replace:'para':'pary'|replace:'grupa':'grupy'}</span><br/>-->
 
 
 								<p>{$event->description|strip_tags|substr:0:150} </p>
