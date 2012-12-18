@@ -43,7 +43,7 @@ class Controller_Miejsca extends \Controller_Ines_Site
 			$place->map_lat = $fiels['map_lat'];
 			$place->map_lng = $fiels['map_lng'];
 			$place->open_time			= $fields['open_time'];
-			$place->end_time			= $fields['end_time'];
+			//$place->end_time			= $fields['end_time'];
 			$place->phone				= $fields['phone'];
 			$place->email				= $fields['email'];
 			$place->website				= $fields['website'];
