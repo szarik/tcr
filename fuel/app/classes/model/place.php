@@ -36,9 +36,14 @@ class Model_Place extends \Orm\Model
          'label' => 'Kod pocztowy',
 		 'validation' => array('required', 'max_length'=>array(255), 'min_length'=>array(3))
       ),
-	  'address_gps' => array(
+	  'map_lat' => array(
          'data_type' => 'string',
-         'label' => 'GPS',
+         'label' => 'lat',
+		 'validation' => array('required', 'max_length'=>array(255), 'min_length'=>array(3))
+      ),
+	  'map_lng' => array(
+         'data_type' => 'string',
+         'label' => 'lng',
 		 'validation' => array('required', 'max_length'=>array(255), 'min_length'=>array(3))
       ),
 	  'open_time' => array(
@@ -56,9 +61,19 @@ class Model_Place extends \Orm\Model
          'label' => 'Nr telefonu',
 		 'validation' => array('required', 'max_length'=>array(255), 'min_length'=>array(3))
       ),
+	  'website' => array(
+         'data_type' => 'string',
+         'label' => 'Strona wwww',
+		 'validation' => array('required', 'max_length'=>array(255), 'min_length'=>array(3))
+      ),
 	  'email' => array(
          'data_type' => 'string',
-         'label' => 'Polozenie',
+         'label' => 'Email',
+		 'validation' => array('required', 'max_length'=>array(255), 'min_length'=>array(3))
+      ),
+	   'photo' => array(
+         'data_type' => 'string',
+         'label' => 'Logo',
 		 'validation' => array('required', 'max_length'=>array(255), 'min_length'=>array(3))
       )
    );
