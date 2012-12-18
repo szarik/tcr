@@ -51,7 +51,7 @@ class Controller_Miejsca extends \Controller_Ines_Site
 			
 			if($place->save())
 			{
-				\Response::redirect('places/edit/'.$place->id);
+				\Response::redirect('/');
 			}
 		}
 		else
@@ -93,7 +93,7 @@ class Controller_Miejsca extends \Controller_Ines_Site
 			
 			if($place->save())
 			{
-				\Response::redirect('/');
+				\Response::redirect('places/edit/'.$id);
 			}
 	   }
 	   else
