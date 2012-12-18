@@ -16,18 +16,47 @@ class Model_Place extends \Orm\Model
 		 'validation' => array('required', 'max_length'=>array(255), 'min_length'=>array(3)),
 		 'form' => array('type' => 'textarea') 
       ),
-	  'address' => array(
+	  'address_street_name' => array(
          'data_type' => 'string',
-         'label' => 'Adres',
+         'label' => 'Ulica',
+		 'validation' => array('required', 'max_length'=>array(255), 'min_length'=>array(3)) 
+      ),
+	  'address_flat_number' => array(
+         'data_type' => 'string',
+         'label' => 'Numer lokalu',
+		 'validation' => array('required', 'max_length'=>array(255), 'min_length'=>array(1))	 
+      ),
+	  'address_city' => array(
+         'data_type' => 'string',
+         'label' => 'Miasto',
 		 'validation' => array('required', 'max_length'=>array(255), 'min_length'=>array(3)),
-		 'form' => array('type' => 'textarea') 
+      ),
+	  'address_post_code' => array(
+         'data_type' => 'string',
+         'label' => 'Kod pocztowy',
+		 'validation' => array('required', 'max_length'=>array(255), 'min_length'=>array(3))
+      ),
+	  'address_gps' => array(
+         'data_type' => 'string',
+         'label' => 'GPS',
+		 'validation' => array('required', 'max_length'=>array(255), 'min_length'=>array(3))
       ),
 	  'open_time' => array(
          'data_type' => 'time',
          'label' => 'Godziny otwarcia',
 		 'validation' => array('required', 'max_length'=>array(255), 'min_length'=>array(3))
       ),
-	  'coordinates' => array(
+	  'end_time' => array(
+         'data_type' => 'time',
+         'label' => 'Godziny zamkniecia',
+		 'validation' => array('required', 'max_length'=>array(255), 'min_length'=>array(3))
+      ),
+	  'phone' => array(
+         'data_type' => 'string',
+         'label' => 'Nr telefonu',
+		 'validation' => array('required', 'max_length'=>array(255), 'min_length'=>array(3))
+      ),
+	  'email' => array(
          'data_type' => 'string',
          'label' => 'Polozenie',
 		 'validation' => array('required', 'max_length'=>array(255), 'min_length'=>array(3))
