@@ -30,11 +30,21 @@ class Controller_Miejsca extends \Controller_Ines_Site
 	    {
 			$fields = $fieldset->validated();
 			$place = new Model_Place;
-			$place->name			= $fields['name'];
-			$place->description		= $fields['description'];
-			$place->address			= $fields['address'];
-			$place->open_time		= $fields['open_time'];
-			$place->coordinates		= $fields['coordinates'];
+			$place->name				= $fields['name'];
+			$place->description			= $fields['description'];
+			$place->address_street_name	= $fields['address_street_name'];
+			$place->address_flat_number	= $fields['address_flat_number'];
+			$place->address_city		= $fields['address_city'];
+			$place->address_postcode	= $fields['address_postcode'];
+			//$place->address_gps			= $fields['address_gps'];
+			$place->map_lat = $fiels['map_lat'];
+			$place->map_lng = $fiels['map_lng'];
+			$place->open_time			= $fields['open_time'];
+			$place->end_time			= $fields['end_time'];
+			$place->phone				= $fields['phone'];
+			$place->email				= $fields['email'];
+			$place->website				= $fields['website'];
+			$place->photo				= $fields['photo'];
 			
 			if($place->save())
 			{
