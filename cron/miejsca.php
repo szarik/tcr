@@ -114,6 +114,8 @@ require_once 'rss_php.php';
 	analiza_xml($xml);
 	$xml = "http://www.prl.wroc.pl/tcr_xml.php";
 	analiza_xml($xml); 
+	$xml = "http://www.u7pub.pl/tcr_xml.php";
+	analiza_xml($xml);
 	?>
 
 

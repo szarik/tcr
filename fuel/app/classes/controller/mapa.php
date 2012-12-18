@@ -70,6 +70,7 @@
 		function action_ajax($id, $type)
 		{
 			if ($type == 'place') {
+
 				$view = View::forge('default/mapa/ajax_lokal.smarty');
 				$place = \Tocorobimy\Places::instance()->get($id)->current();
 				$view->set('lokal', $place, false);
@@ -77,8 +78,15 @@
 				$view->set('dodatkowe_lokale', $additional_places, false);
 				$view->set('mapa_start', \Session::get('mapa_start', false));
 				echo $view->render();
+
 			} else if ($type == 'event') {
-				echo "EVENT IT " . $id;
+
+				$view = View::forge('default/mapa/ajax_wydarzenie.smarty');
+				$event = \Tocorobimy\Model\Tocorobimy::get_events_by_id(array($id))->current();
+				$view->set('wydarzenie', $event, false);
+				$view->set('mapa_start', \Session::get('mapa_start', false));
+				echo $view->render();
+
 			}
 			die();
 		}

@@ -64,7 +64,7 @@
                     <td></td>-->
 						<td>
 							<p>
-								<a href="/public/wydarzenia/wydarzenie/{$event->id}" class="btn btn-primary">Zobacz</a>
+								<a href="/wydarzenia/wydarzenie/{$event->id}" class="btn btn-primary">Zobacz</a>
                                 {if isset($event->map_lat) && isset($event->map_lon)}
 									<a href="http://jakdojade.pl/?tc={$event->map_lat}:{$event->map_lon}&cid=2000" target="_blank" class="btn">JakDojade</a>
                                     {elseif isset($event->address_street_name)}

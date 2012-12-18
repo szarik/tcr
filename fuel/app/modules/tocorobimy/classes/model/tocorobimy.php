@@ -200,6 +200,17 @@ class Tocorobimy extends \Model
 				break;
 		}
 	}
+
+	public static function get_events_by_id($id)
+	{
+		$_query = \DB::select('places.map_lng', 'places.map_lat', 'places.address_street_name', 'events.id', 'place_id', 'events.name', 'events.description', 'date_end', 'preferences', 'periodicity', 'coordinates', 'visible', 'events.date_created', 'date_start', 'events.date_modified', 'link', 'link_photo', 'link_movie', 'category_id', array('categories.name','category_name'))->from('events')->join('categories')->on('events.category_id', '=', 'categories.id');
+		$_query->join('places', 'left')->on('places.id', '=', 'place_id');
+		$_query->where('events.id', 'IN', $id);
+		$_query->order_by('events.id', 'desc');
+		$_query = $_query->as_object()->execute();
+		return $_query;
+	}
+
 	
 	public static function get_events_for_categories($events, $categories)
 	{

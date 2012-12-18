@@ -62,8 +62,15 @@ class Theme
 		
 		$params->set('places', \Tocorobimy\Places::instance()->get(), false);
 		$_r = \Tocorobimy\Places::instance()->get(\Input::get('lokal'));
-		$params->set('selected_place', $_r->current(), false);
 
+		
+		$params->set('selected_place', $_r->current(), false);
+		
+		/*if(\Input::get('lokal')) {
+			$w = \DB::select("*")->from('events')->where('place_id', '=', \Input::get('lokal'));
+			var_dump($w);
+		}*/
+		//$params->set('inne_wydarzenia', \DB::query("SELECT * FROM events WHERE place_id = $_rr ")->as_assoc()->execute(), false);
 		// filter events
 		$events_for_sidepanel = \Tocorobimy\Model\Tocorobimy::get_events_for_filters(
 				\Input::get('preferencja') ? explode(',', \Input::get('preferencja')) : array(),
