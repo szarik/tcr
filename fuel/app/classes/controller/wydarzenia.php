@@ -63,7 +63,6 @@
 			$val->set_message('required', 'Pole \':label\' jest wymagane');
 			$val->field('date_start')->add_rule('is_timestamp');
 			$val->field('date_end')->add_rule('is_timestamp');
-			$val->field('preferences')->add_rule('checkboxes_required');
 			$val->set_message('is_int', '\':label\' musi byc wartoscia calkowita');
 			$val->set_message('is_timestamp', '\':label\' musi byc data formatu YYYY-MM-DD HH:MM');
 			$val->set_message('checkboxes_required', 'Przynajmniej jedna preferencja musi byc zaznaczona');
@@ -81,7 +80,6 @@
 				$event->link_movie = $fields['link_movie'];
 				$event->date_start = $fields['date_start'];
 				$event->date_end = $fields['date_end'];
-				$event->preferences = Model_Event::flatten($fields['preferences']);
 				$event->coordinates = $fields['coordinates'];
 				$event->category_id = $fields['category_id'];
 

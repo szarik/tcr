@@ -38,12 +38,12 @@ class Model_Place extends \Orm\Model
       ),
 	  'map_lat' => array(
          'data_type' => 'string',
-         'label' => 'lat',
+         'label' => 'Szerokosc geograficzna <a href="http://gmaps-samples.googlecode.com/svn/trunk/geocoder/singlegeocode.html" target="_blank">Kilknij tutaj</a>',
 		 'validation' => array('required', 'max_length'=>array(255), 'min_length'=>array(3))
       ),
 	  'map_lng' => array(
          'data_type' => 'string',
-         'label' => 'lng',
+         'label' => 'Dlugosc geograficzna',
 		 'validation' => array('required', 'max_length'=>array(255), 'min_length'=>array(3))
       ),
 	  'open_time' => array(

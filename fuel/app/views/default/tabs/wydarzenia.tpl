@@ -45,7 +45,7 @@
                             <span class="label label-important">
                             {$tooltip = $tooltip + 1}
                                 <!-- <a href="#" rel="tooltip{$tooltip}" data-original-title="Inne Kina"  data-placement="bottom" data-content="
-                              {$tablica_miejsc[$event->name]}
+                              {$tablica_miejsc[$event->name]|strip_tags}
                                		
                               
                                 

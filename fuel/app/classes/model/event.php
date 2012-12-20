@@ -55,11 +55,6 @@ class Model_Event extends \Orm\Model
          'label' => 'Koniec',
 		 'validation' => array('required')
       ),
-	  'preferences' => array(
-         'data_type' => 'string',
-         'label' => 'Preferencje',
-		 'form' => array('type' => 'checkbox', 'options' => array('sam'=>'Jedna osoba', 'para'=>'Para', 'grupa'=>'Grupa'))
-      ),
 	  'coordinates' => array(
          'data_type' => 'string',
          'label' => 'Polozenie',
