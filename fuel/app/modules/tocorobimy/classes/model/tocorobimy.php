@@ -154,7 +154,7 @@ class Tocorobimy extends \Model
 		else
 		{
 			//	all from today inclusive
-			$_query->where(\DB::expr('CAST(date_start AS DATE)'), '>=', date("Y-m-d"));
+			$_query->where(\DB::expr('date_start'), '>=', \DB::expr('now()'));
 		}
 		if (!empty($_prices))
 		{

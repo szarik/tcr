@@ -66,10 +66,6 @@ class Theme
 		
 		$params->set('selected_place', $_r->current(), false);
 		
-		/*if(\Input::get('lokal')) {
-			$w = \DB::select("*")->from('events')->where('place_id', '=', \Input::get('lokal'));
-			var_dump($w);
-		}*/
 		//$params->set('inne_wydarzenia', \DB::query("SELECT * FROM events WHERE place_id = $_rr ")->as_assoc()->execute(), false);
 		// filter events
 		$events_for_sidepanel = \Tocorobimy\Model\Tocorobimy::get_events_for_filters(
@@ -77,7 +73,6 @@ class Theme
 				\Input::get('cena') ? explode(',', \Input::get('cena')) : array(),
 				\Input::get('data'));
 		$events = \Tocorobimy\Model\Tocorobimy::get_events_for_categories($events_for_sidepanel, \Input::get('kategoria') ? explode(',', \Input::get('kategoria')) : array());
-
 
 		// Events map
 		$opt = array('zoom' => 13, 'center' => 'new google.maps.LatLng(51.107885,17.038538)', 'mapTypeId' => 'google.maps.MapTypeId.ROADMAP');
@@ -130,11 +125,11 @@ class Theme
 		// Events
 		$fieldset = \Fieldset::forge('form_event')->add_model('Model_Event');
 		$form = $fieldset->form();
-		$form->repopulate();
-		$form->add('price_free', 'Bilet darmowy', array('type' => 'checkbox'), array());
-		$form->add('price_normal', 'Bilet normalny', array('type' => 'text'), array('is_price'));
-		$form->add('price_discount', 'Bilet ulgowy', array('type' => 'text'), array('is_price'));
+		$form->add('price_free', 'Bilet darmowy', array('type' => 'checkbox', 'onchange' => 'price_free_changed()'), array());
+		$form->add('price_normal', 'Bilet normalny', array('type' => 'text', 'onkeyup' => 'price_normal_discount_changed()'), array('is_price'));
+		$form->add('price_discount', 'Bilet ulgowy', array('type' => 'text', 'onkeyup' => 'price_normal_discount_changed()'), array('is_price'));
 		$form->add('submit', '', array('type' => 'submit', 'value' => 'Dodaj', 'class' => 'btn medium primary'));
+		$form->repopulate();
 		$params->set('form_event', $form->build('wydarzenia/dodaj'), false);
 		
 		// Places

@@ -10,6 +10,14 @@ $(function(){
 	});
 	
 	$("option:not([value])").attr('disabled', 'true');
+	
+	if( $('#form_price_free').is(':checked') ) {
+		$('#form_price_normal').prop('disabled', true);
+		$('#form_price_discount').prop('disabled', true);
+	}
+	else if( $('#form_price_normal').val() || $('#form_price_discount').val() ) {
+		$('#form_price_free').prop('disabled', true);
+	}
 });
 
 function show_events_popup() {
@@ -115,5 +123,27 @@ function getBaseURL() {
         // Root Url for domain name
         return baseURL + "/";
     }
+}
 
+function price_free_changed() {
+	if( $('#form_price_free').is(':checked') ) {
+		$('#form_price_normal').prop('disabled', true);
+		$('#form_price_discount').prop('disabled', true);
+	}
+	else {
+		$('#form_price_normal').prop('disabled', false);
+		$('#form_price_discount').prop('disabled', false);
+	}
+}
+
+function price_normal_discount_changed() {
+	var price_normal = $('#form_price_normal').val();
+	var price_discount = $('#form_price_discount').val();
+	
+	if( (price_normal == null || price_normal.trim() == '')  &&  (price_discount == null || price_discount.trim() == '') ) {
+		$('#form_price_free').prop('disabled', false);
+	}
+	else {
+		$('#form_price_free').prop('disabled', true);
+	}
 }
