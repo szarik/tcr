@@ -8,23 +8,23 @@ class Model_Event extends \Orm\Model
 
 	protected static $_properties = array(
       'id',
+	  'name' => array(
+		 'data_type' => 'string',
+		 'label' => 'Nazwa wydarzenia',
+		 'validation' => array('required', 'min_length'=>array(3), 'max_length'=>array(255))
+ 	  ),
+	  'category_id' => array(
+		'data_type' => 'int',
+		'label' => 'Kategoria',
+		'validation' => array('required'),
+		'form' => array('type' => 'select', '', 'options' => array('' => 'Wybierz kategorię'))
+	  ),
 	  'place_id' => array(
          'data_type' => 'int',
          'label' => 'Miejsce',
          'validation' => array('required'),
 	  	 'form' => array('type' => 'select', '', 'options' => array('' => 'Wybierz miejsce'))
       ),
-	  'name' => array(
-         'data_type' => 'string',
-         'label' => 'Nazwa wydarzenia',
-         'validation' => array('required', 'min_length'=>array(3), 'max_length'=>array(255))
-      ),
-	  'category_id' => array(
-		 'data_type' => 'int',
-		 'label' => 'Kategoria',
-		 'validation' => array('required'),
-		 'form' => array('type' => 'select', '', 'options' => array('' => 'Wybierz kategorię'))
-	  ),
       'description' => array(
          'data_type' => 'string',
          'label' => 'Opis',
@@ -55,11 +55,11 @@ class Model_Event extends \Orm\Model
          'label' => 'Koniec',
 		 'validation' => array('required')
       ),
-	  'coordinates' => array(
-         'data_type' => 'string',
-         'label' => 'Polozenie',
-		 'validation' => array('required')
-      )
+// 	  'coordinates' => array(
+//          'data_type' => 'string',
+//          'label' => 'Polozenie',
+// 		 'validation' => array('required')
+//       )
    );
    
 	

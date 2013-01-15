@@ -13,7 +13,7 @@
                <i class="icon-ok"></i>
             {/if}
             
-            Dowolna  ({$events_all})
+            {if isset($smarty.get.kategoria)}Usuń filtr{else}Dowolna{/if}  ({$events_all})
             {if !isset($smarty.get.kategoria)}
                 <i style="margin-top:2px;" class="icon-chevron-right icon-white pull-right"></i>
             {/if}

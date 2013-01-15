@@ -13,9 +13,14 @@ class Theme
 		\Asset::css('bootstrap-responsive.css');
 		\Asset::css('colorbox.css');
 		\Asset::css('daterangepicker.css');
+		\Asset::css('jquery-ui-timepicker-addon.css');
+		\Asset::css('jquery-ui-1.9.2.custom.css');
 		\Asset::css('tcr.css');
 
 		// Add extended JS
+		\Asset::js('jquery.js');
+		\Asset::js('jquery-ui-1.9.2.custom.js');
+		\Asset::js('jquery-ui-timepicker-addon.js');
 		\Asset::js('jquery.js');
 		\Asset::js('jquery.greyscale.js');
 		\Asset::js('jquery.hover.zoom.js');

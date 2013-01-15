@@ -1,4 +1,6 @@
 $(function(){
+	$('#form_date_start').datetimepicker({timeFormat: 'hh:mm', dateFormat: 'yy-mm-dd'});
+	$('#form_date_end').datetimepicker({timeFormat: 'hh:mm', dateFormat: 'yy-mm-dd'});
 	$('.datepicker').daterangepicker({format: 'yyyy-MM-dd'});
 	
     $(".colorbox").colorbox({inline:true, width:"50%"});
